@@ -1,5 +1,6 @@
 ---
 sidebar_label: "Steam 로그인 인증 예제"
+description: "Steam 로그인 인증 예제"
 ---
 
 # Steamworks.NET 사용

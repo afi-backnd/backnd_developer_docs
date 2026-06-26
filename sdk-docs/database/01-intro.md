@@ -1,5 +1,6 @@
 ---
 sidebar_label: 시작하기
+description: "시작하기"
 ---
 
 # 시작하기

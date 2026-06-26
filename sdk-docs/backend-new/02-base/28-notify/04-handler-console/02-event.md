@@ -1,5 +1,6 @@
 ---
 sidebar_label: 이벤트 등록 핸들러
+description: "이벤트 등록 핸들러"
 ---
 
 # OnNewEventCreated

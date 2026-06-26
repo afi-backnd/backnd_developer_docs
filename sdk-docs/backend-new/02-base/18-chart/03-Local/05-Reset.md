@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 초기화"
+description: "로컬 초기화"
 ---
 
 # Local.Reset

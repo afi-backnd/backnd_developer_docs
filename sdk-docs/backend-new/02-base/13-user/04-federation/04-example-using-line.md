@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[New] Line 로그인 인증 예제"
+description: "[New] Line 로그인 인증 예제"
 sidebar_position: 4.7
 ---
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 랭킹 조회
+description: "내 랭킹 조회"
 ---
 
 # GetMyRank

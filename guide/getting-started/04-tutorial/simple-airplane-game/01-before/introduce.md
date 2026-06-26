@@ -1,5 +1,6 @@
 ---
 sidebar_label: 강의 소개
+description: "강의 소개"
 sidebar_position: 1
 ---
 

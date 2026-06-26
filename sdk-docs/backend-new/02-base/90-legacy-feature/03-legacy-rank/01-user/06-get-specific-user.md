@@ -1,5 +1,6 @@
 ---
 sidebar_label: 특정 유저 랭킹 조회
+description: "특정 유저 랭킹 조회"
 ---
 
 # GetUserRank

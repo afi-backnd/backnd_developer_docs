@@ -1,5 +1,6 @@
 ---
 sidebar_label: 과다 호출 에러 핸들러 (Server)
+description: "과다 호출 에러 핸들러 (Server)"
 sidebar_position: 5
 ---
 

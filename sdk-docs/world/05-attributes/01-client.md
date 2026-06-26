@@ -1,5 +1,6 @@
 ---
 sidebar_label: Client
+description: "Client"
 ---
 
 # [Client]

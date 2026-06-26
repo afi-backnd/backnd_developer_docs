@@ -1,5 +1,6 @@
 ---
 sidebar_label: 에셋 다운로드
+description: "에셋 다운로드"
 sidebar_position: 3
 ---
 

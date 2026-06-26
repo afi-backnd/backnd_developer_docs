@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 특정 폴더의 모든 차트 저장"
+description: "[Deprecated] 특정 폴더의 모든 차트 저장"
 ---
 
 # [Deprecated] GetChartByFolderAndSave

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 펑션 SDK 업그레이드
+description: "펑션 SDK 업그레이드"
 ---
 
 # 펑션 SDK 업그레이드

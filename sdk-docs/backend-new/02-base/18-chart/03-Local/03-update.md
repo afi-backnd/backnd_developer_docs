@@ -1,5 +1,6 @@
 ---
 sidebar_label: "최신 테이블로 업데이트"
+description: "최신 테이블로 업데이트"
 ---
 
 # Local.Update

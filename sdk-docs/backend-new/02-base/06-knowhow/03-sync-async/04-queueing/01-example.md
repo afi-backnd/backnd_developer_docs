@@ -1,3 +1,7 @@
+---
+description: "[Deprecated] SendQueue"
+---
+
 # [Deprecated] SendQueue
 
 :::warning 신규 버전(6.0.1이상) SDK에서는 SendQueue를 지원하지 않습니다.

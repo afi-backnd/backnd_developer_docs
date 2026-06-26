@@ -1,5 +1,6 @@
 ---
 sidebar_label: 마이그레이션 가이드
+description: "마이그레이션 가이드"
 ---
 
 # 마이그레이션 가이드

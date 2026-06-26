@@ -1,5 +1,6 @@
 ---
 sidebar_label: 국가코드를 CountryCode로 바꾸기
+description: "국가코드를 CountryCode로 바꾸기"
 ---
 
 # GetCountryName

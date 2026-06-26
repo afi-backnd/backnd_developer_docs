@@ -1,5 +1,6 @@
 ---
 sidebar_label: 푸시 등록
+description: "푸시 등록"
 ---
 
 # RegisterPush

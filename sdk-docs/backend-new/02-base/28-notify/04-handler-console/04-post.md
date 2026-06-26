@@ -1,5 +1,6 @@
 ---
 sidebar_label: 우편 발송 핸들러
+description: "우편 발송 핸들러"
 ---
 
 # OnNewPostCreated

@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 3. 길드 찾아 가입 요청하기
+description: "Step 3. 길드 찾아 가입 요청하기"
 ---
 
 

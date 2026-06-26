@@ -1,5 +1,6 @@
 ---
 sidebar_label: 친구 삭제
+description: "친구 삭제"
 ---
 
 # RemoveFriend

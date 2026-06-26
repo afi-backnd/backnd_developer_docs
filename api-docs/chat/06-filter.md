@@ -1,5 +1,6 @@
 ---
 sidebar_label: 비속어
+description: "비속어"
 ---
 
 # 비속어

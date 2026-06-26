@@ -1,5 +1,6 @@
 ---
 sidebar_label: 캐릭터 로그인
+description: "캐릭터 로그인"
 ---
 
 # SelectCharacter

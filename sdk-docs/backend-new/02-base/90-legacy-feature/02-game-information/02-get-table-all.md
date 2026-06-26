@@ -1,5 +1,6 @@
 ---
 sidebar_label: 전체 테이블 조회
+description: "전체 테이블 조회"
 ---
 
 # GetTableList

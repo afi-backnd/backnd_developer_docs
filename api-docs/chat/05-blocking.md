@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 제재
+description: "유저 제재"
 ---
 
 # 유저 제재

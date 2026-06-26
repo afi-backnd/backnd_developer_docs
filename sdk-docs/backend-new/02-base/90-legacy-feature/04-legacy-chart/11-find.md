@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] GetLocalChartData"
+description: "[Deprecated] GetLocalChartData"
 ---
 
 # [Deprecated] GetLocalChartData

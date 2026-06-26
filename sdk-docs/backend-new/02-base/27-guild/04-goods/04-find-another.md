@@ -1,5 +1,6 @@
 ---
 sidebar_label: 다른 길드 굿즈 정보 조회
+description: "다른 길드 굿즈 정보 조회"
 ---
 
 # GetGuildGoodsAsync

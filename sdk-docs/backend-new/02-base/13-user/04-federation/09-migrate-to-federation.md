@@ -1,5 +1,6 @@
 ---
 sidebar_label: "외부 로그인 연동 계정 변경"
+description: "외부 로그인 연동 계정 변경"
 ---
 
 # ChangeLinkedProvider

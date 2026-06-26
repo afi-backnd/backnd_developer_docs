@@ -1,5 +1,6 @@
 ---
 sidebar_label: 커스텀 회원가입
+description: "커스텀 회원가입"
 ---
 
 # SignUpCustom 

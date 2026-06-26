@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkIdentity
+description: "NetworkIdentity"
 ---
 
 # NetworkIdentity

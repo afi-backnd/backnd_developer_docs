@@ -1,5 +1,6 @@
 ---
 sidebar_label: 과도한 서버 요청
+description: "과도한 서버 요청"
 sidebar_position: 6
 ---
 

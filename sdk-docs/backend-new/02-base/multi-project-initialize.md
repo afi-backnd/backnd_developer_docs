@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Todo] 멀티 프로젝트 등록"
+description: "[Todo] 멀티 프로젝트 등록"
 sidebar_position: 6.4
 ---
 

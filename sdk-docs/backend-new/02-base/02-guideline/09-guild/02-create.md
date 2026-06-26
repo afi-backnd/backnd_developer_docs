@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 2. 길드 생성하기
+description: "Step 2. 길드 생성하기"
 ---
 
 

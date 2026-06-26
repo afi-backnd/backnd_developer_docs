@@ -1,5 +1,6 @@
 ---
 sidebar_label: 트랜잭션 읽기 (데이터 읽기)
+description: "트랜잭션 읽기 (데이터 읽기)"
 ---
 
 # ReadTransaction

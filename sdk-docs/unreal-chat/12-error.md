@@ -1,5 +1,6 @@
 ---
 sidebar_label: 에러 콜백
+description: "에러 콜백"
 ---
 
 # 에러 콜백

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 차트 리스트 조회"
+description: "[Deprecated] 차트 리스트 조회"
 ---
 
 # [Deprecated] GetChartList

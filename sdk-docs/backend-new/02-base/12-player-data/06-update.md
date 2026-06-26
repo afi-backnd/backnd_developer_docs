@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 데이터 갱신하기
+description: "유저 데이터 갱신하기"
 ---
 
 # UpdateData

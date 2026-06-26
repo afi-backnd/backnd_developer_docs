@@ -1,5 +1,6 @@
 ---
 sidebar_label: 계정 로그아웃
+description: "계정 로그아웃"
 ---
 
 # LogoutAccount

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 뒤끝펑션 템플릿
+description: "뒤끝펑션 템플릿"
 ---
 
 # 뒤끝펑션 템플릿

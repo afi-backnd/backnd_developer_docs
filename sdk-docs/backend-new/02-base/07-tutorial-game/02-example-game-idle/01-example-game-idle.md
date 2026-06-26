@@ -1,5 +1,6 @@
 ---
 sidebar_label: "BackendHero : 방치형"
+description: "BackendHero : 방치형"
 sidebar_position: 1
 ---
 

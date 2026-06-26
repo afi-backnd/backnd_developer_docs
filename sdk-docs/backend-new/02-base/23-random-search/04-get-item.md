@@ -1,5 +1,6 @@
 ---
 sidebar_label: 랜덤 그룹에서 데이터 조회
+description: "랜덤 그룹에서 데이터 조회"
 ---
 
 # PickRandomEntries

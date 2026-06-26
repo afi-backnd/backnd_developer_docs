@@ -1,5 +1,6 @@
 ---
 sidebar_label: "이메일 정보등록"
+description: "이메일 정보등록"
 ---
 
 # UpdateCustomEmail

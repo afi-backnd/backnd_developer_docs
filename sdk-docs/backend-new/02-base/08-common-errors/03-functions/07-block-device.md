@@ -1,5 +1,6 @@
 ---
 sidebar_label: 디바이스 차단
+description: "디바이스 차단"
 sidebar_position: 7
 ---
 

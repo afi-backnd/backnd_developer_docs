@@ -1,5 +1,6 @@
 ---
 sidebar_label: 뒤끝베이스에서 보낸데이터 조회
+description: "뒤끝베이스에서 보낸데이터 조회"
 ---
 
 # Content

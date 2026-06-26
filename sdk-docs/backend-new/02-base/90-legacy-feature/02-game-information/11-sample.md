@@ -1,5 +1,6 @@
 ---
 sidebar_label: 사용 예제
+description: "사용 예제"
 ---
 
 # 유저의 재화 정보 서버에 저장하기

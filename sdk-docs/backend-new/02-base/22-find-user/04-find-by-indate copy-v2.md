@@ -1,5 +1,6 @@
 ---
 sidebar_label: "유저 inDate로 유저 정보 조회"
+description: "유저 inDate로 유저 정보 조회"
 sidebar_position: 0.75
 ---
 

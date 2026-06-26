@@ -1,5 +1,6 @@
 ---
 sidebar_label: 쿠폰 리스트 조회
+description: "쿠폰 리스트 조회"
 ---
 
 # GetCoupons

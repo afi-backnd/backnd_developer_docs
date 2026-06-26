@@ -1,5 +1,6 @@
 ---
 sidebar_label: 친구 요청 보낸 리스트 조회
+description: "친구 요청 보낸 리스트 조회"
 ---
 
 # GetSentFriendRequests

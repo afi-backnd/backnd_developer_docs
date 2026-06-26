@@ -1,5 +1,6 @@
 ---
 sidebar_label: 쓰기량, 읽기량 확인
+description: "쓰기량, 읽기량 확인"
 ---
 
 # 확인 방법

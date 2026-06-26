@@ -1,5 +1,6 @@
 ---
 sidebar_label: 프로젝트 버전 조회
+description: "프로젝트 버전 조회"
 ---
 
 # GetLatestVersion

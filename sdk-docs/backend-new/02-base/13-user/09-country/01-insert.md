@@ -1,5 +1,6 @@
 ---
 sidebar_label: 국가코드 등록
+description: "국가코드 등록"
 ---
 
 # UpdateCountryCode

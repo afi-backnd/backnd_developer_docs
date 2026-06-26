@@ -1,5 +1,6 @@
 ---
 sidebar_label: RequestResult
+description: "RequestResult"
 ---
 
 # RequestResult(리턴 값)

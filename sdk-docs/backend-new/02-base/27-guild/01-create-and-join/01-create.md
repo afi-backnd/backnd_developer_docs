@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 생성
+description: "길드 생성"
 ---
 
 # CreateGuild

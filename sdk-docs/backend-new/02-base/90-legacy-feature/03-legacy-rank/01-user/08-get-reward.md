@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 랭킹 보상 정보 조회
+description: "유저 랭킹 보상 정보 조회"
 ---
 
 # GetRankRewardList

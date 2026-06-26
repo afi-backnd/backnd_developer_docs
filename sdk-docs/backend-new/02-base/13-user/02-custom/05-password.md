@@ -1,5 +1,6 @@
 ---
 sidebar_label: "비밀번호 관리"
+description: "비밀번호 관리"
 ---
 
 # VerifyPassword

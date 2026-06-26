@@ -1,5 +1,6 @@
 ---
 sidebar_label: 명령어모음
+description: "명령어모음"
 ---
 
 # VSCode 뒤끝펑션용 명령 팔레트

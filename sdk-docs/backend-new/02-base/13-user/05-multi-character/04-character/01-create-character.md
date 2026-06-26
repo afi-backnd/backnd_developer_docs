@@ -1,5 +1,6 @@
 ---
 sidebar_label: 캐릭터 생성
+description: "캐릭터 생성"
 ---
 
 # CreateCharacter

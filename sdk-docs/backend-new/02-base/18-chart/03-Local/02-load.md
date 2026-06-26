@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 불러오기"
+description: "로컬 불러오기"
 ---
 
 # Local.Load

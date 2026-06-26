@@ -1,0 +1,345 @@
+# TheBackend Developer Docs — Full Reference
+
+> 이 파일은 AI agent와 LLM이 TheBackend 문서 전체를 단일 컨텍스트로 소비할 수 있도록
+> 핵심 내용을 모아 놓은 레퍼런스입니다.
+> 전체 원본 문서는 각 경로의 마크다운 파일을 참조하세요.
+
+---
+
+## 1. 서비스 개요
+
+TheBackend(뒤끝)는 Unity/Unreal Engine 게임 개발사를 위한 BaaS입니다.
+서버 직접 구축 없이 SDK 연동만으로 게임 서버 기능 전반을 사용할 수 있습니다.
+
+**공식 문서**: https://docs.thebackend.io
+**콘솔**: https://console.thebackend.io
+
+---
+
+## 2. SDK 시작하기
+
+### 설치
+1. 뒤끝 콘솔에서 프로젝트 생성 → 앱 ID / 클라이언트 키 발급
+2. `.unitypackage` 다운로드 후 Unity에 Import
+3. `TheBackend > Edit Settings`에서 앱 ID, 클라이언트 키 입력
+
+### SDK 초기화
+```csharp
+Backend.Initialize(callback =>
+{
+    if (callback.IsSuccess())
+        Debug.Log("초기화 성공");
+    else
+        Debug.LogError($"초기화 실패: {callback}");
+});
+```
+초기화 성공 이후에만 다른 SDK 기능을 호출해야 합니다.
+
+### 주의사항
+- 채팅 SDK와 베이스 SDK 함께 사용 시 `Backend.dll` 중복 체크 해제 필요
+- 안드로이드 AGP 8.5 이하: `mainTemplate.gradle` 추가 설정 필요
+
+---
+
+## 3. 베이스 SDK 주요 기능
+
+### 3.1 유저 인증
+
+```csharp
+// 커스텀 회원가입
+Backend.BMember.CustomSignUp(id, password, callback);
+
+// 커스텀 로그인
+Backend.BMember.CustomLogin(id, password, callback);
+
+// 게스트 로그인
+Backend.BMember.GuestLogin(callback);
+```
+
+### 3.2 플레이어 데이터 (게임 정보)
+
+```csharp
+// 데이터 삽입
+Param param = new Param();
+param.Add("score", 1000);
+param.Add("level", 5);
+Backend.GameData.Insert("tableName", param, callback);
+
+// 데이터 조회
+Backend.GameData.GetMyData("tableName", new Where(), callback);
+
+// 데이터 수정
+Backend.GameData.Update("tableName", inDate, param, callback);
+```
+
+### 3.3 랭킹 (리더보드)
+
+```csharp
+// 점수 저장
+Backend.Rank.RegistRankScore("uuid", score, callback);
+
+// 랭킹 조회
+Backend.Rank.GetRankList("uuid", callback);
+```
+
+### 3.4 길드
+
+```csharp
+// 길드 생성
+Backend.Guild.CreateGuild("guildName", callback);
+
+// 길드 검색
+Backend.Guild.GetGuildList(callback);
+
+// 길드 가입 신청
+Backend.Guild.ApplyGuild("guildInDate", callback);
+```
+
+### 3.5 쿠폰
+
+```csharp
+// 쿠폰 사용
+Backend.Coupon.UseCoupon("couponCode", callback);
+```
+
+### 3.6 푸시 알림
+
+```csharp
+// FCM 토큰 등록 (Android)
+Backend.Push.RegisterDevice("fcmToken", callback);
+```
+
+### 3.7 게임 로그
+
+```csharp
+// 로그 저장 (최대 90일 보관)
+Param logParam = new Param();
+logParam.Add("event", "stage_clear");
+logParam.Add("stage", 5);
+Backend.GameLog.InsertLog("LogTable", logParam, callback);
+```
+
+### 3.8 확률 (가챠)
+
+```csharp
+// 서버 확률 추첨
+Backend.Probability.GetProbabilityCardList("uuid", callback);
+```
+
+### 3.9 영수증 검증
+
+```csharp
+// Google Play 영수증 검증
+Backend.Receipt.AndroidReceiptValidation(receipt, callback);
+
+// App Store 영수증 검증
+Backend.Receipt.AppleReceiptValidation(receipt, callback);
+```
+
+### 3.10 우편함
+
+```csharp
+// 받은 우편 목록 조회
+Backend.UPost.GetPostList(PostType.user, callback);
+
+// 우편 수령
+Backend.UPost.ReceivePost(PostType.user, "inDate", callback);
+```
+
+### 3.11 친구
+
+```csharp
+// 친구 요청
+Backend.Friend.RequestFriend("nickname", callback);
+
+// 친구 목록
+Backend.Friend.GetFriendList(callback);
+```
+
+### 3.12 매치메이킹
+
+```csharp
+// 방 생성
+Backend.Match.CreateRoom(matchType, callback);
+
+// 방 참여
+Backend.Match.JoinRoom("roomInDate", callback);
+```
+
+### 3.13 알림 (Notify)
+
+```csharp
+// 알림 핸들러 등록
+Backend.Notification.OnNotification += (notification) =>
+{
+    Debug.Log(notification.content);
+};
+```
+
+---
+
+## 4. 채팅 SDK
+
+### 초기화 및 연결
+
+```csharp
+// 채팅 초기화 (베이스 SDK 초기화 이후)
+BackndChat.Initialize(callback);
+```
+
+### 채널
+
+```csharp
+// 채널 입장
+BackndChat.Channel.JoinChannel("channelId", callback);
+
+// 채널 나가기
+BackndChat.Channel.LeaveChannel("channelId", callback);
+```
+
+### 메시지
+
+```csharp
+// 메시지 전송
+BackndChat.Message.SendMessage("channelId", "내용", callback);
+
+// 메시지 수신 핸들러
+BackndChat.Message.OnMessage += (message) =>
+{
+    Debug.Log($"{message.sender}: {message.content}");
+};
+```
+
+### 번역
+
+```csharp
+// 메시지 번역 (자동 언어 감지)
+BackndChat.Translate.TranslateMessage("messageId", "ko", callback);
+```
+
+---
+
+## 5. 뒤끝펑션
+
+### 개요
+- 서버리스 함수 실행 환경
+- 베이스 SDK 필수 (단독 사용 불가)
+- 보안이 필요한 로직(확률, 결제 검증)을 서버에서 실행
+
+### 함수 호출
+
+```csharp
+// 서버 함수 호출
+Backend.Function.Call("functionName", new Param(), callback =>
+{
+    if (callback.IsSuccess())
+    {
+        var result = callback.GetFlattenJSON();
+        Debug.Log(result);
+    }
+});
+```
+
+### 설정
+1. 콘솔 → 뒤끝펑션 → 활성화 → 인증키 발급
+2. `TheBackend > Edit Settings` → Function Auth Key 입력
+
+---
+
+## 6. 데이터베이스
+
+### 특징
+- LINQ 기반 타입 안전 쿼리
+- UserTable(유저별 데이터) / FlexibleTable(공유 데이터)
+- 역할 기반 접근 제어
+
+### 데이터 삽입
+
+```csharp
+var item = new MyItem { name = "sword", damage = 100 };
+await Backend.DB.Insert(item);
+```
+
+### 데이터 조회
+
+```csharp
+var results = await Backend.DB
+    .Where<MyItem>(x => x.damage > 50)
+    .OrderByDescending(x => x.damage)
+    .Take(10)
+    .ToListAsync();
+```
+
+### 트랜잭션
+
+```csharp
+await Backend.DB.TransactionAsync(async tx =>
+{
+    var item = await tx.FirstOrDefaultAsync<MyItem>(...);
+    item.count--;
+    await tx.UpdateAsync(item);
+});
+```
+
+---
+
+## 7. 채팅 REST API
+
+**Base URL**: `https://platformapi.thebackend.io/chat/v1`
+
+| 메서드 | 경로 | 설명 |
+|---|---|---|
+| GET | /channels | 채널 목록 조회 |
+| POST | /channels | 채널 생성 |
+| DELETE | /channels/{channelId} | 채널 삭제 |
+| POST | /channels/{channelId}/messages | 시스템 메시지 전송 |
+| GET | /reports | 신고 목록 조회 |
+| POST | /users/{userId}/ban | 유저 채팅 제재 |
+| GET | /filters | 욕설 필터 목록 |
+| POST | /filters | 필터 단어 추가 |
+
+---
+
+## 8. 자주 묻는 질문
+
+**Q. 게임 로그는 얼마나 보관되나요?**
+A. 최대 90일 보관됩니다.
+
+**Q. 채팅 SDK와 베이스 SDK를 함께 사용할 때 주의할 점은?**
+A. 채팅 SDK 임포트 시 `Backend.dll`을 체크 해제해야 합니다.
+
+**Q. 뒤끝펑션을 단독으로 사용할 수 있나요?**
+A. 불가능합니다. 베이스 SDK가 반드시 필요합니다.
+
+**Q. 랭킹 순위 업데이트 주기는?**
+A. 실시간으로 업데이트됩니다. 콘솔에서 업데이트 주기 설정 가능.
+
+**Q. 안드로이드 빌드 시 오류가 발생합니다.**
+A. AGP 8.5 이하인 경우 `mainTemplate.gradle`에 추가 설정이 필요합니다.
+
+**Q. 초기화 실패 시 확인할 것은?**
+A. 앱 ID, 클라이언트 키가 콘솔 값과 일치하는지 확인하세요. 공백 포함 여부도 확인.
+
+---
+
+## 9. 버전 정보
+
+| SDK | 최신 버전 | 비고 |
+|---|---|---|
+| Backend (베이스) | 5.11.x | 주요 기능 SDK |
+| Chat | 1.4.0 | Unity 채팅 |
+| Function | 1.0.x | 서버리스 함수 |
+| World | 0.2.0 | 멀티플레이어 서버 |
+| Database | 1.0.0 | LINQ DB |
+| Unreal Chat | 1.3.0 | Unreal Engine 채팅 |
+
+---
+
+## 10. 에러 코드 참조
+
+전체 에러 코드: [sdk-docs/backend-new/02-base/09-all-errors.md](./sdk-docs/backend-new/02-base/09-all-errors.md)
+공통 에러: [sdk-docs/backend-new/02-base/08-common-errors/](./sdk-docs/backend-new/02-base/08-common-errors/)
+
+---
+
+*이 파일은 자동으로 동기화됩니다. 최신 정보는 https://docs.thebackend.io 를 참조하세요.*

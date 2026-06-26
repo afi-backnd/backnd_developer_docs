@@ -1,5 +1,6 @@
 ---
 sidebar_label: 영수증 검증 예제
+description: "영수증 검증 예제"
 ---
 
 # 구글 영수증 검증 예제

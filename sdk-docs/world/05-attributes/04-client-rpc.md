@@ -1,5 +1,6 @@
 ---
 sidebar_label: ClientRpc
+description: "ClientRpc"
 ---
 
 # [ClientRpc]

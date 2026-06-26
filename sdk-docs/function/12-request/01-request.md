@@ -1,5 +1,6 @@
 ---
 sidebar_label: 뒤끝 기능 요청
+description: "뒤끝 기능 요청"
 ---
 
 # 뒤끝 기능 요청

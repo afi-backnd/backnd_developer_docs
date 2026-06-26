@@ -1,5 +1,6 @@
 ---
 sidebar_label: 프로젝트 상태 조회
+description: "프로젝트 상태 조회"
 ---
 
 # GetProjectStatus

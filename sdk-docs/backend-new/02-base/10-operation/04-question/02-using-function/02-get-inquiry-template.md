@@ -1,5 +1,6 @@
 ---
 sidebar_label: "문의 기본양식 불러오기"
+description: "문의 기본양식 불러오기"
 sidebar_position: 2
 ---
 

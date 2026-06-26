@@ -1,3 +1,7 @@
+---
+description: "TransactionValue"
+---
+
 # TransactionValue
 
 TransactionValue는 게임 정보 관리에서 트랜잭션 기능을 사용하기 위한 클래스입니다.  

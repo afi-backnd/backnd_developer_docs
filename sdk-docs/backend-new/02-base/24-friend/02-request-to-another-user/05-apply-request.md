@@ -1,5 +1,6 @@
 ---
 sidebar_label: 받은 친구 요청 수락
+description: "받은 친구 요청 수락"
 ---
 
 # AcceptFriendRequest

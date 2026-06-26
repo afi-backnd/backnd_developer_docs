@@ -1,5 +1,6 @@
 ---
 sidebar_label: "구글 로그인 인증 예제"
+description: "구글 로그인 인증 예제"
 sidebar_position: 2.5
 ---
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 애플 결제 콘솔 설정
+description: "애플 결제 콘솔 설정"
 ---
 
 # 애플 결제 콘솔 설정

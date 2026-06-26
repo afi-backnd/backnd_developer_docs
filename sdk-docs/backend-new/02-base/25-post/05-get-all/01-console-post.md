@@ -1,5 +1,6 @@
 ---
 sidebar_label: 관리자, 랭킹 보상, 쿠폰 우편 모두 수령
+description: "관리자, 랭킹 보상, 쿠폰 우편 모두 수령"
 ---
 
 # ReceiveAllMails(Admin, Rank, Coupon)

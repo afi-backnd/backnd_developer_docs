@@ -1,3 +1,7 @@
+---
+description: "InDate"
+---
+
 # InDate
 
 indate는 유저나 게임 정보, 랭킹, 길드, 우편 등 데이터가 생성될 때 해당 데이터의 Key 값으로 설정되는 값입니다.  

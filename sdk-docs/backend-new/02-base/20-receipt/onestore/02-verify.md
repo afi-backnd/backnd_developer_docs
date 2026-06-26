@@ -1,5 +1,6 @@
 ---
 sidebar_label: 원스토어 영수증 검증
+description: "원스토어 영수증 검증"
 ---
 
 # OneStore.ValidateReceipt

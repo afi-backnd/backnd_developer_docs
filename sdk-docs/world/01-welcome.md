@@ -1,5 +1,6 @@
 ---
 sidebar_label: Welcome
+description: "Welcome"
 ---
 
 # 월드

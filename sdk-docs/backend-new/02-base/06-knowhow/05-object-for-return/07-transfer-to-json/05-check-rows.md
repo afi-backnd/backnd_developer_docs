@@ -1,5 +1,6 @@
 ---
 sidebar_label: Rows 가져오기
+description: "Rows 가져오기"
 ---
 
 # GetRows

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 모델링
+description: "데이터 모델링"
 ---
 
 # 데이터 모델링

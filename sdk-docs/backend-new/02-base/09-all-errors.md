@@ -1,3 +1,7 @@
+---
+description: "[Todo] 모든 Error Cases"
+---
+
 # [Todo] 모든 Error Cases
 
 ## ErrorCode 정리

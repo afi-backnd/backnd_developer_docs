@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 데이터만 불러오기
+description: "내 데이터만 불러오기"
 ---
 
 # GetDataAsync

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 뽑기 확률 내용 조회"
+description: "[Deprecated] 뽑기 확률 내용 조회"
 ---
 
 # [Deprecated] GetProbabilityContents

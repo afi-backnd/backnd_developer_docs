@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 문의 리스트 불러오기
+description: "내 문의 리스트 불러오기"
 sidebar_position: 4
 ---
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 위치 정보 확인
+description: "내 위치 정보 확인"
 ---
 
 # BackndLocation.Instance

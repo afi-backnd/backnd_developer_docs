@@ -1,5 +1,6 @@
 ---
 sidebar_label: 타임아웃
+description: "타임아웃"
 ---
 
 # 타임아웃

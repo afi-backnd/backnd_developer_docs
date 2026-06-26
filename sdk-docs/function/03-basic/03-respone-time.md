@@ -1,5 +1,6 @@
 ---
 sidebar_label: 응답시간
+description: "응답시간"
 ---
 
 # 응답시간

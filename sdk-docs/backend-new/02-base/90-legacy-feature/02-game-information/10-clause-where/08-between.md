@@ -1,3 +1,7 @@
+---
+description: "Between"
+---
+
 # Between
 public void Between(string **key**, int **begin**, int **end**);  
 public void Between(string **key**, long **begin**, long **end**);  

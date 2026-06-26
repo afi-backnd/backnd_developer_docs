@@ -1,5 +1,6 @@
 ---
 sidebar_label: 랜덤 테이블 리스트 조회
+description: "랜덤 테이블 리스트 조회"
 ---
 
 # GetRandomPools

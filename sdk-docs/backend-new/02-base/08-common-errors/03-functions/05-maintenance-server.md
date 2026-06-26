@@ -1,5 +1,6 @@
 ---
 sidebar_label: 서버 상태 점검중
+description: "서버 상태 점검중"
 sidebar_position: 5
 ---
 

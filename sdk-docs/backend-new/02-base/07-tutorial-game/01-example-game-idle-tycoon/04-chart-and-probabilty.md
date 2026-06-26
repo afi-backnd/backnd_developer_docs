@@ -1,5 +1,6 @@
 ---
 sidebar_label: 차트 및 확률 설정
+description: "차트 및 확률 설정"
 sidebar_position: 4
 ---
 

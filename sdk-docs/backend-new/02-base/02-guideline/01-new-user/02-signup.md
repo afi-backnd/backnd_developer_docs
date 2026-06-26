@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 2. 회원가입 구현하기
+description: "Step 2. 회원가입 구현하기"
 ---
 
 

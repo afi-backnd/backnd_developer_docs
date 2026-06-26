@@ -1,3 +1,7 @@
+---
+description: "Equal"
+---
+
 # Equal
 public void Equal(string **key**, string **value**);  
 public void Equal(string **key**, int** value**);  

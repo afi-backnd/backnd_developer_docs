@@ -1,5 +1,6 @@
 ---
 sidebar_label: 굿즈 사용을 통한 랭킹갱신
+description: "굿즈 사용을 통한 랭킹갱신"
 ---
 
 # UseGuildGoods

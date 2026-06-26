@@ -1,5 +1,6 @@
 ---
 sidebar_label: offsetKey 가져오기
+description: "offsetKey 가져오기"
 ---
 
 # GetOffsetKey

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "테이블 내용 조회"
+description: "테이블 내용 조회"
 ---
 
 # GetContents

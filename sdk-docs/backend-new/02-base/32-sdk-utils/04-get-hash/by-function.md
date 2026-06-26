@@ -1,5 +1,6 @@
 ---
 sidebar_label: 함수로 조회
+description: "함수로 조회"
 ---
 
 # GetGoogleHash

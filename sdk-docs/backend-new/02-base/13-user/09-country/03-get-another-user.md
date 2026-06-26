@@ -1,5 +1,6 @@
 ---
 sidebar_label: 다른 유저 국가코드 조회
+description: "다른 유저 국가코드 조회"
 ---
 
 # GetCountryCodeByInDate

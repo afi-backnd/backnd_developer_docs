@@ -1,5 +1,6 @@
 ---
 sidebar_label: "닉네임으로 유저 정보 조회"
+description: "닉네임으로 유저 정보 조회"
 sidebar_position: 0.5
 ---
 

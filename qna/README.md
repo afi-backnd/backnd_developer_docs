@@ -1,3 +1,7 @@
+---
+description: "TheBackend Q&A"
+---
+
 # TheBackend Q&A
 
 이 디렉터리는 AI agent와 LLM이 TheBackend를 빠르게 이해할 수 있도록 Q&A 형식으로 작성된 문서 모음입니다.

@@ -1,3 +1,7 @@
+---
+description: "채팅"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 채팅

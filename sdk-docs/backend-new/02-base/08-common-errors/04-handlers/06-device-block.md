@@ -1,5 +1,6 @@
 ---
 sidebar_label: 디바이스 차단 에러 핸들러
+description: "디바이스 차단 에러 핸들러"
 sidebar_position: 6
 ---
 

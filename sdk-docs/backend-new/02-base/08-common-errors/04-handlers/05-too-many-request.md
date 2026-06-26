@@ -1,5 +1,6 @@
 ---
 sidebar_label: 과다 호출 에러 핸들러 (Local)
+description: "과다 호출 에러 핸들러 (Local)"
 sidebar_position: 5
 ---
 

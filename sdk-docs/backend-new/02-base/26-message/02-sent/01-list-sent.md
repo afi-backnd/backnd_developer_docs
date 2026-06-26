@@ -1,5 +1,6 @@
 ---
 sidebar_label: 보낸 쪽지 조회
+description: "보낸 쪽지 조회"
 ---
 
 # GetSentMessages

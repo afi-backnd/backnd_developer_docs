@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 조회 (쿼리이용)
+description: "데이터 조회 (쿼리이용)"
 ---
 
 # GetMyData

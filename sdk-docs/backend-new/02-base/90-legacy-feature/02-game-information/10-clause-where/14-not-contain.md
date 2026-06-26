@@ -1,3 +1,7 @@
+---
+description: "NotContains"
+---
+
 # NotContains
 public void NotContains(string **key**, string **value**);
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[New] 굿즈 사용(리더 보드 초기화 시간 갱신 불가)"
+description: "[New] 굿즈 사용(리더 보드 초기화 시간 갱신 불가)"
 ---
 
 # UseGoods

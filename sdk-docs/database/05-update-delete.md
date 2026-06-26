@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 수정 및 삭제
+description: "데이터 수정 및 삭제"
 ---
 
 # 데이터 수정 및 삭제

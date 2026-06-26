@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 3. 차트 정보 가져오기
+description: "Step 3. 차트 정보 가져오기"
 ---
 
 

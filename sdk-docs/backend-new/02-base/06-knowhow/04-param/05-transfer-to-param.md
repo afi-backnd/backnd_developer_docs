@@ -1,5 +1,6 @@
 ---
 sidebar_label: 임의의 객체를 Param으로 변환
+description: "임의의 객체를 Param으로 변환"
 ---
 
 # Parse

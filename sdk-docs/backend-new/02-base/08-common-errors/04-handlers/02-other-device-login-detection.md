@@ -1,5 +1,6 @@
 ---
 sidebar_label: 다른 기기 접속 감지 핸들러
+description: "다른 기기 접속 감지 핸들러"
 sidebar_position: 2
 ---
 

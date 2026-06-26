@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 삽입
+description: "데이터 삽입"
 ---
 
 # Add

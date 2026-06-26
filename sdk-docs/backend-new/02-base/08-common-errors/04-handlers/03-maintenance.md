@@ -1,5 +1,6 @@
 ---
 sidebar_label: 서버 점검 에러 핸들러
+description: "서버 점검 에러 핸들러"
 sidebar_position: 3
 ---
 

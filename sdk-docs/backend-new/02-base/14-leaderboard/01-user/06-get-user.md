@@ -1,5 +1,6 @@
 ---
 sidebar_label: 특정 유저 리더보드 순위 조회
+description: "특정 유저 리더보드 순위 조회"
 ---
 
 # GetOtherUserRank

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 길드 랭킹 조회
+description: "내 길드 랭킹 조회"
 ---
 
 # GetMyGuildRank

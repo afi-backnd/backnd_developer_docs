@@ -1,5 +1,6 @@
 ---
 sidebar_label: 랜덤 그룹에서 데이터 삽입
+description: "랜덤 그룹에서 데이터 삽입"
 ---
 
 # SetRandomEntry

@@ -1,5 +1,6 @@
 ---
 sidebar_label: SyncVar
+description: "SyncVar"
 ---
 
 # [SyncVar]

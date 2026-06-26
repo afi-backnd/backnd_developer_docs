@@ -1,3 +1,7 @@
+---
+description: "시작하기"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 시작하기

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 서버 시간 조회
+description: "서버 시간 조회"
 ---
 
 # GetServerTime

@@ -1,5 +1,6 @@
 ---
 sidebar_label: offsetKey 존재여부 확인
+description: "offsetKey 존재여부 확인"
 ---
 
 # HasOffsetKey

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유니티 메인쓰레드에서 핸들러 호출
+description: "유니티 메인쓰레드에서 핸들러 호출"
 sidebar_position: 1
 ---
 

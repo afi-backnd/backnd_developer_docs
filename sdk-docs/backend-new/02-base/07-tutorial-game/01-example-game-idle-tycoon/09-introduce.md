@@ -1,5 +1,6 @@
 ---
 sidebar_label: 구현 기능 설명
+description: "구현 기능 설명"
 sidebar_position: 9
 ---
 

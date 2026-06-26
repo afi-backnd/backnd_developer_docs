@@ -1,5 +1,6 @@
 ---
 sidebar_label: "GPGS V2 인증 예제"
+description: "GPGS V2 인증 예제"
 sidebar_position: 2.6
 ---
 

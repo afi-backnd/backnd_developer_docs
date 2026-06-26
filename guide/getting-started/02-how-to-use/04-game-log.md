@@ -1,3 +1,7 @@
+---
+description: "게임 로그"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 게임 로그

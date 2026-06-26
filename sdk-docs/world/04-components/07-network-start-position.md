@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkStartPosition
+description: "NetworkStartPosition"
 ---
 
 # NetworkStartPosition

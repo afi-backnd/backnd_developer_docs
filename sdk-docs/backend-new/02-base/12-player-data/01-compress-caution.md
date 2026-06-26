@@ -1,5 +1,6 @@
 ---
 sidebar_label: 압축데이터 주의사항
+description: "압축데이터 주의사항"
 ---
 
 # 압축데이터 주의사항

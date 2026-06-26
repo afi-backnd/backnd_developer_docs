@@ -1,5 +1,6 @@
 ---
 sidebar_label: 배포
+description: "배포"
 ---
 
 # 배포

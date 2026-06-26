@@ -1,5 +1,6 @@
 ---
 sidebar_label: 특정 점수를 통한 길드 랭킹 조회
+description: "특정 점수를 통한 길드 랭킹 조회"
 ---
 
 # GetRankListByScore

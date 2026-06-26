@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 4. 친구 리스트 불러오기
+description: "Step 4. 친구 리스트 불러오기"
 ---
 
 

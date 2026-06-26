@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 4. 게임 정보 수정 구현하기
+description: "Step 4. 게임 정보 수정 구현하기"
 ---
 
 

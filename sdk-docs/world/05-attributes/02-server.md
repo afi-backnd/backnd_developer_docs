@@ -1,5 +1,6 @@
 ---
 sidebar_label: Server
+description: "Server"
 ---
 
 # [Server]

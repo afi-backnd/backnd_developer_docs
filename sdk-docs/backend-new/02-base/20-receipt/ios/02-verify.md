@@ -1,5 +1,6 @@
 ---
 sidebar_label: 애플 영수증 검증
+description: "애플 영수증 검증"
 ---
 
 # Apple.ValidateReceipt

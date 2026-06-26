@@ -1,5 +1,6 @@
 ---
 sidebar_label: "Facebook 인증 예제"
+description: "Facebook 인증 예제"
 sidebar_position: 4.5
 ---
 

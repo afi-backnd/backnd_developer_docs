@@ -1,5 +1,6 @@
 ---
 sidebar_label: 커스텀 로그인
+description: "커스텀 로그인"
 ---
 
 # SignInCustom

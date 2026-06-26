@@ -1,5 +1,6 @@
 ---
 sidebar_label: 랭킹과의 차이점
+description: "랭킹과의 차이점"
 position: 0.5
 ---
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 튜토리얼
+description: "튜토리얼"
 sidebar_position: 6.6
 ---
 

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드원 추방
+description: "길드원 추방"
 ---
 
 # KickMember

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 닉네임 중복 확인
+description: "닉네임 중복 확인"
 ---
 
 # CheckNicknameDuplication

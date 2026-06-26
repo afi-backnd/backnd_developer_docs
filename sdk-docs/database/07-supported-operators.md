@@ -1,5 +1,6 @@
 ---
 sidebar_label: 지원하는 연산자
+description: "지원하는 연산자"
 ---
 
 # 지원하는 연산자

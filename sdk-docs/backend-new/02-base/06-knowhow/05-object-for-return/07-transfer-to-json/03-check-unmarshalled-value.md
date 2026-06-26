@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[unlisted] 언마샬 된 returnValue 확인"
+description: "[unlisted] 언마샬 된 returnValue 확인"
 draft: true
 unlisted: true
 ---

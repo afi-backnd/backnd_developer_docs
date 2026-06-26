@@ -1,5 +1,6 @@
 ---
 sidebar_label: 리더보드 불러오기
+description: "리더보드 불러오기"
 ---
 
 # GetLeaderboards

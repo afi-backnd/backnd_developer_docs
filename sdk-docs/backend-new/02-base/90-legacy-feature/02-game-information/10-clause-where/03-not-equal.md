@@ -1,3 +1,7 @@
+---
+description: "NotEqual"
+---
+
 # NotEqual
 public void NotEqual(string **key**, string **value**);  
 public void NotEqual(string **key**, int **value**);  

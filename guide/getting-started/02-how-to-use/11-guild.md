@@ -1,3 +1,7 @@
+---
+description: "길드 기능"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 길드 기능

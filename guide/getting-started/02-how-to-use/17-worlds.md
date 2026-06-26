@@ -1,5 +1,6 @@
 ---
 sidebar_label: 월드
+description: "월드"
 position: 17
 ---
 

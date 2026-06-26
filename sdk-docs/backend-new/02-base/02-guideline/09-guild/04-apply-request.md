@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 4. 길드 가입 요청 수락하기
+description: "Step 4. 길드 가입 요청 수락하기"
 ---
 
 

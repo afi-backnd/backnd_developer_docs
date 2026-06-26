@@ -1,5 +1,6 @@
 ---
 sidebar_label: "확률 테이블 조회"
+description: "확률 테이블 조회"
 ---
 
 # GetTables

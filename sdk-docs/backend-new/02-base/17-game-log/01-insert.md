@@ -1,5 +1,6 @@
 ---
 sidebar_label: 게임 로그 저장
+description: "게임 로그 저장"
 ---
 
 # SendLog

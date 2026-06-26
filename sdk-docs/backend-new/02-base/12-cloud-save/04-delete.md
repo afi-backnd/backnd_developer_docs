@@ -1,5 +1,6 @@
 ---
 sidebar_label: 세이브 삭제 하기
+description: "세이브 삭제 하기"
 ---
 
 # DeleteSave

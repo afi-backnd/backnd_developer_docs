@@ -1,5 +1,6 @@
 ---
 sidebar_label: 예제게임
+description: "예제게임"
 ---
 
 # 예제 게임

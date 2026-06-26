@@ -1,5 +1,6 @@
 ---
 sidebar_label: Null 삽입
+description: "Null 삽입"
 ---
 
 # AddNull

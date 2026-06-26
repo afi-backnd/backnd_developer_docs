@@ -1,5 +1,6 @@
 ---
 sidebar_label: 채팅 메시지
+description: "채팅 메시지"
 ---
 
 # 채팅 메시지

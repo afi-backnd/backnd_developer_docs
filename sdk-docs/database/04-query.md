@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 조회
+description: "데이터 조회"
 ---
 
 # 데이터 조회

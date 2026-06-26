@@ -1,5 +1,6 @@
 ---
 sidebar_label: SyncVar Collections
+description: "SyncVar Collections"
 ---
 
 # SyncVar Collections

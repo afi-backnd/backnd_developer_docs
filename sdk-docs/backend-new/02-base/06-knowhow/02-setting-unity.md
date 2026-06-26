@@ -1,3 +1,7 @@
+---
+description: "유니티 플레이어 세팅 설정"
+---
+
 # 유니티 플레이어 세팅 설정
 
 뒤끝 SDK를 정상적으로 사용하기 위해서는 Scripting Runtime Version을 **.NET 4 framework**으로 설정해야 합니다.  

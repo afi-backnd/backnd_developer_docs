@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 2. 콘솔에서 쿠폰 생성하기
+description: "Step 2. 콘솔에서 쿠폰 생성하기"
 ---
 
 

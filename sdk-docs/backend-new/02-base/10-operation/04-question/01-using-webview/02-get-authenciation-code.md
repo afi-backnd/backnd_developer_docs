@@ -1,5 +1,6 @@
 ---
 sidebar_label: 1대1 문의 인증코드 받기
+description: "1대1 문의 인증코드 받기"
 sidebar_position: 2
 ---
 

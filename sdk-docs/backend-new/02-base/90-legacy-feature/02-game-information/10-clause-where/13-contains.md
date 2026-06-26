@@ -1,3 +1,7 @@
+---
+description: "Contains"
+---
+
 # Contains
 public void Contains(string **key**, string **value**);
 

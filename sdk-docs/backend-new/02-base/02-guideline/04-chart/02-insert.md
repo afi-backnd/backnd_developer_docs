@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 2. 콘솔에 차트 등록하기
+description: "Step 2. 콘솔에 차트 등록하기"
 ---
 
 

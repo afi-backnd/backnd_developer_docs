@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 검색 후 연산 (inDate이용)
+description: "데이터 검색 후 연산 (inDate이용)"
 ---
 
 # UpdateWithCalculationV2

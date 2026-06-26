@@ -1,5 +1,6 @@
 ---
 sidebar_label: "게임 테이블 조회"
+description: "게임 테이블 조회"
 ---
 
 # GetTables

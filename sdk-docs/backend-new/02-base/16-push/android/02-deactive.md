@@ -1,5 +1,6 @@
 ---
 sidebar_label: 푸시 해제
+description: "푸시 해제"
 ---
 
 # UnregisterPush

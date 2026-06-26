@@ -1,5 +1,6 @@
 ---
 sidebar_label: 외부 인증 회원가입/로그인
+description: "외부 인증 회원가입/로그인"
 ---
 
 # SignInWithProvider

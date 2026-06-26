@@ -1,5 +1,6 @@
 ---
 sidebar_label: 캐릭터 리스트 불러오기
+description: "캐릭터 리스트 불러오기"
 ---
 
 # GetCharacterList

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "업데이트 내역"
+description: "업데이트 내역"
 ---
 
 # 업데이트 상세 내역

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 실시간 알림 서버 연결
+description: "실시간 알림 서버 연결"
 ---
 
 # Connect

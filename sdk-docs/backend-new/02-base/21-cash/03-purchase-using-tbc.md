@@ -1,5 +1,6 @@
 ---
 sidebar_label: TBC로 아이템 구매
+description: "TBC로 아이템 구매"
 ---
 
 # BuyProduct

@@ -1,3 +1,7 @@
+---
+description: "실시간 알림"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 실시간 알림

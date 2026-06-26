@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 inDate 조회
+description: "길드 inDate 조회"
 ---
 
 # GetGuildInDate

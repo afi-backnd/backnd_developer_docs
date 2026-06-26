@@ -1,5 +1,6 @@
 ---
 sidebar_label: 프로젝트 생성
+description: "프로젝트 생성"
 ---
 
 # Visual Studio Code 프로젝트 생성

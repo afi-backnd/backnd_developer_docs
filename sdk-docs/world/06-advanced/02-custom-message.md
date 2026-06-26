@@ -1,5 +1,6 @@
 ---
 sidebar_label: 커스텀 메시지
+description: "커스텀 메시지"
 ---
 
 # 커스텀 메시지

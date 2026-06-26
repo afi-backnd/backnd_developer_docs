@@ -1,3 +1,7 @@
+---
+description: "GetPolicy"
+---
+
 # GetPolicy
 
 public Task&lt;GetPolicyResult&gt; **GetPolicyAsync**();

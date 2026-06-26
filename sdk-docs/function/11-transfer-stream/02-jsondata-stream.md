@@ -1,5 +1,6 @@
 ---
 sidebar_label: JsonData를 Stream으로 변환
+description: "JsonData를 Stream으로 변환"
 ---
 
 # JsonDataToStream

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 기능 핸들러
+description: "길드 기능 핸들러"
 ---
 
 # 길드 기능 핸들러

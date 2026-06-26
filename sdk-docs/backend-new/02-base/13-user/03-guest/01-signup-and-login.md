@@ -1,5 +1,6 @@
 ---
 sidebar_label: 게스트 회원가입/로그인
+description: "게스트 회원가입/로그인"
 ---
 
 # SignInGuest

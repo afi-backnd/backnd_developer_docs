@@ -1,5 +1,6 @@
 ---
 sidebar_label: 영수증 검증/TBC 충전
+description: "영수증 검증/TBC 충전"
 ---
 
 # 영수증 검증 / TBC 충전

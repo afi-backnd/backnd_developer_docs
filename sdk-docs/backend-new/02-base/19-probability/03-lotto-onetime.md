@@ -1,5 +1,6 @@
 ---
 sidebar_label: 뽑기 1회 실행
+description: "뽑기 1회 실행"
 ---
 
 # DrawOnce

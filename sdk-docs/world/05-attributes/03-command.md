@@ -1,5 +1,6 @@
 ---
 sidebar_label: Command
+description: "Command"
 ---
 
 # [Command]

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 사용 예제"
+description: "[Deprecated] 사용 예제"
 ---
 
 # [Deprecated] NPC 대사를 서버에서 불러오기

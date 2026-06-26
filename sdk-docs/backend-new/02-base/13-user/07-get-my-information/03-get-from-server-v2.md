@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 정보 조회(서버)
+description: "유저 정보 조회(서버)"
 sidebar_position: 1.5
 ---
 

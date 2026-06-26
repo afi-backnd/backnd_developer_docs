@@ -1,5 +1,6 @@
 ---
 sidebar_label: 그룹 기능
+description: "그룹 기능"
 position: 5.5
 ---
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';

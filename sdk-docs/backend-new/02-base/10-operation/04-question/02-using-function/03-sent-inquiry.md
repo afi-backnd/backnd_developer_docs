@@ -1,5 +1,6 @@
 ---
 sidebar_label: 문의 보내기
+description: "문의 보내기"
 sidebar_position: 3
 ---
 

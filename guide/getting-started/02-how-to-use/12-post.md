@@ -1,3 +1,7 @@
+---
+description: "우편/쪽지 기능"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 우편/쪽지 기능

@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkRigidbody
+description: "NetworkRigidbody"
 ---
 
 # NetworkRigidbody

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "데이터 테이블 및 리더보드 설정"
+description: "데이터 테이블 및 리더보드 설정"
 sidebar_position: 3
 ---
 

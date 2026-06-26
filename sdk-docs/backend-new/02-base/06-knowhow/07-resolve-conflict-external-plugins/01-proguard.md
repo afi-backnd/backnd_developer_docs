@@ -1,3 +1,7 @@
+---
+description: "Proguard"
+---
+
 # Proguard
 
 ## Proguard 사용 시 SDK 초기화 실패 문제 해결

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 버전 관리
+description: "버전 관리"
 sidebar_position: 7
 ---
 

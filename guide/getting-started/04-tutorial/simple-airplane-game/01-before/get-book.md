@@ -1,5 +1,6 @@
 ---
 sidebar_label: 교안 다운로드
+description: "교안 다운로드"
 sidebar_position: 2
 ---
 

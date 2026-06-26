@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 특정 차트 저장"
+description: "[Deprecated] 특정 차트 저장"
 ---
 
 # [Deprecated] GetOneChartAndSave

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 삭제"
+description: "로컬 삭제"
 ---
 
 # Local.Delete

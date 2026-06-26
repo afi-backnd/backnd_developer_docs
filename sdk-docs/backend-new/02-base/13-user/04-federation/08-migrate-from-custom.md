@@ -1,5 +1,6 @@
 ---
 sidebar_label: 커스텀 -> 외부 로그인 연동
+description: "커스텀 -> 외부 로그인 연동"
 ---
 
 # LinkWithProvider

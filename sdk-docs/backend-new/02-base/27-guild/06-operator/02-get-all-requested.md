@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 가입 요청 유저 리스트 조회
+description: "길드 가입 요청 유저 리스트 조회"
 ---
 
 # GetApplicants

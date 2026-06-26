@@ -1,3 +1,7 @@
+---
+description: "뒤끝매치"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 뒤끝매치

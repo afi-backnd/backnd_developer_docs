@@ -1,5 +1,6 @@
 ---
 sidebar_label: 파티 시스템
+description: "파티 시스템"
 ---
 
 # 파티 시스템

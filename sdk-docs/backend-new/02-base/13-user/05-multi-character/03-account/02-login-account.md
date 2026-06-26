@@ -1,5 +1,6 @@
 ---
 sidebar_label: 계정 로그인
+description: "계정 로그인"
 ---
 
 # LoginAccount

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 종료 처리
+description: "종료 처리"
 ---
 
 # 종료 처리

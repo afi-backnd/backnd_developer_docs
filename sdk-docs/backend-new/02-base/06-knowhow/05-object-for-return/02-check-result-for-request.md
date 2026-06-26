@@ -1,5 +1,6 @@
 ---
 sidebar_label: 요청 성공/실패 여부 확인
+description: "요청 성공/실패 여부 확인"
 ---
 
 # IsSuccess

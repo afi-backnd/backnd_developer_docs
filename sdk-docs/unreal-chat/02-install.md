@@ -1,5 +1,6 @@
 ---
 sidebar_label: 설치 및 환경 구성
+description: "설치 및 환경 구성"
 ---
 
 # 설치 및 환경 구성

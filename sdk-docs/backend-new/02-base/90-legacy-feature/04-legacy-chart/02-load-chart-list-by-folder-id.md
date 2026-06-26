@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 폴더 ID를 통한 차트 리스트 불러오기 V2"
+description: "[Deprecated] 폴더 ID를 통한 차트 리스트 불러오기 V2"
 ---
 
 # [Deprecated] GetChartListByFolderV2

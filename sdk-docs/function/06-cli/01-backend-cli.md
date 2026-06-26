@@ -1,5 +1,6 @@
 ---
 sidebar_label: Backend CLI
+description: "Backend CLI"
 ---
 
 # Backend CLI

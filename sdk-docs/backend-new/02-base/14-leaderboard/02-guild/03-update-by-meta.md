@@ -1,5 +1,6 @@
 ---
 sidebar_label: 메타 정보로 리더보드 갱신
+description: "메타 정보로 리더보드 갱신"
 ---
 
 # UpdateLeaderboardWithGuildMeta

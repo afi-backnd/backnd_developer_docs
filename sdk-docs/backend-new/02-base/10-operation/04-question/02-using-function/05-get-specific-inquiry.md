@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 특정 문의 불러오기
+description: "내 특정 문의 불러오기"
 sidebar_position: 5
 ---
 

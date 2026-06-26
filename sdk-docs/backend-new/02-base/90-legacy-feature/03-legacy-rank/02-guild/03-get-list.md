@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 랭킹 리스트 조회
+description: "길드 랭킹 리스트 조회"
 ---
 
 # GetRankList

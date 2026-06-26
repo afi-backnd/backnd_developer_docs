@@ -1,5 +1,6 @@
 ---
 sidebar_label: 연결 상태 확인
+description: "연결 상태 확인"
 sidebar_position: 2.5
 ---
 

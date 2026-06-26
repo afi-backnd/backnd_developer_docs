@@ -1,5 +1,6 @@
 ---
 sidebar_label: "과거 순위 확인"
+description: "과거 순위 확인"
 ---
 
 # GetPastRankList

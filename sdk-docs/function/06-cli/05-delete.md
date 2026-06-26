@@ -1,5 +1,6 @@
 ---
 sidebar_label: 삭제
+description: "삭제"
 ---
 
 # 삭제

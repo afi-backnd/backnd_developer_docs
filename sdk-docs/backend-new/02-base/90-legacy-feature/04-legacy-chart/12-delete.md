@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] DeleteLocalChartData"
+description: "[Deprecated] DeleteLocalChartData"
 ---
 
 

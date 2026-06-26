@@ -1,3 +1,7 @@
+---
+description: "캐시 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 캐시 관리

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 에코 함수
+description: "에코 함수"
 ---
 
 # 에코 함수

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 보낸 친구 요청 취소
+description: "보낸 친구 요청 취소"
 ---
 
 # CancelFriendRequest

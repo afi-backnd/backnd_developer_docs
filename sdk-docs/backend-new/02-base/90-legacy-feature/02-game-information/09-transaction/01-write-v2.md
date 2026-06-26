@@ -1,5 +1,6 @@
 ---
 sidebar_label: 트랜잭션 쓰기 V2
+description: "트랜잭션 쓰기 V2"
 ---
 
 # TransactionWriteV2

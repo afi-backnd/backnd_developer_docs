@@ -1,5 +1,6 @@
 ---
 sidebar_label: 다운로드 및 게임 설정
+description: "다운로드 및 게임 설정"
 sidebar_position: 2
 ---
 

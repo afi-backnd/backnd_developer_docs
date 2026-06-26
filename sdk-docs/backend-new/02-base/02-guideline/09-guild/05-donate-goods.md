@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 5. 길드 굿즈 기부하기
+description: "Step 5. 길드 굿즈 기부하기"
 ---
 
 

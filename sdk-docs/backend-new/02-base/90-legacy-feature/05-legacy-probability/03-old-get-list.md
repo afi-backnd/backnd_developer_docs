@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated]  뽑기 리스트 조회"
+description: "[Deprecated]  뽑기 리스트 조회"
 ---
 
 # [Deprecated] GetProbabilityCardList

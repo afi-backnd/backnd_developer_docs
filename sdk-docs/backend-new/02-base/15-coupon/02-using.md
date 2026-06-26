@@ -1,5 +1,6 @@
 ---
 sidebar_label: 쿠폰 사용하기
+description: "쿠폰 사용하기"
 ---
 
 # UseCoupon

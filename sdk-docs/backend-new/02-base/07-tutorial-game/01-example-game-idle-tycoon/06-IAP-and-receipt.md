@@ -1,5 +1,6 @@
 ---
 sidebar_label: 인앱 결제, 영수증 검증 설정
+description: "인앱 결제, 영수증 검증 설정"
 sidebar_position: 6
 ---
 

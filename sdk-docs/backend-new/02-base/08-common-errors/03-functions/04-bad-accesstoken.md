@@ -1,5 +1,6 @@
 ---
 sidebar_label: 배드 엑세스토큰
+description: "배드 엑세스토큰"
 sidebar_position: 4
 ---
 

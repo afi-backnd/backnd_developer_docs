@@ -1,5 +1,6 @@
 ---
 sidebar_label: 신고
+description: "신고"
 ---
 
 # 신고

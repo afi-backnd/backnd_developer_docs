@@ -1,5 +1,6 @@
 ---
 sidebar_label: 디버깅
+description: "디버깅"
 ---
 
 # 디버깅

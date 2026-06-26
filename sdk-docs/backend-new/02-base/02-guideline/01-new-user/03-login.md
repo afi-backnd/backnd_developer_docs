@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 3. 로그인 구현하기
+description: "Step 3. 로그인 구현하기"
 ---
 
 

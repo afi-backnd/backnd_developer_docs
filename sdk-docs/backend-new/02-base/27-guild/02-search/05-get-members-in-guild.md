@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드원 리스트 조회
+description: "길드원 리스트 조회"
 ---
 
 # GetGuildMembers

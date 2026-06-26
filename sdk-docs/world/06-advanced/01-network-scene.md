@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkScene
+description: "NetworkScene"
 ---
 
 # NetworkScene

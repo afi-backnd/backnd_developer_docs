@@ -1,5 +1,6 @@
 ---
 sidebar_label: 채널
+description: "채널"
 ---
 
 # 채널

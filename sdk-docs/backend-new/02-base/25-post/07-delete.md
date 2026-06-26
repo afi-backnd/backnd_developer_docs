@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 우편 삭제하기
+description: "유저 우편 삭제하기"
 ---
 
 # DeleteUserMail

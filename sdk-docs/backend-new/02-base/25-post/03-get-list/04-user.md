@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 우편 불러오기
+description: "유저 우편 불러오기"
 ---
 
 # GetMails(MailType.User)

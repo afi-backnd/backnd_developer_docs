@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 3. 랭킹 불러오기
+description: "Step 3. 랭킹 불러오기"
 ---
 
 

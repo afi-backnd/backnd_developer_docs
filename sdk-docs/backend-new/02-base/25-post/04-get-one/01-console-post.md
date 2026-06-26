@@ -1,5 +1,6 @@
 ---
 sidebar_label: 관리자, 랭킹 보상, 쿠폰 우편 하나 수령
+description: "관리자, 랭킹 보상, 쿠폰 우편 하나 수령"
 ---
 
 # ReceiveMail(Admin, Rank, Coupon)

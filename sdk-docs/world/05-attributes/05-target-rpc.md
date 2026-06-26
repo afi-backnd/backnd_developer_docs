@@ -1,5 +1,6 @@
 ---
 sidebar_label: TargetRpc
+description: "TargetRpc"
 ---
 
 # [TargetRpc]

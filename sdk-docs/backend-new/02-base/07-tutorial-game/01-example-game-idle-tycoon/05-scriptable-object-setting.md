@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유니티 스크립터블 오브젝트 세팅
+description: "유니티 스크립터블 오브젝트 세팅"
 sidebar_position: 5
 ---
 

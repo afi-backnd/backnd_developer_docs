@@ -1,3 +1,7 @@
+---
+description: "게임 운영 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 게임 운영 관리

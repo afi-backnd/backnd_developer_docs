@@ -1,5 +1,6 @@
 ---
 sidebar_label: 커스텀 인증
+description: "커스텀 인증"
 ---
 
 # 커스텀 인증

@@ -1,5 +1,6 @@
 ---
 sidebar_label: SDK 초기화
+description: "SDK 초기화"
 ---
 
 # Initialize

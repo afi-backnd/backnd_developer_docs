@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkAnimator
+description: "NetworkAnimator"
 ---
 
 # NetworkAnimator

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 쿠폰 우편 불러오기
+description: "쿠폰 우편 불러오기"
 ---
 
 # GetMails(MailType.Coupon)

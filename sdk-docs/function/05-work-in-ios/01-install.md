@@ -1,5 +1,6 @@
 ---
 sidebar_label: 설치하기
+description: "설치하기"
 ---
 
 # 뒤끝펑션 설치 For Mac

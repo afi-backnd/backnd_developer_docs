@@ -1,5 +1,6 @@
 ---
 sidebar_label: 받은 쪽지 삭제
+description: "받은 쪽지 삭제"
 ---
 
 # DeleteReceivedMessage

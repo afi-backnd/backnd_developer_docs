@@ -1,5 +1,6 @@
 ---
 sidebar_label: 메타 정보 랭킹갱신
+description: "메타 정보 랭킹갱신"
 ---
 
 # UpdateGuildMetaData

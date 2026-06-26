@@ -1,3 +1,7 @@
+---
+description: "뒤끝 SDK Inspector 설정"
+---
+
 # 뒤끝 SDK Inspector 설정
 
 뒤끝 인스펙터 창에서는 뒤끝 SDK를 사용하기 위한 다양한 값을 설정할 수 있습니다.  

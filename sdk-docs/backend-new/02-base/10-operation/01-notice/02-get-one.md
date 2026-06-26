@@ -1,5 +1,6 @@
 ---
 sidebar_label: 공지사항 하나 조회
+description: "공지사항 하나 조회"
 sidebar_position: 2
 ---
 

@@ -1,3 +1,7 @@
+---
+description: "리더보드"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 리더보드

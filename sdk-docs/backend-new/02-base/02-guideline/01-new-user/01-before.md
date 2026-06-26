@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 1. 사전 준비
+description: "Step 1. 사전 준비"
 ---
 
 # 사전 준비

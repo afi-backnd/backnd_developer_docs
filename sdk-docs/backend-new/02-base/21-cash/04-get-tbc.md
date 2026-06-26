@@ -1,5 +1,6 @@
 ---
 sidebar_label: 보유한 TBC 조회
+description: "보유한 TBC 조회"
 ---
 
 # GetTBC

@@ -1,5 +1,6 @@
 ---
 sidebar_label: 프로젝트 설정
+description: "프로젝트 설정"
 ---
 
 # 프로젝트 설정

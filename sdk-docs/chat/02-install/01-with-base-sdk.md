@@ -1,5 +1,6 @@
 ---
 sidebar_label: 베이스 SDK와 함께 사용하는 경우
+description: "베이스 SDK와 함께 사용하는 경우"
 ---
 
 # 베이스 SDK와 함께 사용하는 경우

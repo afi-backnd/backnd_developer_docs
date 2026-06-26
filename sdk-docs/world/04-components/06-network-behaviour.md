@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkBehaviour
+description: "NetworkBehaviour"
 ---
 
 # NetworkBehaviour

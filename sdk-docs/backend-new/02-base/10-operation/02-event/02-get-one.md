@@ -1,5 +1,6 @@
 ---
 sidebar_label: 이벤트 하나 조회
+description: "이벤트 하나 조회"
 sidebar_position: 2
 ---
 

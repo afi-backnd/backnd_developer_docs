@@ -1,5 +1,6 @@
 ---
 sidebar_label: NetworkManager
+description: "NetworkManager"
 ---
 
 # NetworkManager

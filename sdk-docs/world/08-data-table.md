@@ -1,5 +1,6 @@
 ---
 sidebar_label: 데이터 테이블
+description: "데이터 테이블"
 ---
 
 # Data Table

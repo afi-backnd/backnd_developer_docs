@@ -1,5 +1,6 @@
 ---
 sidebar_label: 번역
+description: "번역"
 ---
 
 # 번역

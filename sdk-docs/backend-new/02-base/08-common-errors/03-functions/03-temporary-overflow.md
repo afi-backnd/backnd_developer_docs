@@ -1,5 +1,6 @@
 ---
 sidebar_label: 서버의 일시적인 과부하
+description: "서버의 일시적인 과부하"
 sidebar_position: 3
 ---
 

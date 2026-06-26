@@ -1,5 +1,6 @@
 ---
 sidebar_label: Step 3. 게임 정보 불러오기 구현하기
+description: "Step 3. 게임 정보 불러오기 구현하기"
 ---
 
 

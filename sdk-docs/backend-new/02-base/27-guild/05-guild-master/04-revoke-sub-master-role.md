@@ -1,5 +1,6 @@
 ---
 sidebar_label: 부 길드 마스터 해제
+description: "부 길드 마스터 해제"
 ---
 
 # DismissViceMaster

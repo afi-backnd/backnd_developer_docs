@@ -1,5 +1,6 @@
 ---
 sidebar_label: 뒤끝 가입 여부 확인(외부 로그인)
+description: "뒤끝 가입 여부 확인(외부 로그인)"
 ---
 
 # CheckLinkedAccount

@@ -1,3 +1,7 @@
+---
+description: "친구 기능"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 친구 기능

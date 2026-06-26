@@ -1,5 +1,6 @@
 ---
 sidebar_label: 길드 가입 요청 거절
+description: "길드 가입 요청 거절"
 ---
 
 # RejectApplicant

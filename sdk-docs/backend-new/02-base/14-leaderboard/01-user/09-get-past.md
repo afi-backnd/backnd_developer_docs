@@ -1,5 +1,6 @@
 ---
 sidebar_label: "유저 리더보드 과거 전체 순위 확인"
+description: "유저 리더보드 과거 전체 순위 확인"
 ---
 
 # GetPastRanks

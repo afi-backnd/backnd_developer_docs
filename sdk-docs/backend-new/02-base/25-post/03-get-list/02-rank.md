@@ -1,5 +1,6 @@
 ---
 sidebar_label: 랭킹 우편 불러오기
+description: "랭킹 우편 불러오기"
 ---
 
 # GetMails(MailType.Rank)

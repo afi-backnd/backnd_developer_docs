@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 저장"
+description: "로컬 저장"
 ---
 
 # Local.Save

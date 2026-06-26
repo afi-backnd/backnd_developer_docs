@@ -1,5 +1,6 @@
 ---
 sidebar_label: 트랜잭션
+description: "트랜잭션"
 ---
 
 # 트랜잭션

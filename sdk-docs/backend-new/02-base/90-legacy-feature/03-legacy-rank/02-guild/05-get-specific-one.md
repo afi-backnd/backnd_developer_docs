@@ -1,5 +1,6 @@
 ---
 sidebar_label: 특정 길드의 랭킹 조회
+description: "특정 길드의 랭킹 조회"
 ---
 
 # GetGuildRank

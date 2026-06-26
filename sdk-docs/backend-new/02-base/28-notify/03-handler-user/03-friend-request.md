@@ -1,5 +1,6 @@
 ---
 sidebar_label: 친구 요청 핸들러
+description: "친구 요청 핸들러"
 ---
 
 # 친구 요청 핸들러

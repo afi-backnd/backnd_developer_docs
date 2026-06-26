@@ -1,5 +1,6 @@
 ---
 sidebar_label: 네트워크 최적화
+description: "네트워크 최적화"
 ---
 
 # 네트워크 최적화

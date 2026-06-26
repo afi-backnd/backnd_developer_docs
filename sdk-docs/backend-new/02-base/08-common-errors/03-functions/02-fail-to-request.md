@@ -1,5 +1,6 @@
 ---
 sidebar_label: 클라이언트 요청 실패
+description: "클라이언트 요청 실패"
 sidebar_position: 2
 ---
 

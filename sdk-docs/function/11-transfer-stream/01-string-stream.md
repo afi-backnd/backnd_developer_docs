@@ -1,5 +1,6 @@
 ---
 sidebar_label: String을 Stream으로 변환
+description: "String을 Stream으로 변환"
 ---
 
 # StringToStream

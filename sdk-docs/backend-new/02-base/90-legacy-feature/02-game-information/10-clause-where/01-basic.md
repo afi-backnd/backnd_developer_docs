@@ -1,3 +1,7 @@
+---
+description: "where 절"
+---
+
 # where 절
 
 게임 정보를 검색할 때 row의 inDate를 이용한 검색 이외에도 특정 컬럼 값을 통한 검색이 가능합니다.  

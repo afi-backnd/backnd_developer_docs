@@ -1,5 +1,6 @@
 ---
 sidebar_label: 유저 우편 모두 수령
+description: "유저 우편 모두 수령"
 ---
 
 # ReceiveAllMails(User)

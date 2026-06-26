@@ -1,5 +1,6 @@
 ---
 sidebar_label: 설정
+description: "설정"
 ---
 
 # 설정

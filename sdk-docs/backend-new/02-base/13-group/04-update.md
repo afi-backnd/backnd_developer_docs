@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 유저그룹 변경하기
+description: "내 유저그룹 변경하기"
 ---
 
 # ChangeUserGroup 

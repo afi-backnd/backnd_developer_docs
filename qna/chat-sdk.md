@@ -1,3 +1,7 @@
+---
+description: "채팅 SDK — Q&A"
+---
+
 # 채팅 SDK — Q&A
 
 ## Q. 채팅 SDK는 어떤 기능을 제공하나요?

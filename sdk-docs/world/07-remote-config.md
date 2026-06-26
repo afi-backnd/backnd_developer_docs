@@ -1,5 +1,6 @@
 ---
 sidebar_label: 리모트 컨피그
+description: "리모트 컨피그"
 ---
 
 # Remote Config

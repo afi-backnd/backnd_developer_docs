@@ -1,5 +1,6 @@
 ---
 sidebar_label: 빌드 & 배포
+description: "빌드 & 배포"
 ---
 
 # 빌드 & 배포

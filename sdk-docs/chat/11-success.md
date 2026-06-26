@@ -1,5 +1,6 @@
 ---
 sidebar_label: 성공 콜백
+description: "성공 콜백"
 ---
 
 # 성공 콜백

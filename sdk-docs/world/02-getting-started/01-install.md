@@ -1,5 +1,6 @@
 ---
 sidebar_label: SDK 설치
+description: "SDK 설치"
 ---
 
 # SDK 설치

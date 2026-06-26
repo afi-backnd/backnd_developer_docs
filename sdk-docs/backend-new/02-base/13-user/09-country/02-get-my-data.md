@@ -1,5 +1,6 @@
 ---
 sidebar_label: 내 국가코드 조회
+description: "내 국가코드 조회"
 ---
 
 # GetCountryCode
