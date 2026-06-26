@@ -1,0 +1,39 @@
+# TheBackend Developer Docs
+
+> TheBackend(뒤끝)은 게임 개발사를 위한 BaaS(Backend as a Service)입니다.
+> Unity, Unreal Engine 기반 게임에 서버 기능을 빠르게 붙일 수 있도록 SDK와 API를 제공합니다.
+
+## 주요 모듈
+
+- [베이스 SDK](./sdk-docs/backend-new/02-base/): 인증, 플레이어 데이터, 랭킹, 길드, 쿠폰, 푸시, 게임 로그, 확률 등 게임 서버의 핵심 기능 전반
+- [채팅 SDK](./sdk-docs/chat/): Unity 실시간 채팅 — 채널, 메시지, 번역, 신고
+- [뒤끝펑션](./sdk-docs/function/): 서버리스 함수 실행 — 커스텀 서버 로직을 클라우드에서 실행
+- [월드](./sdk-docs/world/): 멀티플레이어 월드 기능
+- [데이터베이스](./sdk-docs/database/): 게임 데이터 저장 및 조회
+- [언리얼 채팅](./sdk-docs/unreal-chat/): Unreal Engine 실시간 채팅
+- [채팅 API](./api-docs/chat/): REST API 레퍼런스
+
+## 시작 가이드
+
+- [뒤끝 시작하기](./guide/getting-started/): 콘솔 가입부터 SDK 연동까지
+- [콘솔 가이드](./guide/console-guide/): 뒤끝 콘솔 사용법
+
+## 릴리즈 노트
+
+- [Backend 업데이트](./update-note/Backend/)
+- [Chat 업데이트](./update-note/Chat/)
+- [Function 업데이트](./update-note/Function/)
+- [World 업데이트](./update-note/World/)
+- [Database 업데이트](./update-note/Database/)
+
+## FAQ
+
+- [자주 묻는 질문](./faq/)
+
+## QnA
+
+- [QnA](./qna/): AI agent를 위한 질문-답변 형식 문서
+
+## 문서 사이트
+
+공식 문서: https://docs.thebackend.io
