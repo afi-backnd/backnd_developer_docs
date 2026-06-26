@@ -1,5 +1,7 @@
 # TheBackend Developer Docs
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 TheBackend(뒤끝)은 게임 개발사를 위한 **BaaS(Backend as a Service)**입니다.
 Unity 및 Unreal Engine 게임에 서버 기능을 코드 몇 줄로 연동할 수 있도록 SDK와 API를 제공합니다.
 
