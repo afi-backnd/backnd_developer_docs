@@ -1,5 +1,6 @@
 ---
-sidebar_label: 친구 삭제
+sidebar_label: "친구 삭제"
+description: "BreakFriend"
 ---
 
 # BreakFriend

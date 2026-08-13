@@ -1,5 +1,6 @@
 ---
-sidebar_label: 컬렉션 리스트 가져오기
+sidebar_label: "컬렉션 리스트 가져오기"
+description: "GetCollectionNames"
 ---
 
 # GetCollectionNames

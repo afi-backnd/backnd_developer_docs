@@ -1,5 +1,6 @@
 ---
-sidebar_label: 데드레커닝 기법
+sidebar_label: "데드레커닝 기법"
+description: "데드레커닝 기법"
 ---
 
 # 데드레커닝 기법

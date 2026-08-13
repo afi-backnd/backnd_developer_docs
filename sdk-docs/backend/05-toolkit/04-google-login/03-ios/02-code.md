@@ -1,5 +1,6 @@
 ---
 sidebar_label: "구글 로그인 코드 예제"
+description: "GoogleLogin"
 ---
 
 # GoogleLogin  

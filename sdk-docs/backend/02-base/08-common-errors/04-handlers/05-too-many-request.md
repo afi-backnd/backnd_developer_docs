@@ -1,6 +1,7 @@
 ---
-sidebar_label: 과다 호출 에러 핸들러 (Local)
-sidebar_position: 5
+sidebar_label: "과다 호출 에러 핸들러 (Local)"
+sidebar_position: "5"
+description: "OnTooManyRequestByLocalError"
 ---
 
 # OnTooManyRequestByLocalError

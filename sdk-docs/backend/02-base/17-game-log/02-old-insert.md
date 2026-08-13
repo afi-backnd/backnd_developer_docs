@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 게임 로그 저장"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "InsertLog"
 ---
 
 # InsertLog

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 강퇴 이벤트
+sidebar_label: "유저 강퇴 이벤트"
+description: "OnMatchMakingRoomKick"
 ---
 
 # OnMatchMakingRoomKick

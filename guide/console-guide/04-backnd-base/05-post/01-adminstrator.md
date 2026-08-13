@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+description: "관리자 우편"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 관리자 우편

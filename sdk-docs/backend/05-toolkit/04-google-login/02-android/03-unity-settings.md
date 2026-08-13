@@ -1,6 +1,8 @@
 ---
-sidebar_label: "Unity 설정"  
-sidebar_position: 0.5
+sidebar_label: "Unity 설정"
+sidebar_position: "0.5"
+draft: "true"
+description: "Unity 설정"
 ---
 
 # Unity 설정
@@ -8,6 +10,7 @@ sidebar_position: 0.5
 :::caution Unity 지원 버전 안내  
 SDK 3.0.0+ 에 적용된 안드로이드 인증(credentials) 기능은 AGP(Android Gradle Plugin)8.x버전 이상에서 빌드가 가능합니다.  
 Unity6+는 AGP8.x를 공식 지원하여 빌드가 가능하지만 하위 버전은 공식 지원하지 않아 빌드가 되지 않습니다.  
+
 **따라서 하위 버전에서는 별도의 설정이 필요하며 이는 Unity의 공식지원은 아니므로 개발환경에 따라 동작하지 않을 수 있습니다.**  
 **아래의 설정대로 진행해도 문제가 발생할 경우, Unity6로 프로젝트를 업데이트 하여 빌드를 진행하시는 것을 권장드립니다.**  
 

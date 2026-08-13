@@ -1,6 +1,7 @@
 ---
 sidebar_label: "문의 기본양식 불러오기"
-sidebar_position: 2
+sidebar_position: "2"
+description: "GetDefaultQuestionForm"
 ---
 
 # GetDefaultQuestionForm

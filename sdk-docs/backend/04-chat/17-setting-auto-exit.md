@@ -1,7 +1,8 @@
 ---
-sidebar_label: 자동 접속 종료 문구 설정
-draft: true
-unlisted: true
+sidebar_label: "자동 접속 종료 문구 설정"
+draft: "true"
+unlisted: "true"
+description: "SetTimeoutMessage"
 ---
 
 # SetTimeoutMessage

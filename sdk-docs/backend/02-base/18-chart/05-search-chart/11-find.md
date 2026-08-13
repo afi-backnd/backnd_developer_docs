@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] GetLocalChartData"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetLocalChartData"
 ---
 
 # [Deprecated] GetLocalChartData

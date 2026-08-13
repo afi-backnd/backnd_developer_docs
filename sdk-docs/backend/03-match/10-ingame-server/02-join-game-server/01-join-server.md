@@ -1,5 +1,6 @@
 ---
-sidebar_label: 인게임 서버 접속 요청
+sidebar_label: "인게임 서버 접속 요청"
+description: "JoinGameServer"
 ---
 
 # JoinGameServer

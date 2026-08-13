@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+description: "테이블"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 테이블

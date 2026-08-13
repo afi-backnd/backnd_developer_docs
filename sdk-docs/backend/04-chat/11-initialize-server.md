@@ -1,7 +1,8 @@
 ---
-sidebar_label: 채팅 서버 접속 초기화
-draft: true
-unlisted: true
+sidebar_label: "채팅 서버 접속 초기화"
+draft: "true"
+unlisted: "true"
+description: "ResetConnect"
 ---
 
 # ResetConnect

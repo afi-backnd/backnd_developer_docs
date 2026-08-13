@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 리스트 조회
+sidebar_label: "매칭 리스트 조회"
+description: "GetMatchList"
 ---
 
 # GetMatchList

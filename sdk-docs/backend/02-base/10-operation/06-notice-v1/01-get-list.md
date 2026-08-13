@@ -1,6 +1,7 @@
 ---
-sidebar_label: 공지사항 리스트 조회
-sidebar_position: 1
+sidebar_label: "공지사항 리스트 조회"
+sidebar_position: "1"
+description: "NoticeList"
 ---
 
 # NoticeList

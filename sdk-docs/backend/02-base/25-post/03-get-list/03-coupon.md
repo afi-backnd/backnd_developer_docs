@@ -1,5 +1,6 @@
 ---
-sidebar_label: 쿠폰 우편 불러오기
+sidebar_label: "쿠폰 우편 불러오기"
+description: "GetPostList(PostType.Coupon)"
 ---
 
 # GetPostList(PostType.Coupon)

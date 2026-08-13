@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝펑션 리스트 조회
+sidebar_label: "뒤끝펑션 리스트 조회"
+description: "GetFunctionList"
 ---
 
 # GetFunctionList

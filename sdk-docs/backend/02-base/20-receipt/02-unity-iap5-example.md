@@ -1,5 +1,6 @@
 ---
-sidebar_label: Unity Purchasing 연동 예제
+sidebar_label: "Unity Purchasing 연동 예제"
+description: "Unity Purchasing(IAP 5.x) 연동 예제"
 ---
 
 # Unity Purchasing(IAP 5.x) 연동 예제
@@ -177,7 +178,7 @@ private void ValidateWithReceipt(PendingOrder pendingOrder, string receipt, Shop
         {
             // 이미 검증된 영수증 → details의 아이템 정보로 미지급 상품 재지급 가능
             var returnValue = bro.GetReturnValuetoJSON();
-            var receiptDetails = returnValue["details"]["receiptInfo"]["details"];
+            var receiptDetails = returnValue["errorData"]["receiptInfo"]["details"];
             Debug.Log($"[UnityPurchasingBackend] UsedReceipt details: {receiptDetails}");
 
             // TODO: receiptDetails에서 게임 아이템 정보를 확인하여 상품 재지급
@@ -218,7 +219,7 @@ private void HandlePurchasesFetched(Orders orders)
 미완료 구매 복원 시 이미 검증된 영수증에 대해 `UsedReceipt`(409)가 반환될 수 있습니다.
 이는 **영수증 검증은 완료되었지만 상품 지급 전에 앱이 종료된 경우**에 해당합니다.
 
-`UsedReceipt` 응답의 `details.receiptInfo.details`에는 최초 검증 시 `AddDetail`로 저장한 게임 아이템 정보(itemId, itemName 등)가 포함되어 있으므로, 이 정보를 활용하여 **미지급된 상품을 재지급**할 수 있습니다.
+`UsedReceipt` 응답의 `errorData.receiptInfo.details`에는 최초 검증 시 `AddDetail`로 저장한 게임 아이템 정보(itemId, itemName 등)가 포함되어 있으므로, 이 정보를 활용하여 **미지급된 상품을 재지급**할 수 있습니다.
 :::
 
 ## 애플 구매 복원 (Restore Transactions)
@@ -251,11 +252,11 @@ public void RestoreTransactions(Action<bool, string> callback)
 `RestoreTransactions`가 성공하면, 복원된 구매 내역이 `OnPurchasePending` 이벤트를 통해 전달됩니다.
 이때 앞서 구현한 `HandlePurchasePending`에서 영수증 검증 → `ConfirmPurchase` 흐름이 동일하게 실행됩니다.
 
-복원된 구매의 영수증을 검증하면 `UsedReceipt`가 반환됩니다. 이 응답의 `details.receiptInfo.details`에 포함된 게임 아이템 정보를 통해 미지급 상품을 재지급할 수 있습니다.
+복원된 구매의 영수증을 검증하면 `UsedReceipt`가 반환됩니다. 이 응답의 `errorData.receiptInfo.details`에 포함된 게임 아이템 정보를 통해 미지급 상품을 재지급할 수 있습니다.
 
 :::info 구매 복원과 FetchPurchases의 차이
 - **FetchPurchases**: 앱 초기화 시 자동으로 호출하여 미완료 구매 내역을 조회합니다. <br/> 소모품(Consumable)의 미확정 구매도 포함됩니다.
-- **RestoreTransactions**: 사용자가 명시적으로 "구매 복원" 버튼을 눌렀을 때 호출합니다. <br/> 비소모품/구독 상품의 이전 구매를 스토어에서 다시 가져옵니다. <br/> 복원 시 `UsedReceipt` 응답의 details를 활용하여 상품 재지급이 가능합니다.
+- **RestoreTransactions**: 사용자가 명시적으로 "구매 복원" 버튼을 눌렀을 때 호출합니다. <br/> 비소모품/구독 상품의 이전 구매를 스토어에서 다시 가져옵니다. <br/> 복원 시 `UsedReceipt` 응답의 `errorData.receiptInfo.details`를 활용하여 상품 재지급이 가능합니다.
 :::
 
 ### UI 구현 예시

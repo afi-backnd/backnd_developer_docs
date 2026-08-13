@@ -1,3 +1,7 @@
+---
+description: "매치 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 매치 관리

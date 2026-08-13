@@ -1,7 +1,8 @@
 ---
-sidebar_label: 유저 신고
-draft: true
-unlisted: true
+sidebar_label: "유저 신고"
+draft: "true"
+unlisted: "true"
+description: "ReportUser"
 ---
 
 # ReportUser

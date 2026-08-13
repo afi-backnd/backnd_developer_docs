@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 차트 리스트 불러오기 V2"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetChartListV2"
 ---
 
 # [Deprecated] GetChartListV2

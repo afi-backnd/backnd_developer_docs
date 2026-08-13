@@ -1,5 +1,6 @@
 ---
-sidebar_label: 보낸 쪽지 삭제
+sidebar_label: "보낸 쪽지 삭제"
+description: "DeleteSentMessage"
 ---
 
 # DeleteSentMessage

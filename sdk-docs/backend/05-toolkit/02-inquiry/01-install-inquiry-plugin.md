@@ -1,5 +1,6 @@
 ---
-sidebar_label: 1대1 문의 플러그인
+sidebar_label: "1대1 문의 플러그인"
+description: "1대1 문의 플러그인 설치"
 ---
 
 # 1대1 문의 플러그인 설치  

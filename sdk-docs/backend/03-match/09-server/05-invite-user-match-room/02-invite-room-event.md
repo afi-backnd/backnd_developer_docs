@@ -1,5 +1,6 @@
 ---
-sidebar_label: 초대요청 송신 이벤트
+sidebar_label: "초대요청 송신 이벤트"
+description: "OnMatchMakingRoomInvite"
 ---
 
 # OnMatchMakingRoomInvite

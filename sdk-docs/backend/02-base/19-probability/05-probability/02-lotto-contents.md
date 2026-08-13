@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 뽑기 확률 내용 조회"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetProbabilityContents"
 ---
 
 # [Deprecated] GetProbabilityContents

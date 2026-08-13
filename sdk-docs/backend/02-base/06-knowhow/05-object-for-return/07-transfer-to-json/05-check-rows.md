@@ -1,5 +1,6 @@
 ---
-sidebar_label: Rows 확인
+sidebar_label: "Rows 확인"
+description: "Rows"
 ---
 
 # Rows

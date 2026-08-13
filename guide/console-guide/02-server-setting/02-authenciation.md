@@ -1,3 +1,7 @@
+---
+description: "인증정보"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 인증정보

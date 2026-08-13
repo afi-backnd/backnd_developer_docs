@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방 폐기
+sidebar_label: "게임방 폐기"
+description: "게임방 폐기"
 ---
 
 # 게임방 폐기

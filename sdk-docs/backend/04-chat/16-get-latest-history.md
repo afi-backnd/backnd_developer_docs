@@ -1,7 +1,8 @@
 ---
-sidebar_label: 최근 채팅 내역 조회
-draft: true
-unlisted: true
+sidebar_label: "최근 채팅 내역 조회"
+draft: "true"
+unlisted: "true"
+description: "GetRecentChat"
 ---
 
 # GetRecentChat

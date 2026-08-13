@@ -1,5 +1,6 @@
 ---
-sidebar_label: 닉네임 생성
+sidebar_label: "닉네임 생성"
+description: "CreateNickname"
 ---
 
 # CreateNickname

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 푸시 등록
+sidebar_label: "푸시 등록"
+description: "PutDeviceToken"
 ---
 
 # PutDeviceToken

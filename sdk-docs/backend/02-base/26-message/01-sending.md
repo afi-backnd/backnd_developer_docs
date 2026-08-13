@@ -1,5 +1,6 @@
 ---
-sidebar_label: 쪽지 보내기
+sidebar_label: "쪽지 보내기"
+description: "SendMessage"
 ---
 
 # SendMessage

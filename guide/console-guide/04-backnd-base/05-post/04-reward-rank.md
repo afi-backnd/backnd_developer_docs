@@ -1,6 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: "4"
+description: "랭킹 보상"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 랭킹 보상

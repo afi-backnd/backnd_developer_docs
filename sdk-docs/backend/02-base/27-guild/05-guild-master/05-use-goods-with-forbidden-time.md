@@ -1,8 +1,9 @@
 ---
 sidebar_label: "[Deprecated] 굿즈 사용(4시~5시 갱신불가)"
-sidebar_position: 15
-draft: true
-unlisted: true
+sidebar_position: "15"
+draft: "true"
+unlisted: "true"
+description: "UseGoodsV4"
 ---
 
 # UseGoodsV4

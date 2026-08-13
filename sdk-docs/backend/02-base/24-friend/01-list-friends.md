@@ -1,5 +1,6 @@
 ---
-sidebar_label: 친구 목록 조회
+sidebar_label: "친구 목록 조회"
+description: "GetFriendList"
 ---
 
 # GetFriendList

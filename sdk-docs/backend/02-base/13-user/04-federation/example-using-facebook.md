@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Facebook 인증 예제"
-sidebar_position: 4.5
+sidebar_position: "4.5"
+description: "Facebook SDK 사용"
 ---
 
 # Facebook SDK 사용

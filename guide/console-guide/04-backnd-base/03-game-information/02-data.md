@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "데이터"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 데이터

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 특정 유저 접속 핸들러
+sidebar_label: "특정 유저 접속 핸들러"
+description: "UserIsConnectByIndate"
 ---
 
 # UserIsConnectByIndate

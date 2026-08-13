@@ -1,6 +1,7 @@
 ---
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "콜백 함수 풀링"
 ---
 
 # 콜백 함수 풀링

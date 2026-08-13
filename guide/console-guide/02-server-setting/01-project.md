@@ -1,3 +1,7 @@
+---
+description: "프로젝트"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 프로젝트

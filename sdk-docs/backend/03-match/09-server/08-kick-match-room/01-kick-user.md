@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 강퇴 요청
+sidebar_label: "유저 강퇴 요청"
+description: "KickUser"
 ---
 
 # KickUser

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 탈퇴
+sidebar_label: "길드 탈퇴"
+description: "WithdrawGuildV3"
 ---
 
 # WithdrawGuildV3

@@ -1,6 +1,7 @@
 ---
-sidebar_label: 버전 관리
-sidebar_position: 7
+sidebar_label: "버전 관리"
+sidebar_position: "7"
+description: "프로젝트 버전 관리"
 ---
 
 # 프로젝트 버전 관리

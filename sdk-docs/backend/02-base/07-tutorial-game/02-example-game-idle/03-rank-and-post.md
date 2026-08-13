@@ -1,6 +1,7 @@
 ---
-sidebar_label: 랭킹, 우편 설정 방법
-sidebar_position: 3
+sidebar_label: "랭킹, 우편 설정 방법"
+sidebar_position: "3"
+description: "랭킹, 우편 설정 방법"
 ---
 
 # 랭킹, 우편 설정 방법

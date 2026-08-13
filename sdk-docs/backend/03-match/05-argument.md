@@ -1,5 +1,6 @@
 ---
-sidebar_label: 인자 & 리턴 클래스 정보
+sidebar_label: "인자 & 리턴 클래스 정보"
+description: "인자/리턴 클래스 정보"
 ---
 
 # 인자/리턴 클래스 정보

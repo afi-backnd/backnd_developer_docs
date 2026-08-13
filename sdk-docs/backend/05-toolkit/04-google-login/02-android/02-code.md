@@ -1,11 +1,13 @@
 ---
 sidebar_label: "구글 로그인 코드 예제"
+description: "GoogleLogin"
 ---
 
 # GoogleLogin  
-public void **GoogleLogin**(GoogleLoginCallback **googleLoginCallback**);  
-public void **GoogleLogin**(string **webClientId**, GoogleLoginCallback **googleLoginCallback**);  
+public void **GoogleLogin**(bool **isCallbackInMainThread**, GoogleLoginCallback **googleLoginCallback**);  
+public void **GoogleLogin**(string **webClientId**, bool **isCallbackInMainThread**, GoogleLoginCallback **googleLoginCallback**);  
 
+## 콜백
 public void **GoogleLoginCallback**(bool **isSuccess**, string **errorMessage**, string **token**)
 
 ## 파라미터
@@ -13,18 +15,24 @@ public void **GoogleLoginCallback**(bool **isSuccess**, string **errorMessage**,
 | Value        | Type           | Description  |  
 | :------------ |:-------------| :----- |  
 | webClientId      | string | (인스펙터 미설정 시) 구글 클라우드 플랫폼에서 설정한 웹 ClientID |  
+| isCallbackInMainThread    | bool | true일 경우, 콜백이 유니티 메인쓰레드에서 작동합니다. false일 경우, 외부쓰레드에서 작동합니다. |
 | googleLoginCallback    | GoogleLoginCallback | 로그인 요청에 대한 성공여부, 에러메시지, 토큰값을 불러오는 콜백 함수 |  
+
+:::danger 메인쓰레드와 외부쓰레드
+유니티에서 외부쓰레드에서 UnityEngine 혹은 UnityEngine.UI로 생성된 오브젝트나 함수를 호출할 경우, Exception이 발생합니다.
+
+메인쓰레드로 콜백을 호출할 경우, 콜백에서 Object를 많이 생성하거나 동기 형식의 뒤끝 함수등의 게임이 잠시 멈추거나 무거운 동작을 할 경우, 크러쉬 현상이 발생할 수 있습니다.
+:::
 
 ## 설명
 구글 로그인을 시도합니다. 결과는 **GoogleLoginCallback** 콜백 이벤트를 통해 확인할 수 있습니다.  
-단말에 연동된 계정이 하나만 있으면 구글 로그인이 성공한 이 후에는 다시 구글 로그인을 호출할 때마다  
-계정 선택 없이 이전에 선택한 아이디로 로그인이 됩니다.  
+구글 로그인이 성공한 이후에는 구글 로그인을 호출할 때마다 계정 선택 없이 이전에 선택한 아이디로 로그인이 됩니다.  
 계정을 다시 선택하고 싶은 경우 아래 `TheBackend.ToolKit.GoogleLogin.Android.GoogleSignOut`을 호출해야합니다.
 
 ### Example
 ```js
 public void StartGoogleLogin() {
-    TheBackend.ToolKit.GoogleLogin.Android.GoogleLogin(GoogleLoginCallback);
+    TheBackend.ToolKit.GoogleLogin.Android.GoogleLogin(true, GoogleLoginCallback);
 }
 
 private void GoogleLoginCallback(bool isSuccess, string errorMessage, string token) {
@@ -34,6 +42,7 @@ private void GoogleLoginCallback(bool isSuccess, string errorMessage, string tok
     }
     
     Debug.Log("구글 토큰 : " + token);
+    
     var bro = Backend.BMember.AuthorizeFederation(token, FederationType.Google);
     Debug.Log("페데레이션 로그인 결과 : " + bro);
 }
@@ -43,17 +52,16 @@ private void GoogleLoginCallback(bool isSuccess, string errorMessage, string tok
 
 ### Success cases  
 **구글 로그인 호출에 성공한 경우**  
-true  
+bool : true  
 errorMessage : ""
 token : 
 ```
 eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1ZTU1MTA3NDY2YjdlMjk4MzYxOTljNThjNzU4MWY1YjkyM2JlNDQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI0NTk2MDkyMzQ5MDAtMGZrdHBlbjlsNzYxZjFnc3RvdTI0a2Z0dXNlcGpvZGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0NTk2MDkyMzQ5MDAtbnZzaW51bDllMnBvMGU4cGk2aWdqNmlvNGNnN3VmMG4uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTcxMTQ5NTAzOTIxNjIzMzA5MjAiLCJlbWFpbCI6InJsYWd1c3RtZDAyMTdAZ21haWwuY29tIiwiZW1haWxfdmVyDSDjksdajfaskljfkjksuYDtmITsirkiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXprNWExOVpaQ3MyRmJ3ZG5FV0xGdDZIZUFMRUY4OUF6TF9rbFlaRXQxPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6Iu2YhOyKuSIsImZhbWlseV9uYW1lIjoi6rmAIiwibG9jYWxlIjoia28iLCJpYXQiOjE3MDY0NDA2MjMsImV4cCI6MTcwNjQ0NDIyM30.hJx5COWQWmMejDFz76b2NxAB3IcYP3obvQ6CGvwCF6oBQG7rqZzlA9YiQhQwpzd0SM6rt-aFPlrpO6yCF8V_sh2yfI784wf1VNzlhtxoajI_LpDmdny1bWlgpHGv3hwC3lL1Wi9tP2CkEfnlfTXnKXKtsPD1KiaQa8tYZnIXDR_MvnE9FtiNA-vGCclUcUdONgcgF8_tAieKVKJxfIGx2zNNCb19910abbMwkW8-lhWp6kgd
 ```
 
-
 ### Error cases  
 **실행 기기가 Android가 아닐 경우**  
-false  
+bool : false  
 errorMessage : "SDK Exception : not support os: \[ platform ]"  
 token : ""(string.Empty)
 
@@ -74,8 +82,9 @@ token : ""(string.Empty)
 
 ---
 # GoogleSignOut  
-public void **GoogleLogin**(GoogleSignOutCallback **googleSignOutCallback**);  
+public void **GoogleSignOut**(GoogleSignOutCallback **googleSignOutCallback**);
 
+## 콜백
 public void **GoogleSignOutCallback**(bool **isSuccess**, string **errorMessage**)
 
 ## 파라미터

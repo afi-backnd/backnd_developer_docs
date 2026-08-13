@@ -1,5 +1,6 @@
 ---
-sidebar_label: SetDelete, SetDeleteV2
+sidebar_label: "SetDelete, SetDeleteV2"
+description: "SetDelete(Where), SetDeleteV2(inDate)"
 ---
 
 # SetDelete(Where), SetDeleteV2(inDate)  

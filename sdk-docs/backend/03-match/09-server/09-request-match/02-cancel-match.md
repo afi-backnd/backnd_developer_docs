@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 취소 요청
+sidebar_label: "매칭 취소 요청"
+description: "CancelMatchMaking"
 ---
 
 # CancelMatchMaking

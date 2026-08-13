@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "길드 설정"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 길드 설정

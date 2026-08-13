@@ -36,4 +36,4 @@ Backend.Function.Call("함수이름", new Param(), callback =>
 });
 ```
 
-자세한 내용은 [베이스 SDK 펑션 호출 문서](../sdk-docs/backend-new/02-base/31-function/)를 참고하세요.
+자세한 내용은 [베이스 SDK 펑션 호출 문서](../sdk-docs/backend/02-base/31-function/)를 참고하세요.

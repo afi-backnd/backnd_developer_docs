@@ -1,5 +1,6 @@
 ---
-sidebar_label: 랜덤 그룹에 나의 데이터 삭제
+sidebar_label: "랜덤 그룹에 나의 데이터 삭제"
+description: "DeleteRandomData"
 ---
 
 # DeleteRandomData

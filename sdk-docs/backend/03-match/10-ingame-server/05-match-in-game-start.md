@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임 시작 이벤트
+sidebar_label: "게임 시작 이벤트"
+description: "OnMatchInGameStart"
 ---
 
 # OnMatchInGameStart

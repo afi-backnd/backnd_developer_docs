@@ -1,5 +1,6 @@
 ---
-sidebar_label: 계정 탈퇴
+sidebar_label: "계정 탈퇴"
+description: "WithdrawAccount"
 ---
 
 # WithdrawAccount

@@ -1,6 +1,7 @@
 ---
 sidebar_label: "[Legacy] 약관 및 정책"
-sidebar_position: 7
+sidebar_position: "7"
+description: "GetPolicyV2"
 ---
 
 # GetPolicyV2

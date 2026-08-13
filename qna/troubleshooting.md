@@ -26,4 +26,4 @@ AGP(Android Gradle Plugin) 버전이 8.5 이하인 경우 `mainTemplate.gradle`�
 
 ## Q. 더 많은 오류 코드 정보는 어디서 찾나요?
 
-[전체 에러 코드 문서](../sdk-docs/backend-new/02-base/09-all-errors.md)를 참고하세요.
+[전체 에러 코드 문서](../sdk-docs/backend/02-base/09-all-errors.md)를 참고하세요.

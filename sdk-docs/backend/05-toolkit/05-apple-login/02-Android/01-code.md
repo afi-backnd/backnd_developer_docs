@@ -1,5 +1,6 @@
 ---
 sidebar_label: "애플 로그인 코드 예제"
+description: "AppleLogin"
 ---
 
 # AppleLogin  

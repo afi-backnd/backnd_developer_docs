@@ -1,5 +1,6 @@
 ---
-sidebar_position: 6.7
+sidebar_position: "6.7"
+description: "뒤끝 요금 최적화 가이드"
 ---
 
 # 뒤끝 요금 최적화 가이드

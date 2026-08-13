@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝매치 구조
+sidebar_label: "뒤끝매치 구조"
+description: "뒤끝매치 구조"
 ---
 
 # 뒤끝매치 구조

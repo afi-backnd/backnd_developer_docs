@@ -1,3 +1,7 @@
+---
+description: "보안 설정"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 보안 설정

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 마스터 기능
+sidebar_label: "길드 마스터 기능"
+description: "길드 마스터 기능"
 ---
 
 # 길드 마스터 기능

@@ -1,3 +1,7 @@
+---
+description: "확률 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 확률 관리

@@ -1,3 +1,7 @@
+---
+description: "모든 Error Cases"
+---
+
 # 모든 Error Cases
 
 ## ErrorCode 정리

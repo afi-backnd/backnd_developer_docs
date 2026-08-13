@@ -1,5 +1,6 @@
 ---
-sidebar_label: 받은 쪽지 조회
+sidebar_label: "받은 쪽지 조회"
+description: "GetReceivedMessageList"
 ---
 
 # GetReceivedMessageList

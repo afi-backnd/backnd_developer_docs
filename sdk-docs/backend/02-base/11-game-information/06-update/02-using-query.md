@@ -1,5 +1,6 @@
 ---
-sidebar_label: 데이터 수정 (쿼리이용)
+sidebar_label: "데이터 수정 (쿼리이용)"
+description: "Update"
 ---
 
 # Update

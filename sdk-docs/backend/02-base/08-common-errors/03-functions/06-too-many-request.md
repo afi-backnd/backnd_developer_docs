@@ -1,6 +1,7 @@
 ---
-sidebar_label: 과도한 서버 요청
-sidebar_position: 6
+sidebar_label: "과도한 서버 요청"
+sidebar_position: "6"
+description: "IsTooManyRequestError"
 ---
 
 # IsTooManyRequestError

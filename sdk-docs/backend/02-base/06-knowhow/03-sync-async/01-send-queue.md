@@ -1,3 +1,6 @@
+---
+description: "동기/비동기/SendQueue 선택"
+---
 
 # 동기/비동기/SendQueue 선택
 

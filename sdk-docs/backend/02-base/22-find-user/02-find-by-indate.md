@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Legacy] 유저 inDate로 유저 정보 조회"
+description: "GetUserInfoByInDate"
 ---
 
 # GetUserInfoByInDate

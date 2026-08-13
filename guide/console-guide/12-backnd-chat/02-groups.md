@@ -1,6 +1,7 @@
 ---
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "채널 그룹 관리"
 ---
 
 # 채널 그룹 관리

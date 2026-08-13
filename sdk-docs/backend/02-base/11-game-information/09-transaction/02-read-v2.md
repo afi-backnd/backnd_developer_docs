@@ -1,5 +1,6 @@
 ---
-sidebar_label: 트랜잭션 읽기 V2
+sidebar_label: "트랜잭션 읽기 V2"
+description: "TransactionReadV2"
 ---
 
 # TransactionReadV2

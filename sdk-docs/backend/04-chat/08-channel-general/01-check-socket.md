@@ -1,7 +1,8 @@
 ---
-sidebar_label: 일반 채널 소켓접속여부 확인
-draft: true
-unlisted: true
+sidebar_label: "일반 채널 소켓접속여부 확인"
+draft: "true"
+unlisted: "true"
+description: "IsChatConnect"
 ---
 
 # IsChatConnect

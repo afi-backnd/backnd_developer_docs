@@ -1,5 +1,6 @@
 ---
-sidebar_label: 언마샬된 Rows 확인
+sidebar_label: "언마샬된 Rows 확인"
+description: "FlattenRows"
 ---
 
 # FlattenRows

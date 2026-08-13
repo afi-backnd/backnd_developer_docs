@@ -1,6 +1,7 @@
 ---
 sidebar_label: "BackEndHero : 하이스코어"
-sidebar_position: 6.5
+sidebar_position: "6.5"
+description: "BackEndHero"
 ---
 
 # BackEndHero

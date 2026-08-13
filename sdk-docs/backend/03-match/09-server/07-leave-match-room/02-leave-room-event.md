@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 퇴장 이벤트
+sidebar_label: "대기방 퇴장 이벤트"
+description: "OnMatchMakingRoomLeave"
 ---
 
 # OnMatchMakingRoomLeave

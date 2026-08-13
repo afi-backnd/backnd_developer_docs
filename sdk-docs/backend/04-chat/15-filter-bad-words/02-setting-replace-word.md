@@ -1,7 +1,8 @@
 ---
-sidebar_label: 필터링 대체 문자 설정
-draft: true
-unlisted: true
+sidebar_label: "필터링 대체 문자 설정"
+draft: "true"
+unlisted: "true"
+description: "SetFilterReplacementChar"
 ---
 
 # SetFilterReplacementChar

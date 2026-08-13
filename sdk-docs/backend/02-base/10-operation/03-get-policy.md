@@ -1,6 +1,7 @@
 ---
-sidebar_label: 약관 및 정책
-sidebar_position: 3
+sidebar_label: "약관 및 정책"
+sidebar_position: "3"
+description: "GetPolicyV3"
 ---
 
 # GetPolicyV3

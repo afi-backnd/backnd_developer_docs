@@ -1,3 +1,7 @@
+---
+description: "쿼리 에디터"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 쿼리 에디터

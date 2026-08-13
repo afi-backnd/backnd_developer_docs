@@ -1,6 +1,7 @@
 ---
-sidebar_label: 실시간 랭킹(구버전)
-sidebar_position: 8
+sidebar_label: "실시간 랭킹(구버전)"
+sidebar_position: "8"
+description: "구버전 실시간 랭킹 정보"
 ---
 
 # 구버전 실시간 랭킹 정보

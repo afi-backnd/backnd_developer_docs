@@ -1,5 +1,6 @@
 ---
-sidebar_label: 레이턴시 확인
+sidebar_label: "레이턴시 확인"
+description: "Latency"
 ---
 
 # Latency

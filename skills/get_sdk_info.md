@@ -43,7 +43,7 @@ SDK 모듈 이름을 입력하면 해당 모듈의 핵심 정보를 구조화된
 
 | module | overview | docs | changelog |
 |---|---|---|---|
-| backend | sdk-docs/backend-new/_overview.md | sdk-docs/backend-new/ | update-note/Backend/ |
+| backend | sdk-docs/backend/_overview.md | sdk-docs/backend/ | update-note/Backend/ |
 | chat | sdk-docs/chat/_overview.md | sdk-docs/chat/ | update-note/Chat/ |
 | function | sdk-docs/function/_overview.md | sdk-docs/function/ | update-note/Function/ |
 | world | sdk-docs/world/_overview.md | sdk-docs/world/ | update-note/World/ |

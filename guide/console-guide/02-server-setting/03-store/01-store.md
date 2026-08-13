@@ -1,3 +1,7 @@
+---
+description: "스토어 정보"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 스토어 정보

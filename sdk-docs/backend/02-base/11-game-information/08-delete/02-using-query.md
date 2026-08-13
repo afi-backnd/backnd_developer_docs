@@ -1,5 +1,6 @@
 ---
-sidebar_label: 데이터 삭제(쿼리이용)
+sidebar_label: "데이터 삭제(쿼리이용)"
+description: "Delete"
 ---
 
 # Delete

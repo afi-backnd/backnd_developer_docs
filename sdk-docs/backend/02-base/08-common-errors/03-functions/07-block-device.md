@@ -1,6 +1,7 @@
 ---
-sidebar_label: 디바이스 차단
-sidebar_position: 7
+sidebar_label: "디바이스 차단"
+sidebar_position: "7"
+description: "IsDeviceBlockError"
 ---
 
 # IsDeviceBlockError

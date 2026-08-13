@@ -1,5 +1,6 @@
 ---
-sidebar_label: 언마샬 된 returnValue 확인
+sidebar_label: "언마샬 된 returnValue 확인"
+description: "GetFlattenJson"
 ---
 
 # GetFlattenJson

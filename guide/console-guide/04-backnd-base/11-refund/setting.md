@@ -1,5 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "환경설정"
 ---
 
 # 환경설정

@@ -1,3 +1,7 @@
+---
+description: "구글 로그인 유저 회원 탈퇴 웹 링크"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 구글 로그인 유저 회원 탈퇴 웹 링크

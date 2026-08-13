@@ -1,5 +1,6 @@
 ---
-sidebar_label: 내 길드 정보 조회
+sidebar_label: "내 길드 정보 조회"
+description: "GetMyGuildInfoV3"
 ---
 
 # GetMyGuildInfoV3

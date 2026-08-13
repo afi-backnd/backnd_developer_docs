@@ -1,3 +1,7 @@
+---
+description: "IsNull"
+---
+
 # IsNull
 public void IsNull(string **key**);
 

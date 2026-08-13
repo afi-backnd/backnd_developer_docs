@@ -1,7 +1,8 @@
 ---
-sidebar_label: 뒤끝챗 구조
-draft: true
-unlisted: true
+sidebar_label: "뒤끝챗 구조"
+draft: "true"
+unlisted: "true"
+description: "뒤끝챗 구조"
 ---
 
 # 뒤끝챗 구조

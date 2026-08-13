@@ -1,5 +1,6 @@
 ---
-sidebar_label: 데이터 삭제(inDate이용)
+sidebar_label: "데이터 삭제(inDate이용)"
+description: "DeleteV2"
 ---
 
 # DeleteV2

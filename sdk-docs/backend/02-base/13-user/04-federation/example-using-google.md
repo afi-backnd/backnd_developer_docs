@@ -1,6 +1,7 @@
 ---
 sidebar_label: "구글 로그인 인증 예제"
-sidebar_position: 2.5
+sidebar_position: "2.5"
+description: "Sign In with Google 사용"
 ---
 
 # Sign In with Google 사용

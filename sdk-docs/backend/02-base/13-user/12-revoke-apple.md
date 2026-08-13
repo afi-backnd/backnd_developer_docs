@@ -1,5 +1,6 @@
 ---
-sidebar_label: 애플 토큰 만료(only iOS)
+sidebar_label: "애플 토큰 만료(only iOS)"
+description: "RevokeAppleToken"
 ---
 
 # RevokeAppleToken

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 멀티 캐릭터 예제 게임
+sidebar_label: "멀티 캐릭터 예제 게임"
+description: "멀티 캐릭터 예제 게임"
 ---
 
 # 멀티 캐릭터 예제 게임

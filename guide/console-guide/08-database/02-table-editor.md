@@ -1,3 +1,7 @@
+---
+description: "테이블 에디터"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 테이블 에디터
@@ -74,7 +78,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - 인덱스 설정
   - 최대 4개 컬럼의 복합 인덱스를 설정할 수 있습니다. 여러 컬럼을 함께 검색하는 경우 복합 인덱스가 효과적입니다.
   - 유저 테이블의 `user_uuid`는 기본 인덱스로 자동 설정됩니다.
-  - JSON 타입 컬럼에는 인덱스를 생성할 수 없습니다.
+  - JSON, bool 타입 컬럼에는 인덱스를 생성할 수 없습니다.
   - 데이터베이스당 10개까지 생성할 수 있으며, 유저 테이블의 `user_uuid` 기본 인덱스는 개수에 포함되지 않습니다.
 
 :::tip 인덱스 설정 가이드

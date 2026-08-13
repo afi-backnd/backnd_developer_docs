@@ -1,5 +1,6 @@
 ---
-sidebar_label: 인게임 서버 접속
+sidebar_label: "인게임 서버 접속"
+description: "인게임 서버 접속"
 ---
 
 # 인게임 서버 접속

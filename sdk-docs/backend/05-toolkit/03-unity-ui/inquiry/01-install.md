@@ -1,5 +1,6 @@
 ---
-sidebar_label: 설치
+sidebar_label: "설치"
+description: "1대1문의 UI"
 ---
 
 # 1대1문의 UI

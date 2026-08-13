@@ -1,5 +1,6 @@
 ---
-sidebar_label: 쓰로틀링
+sidebar_label: "쓰로틀링"
+description: "쓰로틀링(Throttling)"
 ---
 
 # 쓰로틀링(Throttling)

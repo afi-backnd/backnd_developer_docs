@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 즉시 가입 설정
+sidebar_label: "길드 즉시 가입 설정"
+description: "SetRegistrationValueV3"
 ---
 
 # SetRegistrationValueV3

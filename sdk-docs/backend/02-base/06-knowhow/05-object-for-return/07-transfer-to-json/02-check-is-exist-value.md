@@ -1,5 +1,6 @@
 ---
-sidebar_label: returnValue 확인
+sidebar_label: "returnValue 확인"
+description: "HasReturnValue"
 ---
 
 # HasReturnValue

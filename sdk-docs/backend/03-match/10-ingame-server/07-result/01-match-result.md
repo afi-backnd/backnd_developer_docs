@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임 결과 메시지 전송
+sidebar_label: "게임 결과 메시지 전송"
+description: "MatchEnd"
 ---
 
 # MatchEnd

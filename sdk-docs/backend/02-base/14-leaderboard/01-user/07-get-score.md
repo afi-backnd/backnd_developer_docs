@@ -1,5 +1,6 @@
 ---
-sidebar_label: 특정 점수를 가진 유저 랭킹 조회
+sidebar_label: "특정 점수를 가진 유저 랭킹 조회"
+description: "GetLeaderboardByScore"
 ---
 
 # GetLeaderboardByScore

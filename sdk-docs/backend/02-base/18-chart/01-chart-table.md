@@ -1,5 +1,6 @@
 ---
 sidebar_label: "차트 테이블 조회"
+description: "Backend.CDN.Content.Table.Get"
 ---
 
 # Backend.CDN.Content.Table.Get

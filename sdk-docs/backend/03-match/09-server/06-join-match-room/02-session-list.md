@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 유저 리스트 이벤트
+sidebar_label: "대기방 유저 리스트 이벤트"
+description: "OnMatchMakingRoomUserList"
 ---
 
 # OnMatchMakingRoomUserList

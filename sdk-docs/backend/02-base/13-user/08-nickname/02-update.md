@@ -1,5 +1,6 @@
 ---
-sidebar_label: 닉네임 수정
+sidebar_label: "닉네임 수정"
+description: "UpdateNickname"
 ---
 
 # UpdateNickname

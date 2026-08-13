@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 3. 쿠폰 사용하고 아이템 저장하기
+sidebar_label: "Step 3. 쿠폰 사용하고 아이템 저장하기"
+description: "쿠폰 사용하고 아이템 저장하기"
 ---
-
-
 
 # 쿠폰 사용하고 아이템 저장하기
 

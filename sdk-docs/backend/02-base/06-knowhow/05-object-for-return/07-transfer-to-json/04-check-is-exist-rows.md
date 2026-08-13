@@ -1,5 +1,6 @@
 ---
-sidebar_label: Rows 존재여부 확인
+sidebar_label: "Rows 존재여부 확인"
+description: "HasRows"
 ---
 
 # HasRows

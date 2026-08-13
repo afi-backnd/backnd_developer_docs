@@ -1,3 +1,7 @@
+---
+description: "유저 정보 찾기"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저 정보 찾기

@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 2. 친구 요청 보내기
+sidebar_label: "Step 2. 친구 요청 보내기"
+description: "친구 요청 보내기"
 ---
-
-
 
 # 친구 요청 보내기
 

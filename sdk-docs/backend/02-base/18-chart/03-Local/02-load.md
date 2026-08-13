@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 불러오기"
+description: "Backend.CDN.Content.Local.Load"
 ---
 
 # Backend.CDN.Content.Local.Load

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝펑션 실행
+sidebar_label: "뒤끝펑션 실행"
+description: "InvokeFunction"
 ---
 
 # InvokeFunction

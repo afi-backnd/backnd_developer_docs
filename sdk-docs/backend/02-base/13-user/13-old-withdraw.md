@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 회원 탈퇴"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "SignOut"
 ---
 
 # SignOut

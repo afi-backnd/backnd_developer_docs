@@ -1,5 +1,6 @@
 ---
-sidebar_label: 다른 유저 재접속 성공 이벤트
+sidebar_label: "다른 유저 재접속 성공 이벤트"
+description: "OnSessionOnline"
 ---
 
 # OnSessionOnline

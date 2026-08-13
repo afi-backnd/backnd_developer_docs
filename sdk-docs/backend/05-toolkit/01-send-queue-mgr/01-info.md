@@ -1,5 +1,6 @@
 ---
-sidebar_label: SendQueueMgr
+sidebar_label: "SendQueueMgr"
+description: "SendQueueMgr"
 ---
 
 # SendQueueMgr

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 바이너리 데이터 송신
+sidebar_label: "바이너리 데이터 송신"
+description: "SendDataToInGameRoom"
 ---
 
 # SendDataToInGameRoom

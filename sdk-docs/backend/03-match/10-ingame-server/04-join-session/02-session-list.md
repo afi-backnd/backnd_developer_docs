@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방에 존재하는 유저 리스트 이벤트
+sidebar_label: "게임방에 존재하는 유저 리스트 이벤트"
+description: "OnSessionListInServer"
 ---
 
 # OnSessionListInServer

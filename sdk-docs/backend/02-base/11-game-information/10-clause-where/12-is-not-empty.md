@@ -1,3 +1,7 @@
+---
+description: "IsNotEmpty"
+---
+
 # IsNotEmpty
 public void IsNotEmpty(string **key**);
 

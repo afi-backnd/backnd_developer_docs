@@ -1,7 +1,8 @@
 ---
-sidebar_label: 일반 채널 접속 종료 요청
-draft: true
-unlisted: true
+sidebar_label: "일반 채널 접속 종료 요청"
+draft: "true"
+unlisted: "true"
+description: "LeaveChannel"
 ---
 
 # LeaveChannel

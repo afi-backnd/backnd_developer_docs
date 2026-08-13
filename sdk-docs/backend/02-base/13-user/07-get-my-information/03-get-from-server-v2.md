@@ -1,6 +1,7 @@
 ---
-sidebar_label: 유저 정보 조회 V2(서버)
-sidebar_position: 1.5
+sidebar_label: "유저 정보 조회 V2(서버)"
+sidebar_position: "1.5"
+description: "GetUserInfoV2"
 ---
 
 # GetUserInfoV2

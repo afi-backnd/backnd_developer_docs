@@ -1,5 +1,6 @@
 ---
-sidebar_label: 주의점 및 커스텀 방법
+sidebar_label: "주의점 및 커스텀 방법"
+description: "주의점 및 커스텀 방법"
 ---
 
 # 주의점 및 커스텀 방법

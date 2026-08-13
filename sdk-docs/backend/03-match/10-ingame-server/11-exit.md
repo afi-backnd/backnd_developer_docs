@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방 나가기
+sidebar_label: "게임방 나가기"
+description: "게임방 나가기"
 ---
 
 # 게임방 나가기

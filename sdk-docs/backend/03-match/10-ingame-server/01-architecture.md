@@ -1,5 +1,6 @@
 ---
-sidebar_label: 인게임 서버 구조
+sidebar_label: "인게임 서버 구조"
+description: "인게임 서버 구조"
 ---
 
 # 인게임 서버 구조

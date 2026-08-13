@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 inDate 조회
+sidebar_label: "길드 inDate 조회"
+description: "GetGuildIndateByGuildNameV3"
 ---
 
 # GetGuildIndateByGuildNameV3

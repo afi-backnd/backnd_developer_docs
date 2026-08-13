@@ -1,5 +1,6 @@
 ---
-sidebar_label: 내 위치로 국가 정보 동기화
+sidebar_label: "내 위치로 국가 정보 동기화"
+description: "UpdateLocationProperties"
 ---
 
 # UpdateLocationProperties

@@ -1,5 +1,6 @@
 ---
-sidebar_label: SetUpdate, SetUpdateV2
+sidebar_label: "SetUpdate, SetUpdateV2"
+description: "SetUpdate(Where), SetUpdateV2(inDate)"
 ---
 
 # SetUpdate(Where), SetUpdateV2(inDate)  

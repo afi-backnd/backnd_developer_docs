@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+description: "환불 관리"
 ---
 
 # 환불 관리

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 방장 & 슈퍼 게이머
+sidebar_label: "방장 & 슈퍼 게이머"
+description: "방장"
 ---
 
 # 방장

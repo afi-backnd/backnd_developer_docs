@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뽑기 n회 실행
+sidebar_label: "뽑기 n회 실행"
+description: "GetProbabilitys"
 ---
 
 # GetProbabilitys

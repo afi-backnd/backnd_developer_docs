@@ -1,7 +1,8 @@
 ---
-sidebar_label: 모든 유저 랭킹 설정값 조회
-draft: true
-unlisted: true
+sidebar_label: "모든 유저 랭킹 설정값 조회"
+draft: "true"
+unlisted: "true"
+description: "GetRankTableList"
 ---
 
 # GetRankTableList

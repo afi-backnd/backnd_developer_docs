@@ -21,7 +21,7 @@
 {
   "results": [
     {
-      "path": "sdk-docs/backend-new/02-base/27-guild/",
+      "path": "sdk-docs/backend/02-base/27-guild/",
       "title": "길드 시스템",
       "description": "길드 생성, 검색, 멤버 관리, 길드 랭킹",
       "module": "backend"
@@ -35,13 +35,13 @@
 **입력**: `{ "query": "길드 생성", "module": "backend" }`
 
 **참조 경로**:
-- `sdk-docs/backend-new/02-base/27-guild/` — 길드 API 전체
+- `sdk-docs/backend/02-base/27-guild/` — 길드 API 전체
 - `guide/console-guide/04-backnd-base/12-guild/` — 콘솔에서 길드 설정
 - `qna/backend-sdk.md` — 길드 관련 Q&A
 
 **입력**: `{ "query": "push notification android" }`
 
 **참조 경로**:
-- `sdk-docs/backend-new/02-base/16-push/` — 푸시 알림 SDK
+- `sdk-docs/backend/02-base/16-push/` — 푸시 알림 SDK
 - `guide/console-guide/02-server-setting/04-push/` — 콘솔 푸시 설정
 - `faq/08-push.md` — 푸시 FAQ

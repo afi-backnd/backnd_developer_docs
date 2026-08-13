@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방 접속 요청
+sidebar_label: "게임방 접속 요청"
+description: "JoinGameRoom"
 ---
 
 # JoinGameRoom

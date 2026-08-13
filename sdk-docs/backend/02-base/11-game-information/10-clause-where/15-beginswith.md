@@ -1,3 +1,7 @@
+---
+description: "BeginsWith"
+---
+
 # BeginsWith
 public void BeginsWith(string **key**, string **value**);
 

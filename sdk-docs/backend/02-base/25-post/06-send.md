@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 우편 보내기
+sidebar_label: "유저 우편 보내기"
+description: "SendUserPost"
 ---
 
 # SendUserPost

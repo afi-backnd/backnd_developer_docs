@@ -1,5 +1,6 @@
 ---
 sidebar_label: "Steam 로그인 인증 예제"
+description: "Steamworks.NET 사용"
 ---
 
 # Steamworks.NET 사용
@@ -212,6 +213,68 @@ Debug.Log("스팀 아이디 : " + SteamUser.GetSteamID()); // 고유번호 - 숫
 Debug.Log("사용자 닉네임 : " + SteamFriends.GetPersonaName()); // 닉네임 - 닉네임 (ex : Backend01 )
 Debug.Log("사용자 국가 정보 : " + SteamUtils.GetIPCountry()); // 유저 국가 정보 - KR
 ```
+
+## Partner 방식 로그인 (Web API 티켓)
+
+:::info 안내
+스팀 로그인에 Partner(Web API) 방식 인증을 지원합니다.  
+뒤끝 콘솔 > 프로젝트 설정 > 인증 정보 > 스팀 계정 인증 정보에 **Partner Identity**를 입력하면, 서버가 스팀 Partner API로 티켓을 검증합니다.
+:::
+
+- 콘솔에 Partner Identity를 입력하지 않은 경우, 위의 기존 방식(GetAuthSessionTicket)을 그대로 사용할 수 있습니다.
+- 콘솔에 Partner Identity를 입력한 경우, 반드시 아래의 GetAuthTicketForWebApi 방식으로 티켓을 발급해야 합니다.  
+**Partner Identity가 설정된 상태에서 기존 GetAuthSessionTicket 방식으로 로그인하면 오류가 발생합니다.**
+
+### 1. 콘솔에 Partner Identity 등록
+
+뒤끝 콘솔 > 프로젝트 설정 > 인증 정보 > 스팀 계정 인증 정보에 Partner Identity를 입력합니다.
+
+### 2. Web API 티켓 발급
+
+GetAuthTicketForWebApi 호출 시 identity 파라미터에 **콘솔에 입력한 Partner Identity와 동일한 값**을 전달합니다.  
+발급된 티켓은 GetTicketForWebApiResponse_t 콜백으로 전달되며, hex 문자열로 변환해 federationToken으로 사용합니다.
+
+```js
+// 콘솔에 입력한 Partner Identity와 동일해야 합니다.
+private const string WebApiIdentity = "BACKND";
+
+private Callback<GetTicketForWebApiResponse_t> m_TicketResponse;
+private HAuthTicket m_TicketHandle = HAuthTicket.Invalid;
+
+void RequestWebApiTicket()
+{
+    if (SteamManager.Initialized == false)
+    {
+        Debug.LogError("Steam 초기화에 실패했습니다.");
+        return;
+    }
+
+    m_TicketResponse = Callback<GetTicketForWebApiResponse_t>.Create(OnGetTicketForWebApiResponse);
+    m_TicketHandle = SteamUser.GetAuthTicketForWebApi(WebApiIdentity);
+}
+
+void OnGetTicketForWebApiResponse(GetTicketForWebApiResponse_t response)
+{
+    if (response.m_hAuthTicket != m_TicketHandle || response.m_eResult != EResult.k_EResultOK)
+    {
+        Debug.LogError("Steam Web API 티켓 발급에 실패했습니다 : " + response.m_eResult);
+        return;
+    }
+
+    var tokenBuilder = new System.Text.StringBuilder(response.m_cubTicket * 2);
+    for (int i = 0; i < response.m_cubTicket; i++)
+    {
+        tokenBuilder.AppendFormat("{0:x2}", response.m_rgubTicket[i]);
+    }
+
+    string federationToken = tokenBuilder.ToString();
+
+    // 이후는 기존 방식과 동일하게 페더레이션 관련 처리를 진행합니다.
+    BackendReturnObject bro = Backend.BMember.AuthorizeFederation(federationToken, FederationType.Steam);
+}
+```
+
+사용이 끝난 티켓은 SteamUser.CancelAuthTicket(m_TicketHandle)으로 해제할 수 있습니다.
 
 ## ReturnCase
 

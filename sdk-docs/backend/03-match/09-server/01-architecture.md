@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 서버 구조
+sidebar_label: "매칭 서버 구조"
+description: "매칭 서버 구조"
 ---
 
 # 매칭 서버 구조

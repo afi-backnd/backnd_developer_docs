@@ -1,5 +1,6 @@
 ---
-sidebar_label: 리턴값내 inDate를 직접조회
+sidebar_label: "리턴값내 inDate를 직접조회"
+description: "리턴 값 내 inDate를 직접 조회하기"
 ---
 
 # 리턴 값 내 inDate를 직접 조회하기

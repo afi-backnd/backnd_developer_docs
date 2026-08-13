@@ -1,7 +1,9 @@
 ---
-sidebar_label: 리더보드 수정
-sidebar_position: 3
+sidebar_label: "리더보드 수정"
+sidebar_position: "3"
+description: "리더보드 수정"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 리더보드 수정

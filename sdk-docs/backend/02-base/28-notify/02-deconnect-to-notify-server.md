@@ -1,5 +1,6 @@
 ---
-sidebar_label: 실시간 알림 서버 해제
+sidebar_label: "실시간 알림 서버 해제"
+description: "Disconnect"
 ---
 
 # Disconnect

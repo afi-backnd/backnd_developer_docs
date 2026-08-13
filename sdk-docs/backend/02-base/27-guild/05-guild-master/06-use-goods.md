@@ -1,8 +1,9 @@
 ---
 sidebar_label: "[Deprecated] 굿즈 사용"
-sidebar_position: 14
-draft: true
-unlisted: true
+sidebar_position: "14"
+draft: "true"
+unlisted: "true"
+description: "UseGoodsV3"
 ---
 
 # UseGoodsV3

@@ -1,5 +1,6 @@
 ---
-sidebar_label: firstKey 확인
+sidebar_label: "firstKey 확인"
+description: "FirstKeyString"
 ---
 
 # FirstKeyString

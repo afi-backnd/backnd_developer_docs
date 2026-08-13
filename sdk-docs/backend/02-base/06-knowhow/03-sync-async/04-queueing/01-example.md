@@ -1,3 +1,7 @@
+---
+description: "SendQueue"
+---
+
 # SendQueue
 
 SendQueue는 함수 호출 시 바로 호출하지 않고 큐에 적재한 후 순차적으로 함수를 호출하는 방식입니다.  

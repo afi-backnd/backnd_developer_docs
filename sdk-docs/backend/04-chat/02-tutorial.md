@@ -1,7 +1,8 @@
 ---
-sidebar_label: 튜토리얼
-draft: true
-unlisted: true
+sidebar_label: "튜토리얼"
+draft: "true"
+unlisted: "true"
+description: "튜토리얼"
 ---
 
 # 튜토리얼

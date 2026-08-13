@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 뽑기 리스트 조회 V2"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetProbabilityCardListV2"
 ---
 
 # [Deprecated] GetProbabilityCardListV2

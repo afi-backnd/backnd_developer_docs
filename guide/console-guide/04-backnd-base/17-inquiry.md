@@ -1,3 +1,7 @@
+---
+description: "1:1 문의"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 1:1 문의

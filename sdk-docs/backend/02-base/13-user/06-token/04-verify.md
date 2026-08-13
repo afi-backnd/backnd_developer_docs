@@ -1,5 +1,6 @@
 ---
-sidebar_label: 토큰 유효성 체크
+sidebar_label: "토큰 유효성 체크"
+description: "IsAccessTokenAlive"
 ---
 
 # IsAccessTokenAlive

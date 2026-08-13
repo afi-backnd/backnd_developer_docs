@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 길드 메타 데이터 변경"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "ModifyGuildV3"
 ---
 
 # ModifyGuildV3

@@ -1,7 +1,9 @@
 ---
-sidebar_label: 접근 차단
-sidebar_position: 2
+sidebar_label: "접근 차단"
+sidebar_position: "2"
+description: "유저 접근 관리 - 접근 차단"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저 접근 관리 - 접근 차단

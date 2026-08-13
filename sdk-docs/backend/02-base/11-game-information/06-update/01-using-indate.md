@@ -1,5 +1,6 @@
 ---
-sidebar_label: 데이터 수정 (inDate이용)
+sidebar_label: "데이터 수정 (inDate이용)"
+description: "UpdateV2"
 ---
 
 # UpdateV2

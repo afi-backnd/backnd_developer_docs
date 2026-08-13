@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 기록 조회
+sidebar_label: "매칭 기록 조회"
+description: "GetMatchRecord"
 ---
 
 # GetMatchRecord

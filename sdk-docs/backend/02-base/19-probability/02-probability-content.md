@@ -1,5 +1,6 @@
 ---
 sidebar_label: "뽑기 확률 내용 조회"
+description: "Backend.CDN.Probability.Get"
 ---
 
 # Backend.CDN.Probability.Get

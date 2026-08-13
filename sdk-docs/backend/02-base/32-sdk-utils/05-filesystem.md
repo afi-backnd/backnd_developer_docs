@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝 파일시스템
+sidebar_label: "뒤끝 파일시스템"
+description: "뒤끝 파일시스템"
 ---
 
 # 뒤끝 파일시스템

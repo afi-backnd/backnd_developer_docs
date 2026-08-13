@@ -1,6 +1,7 @@
 ---
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "신고 관리"
 ---
 
 # 신고 관리

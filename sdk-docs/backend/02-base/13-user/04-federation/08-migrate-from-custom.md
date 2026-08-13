@@ -1,5 +1,6 @@
 ---
-sidebar_label: 커스텀 -> 페더레이션 계정 전환
+sidebar_label: "커스텀 -> 페더레이션 계정 전환"
+description: "ChangeCustomToFederation"
 ---
 
 # ChangeCustomToFederation

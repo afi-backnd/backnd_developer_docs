@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 1. 사전 준비
+sidebar_label: "Step 1. 사전 준비"
+description: "사전 준비"
 ---
-
-
 
 # 사전 준비
 게임 정보관리 기능을 구현하기 위해서는 다음과 같은 작업들이 사전에 준비되어 있어야 합니다.  

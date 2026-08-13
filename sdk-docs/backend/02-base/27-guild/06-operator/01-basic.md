@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 운영진 기능
+sidebar_label: "길드 운영진 기능"
+description: "길드 마스터 및 부 길드 마스터 기능"
 ---
 
 # 길드 마스터 및 부 길드 마스터 기능

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Legacy] 닉네임으로 유저 정보 조회"
+description: "GetUserInfoByNickName"
 ---
 
 # GetUserInfoByNickName

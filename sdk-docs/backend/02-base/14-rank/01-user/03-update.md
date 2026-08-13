@@ -1,7 +1,8 @@
 ---
-sidebar_label: 유저 랭킹 갱신
-draft: true
-unlisted: true
+sidebar_label: "유저 랭킹 갱신"
+draft: "true"
+unlisted: "true"
+description: "UpdateUserScore"
 ---
 
 # UpdateUserScore

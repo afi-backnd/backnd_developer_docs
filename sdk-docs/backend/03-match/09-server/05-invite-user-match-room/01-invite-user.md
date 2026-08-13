@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저를 대기방에 초대 요청
+sidebar_label: "유저를 대기방에 초대 요청"
+description: "InviteUser"
 ---
 
 # InviteUser

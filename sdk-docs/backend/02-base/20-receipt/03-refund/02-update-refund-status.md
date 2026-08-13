@@ -1,5 +1,6 @@
 ---
-sidebar_label: 환불 상태 업데이트
+sidebar_label: "환불 상태 업데이트"
+description: "UpdateRefundStatus"
 ---
 
 # UpdateRefundStatus

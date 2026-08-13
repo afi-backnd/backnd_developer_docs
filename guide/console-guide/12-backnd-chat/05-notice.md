@@ -1,6 +1,7 @@
 ---
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "공지 관리"
 ---
 
 # 공지 관리

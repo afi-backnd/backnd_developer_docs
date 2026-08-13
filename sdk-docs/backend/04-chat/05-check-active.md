@@ -1,7 +1,8 @@
 ---
-sidebar_label: 뒤끝챗 활성화 여부 확인
-draft: true
-unlisted: true
+sidebar_label: "뒤끝챗 활성화 여부 확인"
+draft: "true"
+unlisted: "true"
+description: "GetChatStatus"
 ---
 
 # GetChatStatus

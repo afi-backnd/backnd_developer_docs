@@ -1,7 +1,9 @@
 ---
-sidebar_label: 리더보드
-sidebar_position: 1
+sidebar_label: "리더보드"
+sidebar_position: "1"
+description: "리더보드"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 리더보드

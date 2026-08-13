@@ -1,5 +1,6 @@
 ---
-sidebar_label: 재접속 가능 여부 확인
+sidebar_label: "재접속 가능 여부 확인"
+description: "IsGameRoomActivate"
 ---
 
 # IsGameRoomActivate

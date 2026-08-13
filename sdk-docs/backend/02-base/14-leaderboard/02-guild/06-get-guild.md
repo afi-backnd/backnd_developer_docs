@@ -1,5 +1,6 @@
 ---
-sidebar_label: 특정 길드 리더보드 순위 조회
+sidebar_label: "특정 길드 리더보드 순위 조회"
+description: "GetOtherGuildLeaderboardPlace"
 ---
 
 # GetOtherGuildLeaderboardPlace

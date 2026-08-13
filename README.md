@@ -22,7 +22,7 @@ AI agent, LLM, RAG 시스템이 TheBackend 문서를 쉽게 읽고 활용할 수
 
 ```
 sdk-docs/
-├── backend-new/     # 베이스 SDK — 플레이어 데이터, 랭킹, 길드, 쿠폰, 푸시, 게임 로그, 확률 등
+├── backend/         # 베이스 SDK — 플레이어 데이터, 랭킹, 길드, 쿠폰, 푸시, 게임 로그, 확률 등
 ├── chat/            # 채팅 SDK — 채널, 메시지, 번역, 신고
 ├── function/        # 뒤끝펑션 — 서버리스 커스텀 함수
 ├── world/           # 월드 — 멀티플레이어 기능
@@ -47,7 +47,7 @@ qna/                 # Q&A 형식 문서 (AI agent용)
 
 | 모듈 | 설명 | 경로 |
 |---|---|---|
-| 베이스 SDK | 플레이어 인증, 데이터 저장, 랭킹, 길드, 쿠폰, 푸시, 게임 로그, 확률 | `sdk-docs/backend-new/` |
+| 베이스 SDK | 플레이어 인증, 데이터 저장, 랭킹, 길드, 쿠폰, 푸시, 게임 로그, 확률 | `sdk-docs/backend/` |
 | 채팅 SDK | Unity 실시간 채팅 (채널, 메시지, 번역) | `sdk-docs/chat/` |
 | 뒤끝펑션 | 서버리스 함수 — 커스텀 서버 로직 클라우드 실행 | `sdk-docs/function/` |
 | 월드 | 멀티플레이어 월드 기능 | `sdk-docs/world/` |

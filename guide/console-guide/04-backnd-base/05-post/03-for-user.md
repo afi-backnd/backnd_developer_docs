@@ -1,7 +1,9 @@
 ---
-sidebar_label: 유저 우편
-sidebar_position: 3
+sidebar_label: "유저 우편"
+sidebar_position: "3"
+description: "유저/캐릭터 우편"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저/캐릭터 우편

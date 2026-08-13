@@ -1,7 +1,8 @@
 ---
-sidebar_label: 차단 목록 모두 불러오기
-draft: true
-unlisted: true
+sidebar_label: "차단 목록 모두 불러오기"
+draft: "true"
+unlisted: "true"
+description: "GetBlockUserList"
 ---
 
 # GetBlockUserList

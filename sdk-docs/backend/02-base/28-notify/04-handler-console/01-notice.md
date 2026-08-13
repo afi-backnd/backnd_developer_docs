@@ -1,5 +1,6 @@
 ---
-sidebar_label: 공지사항 등록 핸들러
+sidebar_label: "공지사항 등록 핸들러"
+description: "OnNewNoticeCreated"
 ---
 
 # OnNewNoticeCreated

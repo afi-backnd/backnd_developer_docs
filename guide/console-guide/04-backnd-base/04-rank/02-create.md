@@ -1,7 +1,9 @@
 ---
-sidebar_label: 리더보드 생성
-sidebar_position: 2
+sidebar_label: "리더보드 생성"
+sidebar_position: "2"
+description: "리더보드 생성"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 리더보드 생성

@@ -1,6 +1,7 @@
 ---
 sidebar_label: "닉네임으로 유저 정보 조회 V2"
-sidebar_position: 0.5
+sidebar_position: "0.5"
+description: "GetUserInfoByNickNameV2"
 ---
 
 # GetUserInfoByNickNameV2

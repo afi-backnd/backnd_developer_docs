@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[New] 페더레이션 계정으로 전환"
+description: "ChangeToFederation"
 ---
 
 # ChangeToFederation

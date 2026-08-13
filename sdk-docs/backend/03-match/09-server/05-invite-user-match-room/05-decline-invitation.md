@@ -1,5 +1,6 @@
 ---
-sidebar_label: 초대 거절 요청
+sidebar_label: "초대 거절 요청"
+description: "DeclineInvitation"
 ---
 
 # DeclineInvitation

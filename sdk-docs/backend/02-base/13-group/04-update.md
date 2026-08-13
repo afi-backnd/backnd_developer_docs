@@ -1,5 +1,6 @@
 ---
-sidebar_label: 내 유저그룹 변경하기
+sidebar_label: "내 유저그룹 변경하기"
+description: "Update"
 ---
 
 # Update

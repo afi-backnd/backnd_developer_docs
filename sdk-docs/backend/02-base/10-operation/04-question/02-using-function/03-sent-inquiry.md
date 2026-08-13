@@ -1,6 +1,7 @@
 ---
-sidebar_label: 문의 보내기
-sidebar_position: 3
+sidebar_label: "문의 보내기"
+sidebar_position: "3"
+description: "SendQuestion"
 ---
 
 # SendQuestion

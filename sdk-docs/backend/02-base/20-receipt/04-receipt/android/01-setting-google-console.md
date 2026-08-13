@@ -1,5 +1,6 @@
 ---
-sidebar_label: 구글 결제 콘솔 설정
+sidebar_label: "구글 결제 콘솔 설정"
+description: "구글 결제 콘솔 설정"
 ---
 
 # 구글 결제 콘솔 설정

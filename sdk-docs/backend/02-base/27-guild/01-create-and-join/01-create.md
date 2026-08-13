@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 생성
+sidebar_label: "길드 생성"
+description: "CreateGuildV4"
 ---
 
 # CreateGuildV4

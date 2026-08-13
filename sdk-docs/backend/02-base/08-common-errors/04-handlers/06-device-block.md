@@ -1,6 +1,7 @@
 ---
-sidebar_label: 디바이스 차단 에러 핸들러
-sidebar_position: 6
+sidebar_label: "디바이스 차단 에러 핸들러"
+sidebar_position: "6"
+description: "OnDeviceBlockError"
 ---
 
 # OnDeviceBlockError

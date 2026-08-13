@@ -1,7 +1,9 @@
 ---
-sidebar_label: 접근 허용
-sidebar_position: 1
+sidebar_label: "접근 허용"
+sidebar_position: "1"
+description: "유저 접근 관리 - 접근 허용"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저 접근 관리 - 접근 허용

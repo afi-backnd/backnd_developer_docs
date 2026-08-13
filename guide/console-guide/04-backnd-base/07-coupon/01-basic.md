@@ -1,7 +1,9 @@
 ---
-sidebar_label: 쿠폰 등록 및 관리
-sidebar_position: 1
+sidebar_label: "쿠폰 등록 및 관리"
+sidebar_position: "1"
+description: "쿠폰 관리"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 쿠폰 관리

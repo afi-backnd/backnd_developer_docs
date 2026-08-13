@@ -1,3 +1,7 @@
+---
+description: "소셜 설정"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 소셜 설정

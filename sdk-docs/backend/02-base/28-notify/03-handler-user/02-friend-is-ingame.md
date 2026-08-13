@@ -1,5 +1,6 @@
 ---
-sidebar_label: 친구 접속 핸들러
+sidebar_label: "친구 접속 핸들러"
+description: "친구 접속 핸들러"
 ---
 
 # 친구 접속 핸들러

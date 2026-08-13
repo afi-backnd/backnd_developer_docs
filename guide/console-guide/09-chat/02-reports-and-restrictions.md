@@ -1,3 +1,7 @@
+---
+description: "신고 및 제재"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 신고 및 제재

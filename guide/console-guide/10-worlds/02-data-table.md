@@ -1,5 +1,6 @@
 ---
-title: 데이터 테이블
+title: "데이터 테이블"
+description: "데이터 테이블"
 ---
 
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';

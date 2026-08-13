@@ -1,3 +1,7 @@
+---
+description: "차트 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 차트 관리

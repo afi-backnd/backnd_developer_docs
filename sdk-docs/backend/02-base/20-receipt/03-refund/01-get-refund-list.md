@@ -1,5 +1,6 @@
 ---
-sidebar_label: 환불 목록 조회
+sidebar_label: "환불 목록 조회"
+description: "GetRefundList"
 ---
 
 # GetRefundList

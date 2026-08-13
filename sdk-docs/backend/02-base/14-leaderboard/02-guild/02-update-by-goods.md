@@ -1,5 +1,6 @@
 ---
-sidebar_label: 굿즈로 리더보드 갱신
+sidebar_label: "굿즈로 리더보드 갱신"
+description: "굿즈로 리더보드 갱신"
 ---
 
 # 굿즈로 리더보드 갱신

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임 정보 삽입
+sidebar_label: "게임 정보 삽입"
+description: "Insert"
 ---
 
 # Insert

@@ -1,7 +1,9 @@
 ---
-sidebar_label: 그룹
-position: 4.5
+sidebar_label: "그룹"
+position: "4.5"
+description: "그룹"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 그룹

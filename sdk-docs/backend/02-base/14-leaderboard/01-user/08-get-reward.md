@@ -1,5 +1,6 @@
 ---
-sidebar_label: 리더보드 보상 정보 조회
+sidebar_label: "리더보드 보상 정보 조회"
+description: "GetLeaderboardReward"
 ---
 
 # GetLeaderboardReward

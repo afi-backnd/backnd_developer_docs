@@ -1,7 +1,8 @@
 ---
-sidebar_label: 최근채팅내역 이벤트
-draft: true
-unlisted: true
+sidebar_label: "최근채팅내역 이벤트"
+draft: "true"
+unlisted: "true"
+description: "OnRecentChatLogs"
 ---
 
 # OnRecentChatLogs

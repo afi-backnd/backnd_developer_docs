@@ -1,7 +1,8 @@
 ---
-sidebar_label: 굿즈 사용을통한 랭킹갱신
-draft: true
-unlisted: true
+sidebar_label: "굿즈 사용을통한 랭킹갱신"
+draft: "true"
+unlisted: "true"
+description: "UseGuildGoods"
 ---
 
 # UseGuildGoods

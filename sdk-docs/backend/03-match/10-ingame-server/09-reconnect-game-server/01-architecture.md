@@ -1,5 +1,6 @@
 ---
-sidebar_label: 재접속 구조
+sidebar_label: "재접속 구조"
+description: "재접속 정의"
 ---
 
 # 재접속 정의

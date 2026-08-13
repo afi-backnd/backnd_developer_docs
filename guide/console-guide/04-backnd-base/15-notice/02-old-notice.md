@@ -1,3 +1,7 @@
+---
+description: "공지사항(구버전)"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 공지사항(구버전)

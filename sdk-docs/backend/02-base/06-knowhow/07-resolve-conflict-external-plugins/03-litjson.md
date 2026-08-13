@@ -1,3 +1,7 @@
+---
+description: "LitJSON"
+---
+
 # LitJSON
 
 ## 유니티 빌드 후 LitJSON 경고메시지가 표시되는 경우

@@ -1,3 +1,7 @@
+---
+description: "Param"
+---
+
 # Param
 
 Param은 뒤끝 서버와 **통신을 할 때 넘겨주는 파라미터 클래스**입니다.  

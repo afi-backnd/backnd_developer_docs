@@ -1,5 +1,6 @@
 ---
-sidebar_label: 야간 푸시 동의
+sidebar_label: "야간 푸시 동의"
+description: "AgreeNightPushNotification"
 ---
 
 # AgreeNightPushNotification

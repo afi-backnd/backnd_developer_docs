@@ -1,5 +1,6 @@
 ---
-sidebar_label: inDate로 데이터 조회
+sidebar_label: "inDate로 데이터 조회"
+description: "GetV2"
 ---
 
 # GetV2

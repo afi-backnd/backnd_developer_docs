@@ -1,5 +1,6 @@
 ---
-sidebar_label: SDK 업데이트시 주의사항
+sidebar_label: "SDK 업데이트시 주의사항"
+description: "SDK 업데이트 시 주의사항"
 ---
 
 # SDK 업데이트 시 주의사항

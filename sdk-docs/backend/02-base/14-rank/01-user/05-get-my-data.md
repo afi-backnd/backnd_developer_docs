@@ -1,7 +1,8 @@
 ---
-sidebar_label: 내 랭킹 조회
-draft: true
-unlisted: true
+sidebar_label: "내 랭킹 조회"
+draft: "true"
+unlisted: "true"
+description: "GetMyRank"
 ---
 
 # GetMyRank

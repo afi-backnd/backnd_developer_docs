@@ -1,5 +1,6 @@
 ---
-sidebar_label: 원스토어 결제 콘솔 설정
+sidebar_label: "원스토어 결제 콘솔 설정"
+description: "원스토어 결제 콘솔 설정"
 ---
 
 # 원스토어 결제 콘솔 설정

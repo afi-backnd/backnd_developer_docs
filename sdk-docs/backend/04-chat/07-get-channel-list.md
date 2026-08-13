@@ -1,7 +1,8 @@
 ---
-sidebar_label: 채널 리스트 조회
-draft: true
-unlisted: true
+sidebar_label: "채널 리스트 조회"
+draft: "true"
+unlisted: "true"
+description: "GetGroupChannelList"
 ---
 
 # GetGroupChannelList

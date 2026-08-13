@@ -1,5 +1,6 @@
 ---
-sidebar_label: 내 길드 굿즈 정보 조회
+sidebar_label: "내 길드 굿즈 정보 조회"
+description: "GetMyGuildGoodsV3"
 ---
 
 # GetMyGuildGoodsV3

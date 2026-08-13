@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 저장"
+description: "Backend.CDN.Content.Local.Save"
 ---
 
 # Backend.CDN.Content.Local.Save

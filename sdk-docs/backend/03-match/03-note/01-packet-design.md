@@ -1,5 +1,6 @@
 ---
-sidebar_label: 패킷 디자인
+sidebar_label: "패킷 디자인"
+description: "패킷 디자인"
 ---
 
 # 패킷 디자인

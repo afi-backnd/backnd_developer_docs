@@ -1,7 +1,8 @@
 ---
-sidebar_label: 유저 랭킹 보상 정보 조회
-draft: true
-unlisted: true
+sidebar_label: "유저 랭킹 보상 정보 조회"
+draft: "true"
+unlisted: "true"
+description: "GetRankRewardList"
 ---
 
 # GetRankRewardList

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 데이터 삭제하기
+sidebar_label: "유저 데이터 삭제하기"
+description: "DeleteData"
 ---
 
 # DeleteData

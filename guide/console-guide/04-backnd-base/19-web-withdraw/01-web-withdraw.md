@@ -1,3 +1,7 @@
+---
+description: "회원 탈퇴 웹 링크"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 회원 탈퇴 웹 링크

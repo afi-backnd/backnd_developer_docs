@@ -1,5 +1,6 @@
 ---
-sidebar_label: 모든 길드 리스트 조회
+sidebar_label: "모든 길드 리스트 조회"
+description: "GetGuildListV3"
 ---
 
 # GetGuildListV3

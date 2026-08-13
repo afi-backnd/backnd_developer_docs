@@ -1,5 +1,6 @@
 ---
 sidebar_label: "사용 예제"
+description: "NPC 대사를 서버에서 불러오기"
 ---
 
 # NPC 대사를 서버에서 불러오기

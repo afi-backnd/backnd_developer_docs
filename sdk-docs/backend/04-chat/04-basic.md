@@ -1,7 +1,8 @@
 ---
-sidebar_label: 인자/리턴 클래스 정보
-draft: true
-unlisted: true
+sidebar_label: "인자/리턴 클래스 정보"
+draft: "true"
+unlisted: "true"
+description: "인자/리턴 클래스 정보"
 ---
 
 # 인자/리턴 클래스 정보

@@ -1,6 +1,7 @@
 ---
 sidebar_label: "GPGS V2 인증 예제"
-sidebar_position: 2.6
+sidebar_position: "2.6"
+description: "Google Play Game Service V2(GPGS2) 사용"
 ---
 
 # Google Play Game Service V2(GPGS2) 사용

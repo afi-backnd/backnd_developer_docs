@@ -1,5 +1,6 @@
 ---
-sidebar_label: 함수 설명
+sidebar_label: "함수 설명"
+description: "함수 설명"
 ---
 
 # 함수 설명

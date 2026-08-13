@@ -1,5 +1,6 @@
 ---
-sidebar_label: 자동 로그인(토큰 로그인)
+sidebar_label: "자동 로그인(토큰 로그인)"
+description: "AutoLoginAccount"
 ---
 
 # AutoLoginAccount

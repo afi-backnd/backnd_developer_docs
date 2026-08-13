@@ -1,5 +1,6 @@
 ---
 sidebar_label: "길드 메타 데이터 변경(리더 보드 초기화 시간 갱신 불가)"
+description: "ModifyGuildV5"
 ---
 
 # ModifyGuildV5

@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 3. 친구 요청 불러오기 및 수락하기
+sidebar_label: "Step 3. 친구 요청 불러오기 및 수락하기"
+description: "친구 요청 불러오기 및 수락하기"
 ---
-
-
 
 # 친구 요청 불러오기 및 수락하기
 

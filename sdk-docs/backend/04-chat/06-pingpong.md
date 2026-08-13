@@ -1,7 +1,8 @@
 ---
-sidebar_label: 메시지 송수신
-draft: true
-unlisted: true
+sidebar_label: "메시지 송수신"
+draft: "true"
+unlisted: "true"
+description: "Poll"
 ---
 
 # Poll

@@ -1,6 +1,7 @@
 ---
-sidebar_label: 유저 복사
-sidebar_position: 3
+sidebar_label: "유저 복사"
+sidebar_position: "3"
+description: "유저 관리 - 유저 복사"
 ---
 
 # 유저 관리 - 유저 복사

@@ -1,3 +1,7 @@
+---
+description: "랜덤 조회"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 랜덤 조회

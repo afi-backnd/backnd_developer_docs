@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 4. 닉네임 변경 구현하기
+sidebar_label: "Step 4. 닉네임 변경 구현하기"
+description: "닉네임 변경 구현하기"
 ---
-
-
 
 # 닉네임 변경 구현하기
 

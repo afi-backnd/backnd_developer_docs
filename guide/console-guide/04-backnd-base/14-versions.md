@@ -1,3 +1,7 @@
+---
+description: "버전 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 버전 관리

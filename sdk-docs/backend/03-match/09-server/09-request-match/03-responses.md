@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 신청/취소/성사 이벤트
+sidebar_label: "매칭 신청/취소/성사 이벤트"
+description: "OnMatchMakingResponse"
 ---
 
 # OnMatchMakingResponse

@@ -1,3 +1,7 @@
+---
+description: "구글 플레이 스토어"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 구글 플레이 스토어

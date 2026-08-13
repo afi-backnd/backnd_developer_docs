@@ -1,6 +1,7 @@
 ---
-sidebar_label: 웹뷰형 1대1 문의 기능
-sidebar_position: 1
+sidebar_label: "웹뷰형 1대1 문의 기능"
+sidebar_position: "1"
+description: "1대1 문의"
 ---
 
 # 1대1 문의

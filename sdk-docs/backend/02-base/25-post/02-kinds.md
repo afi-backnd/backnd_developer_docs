@@ -1,5 +1,6 @@
 ---
-sidebar_label: 우편 종류
+sidebar_label: "우편 종류"
+description: "우편의 종류"
 ---
 
 # 우편의 종류

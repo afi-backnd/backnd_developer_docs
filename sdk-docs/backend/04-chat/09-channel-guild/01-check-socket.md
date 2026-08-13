@@ -1,7 +1,8 @@
 ---
-sidebar_label: 길드 채널 소켓 접속 여부 확인
-draft: true
-unlisted: true
+sidebar_label: "길드 채널 소켓 접속 여부 확인"
+draft: "true"
+unlisted: "true"
+description: "IsChatConnect"
 ---
 
 # IsChatConnect

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 애플 영수증 검증
+sidebar_label: "애플 영수증 검증"
+description: "IsValidateApplePurchase"
 ---
 
 # IsValidateApplePurchase

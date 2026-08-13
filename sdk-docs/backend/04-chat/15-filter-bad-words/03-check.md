@@ -1,7 +1,8 @@
 ---
-sidebar_label: 문자열 비속어 포함 여부 확인
-draft: true
-unlisted: true
+sidebar_label: "문자열 비속어 포함 여부 확인"
+draft: "true"
+unlisted: "true"
+description: "IsFilteredString"
 ---
 
 # IsFilteredString

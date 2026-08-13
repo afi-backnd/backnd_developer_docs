@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 생성 이벤트
+sidebar_label: "대기방 생성 이벤트"
+description: "OnMatchMakingRoomCreate"
 ---
 
 # OnMatchMakingRoomCreate

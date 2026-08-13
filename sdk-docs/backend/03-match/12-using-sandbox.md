@@ -1,5 +1,6 @@
 ---
-sidebar_label: 샌드박스 매칭 (AI매칭)
+sidebar_label: "샌드박스 매칭 (AI매칭)"
+description: "샌드박스 매칭(AI 매칭)"
 ---
 
 # 샌드박스 매칭(AI 매칭)

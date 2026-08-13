@@ -1,5 +1,6 @@
 ---
-sidebar_label: 토큰 로그인
+sidebar_label: "토큰 로그인"
+description: "LoginWithTheBackendToken"
 ---
 
 # LoginWithTheBackendToken

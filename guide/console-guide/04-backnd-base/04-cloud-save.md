@@ -1,7 +1,9 @@
 ---
-sidebar_label: 클라우드 세이브
-position: 3.5
+sidebar_label: "클라우드 세이브"
+position: "3.5"
+description: "클라우드 세이브"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 클라우드 세이브

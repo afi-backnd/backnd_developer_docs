@@ -1,7 +1,8 @@
 ---
-sidebar_label: 내 길드 랭킹 조회
-draft: true
-unlisted: true
+sidebar_label: "내 길드 랭킹 조회"
+draft: "true"
+unlisted: "true"
+description: "GetMyGuildRank"
 ---
 
 # GetMyGuildRank

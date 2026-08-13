@@ -1,3 +1,7 @@
+---
+description: "에러 정보 확인"
+---
+
 # 에러 정보 확인
 
 뒤끝의 에러 정보는 **ErrorCode**, **StatusCode**, **Message** 3가지로 구성되어 있습니다.  

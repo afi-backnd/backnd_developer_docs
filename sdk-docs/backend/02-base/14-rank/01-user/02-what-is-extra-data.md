@@ -1,6 +1,7 @@
 ---
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "랭킹 추가 항목 사용법"
 ---
 
 # 랭킹 추가 항목 사용법

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 슈퍼 게이머 변경
+sidebar_label: "슈퍼 게이머 변경"
+description: "OnChangeSuperGamer"
 ---
 
 # OnChangeSuperGamer

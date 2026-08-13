@@ -1,5 +1,6 @@
 ---
-sidebar_label: 함수를 이용하여 inDate 조회
+sidebar_label: "함수를 이용하여 inDate 조회"
+description: "GetInDate"
 ---
 
 # GetInDate

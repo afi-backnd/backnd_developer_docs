@@ -1,5 +1,6 @@
 ---
-sidebar_label: 관리자 우편 불러오기
+sidebar_label: "관리자 우편 불러오기"
+description: "GetPostList(PostType.Admin)"
 ---
 
 # GetPostList(PostType.Admin)

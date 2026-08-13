@@ -37,12 +37,12 @@ Backend.Initialize(callback =>
 ## Q. 플레이어 데이터(게임 정보)는 어떻게 저장하나요?
 
 `Backend.GameData` 네임스페이스를 통해 서버에 JSON 형식으로 데이터를 저장합니다.
-자세한 내용은 [플레이어 데이터 문서](../sdk-docs/backend-new/02-base/)를 참고하세요.
+자세한 내용은 [플레이어 데이터 문서](../sdk-docs/backend/02-base/)를 참고하세요.
 
 ## Q. 랭킹 점수를 업데이트하는 방법은?
 
 `Backend.Rank`를 사용하여 점수를 저장하면 자동으로 순위가 계산됩니다.
-자세한 내용은 [랭킹 문서](../sdk-docs/backend-new/02-base/14-leaderboard/)를 참고하세요.
+자세한 내용은 [랭킹 문서](../sdk-docs/backend/02-base/14-leaderboard/)를 참고하세요.
 
 ## Q. 안드로이드 빌드 시 AGP 버전 관련 주의사항이 있나요?
 

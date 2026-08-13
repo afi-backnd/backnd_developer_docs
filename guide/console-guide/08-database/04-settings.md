@@ -1,3 +1,7 @@
+---
+description: "데이터베이스 설정"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 데이터베이스 설정
@@ -31,7 +35,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - 데이터 조회 성능 향상을 위해 컬럼 기반 인덱스를 설정할 수 있습니다.
 - 데이터베이스 기준 **최대 10개**까지 생성할 수 있습니다. (모든 유저 테이블의 `user_uuid` 기본 인덱스는 제외)
 - 한 인덱스는 **최대 4개 컬럼**을 묶어서 생성할 수 있습니다.
-- JSON 타입 컬럼은 인덱스 생성 불가합니다.
+- JSON, bool 타입 컬럼은 인덱스 생성 불가합니다.
 - 인덱스는 각 테이블의 수정 페이지에서도 설정할 수 있습니다.
 
 ## 백업

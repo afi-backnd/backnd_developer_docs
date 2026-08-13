@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 마스터 권한 위임
+sidebar_label: "길드 마스터 권한 위임"
+description: "NominateMasterV3"
 ---
 
 # NominateMasterV3

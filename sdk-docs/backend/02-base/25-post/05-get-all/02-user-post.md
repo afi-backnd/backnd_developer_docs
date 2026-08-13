@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 우편 모두 수령
+sidebar_label: "유저 우편 모두 수령"
+description: "ReceivePostItemAll(User)"
 ---
 
 # ReceivePostItemAll(User)

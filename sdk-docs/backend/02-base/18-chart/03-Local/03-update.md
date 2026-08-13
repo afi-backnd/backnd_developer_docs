@@ -1,5 +1,6 @@
 ---
 sidebar_label: "최신 차트로 업데이트"
+description: "Backend.CDN.Content.Local.Update"
 ---
 
 # Backend.CDN.Content.Local.Update

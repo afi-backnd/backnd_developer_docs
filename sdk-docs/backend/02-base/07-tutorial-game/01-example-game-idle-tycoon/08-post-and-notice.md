@@ -1,6 +1,7 @@
 ---
-sidebar_label: 우편, 공지 설정 방법
-sidebar_position: 8
+sidebar_label: "우편, 공지 설정 방법"
+sidebar_position: "8"
+description: "우편 설정 방법"
 ---
 
 # 우편 설정 방법

@@ -1,7 +1,8 @@
 ---
-sidebar_label: 재접속 조건
-draft: true
-unlisted: true
+sidebar_label: "재접속 조건"
+draft: "true"
+unlisted: "true"
+description: "재접속 조건"
 ---
 
 # 재접속 조건

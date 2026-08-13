@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 삭제"
+description: "Backend.CDN.Content.Local.Delete"
 ---
 
 # Backend.CDN.Content.Local.Delete

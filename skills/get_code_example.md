@@ -18,22 +18,22 @@ TheBackend SDK의 특정 기능에 대한 코드 예제와 참조 문서를 반�
 
 | feature | 문서 경로 |
 |---|---|
-| 초기화, initialize | sdk-docs/backend-new/02-base/05-sdk-initialize.md |
-| 회원가입, signup | sdk-docs/backend-new/02-base/13-user/ |
-| 로그인, login | sdk-docs/backend-new/02-base/13-user/ |
-| 플레이어 데이터, game data | sdk-docs/backend-new/02-base/12-player-data/ |
-| 랭킹, leaderboard, rank | sdk-docs/backend-new/02-base/14-leaderboard/ |
-| 길드, guild | sdk-docs/backend-new/02-base/27-guild/ |
-| 쿠폰, coupon | sdk-docs/backend-new/02-base/15-coupon/ |
-| 푸시, push | sdk-docs/backend-new/02-base/16-push/ |
-| 게임 로그, game log | sdk-docs/backend-new/02-base/17-game-log/ |
-| 확률, probability, gacha | sdk-docs/backend-new/02-base/19-probability/ |
-| 영수증, receipt | sdk-docs/backend-new/02-base/20-receipt/ |
-| 친구, friend | sdk-docs/backend-new/02-base/24-friend/ |
-| 우편, post, mail | sdk-docs/backend-new/02-base/25-post/ |
+| 초기화, initialize | sdk-docs/backend/02-base/05-sdk-initialize.md |
+| 회원가입, signup | sdk-docs/backend/02-base/13-user/ |
+| 로그인, login | sdk-docs/backend/02-base/13-user/ |
+| 플레이어 데이터, game data | sdk-docs/backend/02-base/12-player-data/ |
+| 랭킹, leaderboard, rank | sdk-docs/backend/02-base/14-leaderboard/ |
+| 길드, guild | sdk-docs/backend/02-base/27-guild/ |
+| 쿠폰, coupon | sdk-docs/backend/02-base/15-coupon/ |
+| 푸시, push | sdk-docs/backend/02-base/16-push/ |
+| 게임 로그, game log | sdk-docs/backend/02-base/17-game-log/ |
+| 확률, probability, gacha | sdk-docs/backend/02-base/19-probability/ |
+| 영수증, receipt | sdk-docs/backend/02-base/20-receipt/ |
+| 친구, friend | sdk-docs/backend/02-base/24-friend/ |
+| 우편, post, mail | sdk-docs/backend/02-base/25-post/ |
 | 채팅 채널, chat channel | sdk-docs/chat/06-channel.md |
 | 채팅 메시지, chat message | sdk-docs/chat/07-message.md |
-| 펑션 호출, function call | sdk-docs/backend-new/02-base/31-function/ |
+| 펑션 호출, function call | sdk-docs/backend/02-base/31-function/ |
 | DB 삽입, insert | sdk-docs/database/03-insert.md |
 | DB 조회, query | sdk-docs/database/04-query.md |
 | 트랜잭션, transaction | sdk-docs/database/06-transaction.md |
@@ -42,7 +42,7 @@ TheBackend SDK의 특정 기능에 대한 코드 예제와 참조 문서를 반�
 
 **입력**: `{ "feature": "랭킹" }`
 
-**참조**: `sdk-docs/backend-new/02-base/14-leaderboard/`
+**참조**: `sdk-docs/backend/02-base/14-leaderboard/`
 
 **코드 요약**:
 ```csharp

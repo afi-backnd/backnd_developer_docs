@@ -1,5 +1,6 @@
 ---
-sidebar_label: 메시지 송수신
+sidebar_label: "메시지 송수신"
+description: "Poll"
 ---
 
 # Poll

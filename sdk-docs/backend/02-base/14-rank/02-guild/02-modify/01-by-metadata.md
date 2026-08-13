@@ -1,7 +1,8 @@
 ---
-sidebar_label: 메타 정보 랭킹갱신
-draft: true
-unlisted: true
+sidebar_label: "메타 정보 랭킹갱신"
+draft: "true"
+unlisted: "true"
+description: "UpdateGuildMetaData"
 ---
 
 # UpdateGuildMetaData

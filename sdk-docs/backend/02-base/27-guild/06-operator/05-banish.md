@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드원 추방
+sidebar_label: "길드원 추방"
+description: "ExpelMemberV3"
 ---
 
 # ExpelMemberV3

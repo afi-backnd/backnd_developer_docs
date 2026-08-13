@@ -1,5 +1,6 @@
 ---
-sidebar_label: 페더레이션 회원가입/로그인
+sidebar_label: "페더레이션 회원가입/로그인"
+description: "AuthorizeFederation"
 ---
 
 # AuthorizeFederation

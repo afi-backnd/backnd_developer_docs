@@ -1,6 +1,7 @@
 ---
-sidebar_label: 랭킹(구버전)
-sidebar_position: 6
+sidebar_label: "랭킹(구버전)"
+sidebar_position: "6"
+description: "구버전 랭킹 정보"
 ---
 
 # 구버전 랭킹 정보

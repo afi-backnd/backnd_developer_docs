@@ -11,13 +11,14 @@
 
 ## SDK 모듈
 
-### 베이스 SDK (sdk-docs/backend-new/)
-엔진: Unity | 문서 481개
+### 베이스 SDK (sdk-docs/backend/)
+엔진: Unity | 문서 555개
 플레이어 인증, 데이터, 랭킹, 길드, 쿠폰, 푸시, 로그, 확률, 결제 등 게임 서버 핵심 기능 전반
 
-- [02-base/](./sdk-docs/backend-new/02-base/): 02-base
-- [03-match/](./sdk-docs/backend-new/03-match/): 03-match
-- [05-toolkit/](./sdk-docs/backend-new/05-toolkit/): 05-toolkit
+- [02-base/](./sdk-docs/backend/02-base/): 뒤끝베이스
+- [03-match/](./sdk-docs/backend/03-match/): 뒤끝매치
+- [04-chat/](./sdk-docs/backend/04-chat/): [지원 종료] 뒤끝챗
+- [05-toolkit/](./sdk-docs/backend/05-toolkit/): Toolkit
 
 ### 채팅 SDK (sdk-docs/chat/)
 엔진: Unity | 문서 13개
@@ -32,7 +33,7 @@
 - [08-report.md](./sdk-docs/chat/08-report.md): 신고
 - [09-translate.md](./sdk-docs/chat/09-translate.md): 번역
 - ... 외 3개
-- [02-install/](./sdk-docs/chat/02-install/): 02-install
+- [02-install/](./sdk-docs/chat/02-install/): 설치 유의사항
 
 ### 뒤끝펑션 (sdk-docs/function/)
 엔진: Unity | 문서 34개
@@ -42,14 +43,14 @@
 - [02-migrate-from-old-version.md](./sdk-docs/function/02-migrate-from-old-version.md): 뒤끝펑션 버전 마이그레이션  
 - [07-upgrade.md](./sdk-docs/function/07-upgrade.md): 펑션 SDK 업그레이드
 - [08-template.md](./sdk-docs/function/08-template.md): 뒤끝펑션 템플릿
-- [03-basic/](./sdk-docs/function/03-basic/): 03-basic
-- [04-work-in-windows/](./sdk-docs/function/04-work-in-windows/): 04-work-in-windows
-- [05-work-in-ios/](./sdk-docs/function/05-work-in-ios/): 05-work-in-ios
-- [06-cli/](./sdk-docs/function/06-cli/): 06-cli
-- [09-tutorial/](./sdk-docs/function/09-tutorial/): 09-tutorial
-- [10-connect-with-base/](./sdk-docs/function/10-connect-with-base/): 10-connect-with-base
-- [11-transfer-stream/](./sdk-docs/function/11-transfer-stream/): 11-transfer-stream
-- [12-request/](./sdk-docs/function/12-request/): 12-request
+- [03-basic/](./sdk-docs/function/03-basic/): 뒤끝펑션 기초
+- [04-work-in-windows/](./sdk-docs/function/04-work-in-windows/): 개발환경설정 (Windows)
+- [05-work-in-ios/](./sdk-docs/function/05-work-in-ios/): 개발환경설정 (MacOS)
+- [06-cli/](./sdk-docs/function/06-cli/): Backend CLI
+- [09-tutorial/](./sdk-docs/function/09-tutorial/): 튜토리얼
+- [10-connect-with-base/](./sdk-docs/function/10-connect-with-base/): 뒤끝베이스와 통신
+- [11-transfer-stream/](./sdk-docs/function/11-transfer-stream/): Stream으로 변환
+- [12-request/](./sdk-docs/function/12-request/): 뒤끝기능요청
 
 ### 월드 (sdk-docs/world/)
 엔진: Unity | 문서 25개
@@ -60,10 +61,10 @@
 - [07-remote-config.md](./sdk-docs/world/07-remote-config.md): 리모트 컨피그
 - [08-data-table.md](./sdk-docs/world/08-data-table.md): 데이터 테이블
 - [09-build-deploy.md](./sdk-docs/world/09-build-deploy.md): 빌드 & 배포
-- [02-getting-started/](./sdk-docs/world/02-getting-started/): 02-getting-started
-- [04-components/](./sdk-docs/world/04-components/): 04-components
-- [05-attributes/](./sdk-docs/world/05-attributes/): 05-attributes
-- [06-advanced/](./sdk-docs/world/06-advanced/): 06-advanced
+- [02-getting-started/](./sdk-docs/world/02-getting-started/): 시작하기
+- [04-components/](./sdk-docs/world/04-components/): Components
+- [05-attributes/](./sdk-docs/world/05-attributes/): Attributes
+- [06-advanced/](./sdk-docs/world/06-advanced/): Advanced
 
 ### 데이터베이스 (sdk-docs/database/)
 엔진: Unity | 문서 8개
@@ -127,7 +128,7 @@ Unreal Engine 전용 실시간 채팅
 
 ## 릴리즈 노트 (update-note/)
 
-- Backend: 최신 Backend-5.18.10 (37개 버전) → [update-note/Backend/](./update-note/Backend/)
+- Backend: 최신 Backend-5.18.13 (40개 버전) → [update-note/Backend/](./update-note/Backend/)
 - Chat: 최신 Chat-1.4.0 (11개 버전) → [update-note/Chat/](./update-note/Chat/)
 - Function: 최신 Function-1.0.2 (7개 버전) → [update-note/Function/](./update-note/Function/)
 - World: 최신 World-0.2.0 (2개 버전) → [update-note/World/](./update-note/World/)

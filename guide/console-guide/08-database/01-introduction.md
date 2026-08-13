@@ -1,3 +1,7 @@
+---
+description: "데이터베이스란?"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 데이터베이스란?

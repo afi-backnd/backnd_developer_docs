@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 특정 폴더의 모든 차트 저장"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetChartByFolderAndSave"
 ---
 
 # [Deprecated] GetChartByFolderAndSave

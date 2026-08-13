@@ -1,5 +1,6 @@
 ---
-sidebar_label: firstKey 존재여부 확인
+sidebar_label: "firstKey 존재여부 확인"
+description: "HasFirstKey"
 ---
 
 # HasFirstKey

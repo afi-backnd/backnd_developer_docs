@@ -1,6 +1,7 @@
 ---
-sidebar_label: 공지사항 하나 조회
-sidebar_position: 2
+sidebar_label: "공지사항 하나 조회"
+sidebar_position: "2"
+description: "NoticeOneV2"
 ---
 
 # NoticeOneV2

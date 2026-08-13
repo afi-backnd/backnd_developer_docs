@@ -1,5 +1,6 @@
 ---
 sidebar_label: "로컬 초기화"
+description: "Backend.CDN.Content.Local.Reset"
 ---
 
 # Backend.CDN.Content.Local.Reset

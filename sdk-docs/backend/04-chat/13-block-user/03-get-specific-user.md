@@ -1,7 +1,8 @@
 ---
-sidebar_label: 차단 목록에서 유저 조회
-draft: true
-unlisted: true
+sidebar_label: "차단 목록에서 유저 조회"
+draft: "true"
+unlisted: "true"
+description: "IsUserBlocked"
 ---
 
 # IsUserBlocked

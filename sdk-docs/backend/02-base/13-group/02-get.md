@@ -1,5 +1,6 @@
 ---
-sidebar_label: 내 그룹 불러오기
+sidebar_label: "내 그룹 불러오기"
+description: "Get"
 ---
 
 # Get

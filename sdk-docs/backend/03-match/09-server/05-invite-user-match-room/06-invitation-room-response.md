@@ -1,5 +1,6 @@
 ---
-sidebar_label: 초대 수락/거절 이벤트
+sidebar_label: "초대 수락/거절 이벤트"
+description: "OnMatchMakingRoomInviteResponse"
 ---
 
 # OnMatchMakingRoomInviteResponse

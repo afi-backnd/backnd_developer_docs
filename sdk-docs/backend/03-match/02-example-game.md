@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝매치 예제게임
+sidebar_label: "뒤끝매치 예제게임"
+description: "TheBackendMatch"
 ---
 
 # TheBackendMatch

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 이메일 정보 등록
+sidebar_label: "이메일 정보 등록"
+description: "UpdateFederationEmail"
 ---
 
 # UpdateFederationEmail

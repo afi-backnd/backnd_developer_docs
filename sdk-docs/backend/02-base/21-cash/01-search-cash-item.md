@@ -1,5 +1,6 @@
 ---
-sidebar_label: 캐시 아이템 리스트 조회
+sidebar_label: "캐시 아이템 리스트 조회"
+description: "GetProductList"
 ---
 
 # GetProductList

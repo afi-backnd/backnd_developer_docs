@@ -1,5 +1,6 @@
 ---
-sidebar_label: 리더보드 내 전체 순위 조회
+sidebar_label: "리더보드 내 전체 순위 조회"
+description: "GetLeaderboard"
 ---
 
 # GetLeaderboard

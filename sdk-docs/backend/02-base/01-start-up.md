@@ -1,3 +1,7 @@
+---
+description: "시작하기"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 시작하기
@@ -21,7 +25,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 ## Step1. 최신 뒤끝 SDK 다운로드
 
 아래 뒤끝 SDK를 다운로드합니다. 뒤끝 베이스 SDK는 베이스 기능 외, 뒤끝매치 기능도 포함하고 있습니다.
-- <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.10/Backend-5.18.10.unitypackage" id="download-sdk">Backend-5.18.10.unitypackage</a>&nbsp;[2026-04-29]
+- <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.13/Backend-5.18.13.unitypackage" id="download-sdk">Backend-5.18.13.unitypackage</a>&nbsp;[2026-08-13]
 
 **최초 설치인 경우**
 - Step2.로 이동합니다.

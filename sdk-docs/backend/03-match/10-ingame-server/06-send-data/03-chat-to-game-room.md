@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 채팅 메시지 송신"
+description: "ChatToGameRoom"
 ---
 
 # ChatToGameRoom

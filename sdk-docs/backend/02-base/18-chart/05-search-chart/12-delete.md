@@ -1,9 +1,9 @@
 ---
 sidebar_label: "[Deprecated] DeleteLocalChartData"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] DeleteLocalChartData"
 ---
-
 
 # [Deprecated] DeleteLocalChartData
 public void **DeleteLocalChartData**(string **chartKey**);

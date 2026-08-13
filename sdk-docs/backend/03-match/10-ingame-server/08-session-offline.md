@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방 연결 끊김 이벤트
+sidebar_label: "게임방 연결 끊김 이벤트"
+description: "OnSessionOffline"
 ---
 
 # OnSessionOffline

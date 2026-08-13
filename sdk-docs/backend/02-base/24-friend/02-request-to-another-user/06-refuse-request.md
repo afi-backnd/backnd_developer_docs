@@ -1,5 +1,6 @@
 ---
-sidebar_label: 받은 친구 요청 거절
+sidebar_label: "받은 친구 요청 거절"
+description: "RejectFriend"
 ---
 
 # RejectFriend

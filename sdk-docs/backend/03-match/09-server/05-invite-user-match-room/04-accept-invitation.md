@@ -1,5 +1,6 @@
 ---
-sidebar_label: 초대 수락 요청
+sidebar_label: "초대 수락 요청"
+description: "AcceptInvitation"
 ---
 
 # AcceptInvitation

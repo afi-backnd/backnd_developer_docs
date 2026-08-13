@@ -1,5 +1,6 @@
 ---
-sidebar_label: 로그아웃
+sidebar_label: "로그아웃"
+description: "Logout"
 ---
 
 # Logout

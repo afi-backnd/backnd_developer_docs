@@ -1,3 +1,7 @@
+---
+description: "영수증 검증"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 영수증 검증

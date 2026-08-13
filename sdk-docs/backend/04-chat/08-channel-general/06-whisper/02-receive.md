@@ -1,7 +1,8 @@
 ---
-sidebar_label: 귓속말 메시지 수신 이벤트
-draft: true
-unlisted: true
+sidebar_label: "귓속말 메시지 수신 이벤트"
+draft: "true"
+unlisted: "true"
+description: "OnWhisper"
 ---
 
 # OnWhisper

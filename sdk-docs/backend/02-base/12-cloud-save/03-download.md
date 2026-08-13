@@ -1,5 +1,6 @@
 ---
-sidebar_label: 세이브 다운로드 하기
+sidebar_label: "세이브 다운로드 하기"
+description: "Download"
 ---
 
 # Download

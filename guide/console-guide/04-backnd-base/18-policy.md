@@ -1,3 +1,7 @@
+---
+description: "약관 및 정책"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 약관 및 정책

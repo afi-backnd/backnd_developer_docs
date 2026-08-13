@@ -1,6 +1,7 @@
 ---
-sidebar_label: UGUI형 1:1 문의 SDK
-sidebar_position: 1
+sidebar_label: "UGUI형 1:1 문의 SDK"
+sidebar_position: "1"
+description: "UGUI형 1:1 문의"
 ---
 
 # UGUI형 1:1 문의

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[Deprecated] 채팅 메시지 수신 이벤트"
+description: "OnMatchChat"
 ---
 
 # OnMatchChat

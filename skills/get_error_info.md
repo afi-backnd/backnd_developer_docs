@@ -21,7 +21,7 @@ TheBackend SDK에서 발생하는 에러에 대한 설명과 해결 방법을 �
   "description": "잘못된 요청",
   "cause": "파라미터 형식이 올바르지 않음",
   "solution": "Param 객체의 키/값 형식을 확인하세요",
-  "reference_path": "sdk-docs/backend-new/02-base/08-common-errors/"
+  "reference_path": "sdk-docs/backend/02-base/08-common-errors/"
 }
 ```
 
@@ -29,8 +29,8 @@ TheBackend SDK에서 발생하는 에러에 대한 설명과 해결 방법을 �
 
 | 에러 유형 | 경로 |
 |---|---|
-| 전체 에러 코드 목록 | sdk-docs/backend-new/02-base/09-all-errors.md |
-| 자주 발생하는 에러 | sdk-docs/backend-new/02-base/08-common-errors/ |
+| 전체 에러 코드 목록 | sdk-docs/backend/02-base/09-all-errors.md |
+| 자주 발생하는 에러 | sdk-docs/backend/02-base/08-common-errors/ |
 | 채팅 SDK 에러 | sdk-docs/chat/12-error.md |
 | 언리얼 채팅 에러 | sdk-docs/unreal-chat/12-error.md |
 | 일반 Q&A | qna/troubleshooting.md |

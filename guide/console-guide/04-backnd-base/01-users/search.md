@@ -1,7 +1,9 @@
 ---
-sidebar_label: 유저 정보 조회
-sidebar_position: 2
+sidebar_label: "유저 정보 조회"
+sidebar_position: "2"
+description: "유저 관리 - 유저 정보 조회"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저 관리 - 유저 정보 조회

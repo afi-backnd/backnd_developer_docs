@@ -1,6 +1,7 @@
 ---
-sidebar_label: 임시공지 조회
-sidebar_position: 3
+sidebar_label: "임시공지 조회"
+sidebar_position: "3"
+description: "GetTempNotice"
 ---
 
 # GetTempNotice

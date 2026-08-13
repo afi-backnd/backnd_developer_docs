@@ -1,3 +1,7 @@
+---
+description: "Android 푸시 등록"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # Android 푸시 등록

@@ -1,6 +1,7 @@
 ---
-sidebar_label: Food Truck Venture 개요
-sidebar_position: 1
+sidebar_label: "Food Truck Venture 개요"
+sidebar_position: "1"
+description: "Food Truck Venture"
 ---
 
 # Food Truck Venture

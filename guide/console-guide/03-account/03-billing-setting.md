@@ -1,3 +1,7 @@
+---
+description: "결제 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 결제 관리

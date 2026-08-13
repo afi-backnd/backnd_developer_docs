@@ -2,22 +2,23 @@
 
 > AI agent와 LLM이 TheBackend 문서를 단일 컨텍스트로 소비할 수 있도록 핵심 내용을 모은 파일입니다.
 > 전체 원본: https://github.com/afi-backnd/backnd_developer_docs
-> 생성일: 2026-06-26
+> 생성일: 2026-08-13
 
 ---
 
 ## 베이스 SDK
 
-# backend-new 개요
+# backend 개요
 
 
 ## 하위 디렉터리
 
 | 디렉터리 | 설명 |
 |---|---|
-| [02-base/](./02-base/) | 02-base |
-| [03-match/](./03-match/) | 03-match |
-| [05-toolkit/](./05-toolkit/) | 05-toolkit |
+| [02-base/](./02-base/) | 뒤끝베이스 |
+| [03-match/](./03-match/) | 뒤끝매치 |
+| [04-chat/](./04-chat/) | [지원 종료] 뒤끝챗 |
+| [05-toolkit/](./05-toolkit/) | Toolkit |
 
 # 시작하기
 
@@ -40,7 +41,7 @@
 ## Step1. 최신 뒤끝 SDK 다운로드
 
 아래 뒤끝 SDK를 다운로드합니다. 뒤끝 베이스 SDK는 베이스 기능 외, 뒤끝매치 기능도 포함하고 있습니다.
-- <a href="https://developer.thebackend.io/sdk/unityPackage/6.0.1/BackndBase-6.0.1.unitypackage" id="download-sdk">BackndBase-6.0.1.unitypackage</a>&nbsp;[2025-10-31]
+- <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.13/Backend-5.18.13.unitypackage" id="download-sdk">Backend-5.18.13.unitypackage</a>&nbsp;[2026-08-13]
 
 **최초 설치인 경우**
 - Step2.로 이동합니다.
@@ -115,7 +116,7 @@ Unity Inspector는 `Unity 상단 메뉴 > The Backend > Edit Settings` 을 클�
  {
      // Start is called be
 
-> ... (전체 내용: sdk-docs/backend-new/02-base/01-start-up.md)
+> ... (전체 내용: sdk-docs/backend/02-base/01-start-up.md)
 
 ---
 
@@ -144,7 +145,7 @@ Unity Inspector는 `Unity 상단 메뉴 > The Backend > Edit Settings` 을 클�
 
 | 디렉터리 | 설명 |
 |---|---|
-| [02-install/](./02-install/) | 02-install |
+| [02-install/](./02-install/) | 설치 유의사항 |
 
 # 시작하기
 
@@ -284,14 +285,14 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
 
 | 디렉터리 | 설명 |
 |---|---|
-| [03-basic/](./03-basic/) | 03-basic |
-| [04-work-in-windows/](./04-work-in-windows/) | 04-work-in-windows |
-| [05-work-in-ios/](./05-work-in-ios/) | 05-work-in-ios |
-| [06-cli/](./06-cli/) | 06-cli |
-| [09-tutorial/](./09-tutorial/) | 09-tutorial |
-| [10-connect-with-base/](./10-connect-with-base/) | 10-connect-with-base |
-| [11-transfer-stream/](./11-transfer-stream/) | 11-transfer-stream |
-| [12-request/](./12-request/) | 12-request |
+| [03-basic/](./03-basic/) | 뒤끝펑션 기초 |
+| [04-work-in-windows/](./04-work-in-windows/) | 개발환경설정 (Windows) |
+| [05-work-in-ios/](./05-work-in-ios/) | 개발환경설정 (MacOS) |
+| [06-cli/](./06-cli/) | Backend CLI |
+| [09-tutorial/](./09-tutorial/) | 튜토리얼 |
+| [10-connect-with-base/](./10-connect-with-base/) | 뒤끝베이스와 통신 |
+| [11-transfer-stream/](./11-transfer-stream/) | Stream으로 변환 |
+| [12-request/](./12-request/) | 뒤끝기능요청 |
 
 # 시작하기
 
@@ -388,10 +389,10 @@ Visual Studio Code 내 확장에서 검색을 이용해 BackendFunction을 검�
 
 | 디렉터리 | 설명 |
 |---|---|
-| [02-getting-started/](./02-getting-started/) | 02-getting-started |
-| [04-components/](./04-components/) | 04-components |
-| [05-attributes/](./05-attributes/) | 05-attributes |
-| [06-advanced/](./06-advanced/) | 06-advanced |
+| [02-getting-started/](./02-getting-started/) | 시작하기 |
+| [04-components/](./04-components/) | Components |
+| [05-attributes/](./05-attributes/) | Attributes |
+| [06-advanced/](./06-advanced/) | Advanced |
 
 # 월드
 
@@ -988,12 +989,12 @@ Backend.Initialize(callback =>
 ## Q. 플레이어 데이터(게임 정보)는 어떻게 저장하나요?
 
 `Backend.GameData` 네임스페이스를 통해 서버에 JSON 형식으로 데이터를 저장합니다.
-자세한 내용은 [플레이어 데이터 문서](../sdk-docs/backend-new/02-base/)를 참고하세요.
+자세한 내용은 [플레이어 데이터 문서](../sdk-docs/backend/02-base/)를 참고하세요.
 
 ## Q. 랭킹 점수를 업데이트하는 방법은?
 
 `Backend.Rank`를 사용하여 점수를 저장하면 자동으로 순위가 계산됩니다.
-자세한 내용은 [랭킹 문서](../sdk-docs/backend-new/02-base/14-leaderboard/)를 참고하세요.
+자세한 내용은 [랭킹 문서](../sdk-docs/backend/02-base/14-leaderboard/)를 참고하세요.
 
 ## Q. 안드로이드 빌드 시 AGP 버전 관련 주의사항이 있나요?
 
@@ -1077,7 +1078,7 @@ Backend.Function.Call("함수이름", new Param(), callback =>
 });
 ```
 
-자세한 내용은 [베이스 SDK 펑션 호출 문서](../sdk-docs/backend-new/02-base/31-function/)를 참고하세요.
+자세한 내용은 [베이스 SDK 펑션 호출 문서](../sdk-docs/backend/02-base/31-function/)를 참고하세요.
 
 # TheBackend 시작하기 — Q&A
 
@@ -1139,4 +1140,4 @@ AGP(Android Gradle Plugin) 버전이 8.5 이하인 경우 `mainTemplate.gradle`�
 
 ## Q. 더 많은 오류 코드 정보는 어디서 찾나요?
 
-[전체 에러 코드 문서](../sdk-docs/backend-new/02-base/09-all-errors.md)를 참고하세요.
+[전체 에러 코드 문서](../sdk-docs/backend/02-base/09-all-errors.md)를 참고하세요.

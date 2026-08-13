@@ -1,7 +1,8 @@
 ---
-sidebar_label: 유저 차단
-draft: true
-unlisted: true
+sidebar_label: "유저 차단"
+draft: "true"
+unlisted: "true"
+description: "BlockUser"
 ---
 
 # BlockUser

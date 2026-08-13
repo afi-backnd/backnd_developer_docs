@@ -1,5 +1,6 @@
 ---
-sidebar_label: 구글 클라우드 플랫폼 설정
+sidebar_label: "구글 클라우드 플랫폼 설정"
+description: "구글 클라우드 플랫폼 설정"
 ---
 
 # 구글 클라우드 플랫폼 설정  

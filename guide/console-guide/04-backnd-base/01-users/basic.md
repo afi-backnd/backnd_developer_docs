@@ -1,7 +1,9 @@
 ---
-sidebar_label: 검색/생성/삭제
-sidebar_position: 2
+sidebar_label: "검색/생성/삭제"
+sidebar_position: "2"
+description: "유저 관리 - 검색/생성/삭제"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 유저 관리 - 검색/생성/삭제

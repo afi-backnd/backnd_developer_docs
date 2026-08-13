@@ -1,5 +1,6 @@
 ---
-sidebar_label: 타인의 데이터 불러오기
+sidebar_label: "타인의 데이터 불러오기"
+description: "GetOtherData"
 ---
 
 # GetOtherData

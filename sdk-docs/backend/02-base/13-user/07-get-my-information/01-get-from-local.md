@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 정보 조회(로컬)
+sidebar_label: "유저 정보 조회(로컬)"
+description: "로컬에 저장된 유저 정보 조회"
 ---
 
 # 로컬에 저장된 유저 정보 조회

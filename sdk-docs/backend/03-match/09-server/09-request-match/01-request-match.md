@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 신청
+sidebar_label: "매칭 신청"
+description: "RequestMatchMaking"
 ---
 
 # RequestMatchMaking

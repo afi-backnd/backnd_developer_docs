@@ -1,7 +1,8 @@
 ---
-sidebar_label: 귓속말 메시지 송신
-draft: true
-unlisted: true
+sidebar_label: "귓속말 메시지 송신"
+draft: "true"
+unlisted: "true"
+description: "Whisper"
 ---
 
 # Whisper

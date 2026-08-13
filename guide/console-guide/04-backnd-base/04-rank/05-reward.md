@@ -1,7 +1,9 @@
 ---
-sidebar_label: 보상
-sidebar_position: 5
+sidebar_label: "보상"
+sidebar_position: "5"
+description: "보상"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 보상

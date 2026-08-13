@@ -1,5 +1,6 @@
 ---
-sidebar_label: 로컬에 저장된 게스트 ID 조회
+sidebar_label: "로컬에 저장된 게스트 ID 조회"
+description: "GetGuestID"
 ---
 
 # GetGuestID

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 랭킹 우편 불러오기
+sidebar_label: "랭킹 우편 불러오기"
+description: "GetPostList(PostType.Rank)"
 ---
 
 # GetPostList(PostType.Rank)

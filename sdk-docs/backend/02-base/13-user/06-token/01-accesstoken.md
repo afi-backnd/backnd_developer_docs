@@ -1,3 +1,7 @@
+---
+description: "AccessToken"
+---
+
 # AccessToken
 **AccessToken은 뒤끝에서 유저를 인증하기 위한 수단으로 사용되는 값**입니다.  
 뒤끝의 다양한 기능들을 호출할 때 이를 이용하여 유저를 인증/식별합니다.  

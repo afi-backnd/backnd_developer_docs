@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+description: "공통 에러 처리 예제"
 ---
 
 # 공통 에러 처리 예제

@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 차트 내용 조회"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetChartContents"
 ---
 
 # [Deprecated] GetChartContents

@@ -1,7 +1,9 @@
 ---
-sidebar_label: 리더보드 상세 조회
-sidebar_position: 4
+sidebar_label: "리더보드 상세 조회"
+sidebar_position: "4"
+description: "리더보드 상세 조회"
 ---
+
 # 리더보드 상세 조회
 
 리더보드 상세 페이지에서 리더보드와 보상 우편 정보, 현재 및 과거 기록을 확인할 수 있습니다.

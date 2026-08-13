@@ -1,5 +1,6 @@
 ---
-sidebar_label: 프로젝트 상태 변경 핸들러
+sidebar_label: "프로젝트 상태 변경 핸들러"
+description: "OnServerStatusChanged"
 ---
 
 # OnServerStatusChanged

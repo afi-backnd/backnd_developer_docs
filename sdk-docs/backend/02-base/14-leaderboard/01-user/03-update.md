@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 리더보드 갱신
+sidebar_label: "유저 리더보드 갱신"
+description: "UpdateMyDataAndRefreshLeaderboard"
 ---
 
 # UpdateMyDataAndRefreshLeaderboard

@@ -1,6 +1,7 @@
 ---
-sidebar_label: 서버 점검 에러 핸들러
-sidebar_position: 3
+sidebar_label: "서버 점검 에러 핸들러"
+sidebar_position: "3"
+description: "OnMaintenanceError"
 ---
 
 # OnMaintenanceError

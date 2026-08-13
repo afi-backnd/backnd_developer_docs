@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 모든 차트 저장 V2"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "[Deprecated] GetAllChartAndSaveV2"
 ---
 
 # [Deprecated] GetAllChartAndSaveV2

@@ -1,8 +1,9 @@
 ---
 sidebar_label: "[Deprecated] 길드 메타 데이터 변경(4시~5시 갱신불가)"
-sidebar_position: 1.1
-draft: true
-unlisted: true
+sidebar_position: "1.1"
+draft: "true"
+unlisted: "true"
+description: "ModifyGuildV4"
 ---
 
 # ModifyGuildV4

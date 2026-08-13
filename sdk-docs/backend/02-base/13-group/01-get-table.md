@@ -1,5 +1,6 @@
 ---
-sidebar_label: 그룹 리스트 불러오기
+sidebar_label: "그룹 리스트 불러오기"
+description: "Table.Get"
 ---
 
 # Table.Get

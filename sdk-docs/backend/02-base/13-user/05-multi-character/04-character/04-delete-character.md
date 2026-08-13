@@ -1,5 +1,6 @@
 ---
-sidebar_label: 캐릭터 삭제
+sidebar_label: "캐릭터 삭제"
+description: "DeleteCharacter"
 ---
 
 # DeleteCharacter

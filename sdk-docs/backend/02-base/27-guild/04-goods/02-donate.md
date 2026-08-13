@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 굿즈 기부"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "ContributeGoodsV3"
 ---
 
 # ContributeGoodsV3

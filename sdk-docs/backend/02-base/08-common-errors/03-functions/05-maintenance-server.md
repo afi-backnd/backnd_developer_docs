@@ -1,6 +1,7 @@
 ---
-sidebar_label: 서버 상태 점검중
-sidebar_position: 5
+sidebar_label: "서버 상태 점검중"
+sidebar_position: "5"
+description: "IsMaintenanceError"
 ---
 
 # IsMaintenanceError

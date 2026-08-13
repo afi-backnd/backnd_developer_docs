@@ -1,7 +1,8 @@
 ---
-sidebar_label: 유저 목록 이벤트
-draft: true
-unlisted: true
+sidebar_label: "유저 목록 이벤트"
+draft: "true"
+unlisted: "true"
+description: "OnSessionListInChannel"
 ---
 
 # OnSessionListInChannel

@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 2. 게임 로그 저장하기
+sidebar_label: "Step 2. 게임 로그 저장하기"
+description: "게임 로그 저장하기"
 ---
-
-
 
 # 게임 로그 저장하기
 

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 로컬에 저장된 게스트 정보 삭제
+sidebar_label: "로컬에 저장된 게스트 정보 삭제"
+description: "DeleteGuestInfo"
 ---
 
 # DeleteGuestInfo

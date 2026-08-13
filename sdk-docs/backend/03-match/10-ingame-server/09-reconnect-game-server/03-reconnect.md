@@ -1,5 +1,6 @@
 ---
-sidebar_label: 재접속 요청
+sidebar_label: "재접속 요청"
+description: "JoinGameServer"
 ---
 
 # JoinGameServer

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 영수증 검증을 통한 TBC 충전
+sidebar_label: "영수증 검증을 통한 TBC 충전"
+description: "ChargeTBC"
 ---
 
 # ChargeTBC

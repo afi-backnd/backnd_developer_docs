@@ -1,7 +1,8 @@
 ---
 sidebar_label: "과거 순위 확인"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "GetPastRankList"
 ---
 
 # GetPastRankList

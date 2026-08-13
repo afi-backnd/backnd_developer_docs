@@ -1,5 +1,6 @@
 ---
-title: 설정
+title: "설정"
+description: "설정"
 ---
 
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';

@@ -1,3 +1,7 @@
+---
+description: "이벤트(구버전)"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 이벤트(구버전)

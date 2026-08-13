@@ -1,6 +1,7 @@
 ---
-sidebar_label: 웹숍 우편 불러오기
-sidebar_position: 3.1
+sidebar_label: "웹숍 우편 불러오기"
+sidebar_position: "3.1"
+description: "GetPostList(PostType.Webshop)"
 ---
 
 # GetPostList(PostType.Webshop)

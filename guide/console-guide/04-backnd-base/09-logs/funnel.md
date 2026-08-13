@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "퍼널 분석"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 퍼널 분석

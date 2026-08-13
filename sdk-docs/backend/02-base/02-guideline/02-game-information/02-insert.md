@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 2. 게임 정보 삽입 구현하기
+sidebar_label: "Step 2. 게임 정보 삽입 구현하기"
+description: "게임 정보 삽입 구현하기"
 ---
-
-
 
 # 게임 정보 삽입 구현하기
 

@@ -1,3 +1,7 @@
+---
+description: "앱 스토어"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 앱 스토어

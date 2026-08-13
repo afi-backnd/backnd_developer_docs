@@ -1,5 +1,6 @@
 ---
-sidebar_label: 길드 가입 승인
+sidebar_label: "길드 가입 승인"
+description: "ApproveApplicantV3"
 ---
 
 # ApproveApplicantV3

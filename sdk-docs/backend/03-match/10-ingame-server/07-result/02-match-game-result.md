@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임 결과 이벤트
+sidebar_label: "게임 결과 이벤트"
+description: "OnMatchResult"
 ---
 
 # OnMatchResult

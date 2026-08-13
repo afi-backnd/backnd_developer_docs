@@ -1,5 +1,6 @@
 ---
-sidebar_label: 매칭 서버 접속 이벤트
+sidebar_label: "매칭 서버 접속 이벤트"
+description: "OnJoinMatchMakingServer"
 ---
 
 # OnJoinMatchMakingServer

@@ -1,3 +1,7 @@
+---
+description: "대시보드"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 대시보드

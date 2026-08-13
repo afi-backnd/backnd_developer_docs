@@ -1,7 +1,8 @@
 ---
-sidebar_label: 길드 채널 접속 이벤트
-draft: true
-unlisted: true
+sidebar_label: "길드 채널 접속 이벤트"
+draft: "true"
+unlisted: "true"
+description: "OnJoinGuildChannel"
 ---
 
 # OnJoinGuildChannel

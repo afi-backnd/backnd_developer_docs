@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 3. 차트 정보 가져오기
+sidebar_label: "Step 3. 차트 정보 가져오기"
+description: "차트 정보 가져오기"
 ---
-
-
 
 # 차트 정보 가져오기
 

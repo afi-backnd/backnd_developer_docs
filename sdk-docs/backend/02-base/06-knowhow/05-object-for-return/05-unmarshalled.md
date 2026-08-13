@@ -1,5 +1,6 @@
 ---
-sidebar_label: 언마샬(데이터 자료형 지우기)
+sidebar_label: "언마샬(데이터 자료형 지우기)"
+description: "Flatten"
 ---
 
 # Flatten

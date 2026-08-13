@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 삭제 이벤트
+sidebar_label: "대기방 삭제 이벤트"
+description: "OnMatchMakingRoomDestory"
 ---
 
 # OnMatchMakingRoomDestory

@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 4. 우편 개별 수령 및 저장하기
+sidebar_label: "Step 4. 우편 개별 수령 및 저장하기"
+description: "우편 개별 수령 및 저장하기"
 ---
-
-
 
 # 우편 개별 수령 및 저장하기
 

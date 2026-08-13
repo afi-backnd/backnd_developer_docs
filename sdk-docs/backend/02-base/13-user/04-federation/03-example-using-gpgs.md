@@ -1,5 +1,6 @@
 ---
 sidebar_label: "[deprecated] GPGS V1 인증 예제"
+description: "Google Play Game Service(GPGS) 사용"
 ---
 
 # Google Play Game Service(GPGS) 사용

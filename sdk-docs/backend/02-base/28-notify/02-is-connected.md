@@ -1,6 +1,7 @@
 ---
-sidebar_label: 연결 상태 확인
-sidebar_position: 2.5
+sidebar_label: "연결 상태 확인"
+sidebar_position: "2.5"
+description: "IsConnected"
 ---
 
 # IsConnected

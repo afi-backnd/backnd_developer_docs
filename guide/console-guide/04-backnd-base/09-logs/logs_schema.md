@@ -1,6 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: "3"
+description: "스키마 관리"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 스키마 관리

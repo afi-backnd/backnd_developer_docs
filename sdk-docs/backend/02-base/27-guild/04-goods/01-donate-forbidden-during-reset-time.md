@@ -1,10 +1,12 @@
 ---
 sidebar_label: "굿즈 기부(리더 보드 초기화 시간 갱신 불가)"
+description: "ContributeGoodsV5"
 ---
 
 # ContributeGoodsV5
 
-public BackendReturnObject **ContributeGoodsV5**(goodsType **type**, int **amount**);
+public BackendReturnObject **ContributeGoodsV5**(goodsType **type**, int **amount**);  
+public BackendReturnObject **ContributeGoodsV5**(goodsType **type**, double **amount**);
 
 :::info 안내
 해당 함수는 랭킹 정산 에러를 방지하기 위해 리더보드 정산 시간을 제외한 시간에만 굿즈를 기부하는 함수입니다.  
@@ -16,7 +18,7 @@ public BackendReturnObject **ContributeGoodsV5**(goodsType **type**, int **amoun
 | Value  | Type             | Description                                     |
 | ------ | ---------------- | ----------------------------------------------- |
 | type   | goodsType(enum) | 기부할 재화의 종류. goodsType.goodsN(N : 1~10) |
-| amount | int              | 기부할 금액의 양. 양수만 허용.                  |
+| amount | int, double      | 기부할 금액의 양. 양수만 허용.                  |
 
 ## 설명
 
@@ -29,12 +31,18 @@ public BackendReturnObject **ContributeGoodsV5**(goodsType **type**, int **amoun
 
 ContributeGoodsV3, ContributeGoodsV4와 사용법은 동일합니다.  
 
+SDK 5.18.13부터 double 타입 amount를 사용할 수 있습니다.  
+int 범위를 초과하는 큰 수치의 재화를 기부할 때 사용해 주세요. amount는 정수 값으로 처리되므로 소수점 이하 값은 버림 처리될 수 있습니다.  
+
 ## Example
 
 ### 동기
 
 ```js
 Backend.Guild.ContributeGoodsV5(goodsType.goods1, 20);
+
+// int 범위를 초과하는 값은 double 타입으로 전달할 수 있습니다.
+Backend.Guild.ContributeGoodsV5(goodsType.goods1, 5000000000d);
 ```
 
 ### 비동기

@@ -1,9 +1,9 @@
 ---
 sidebar_label: "[Deprecated] 약관 및 정책"
-sidebar_position: 8
-
-draft: true
-unlisted: true
+sidebar_position: "8"
+draft: "true"
+unlisted: "true"
+description: "[deprecated] GetPolicy"
 ---
 
 # [deprecated] GetPolicy

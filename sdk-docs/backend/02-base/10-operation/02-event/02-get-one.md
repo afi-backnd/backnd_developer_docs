@@ -1,6 +1,7 @@
 ---
-sidebar_label: 이벤트 하나 조회
-sidebar_position: 2
+sidebar_label: "이벤트 하나 조회"
+sidebar_position: "2"
+description: "EventOneV2"
 ---
 
 # EventOneV2

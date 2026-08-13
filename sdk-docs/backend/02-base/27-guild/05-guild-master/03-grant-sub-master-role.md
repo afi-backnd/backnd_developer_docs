@@ -1,5 +1,6 @@
 ---
-sidebar_label: 부 길드 마스터 지정
+sidebar_label: "부 길드 마스터 지정"
+description: "NominateViceMasterV3"
 ---
 
 # NominateViceMasterV3

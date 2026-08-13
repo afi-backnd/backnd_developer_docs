@@ -1,7 +1,8 @@
 ---
-sidebar_label: 도배 방지 문구 설정
-draft: true
-unlisted: true
+sidebar_label: "도배 방지 문구 설정"
+draft: "true"
+unlisted: "true"
+description: "SetRepeatedChatBlockMessage"
 ---
 
 # SetRepeatedChatBlockMessage

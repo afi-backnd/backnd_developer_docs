@@ -1,5 +1,6 @@
 ---
-sidebar_label: 토큰 갱신
+sidebar_label: "토큰 갱신"
+description: "RefreshTheBackendToken"
 ---
 
 # RefreshTheBackendToken

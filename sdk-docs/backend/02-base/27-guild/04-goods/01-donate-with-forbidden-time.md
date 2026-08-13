@@ -1,8 +1,9 @@
 ---
 sidebar_label: "[Deprecated] 굿즈 기부(4시~5시 갱신불가)"
-sidebar_position: 1.1
-draft: true
-unlisted: true
+sidebar_position: "1.1"
+draft: "true"
+unlisted: "true"
+description: "ContributeGoodsV4"
 ---
 
 # ContributeGoodsV4

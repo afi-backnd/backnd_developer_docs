@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 데이터 연산하기
+sidebar_label: "유저 데이터 연산하기"
+description: "UpdateDataWithCalculation"
 ---
 
 # UpdateDataWithCalculation

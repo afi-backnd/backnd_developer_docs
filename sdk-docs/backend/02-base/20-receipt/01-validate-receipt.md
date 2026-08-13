@@ -1,5 +1,6 @@
 ---
-sidebar_label: 영수증 검증
+sidebar_label: "영수증 검증"
+description: "ValidateReceipt"
 ---
 
 # ValidateReceipt
@@ -284,7 +285,7 @@ BackendReturnObject bro = Backend.Receipt.ValidateReceipt(param);
 
 #### 플랫폼별 에러
 
-영수증 토큰 검증 시 플랫폼별로 `details` 필드가 포함된 응답이 반환됩니다. `details`를 통해 에러의 구체적인 원인을 확인할 수 있습니다.
+영수증 토큰 검증 시 플랫폼별로 `errorData` 필드가 포함된 응답이 반환됩니다. `errorData`를 통해 에러의 구체적인 원인을 확인할 수 있습니다.
 
 ##### Android
 
@@ -424,14 +425,14 @@ JWT 수정 여부는 바로 적용이 안될 수 있어 1~2시간 후에 다시 
 
 | 필드 | 설명 |
 | ---- | ---- |
-| details.receiptInfo.inDate | 최초 영수증 검증 시각 |
-| details.receiptInfo.details | 최초 검증 시 `AddDetail`로 저장한 상세 정보 <br/> (itemId, itemName 등이 JSON string으로 포함) |
+| errorData.receiptInfo.inDate | 최초 영수증 검증 시각 |
+| errorData.receiptInfo.details | 최초 검증 시 `AddDetail`로 저장한 상세 정보 <br/> (itemId, itemName 등이 JSON string으로 포함) |
 
 ### UsedReceipt를 활용한 상품 재지급
 
 영수증 검증은 완료되었지만 상품 지급 전에 앱이 종료된 경우(앱 크래시, 네트워크 끊김 등), 앱 재시작 시 동일한 영수증으로 다시 검증을 요청하면 `UsedReceipt`가 반환됩니다.
 
-이때 응답의 `details.receiptInfo.details`에 포함된 게임 아이템 정보(`itemId`, `itemName`)를 파싱하여 **미지급된 상품을 재지급**할 수 있습니다.
+이때 응답의 `errorData.receiptInfo.details`에 포함된 게임 아이템 정보(`itemId`, `itemName`)를 파싱하여 **미지급된 상품을 재지급**할 수 있습니다.
 
 ```js
 Backend.Receipt.ValidateReceipt(param, bro =>
@@ -448,7 +449,7 @@ Backend.Receipt.ValidateReceipt(param, bro =>
     {
         // 이미 검증된 영수증 → details에서 아이템 정보를 확인하여 상품 재지급
         var returnValue = bro.GetReturnValuetoJSON();
-        var detailsJson = returnValue["details"]["receiptInfo"]["details"].ToString();
+        var detailsJson = returnValue["errorData"]["receiptInfo"]["details"].ToString();
 
         // details를 파싱하여 게임 아이템 ID와 이름 추출
         var detailData = JsonMapper.ToObject(detailsJson);

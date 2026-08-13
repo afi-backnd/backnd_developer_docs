@@ -1,6 +1,7 @@
 ---
-sidebar_label: 1대1 문의 인증코드 받기
-sidebar_position: 2
+sidebar_label: "1대1 문의 인증코드 받기"
+sidebar_position: "2"
+description: "GetQuestionAuthorize"
 ---
 
 # GetQuestionAuthorize

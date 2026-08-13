@@ -1,6 +1,7 @@
 ---
-sidebar_label: 클라이언트 요청 실패
-sidebar_position: 2
+sidebar_label: "클라이언트 요청 실패"
+sidebar_position: "2"
+description: "IsClientRequestFailError"
 ---
 
 # IsClientRequestFailError

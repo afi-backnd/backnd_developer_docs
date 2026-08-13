@@ -1,5 +1,6 @@
 ---
-sidebar_label: 친구 요청 받은 리스트 조회
+sidebar_label: "친구 요청 받은 리스트 조회"
+description: "GetReceivedRequestList"
 ---
 
 # GetReceivedRequestList

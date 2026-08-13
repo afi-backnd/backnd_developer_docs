@@ -1,6 +1,7 @@
 ---
-sidebar_label: 배드 엑세스토큰
-sidebar_position: 4
+sidebar_label: "배드 엑세스토큰"
+sidebar_position: "4"
+description: "IsBadaccessTokenError"
 ---
 
 # IsBadaccessTokenError  

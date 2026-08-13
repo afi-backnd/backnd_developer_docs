@@ -1,5 +1,6 @@
 ---
-sidebar_label: 게임방 접속 이벤트
+sidebar_label: "게임방 접속 이벤트"
+description: "OnMatchInGameAccess"
 ---
 
 # OnMatchInGameAccess

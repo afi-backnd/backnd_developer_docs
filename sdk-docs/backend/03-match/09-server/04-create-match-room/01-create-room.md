@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 생성요청
+sidebar_label: "대기방 생성요청"
+description: "CreateMatchRoom"
 ---
 
 # CreateMatchRoom

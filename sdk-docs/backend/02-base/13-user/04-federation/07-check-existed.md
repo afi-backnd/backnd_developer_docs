@@ -1,5 +1,6 @@
 ---
-sidebar_label: 뒤끝 가입 여부 확인(페더레이션)
+sidebar_label: "뒤끝 가입 여부 확인(페더레이션)"
+description: "CheckUserInBackend"
 ---
 
 # CheckUserInBackend

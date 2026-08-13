@@ -1,5 +1,6 @@
 ---
-sidebar_label: Apple 로그인 인증 예제
+sidebar_label: "Apple 로그인 인증 예제"
+description: "Sign In with Apple(Apple로 로그인) 사용"
 ---
 
 # Sign In with Apple(Apple로 로그인) 사용

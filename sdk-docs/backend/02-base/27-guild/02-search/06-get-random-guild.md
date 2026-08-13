@@ -1,7 +1,8 @@
 ---
 sidebar_label: "[Deprecated] 길드 랜덤 조회"
-draft: true
-unlisted: true
+draft: "true"
+unlisted: "true"
+description: "GetRandomGuildInfoV3"
 ---
 
 # GetRandomGuildInfoV3

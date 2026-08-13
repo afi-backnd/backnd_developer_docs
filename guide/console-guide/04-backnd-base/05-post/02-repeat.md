@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "반복 우편"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 반복 우편

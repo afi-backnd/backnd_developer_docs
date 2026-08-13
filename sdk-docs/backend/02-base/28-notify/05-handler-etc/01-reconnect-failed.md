@@ -1,5 +1,6 @@
 ---
-sidebar_label: 재연결 실패 핸들러
+sidebar_label: "재연결 실패 핸들러"
+description: "OnReconnectFailed"
 ---
 
 # OnReconnectFailed

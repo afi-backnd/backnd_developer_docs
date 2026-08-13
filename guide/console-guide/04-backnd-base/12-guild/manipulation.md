@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: "1"
+description: "길드 관리"
 ---
+
 # 길드 관리
 
 뒤끝 콘솔의 '길드'에서는 유저가 생성한 길드를 관리할 수 있습니다.  

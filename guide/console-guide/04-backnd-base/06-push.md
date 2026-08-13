@@ -1,3 +1,7 @@
+---
+description: "푸시 알림"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 푸시 알림

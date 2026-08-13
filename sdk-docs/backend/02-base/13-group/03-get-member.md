@@ -1,5 +1,6 @@
 ---
-sidebar_label: 그룹 내 유저 리스트 불러오기
+sidebar_label: "그룹 내 유저 리스트 불러오기"
+description: "Member.Get"
 ---
 
 # Member.Get

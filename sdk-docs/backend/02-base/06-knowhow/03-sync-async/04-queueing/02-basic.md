@@ -1,3 +1,7 @@
+---
+description: "SendQueue 사용법"
+---
+
 # SendQueue 사용법
 
 SendQueue를 사용하기 위해 SendQueue 및 스레드를 초기화, 중지, 재시작 등을 하는 사용법입니다.  

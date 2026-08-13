@@ -1,6 +1,7 @@
 ---
-sidebar_label: 길드명 변경
-sidebar_position: 1.1
+sidebar_label: "길드명 변경"
+sidebar_position: "1.1"
+description: "UpdateGuildName"
 ---
 
 # UpdateGuildName

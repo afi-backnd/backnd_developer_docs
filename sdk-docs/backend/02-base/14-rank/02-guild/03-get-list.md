@@ -1,7 +1,8 @@
 ---
-sidebar_label: 길드 랭킹 리스트 조회
-draft: true
-unlisted: true
+sidebar_label: "길드 랭킹 리스트 조회"
+draft: "true"
+unlisted: "true"
+description: "GetRankList"
 ---
 
 # GetRankList

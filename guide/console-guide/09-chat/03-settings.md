@@ -1,3 +1,7 @@
+---
+description: "설정"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 설정

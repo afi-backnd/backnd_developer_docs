@@ -1,3 +1,7 @@
+---
+description: "관리자 계정 관리"
+---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 관리자 계정 관리

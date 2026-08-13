@@ -1,5 +1,6 @@
 ---
-title: 월드 서버
+title: "월드 서버"
+description: "월드 서버"
 ---
 
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';

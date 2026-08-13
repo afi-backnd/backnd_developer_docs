@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 5. 우편 전체 수령 및 저장하기
+sidebar_label: "Step 5. 우편 전체 수령 및 저장하기"
+description: "우편 전체 수령 및 저장하기"
 ---
-
-
 
 # 우편 전체 수령 및 저장하기
 

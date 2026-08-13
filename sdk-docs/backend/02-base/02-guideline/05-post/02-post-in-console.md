@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 2. 콘솔에서 우편 발송하기
+sidebar_label: "Step 2. 콘솔에서 우편 발송하기"
+description: "콘솔에서 우편 발송하기"
 ---
-
-
 
 # 콘솔에서 우편 발송하기
 

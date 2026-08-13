@@ -1,5 +1,6 @@
 ---
-sidebar_label: 유저 입장 이벤트 이벤트
+sidebar_label: "유저 입장 이벤트 이벤트"
+description: "OnMatchMakingRoomJoin"
 ---
 
 # OnMatchMakingRoomJoin

@@ -1,5 +1,6 @@
 ---
-sidebar_label: TBC로 아이템 구매
+sidebar_label: "TBC로 아이템 구매"
+description: "UseTBC"
 ---
 
 # UseTBC

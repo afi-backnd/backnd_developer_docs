@@ -1,3 +1,7 @@
+---
+description: "뒤끝 애플 로그인 SDK"
+---
+
 # 뒤끝 애플 로그인 SDK
 
 :::info ios 미지원 안내

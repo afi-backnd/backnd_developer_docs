@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: "2"
+description: "웹 쿠폰 설정"
 ---
+
 import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 웹 쿠폰 설정

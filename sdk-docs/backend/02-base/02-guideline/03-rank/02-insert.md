@@ -1,8 +1,7 @@
 ---
-sidebar_label: Step 2. 랭킹 등록하기
+sidebar_label: "Step 2. 랭킹 등록하기"
+description: "랭킹 등록하기"
 ---
-
-
 
 # 랭킹 등록하기
 

@@ -1,5 +1,6 @@
 ---
-sidebar_label: 쿼리로 전체 데이터 조회
+sidebar_label: "쿼리로 전체 데이터 조회"
+description: "Get"
 ---
 
 # Get

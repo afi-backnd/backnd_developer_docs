@@ -1,5 +1,6 @@
 ---
-sidebar_label: 대기방 퇴장 요청
+sidebar_label: "대기방 퇴장 요청"
+description: "LeaveMatchRoom"
 ---
 
 # LeaveMatchRoom

@@ -1,5 +1,6 @@
 ---
 sidebar_label: "확률 테이블 조회"
+description: "Backend.CDN.Probability.Table.Get"
 ---
 
 # Backend.CDN.Probability.Table.Get
