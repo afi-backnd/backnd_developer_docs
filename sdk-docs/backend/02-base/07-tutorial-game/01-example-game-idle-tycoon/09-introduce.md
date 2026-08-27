@@ -70,7 +70,7 @@ BackndUserInfo.cs    //파일명
 
 ### 유저 정보 가져오기 
 GetUserInfo 함수를 사용하여 뒤끝 콘솔에서 유저 정보를 얻어옵니다.  
-더 자세한 설명은 [유저 정보 가져오기](sdk-docs/backend/base/user/get-my-information/get-from-server-v2)에서 확인 가능합니다.
+더 자세한 설명은 [유저 정보 가져오기](/sdk-docs/backend/base/user/get-my-information/get-from-server-v2)에서 확인 가능합니다.
 
 유저 정보 가져오기 부분이 구현되어 있는 부분은 아래와 같습니다.  
 ```
@@ -91,7 +91,7 @@ BackndUserInfo.cs    //파일명
 스테이지 업그레이드 : 현재 스테이지에서 영구적인 버프 제공  
 게임 내 모든 아이템 : 아이템 데이터를 저장하여 게임 내 교차 검증 및 우편 시스템을 통해 아이템 지급 시 활용  
 
-구현된 차트의 자세한 사용 설명은 [차트 테이블 조회](/sdk-docs/backend/base/content/chart/chart-table)와 [차트 내용 조회](/sdk-docs/backend/base/content/chart/chart-content)에서 확인 해주세요.  
+구현된 차트의 자세한 사용 설명은 [차트 테이블 조회](/sdk-docs/backend/base/chart/chart-table)와 [차트 내용 조회](/sdk-docs/backend/base/chart/chart-content)에서 확인 해주세요.  
 
 차트를 불러오는 부분과 스크립터블 오브젝트에 저장하는 부분이 구현된 부분은 아래와 같습니다.  
 ```
@@ -107,7 +107,7 @@ SO_ChartData.cs
 
 플레이어가 특정 재화를 사용하여 확률형 아이템을 구매할 경우 확률에 따라서 도출된 등급과 종류의 아이템을 지급하게 됩니다.  
 
-구현된 차트의 자세한 설명은 [확률 테이블 조회](/sdk-docs/backend/base/content/probability/probability-table)와 [뽑기 확률 내용 조회](/sdk-docs/backend/base/content/probability/probability-content)에서 확인 해주세요.  
+구현된 차트의 자세한 설명은 [확률 테이블 조회](/sdk-docs/backend/base/probability/probability-table)와 [뽑기 확률 내용 조회](/sdk-docs/backend/base/probability/probability-content)에서 확인 해주세요.  
 
 ```
 확률 불러오기

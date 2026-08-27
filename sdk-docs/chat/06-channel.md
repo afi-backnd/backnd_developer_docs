@@ -41,10 +41,10 @@ public void OnJoinChannel(ChannelInfo channelInfo)
     // channelInfo: 채널 정보, 유저 목록, 이전 메시지 포함
 }
 
-// 채널 퇴장 완료 시 호출
+// 명시적으로 채널을 나가거나 연결이 끊겨 재연결을 시작할 때, 또는 ChatClient.Dispose()를 호출할 때 호출
 public void OnLeaveChannel(ChannelInfo channelInfo)
 {
-    // channelInfo: 퇴장한 채널의 정보
+    // 재연결에 성공하면 같은 채널에 대해 OnJoinChannel이 다시 호출될 수 있습니다.
 }
 
 // 다른 유저가 채널에 입장할 때 호출
@@ -68,6 +68,10 @@ public void OnLeaveChannelPlayer(
 }
 ```
 
+:::caution 호출 시점
+채널 생성 및 입장 함수는 채팅 서버 연결이 완료된 상태에서만 처리됩니다. `ChatClient` 생성 직후 호출하면 요청이 처리되지 않으므로, 기본 채널의 `OnJoinChannel` 콜백 등 연결 완료 이후 시점에 호출하세요.
+:::
+
 ### 호출 함수
 
 ```csharp
@@ -85,8 +89,8 @@ ChatClient.SendJoinOpenChannel(string channelGroup, string channelName)
 // 프라이빗 채널 타입의 채널 입장 함수 입니다. 채널 그룹, 채널 번호를 넣어서 보내 줍니다.
 ChatClient.SendJoinPrivateChannel(string channelGroup, ulong channelNumber, string password = "")
 
-// 채널에서 나가는 함수 입니다. 채널 그룹, 채널 이름, 채널 번호를 넣어서 보내 줍니다.
-ChatClient.SendLeaveChannel(string channelGroup, string channelName, UInt64 channelNumber = 0)
+// 채널에서 나가는 함수 입니다. 채널 그룹, 채널 이름, 0이 아닌 채널 번호를 넣어서 보내 줍니다.
+ChatClient.SendLeaveChannel(string channelGroup, string channelName, UInt64 channelNumber)
 ```
 
 ```csharp

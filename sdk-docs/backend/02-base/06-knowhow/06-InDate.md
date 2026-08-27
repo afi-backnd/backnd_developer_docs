@@ -26,7 +26,7 @@ inDate를 조회하는 다양한 방법은 아래 개발자 문서를 참고해�
 | --- | --- | --- |
 | [유저 자신의 inDate 값 확인](/sdk-docs/backend/base/user/get-my-information/get-from-local)| UserIndate | 로그인 한 유저의 inDate |
 | [다른 유저의 inDate 값 확인](/sdk-docs/backend/base/find-user/find-by-nickname)| inDate | 검색한 유저의 inDate |
-| [랭킹 리스트 조회](/sdk-docs/backend/base/rank/user/get-list)| gamerIndate | 해당 랭커의 inDate |
+| [랭킹 리스트 조회](/sdk-docs/backend/base/leaderboard/user/get-list)| gamerIndate | 해당 랭커의 inDate |
 | [게임 정보 조회](/sdk-docs/backend/base/game-information/get-all/using-query) | owner_inDate | 해당 row를 소유한 유저의 inDate |
 | [친구 리스트 조회](/sdk-docs/backend/base/friend/list-friends) | inDate | 친구의 inDate |
 | [우편 리스트 조회](/sdk-docs/backend/base/post/difference-to-old#구버전-코드post) | receiverInDate | 수신인의 inDate |

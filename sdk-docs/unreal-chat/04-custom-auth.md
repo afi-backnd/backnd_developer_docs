@@ -108,7 +108,7 @@ token: USER_TOKEN
 ```
 
 유저 간 차단 기능을 사용하시려면 `blockedPlayers`에 차단 된 유저의 `uid`와 `nickname`을 포함 해 주시면 서버에서 채팅 차단 처리가 가능 해 집니다.  
-자세한 내용은 ([유저](sdk-docs/unreal-chat/user)) 에서 확인 해 주시길 바랍니다.
+자세한 내용은 ([유저](/sdk-docs/unreal-chat/user)) 에서 확인 해 주시길 바랍니다.
 ```json title="Status: 200 OK"
 {
     "nickname": "john doe",

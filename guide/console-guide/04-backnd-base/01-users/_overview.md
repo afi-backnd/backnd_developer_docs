@@ -8,5 +8,6 @@
 | 파일 | 설명 |
 |---|---|
 | [basic.md](./basic.md) | 유저 관리 - 검색/생성/삭제 |
+| [multi-character.md](./multi-character.md) | 유저 관리 - 멀티 캐릭터 |
 | [search.md](./search.md) | 유저 관리 - 유저 정보 조회 |
 | [usercopy.md](./usercopy.md) | 유저 관리 - 유저 복사 |

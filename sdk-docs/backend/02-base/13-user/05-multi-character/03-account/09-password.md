@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "비밀번호 관리"
 description: "ConfirmCustomPassword"
 ---

@@ -103,7 +103,7 @@ void Test()
 <img src="https://developer.thebackend.io/static/img/outline/manual/beginner/rank/get-success-log.png" />
 
 이때 로그에서 **'랭킹에 업데이트된 유저의 정보'**가 표시되어야 함수 호출에 성공한 것입니다.  
-해당 로그 외에 statusCode : 400, 404, 409 에러등이 발생할 경우에는 [GetRankList 에러케이스](/sdk-docs/backend/base/rank/user/get-list)를 통해 어떠한 에러로 문제가 발생하였는지 확인할 수 있습니다.  
+해당 로그 외에 statusCode : 400, 404, 409 에러등이 발생할 경우에는 [GetRankList 에러케이스](/sdk-docs/backend/base/leaderboard/user/get-list)를 통해 어떠한 에러로 문제가 발생하였는지 확인할 수 있습니다.  
 
 ### 에러케이스
 

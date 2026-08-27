@@ -14,7 +14,7 @@ public TransactionValue **SetUpdate**(string **tableName**, Where **where**, Par
 | inDate   | string | (selection)수정할 row의 inDate | 
 | owner_inDate   | string | (selection)해당 row를 가지고 있는 유저의 inDate | 
 | where| [Where](/sdk-docs/backend/base/game-information/clause-where/basic)   | (selection)수정할 row를 검색하기 위한 where 조건| 
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 수정할 정보 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 수정할 정보 |
 
 ## 설명
 테이블을 수정하는 명령을 리턴합니다.  

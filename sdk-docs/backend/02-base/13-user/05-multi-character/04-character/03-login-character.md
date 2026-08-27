@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "캐릭터 로그인"
 description: "SelectCharacter"
 ---

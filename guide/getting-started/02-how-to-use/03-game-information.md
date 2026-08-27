@@ -6,7 +6,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 게임 정보 관리
 뒤끝을 활용하면 손쉽게 유저의 데이터를 관리할 수 있습니다.  
-뒤끝에서는 스키마를 정의한 테이블과 정의하지 않은 테이블, 두 가지 방식으로 테이블을 생성할 수 있으며
+뒤끝에서는 스키마를 정의한 테이블과 정의하지 않은 테이블, 두 가지 방식으로 테이블을 생성할 수 있으며  
 뒤끝 SDK를 활용해 뒤끝 서버와 통신하며 실제 게임 정보를 저장, 수정, 조회, 삭제할 수 있습니다.  
 
 <ConsoleLinkButton text="게임 정보 바로가기" menu="baseGameInfo/table" feature="게임 정보" title="게임 정보 관리" />

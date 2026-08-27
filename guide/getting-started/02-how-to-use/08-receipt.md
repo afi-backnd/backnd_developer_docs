@@ -11,7 +11,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 <ConsoleLinkButton text="영수증 검증 바로가기" menu="baseReceipt" feature="영수증 검증" title="영수증 검증" />
 
 관련 콘솔 가이드 : [뒤끝베이스 - 영수증 검증](/guide/console-guide/backnd-base/receipt)  
-관련 SDK 개발자 문서 : [구글 영수증 검증](/sdk-docs/backend/base/receipt/android/setting-google-console) / [애플 영수증 검증](/sdk-docs/backend/base/receipt/ios/setting-google-console) / [원스토어 영수증 검증](/sdk-docs/backend/base/receipt/onestore/setting-onestore-console)
+관련 SDK 개발자 문서 : [구글 영수증 검증](/sdk-docs/backend/base/receipt/receipt/android/setting-google-console) / [애플 영수증 검증](/sdk-docs/backend/base/receipt/receipt/ios/setting-google-console) / [원스토어 영수증 검증](/sdk-docs/backend/base/receipt/receipt/onestore/setting-onestore-console)
 
 ## 영수증 검증 지원
 뒤끝은 **구글 플레이스토어**와 **애플 앱스토어**, **원스토어**의 결제 영수증에 대한 유효성 검증을 지원합니다.  

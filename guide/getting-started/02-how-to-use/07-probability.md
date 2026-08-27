@@ -15,4 +15,4 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 <ConsoleLinkButton text="확률 바로가기" menu="baseProbability" feature="확률" title="확률 관리" />
 
 관련 콘솔 가이드 : [뒤끝베이스 - 확률 관리](/guide/console-guide/backnd-base/probability)  
-관련 SDK 개발자 문서 : [확률 관리 - 뽑기 리스트 조회](/sdk-docs/backend/base/probability/lotto-list)
+관련 SDK 개발자 문서 : [확률 관리 - 확률 테이블 조회](/sdk-docs/backend/base/probability/probability-table)

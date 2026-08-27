@@ -49,7 +49,7 @@ Backend.BMember.GetUserInfo();
 #### 2. 메인 스레드에서 실행되는 방법  
 콜백 함수 풀링 기능을 사용하면 콜백 함수 내에서도 유니티 MonoBehavior 객체에 접근할 수 있습니다.  
 즉 콜백 함수 내에서 유니티 객체, UI 객체 등에 접근할 수 있습니다.  
-콜백 함수 풀링 기능에 대해서는 [해당 문서](/sdk-docs/backend/base/knowhow/sync-async/async/pulling)를 참고해 주세요.  
+콜백 함수 풀링 기능에 대해서는 [해당 문서](/sdk-docs/backend/base/knowhow/sync-async/async/functions)를 참고해 주세요.  
 
 
 

@@ -29,11 +29,3 @@ TheBackend(뒤끝)는 게임 개발사를 위한 BaaS(Backend as a Service)입�
 ## Q. SDK를 Unity에 임포트할 때 주의할 점이 있나요?
 
 베이스 SDK와 채팅 SDK를 함께 사용하는 경우, 채팅 SDK 임포트 시 `Backend.dll`이 덮어씌워지지 않도록 해당 파일의 체크를 해제해야 합니다. 자세한 내용은 [베이스 SDK와 함께 사용하는 경우](../sdk-docs/chat/install/with-base-sdk) 문서를 참고하세요.
-
-## Q. 로컬 개발 환경에서 문서 사이트를 실행하는 방법은?
-
-```bash
-npm install
-npm run start:ko   # 한국어
-npm run start:en   # 영어
-```

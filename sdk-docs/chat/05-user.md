@@ -149,7 +149,7 @@ token: USER_TOKEN
 ```json
 {
   "source": "thebackend-chat-api",
-  "nickname" : "nickname",
+  "nickname" : "nickname"
 }
 ```
 

@@ -20,7 +20,7 @@ public BackendReturnObject **UpdateGuildInfoAndRefreshLeaderboard**(string **lea
 ## 설명
 길드의 메타 데이터를 갱신함과 동시에 리더보드를 갱신합니다.  
 * 갱신하려는 메타 데이터가 존재하지 않는 경우 해당 메타 데이터가 새로 생성되게 됩니다.  
-* 해당 함수는 [Backend.Social.Guild.ModifyGuildV3](/sdk-docs/backend/base/guild/metadata/change) 함수에 리더보드 갱신 기능이 추가된 함수입니다.  
+* 해당 함수는 [Backend.Social.Guild.ModifyGuildV3](/sdk-docs/backend/base/guild/metadata/change-forbidden-during-reset-time) 함수에 리더보드 갱신 기능이 추가된 함수입니다.  
 * 해당 함수를 이용하지 않고 갱신된 데이터는 리더보드에 반영되지 않습니다.  
 > **리더보드에 사용하는 메타 데이터의 값(점수로 사용할 값)의 범위는 아래와 같아야 합니다.  
 해당 범위를 벗어나는 값은 반올림, 반내림 되는 등 정상적으로 저장되지 않을 수 있고, SDK에서 리더보드를 조회할 때 에러가 발생할 수 있습니다.**  

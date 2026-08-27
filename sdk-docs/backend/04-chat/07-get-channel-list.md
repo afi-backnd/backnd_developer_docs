@@ -26,7 +26,7 @@ public BackendReturnObject **GetGroupChannelList**(string **groupName**);
 ## 설명
 
 그룹명을 통해 해당 그룹의 채팅 채널의 정보들을 불러옵니다.  
-채팅 채널 그룹은 [**뒤끝 콘솔 > 뒤끝챗 > 채팅 그룹 관리**에서 미리 생성](/guide/console-guide/backnd-chat/groups)해야 하며 콘솔에서 생성한 채널 그룹을 불러올 수 있습니다.  
+채팅 채널 그룹은 [**뒤끝 콘솔 > 뒤끝챗 > 채팅 그룹 관리**에서 미리 생성](/guide/console-guide/chat/channels)해야 하며 콘솔에서 생성한 채널 그룹을 불러올 수 있습니다.  
 
 > 30초동안 유저가 존재하지 않는 채널은 자동으로 삭제가 됩니다.  
 > 채널 리스트를 조회한 후, 유저가 없는 채널을 30초 이상의 시간이 지난 뒤에 접속을 시도할 경우 이미 삭제된 채널이기에 에러가 발생합니다.  

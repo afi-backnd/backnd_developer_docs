@@ -13,7 +13,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 서버 설정 → 푸시 → 푸시 등록과 클라이언트에서의 기능에 대해서는 아래 링크를 참고해 주세요.  
 Android(구글, 원스토어) 푸시 등록 : <a href="/sdk-docs/backend/base/push/android/active" target="_blank">개발자 문서 - Android 푸시 등록</a>  
 애플 푸시 등록 : <a href="/sdk-docs/backend/base/push/ios/active" target="_blank">개발자 문서 - iOS 푸시 등록</a>  
-멀티 캐릭터 사용 시에도 한번만 푸시가 전송이 됩니다.  
+멀티 캐릭터 사용 시 한 계정에 유저가 여러 개여도 동일한 디바이스로는 한 번만 전송됩니다. 유저 간 언어 정보가 다를 경우 마지막에 등록된 유저를 기준으로 전송됩니다. [보기](/guide/console-guide/backnd-base/users/multi-character#다른-메뉴에서의-동작)  
 :::
 
 ### 일반 푸시

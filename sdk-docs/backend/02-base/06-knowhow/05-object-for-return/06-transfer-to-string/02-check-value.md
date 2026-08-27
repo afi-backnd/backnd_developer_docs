@@ -12,7 +12,7 @@ returnValue는 json 형태의 string입니다.
 
 ## Example
 ```js
-var bro = Backend.Social.Guild.GetGuildListV3();
+var bro = Backend.Guild.GetGuildListV4();
 if(bro.IsSuccess() == false) {
     return;
 }

@@ -144,7 +144,7 @@ Backend.UPost.GetPostList(PostType.Admin, 10)를 20분 간격으로 호출
 
 ### 길드 UI 띄울 때마다 길드 함수, 길드 랭킹 함수 호출 자제
 
-길드 정보 관련 UI를 생성할 때마다 내 길드 정보 불러오기(Backend.Guild.GetMyGuildInfoV3), 길드 랭킹 불러오기(Backend.URank.Guild.GetRankList)할 경우 요금이 크게 증가할 수 있습니다.  
+길드 정보 관련 UI를 생성할 때마다 내 길드 정보 불러오기(Backend.Guild.GetMyGuildInfoV4), 길드 랭킹 불러오기(Backend.URank.Guild.GetRankList)할 경우 요금이 크게 증가할 수 있습니다.  
 랭킹과 마찬가지로 불러온 값을 캐싱 하여 일정 주기가 지났거나 길드에서 탈퇴할 경우에는 재호출을 하는 로직을 추천드립니다.  
 
 **잘못된 로직**  

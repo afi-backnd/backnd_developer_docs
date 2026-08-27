@@ -8,7 +8,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 클라우드 세이브
 
-클라우드 세이브는 **유저 데이터를 자유로운 JSON 형식으로 저렴하게 저장**할 수 있는 기능입니다.
+클라우드 세이브는 **유저 데이터를 자유로운 JSON 형식으로 저렴하게 저장**할 수 있는 기능입니다.  
 게임 내 유저 데이터를 손쉽게 저장하고 관리해보세요.
 
 <ConsoleLinkButton text="클라우드 세이브 바로가기" menu="baseCloudSave" feature="클라우드 세이브" title="클라우드 세이브" />

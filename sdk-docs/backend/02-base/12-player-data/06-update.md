@@ -15,7 +15,7 @@ public BackendReturnObject **UpdateOtherData**(string **tableName**, string **in
 | tableName   | string | 업데이트를 할 테이블명 | 
 | inDate   | string | 업데이트를 할 row의 inDate 값 | 
 | owner_inDate   | string | 해당 row를 소유한 유저의 inDate | 
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 업데이트할 정보 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 업데이트할 정보 |
 
 ## 설명
 **UpdateMyLatestData** 함수는 해당 테이블에 존재하는 가장 최근에 등록된 내 데이터 하나를 수정합니다.  

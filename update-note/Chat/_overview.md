@@ -18,3 +18,4 @@
 | [Chat-1.3.0.md](./Chat-1.3.0.md) | Chat-1.3.0 |
 | [Chat-1.3.1.md](./Chat-1.3.1.md) | Chat-1.3.1 |
 | [Chat-1.4.0.md](./Chat-1.4.0.md) | Chat-1.4.0 |
+| [Chat-1.4.1.md](./Chat-1.4.1.md) | Chat-1.4.1 |

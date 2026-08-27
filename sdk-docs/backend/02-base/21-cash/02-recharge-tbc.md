@@ -141,7 +141,7 @@ public Purchasing.PurchaseProcessingResult ProcessPurchase(Purchasing.PurchaseEv
 
 ## OneStore Example
 
-[원스토어 영수증 검증](/sdk-docs/backend/base/receipt/onestore/verify) 문서를 참고하여 영수증 토큰을 획득한 후 ChargeTBCByOneStore 함수를 호출합니다.
+[원스토어 영수증 검증](/sdk-docs/backend/base/receipt/receipt/onestore/verify) 문서를 참고하여 영수증 토큰을 획득한 후 ChargeTBCByOneStore 함수를 호출합니다.
 
 ### 동기
 

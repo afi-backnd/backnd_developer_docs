@@ -22,7 +22,7 @@ public BackendReturnObject **Upload**(**string** collectionName, **Param** param
 | :------------ |:------------| :-----|
 | collectionName  | string | 데이터가 업로드 될 컬렉션 이름 |
 | jsonString      | string | JSON 문자열 형식의 저장 데이터 |
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | Param 형식의 저장 데이터 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | Param 형식의 저장 데이터 |
 
 ## 설명
 저장 데이터를 클라우드 저장소로 업로드 합니다.  

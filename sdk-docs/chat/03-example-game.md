@@ -20,7 +20,7 @@ description: "예제게임"
 
 ### 다운로드
 
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.0/BackndChatExample.unitypackage" id="download-sdk-chat-example">BackndChatExample.unitypackage</a>&nbsp;[2025-12-18]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChatExample.unitypackage" id="download-sdk-chat-example">BackndChatExample.unitypackage</a>&nbsp;[2026-08-27]
 
 :::info Supported Platforms
 - Android, iOS, Windows, Mac, Linux

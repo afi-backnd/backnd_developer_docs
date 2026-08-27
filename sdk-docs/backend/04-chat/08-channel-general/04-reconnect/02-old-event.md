@@ -2,7 +2,7 @@
 sidebar_label: "[Deprecated] 다른 유저 재접속 성공이벤트"
 draft: "true"
 unlisted: "true"
-description: "\[Deprecated] OnSessionOnlineChannel"
+description: "[Deprecated] OnSessionOnlineChannel"
 ---
 
 # \[Deprecated] OnSessionOnlineChannel

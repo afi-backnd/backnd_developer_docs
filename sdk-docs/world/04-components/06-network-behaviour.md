@@ -301,7 +301,7 @@ public class PlayerController : NetworkBehaviour
 :::tip 소유권이란?
 소유권은 클라이언트가 서버를 거치지 않고 **오브젝트를 직접 조작**할 수 있게 해주는 기능입니다.
 레이싱 게임의 차량처럼 **즉각적인 반응이 필수**인 경우에만 사용합니다.
-대부분의 게임 로직은 Command로 충분합니다. 자세한 내용은 [NetworkIdentity - 소유권 시스템](./network-identity#소유권authority-시스템)을 참고하세요.
+대부분의 게임 로직은 Command로 충분합니다. 자세한 내용은 [NetworkIdentity - 소유권 시스템](./05-network-identity.md#소유권authority-시스템)을 참고하세요.
 :::
 
 ```csharp

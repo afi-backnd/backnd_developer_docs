@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "[Deprecated] 페더레이션 계정으로 전환"
 description: "ChangeCustomToFederation"
 ---

@@ -15,7 +15,7 @@ public BackendReturnObject **UpdateOtherDataWithCalculation**(string **tableName
 | tableName   | string | 업데이트할 테이블명 | 
 | inDate   | string | 업데이트를 할 row의 inDate 값 | 
 | owner_inDate   | string | 해당 row를 소유한 유저의 inDate | 
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 업데이트할 정보(AddCalculation을 통해 데이터 삽입) |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 업데이트할 정보(AddCalculation을 통해 데이터 삽입) |
 
 
 ## 설명

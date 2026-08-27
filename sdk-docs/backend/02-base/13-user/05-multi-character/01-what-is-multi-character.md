@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "멀티 캐릭터란"
 description: "멀티 캐릭터란"
 ---

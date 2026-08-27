@@ -6,7 +6,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 영수증 검증
 
-게임 내에서 [ChargeTBC](/sdk-docs/backend/base/cash/recharge-tbc) 혹은 [IsValidateGooglePurchase](/sdk-docs/backend/base/receipt/android/verify), [IsValidateApplePurchase](/sdk-docs/backend/base/receipt/ios/verify)을 통한 영수증 검증 내역을 확인할 수 있습니다.  
+게임 내에서 [ChargeTBC](/sdk-docs/backend/base/cash/recharge-tbc) 혹은 [IsValidateGooglePurchase](/sdk-docs/backend/base/receipt/receipt/android/verify), [IsValidateApplePurchase](/sdk-docs/backend/base/receipt/receipt/ios/verify)을 통한 영수증 검증 내역을 확인할 수 있습니다.  
 
 <ConsoleLinkButton text="영수증 검증 바로가기" menu="baseReceipt" feature="영수증 검증" title="영수증 검증" />
 

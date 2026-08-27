@@ -16,7 +16,7 @@ Unity SDK를 통해 실시간 채팅 기능을 Unity 프로젝트에 빠르게 �
 ### 1. 채팅 SDK 설치하기
 
 아래 패키지를 다운로드하고 유니티 프로젝트에 Import 합니다.
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.0/BackndChat-1.4.0.unitypackage" id="download-sdk-chat">BackndChat-1.4.0.unitypackage</a>&nbsp;[2025-12-18]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChat-1.4.1.unitypackage" id="download-sdk-chat">BackndChat-1.4.1.unitypackage</a>&nbsp;[2026-08-27]
 
 :::info 베이스 SDK와 함께 사용한다면?
 채팅 SDK를 임포트할 때 `Backend.dll`이 덮어씌워지지 않도록 체크 해제하세요. 자세한 내용은 [베이스 SDK와 함께 사용하는 경우](/sdk-docs/chat/install/with-base-sdk) 문서에서 확인하세요.
@@ -111,6 +111,17 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
     void Update() => ChatClient?.Update();
     void OnApplicationQuit() => ChatClient?.Dispose();
 
+    public void OnJoinChannel(ChannelInfo channelInfo) { }
+    public void OnLeaveChannel(ChannelInfo channelInfo) { }
+    public void OnJoinChannelPlayer(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
+    public void OnLeaveChannelPlayer(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
+    public void OnUpdatePlayerInfo(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
+    public void OnChangeGamerName(string oldGamerName, string newGamerName) { }
+    public void OnWhisperMessage(WhisperMessageInfo messageInfo) { }
+    public void OnTranslateMessage(List<MessageInfo> messages) { }
+    public void OnHideMessage(MessageInfo messageInfo) { }
+    public void OnDeleteMessage(MessageInfo messageInfo) { }
+
     public void OnChatMessage(MessageInfo messageInfo)
     {
         Debug.Log($"[수신] {messageInfo.GamerName}: {messageInfo.Message}");
@@ -122,34 +133,27 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
 ```
 
 :::note
-뒤끝 채팅 SDK는 네트워크 변경이나 일시적인 연결 끊김 상황에서도 자동으로 다시 연결되는 기능을 제공합니다. `ChatClient`를 초기화한 뒤, 종료 시점에 `Dispose()`만 호출하면 별도의 재연결 처리를 따로 구현하지 않아도 됩니다.
+`ChatClient.Update()`를 매 프레임 호출해야 수신 메시지와 콜백이 처리됩니다.
+뒤끝 채팅 SDK는 네트워크 변경이나 일시적인 연결 끊김 상황에서도 자동으로 다시 연결되는 기능을 제공합니다. 별도의 재연결 처리는 필요하지 않으며, 종료 시점에는 `Dispose()`를 호출하세요.
 :::
 
 ### 5. 메시지 보내기
 
-채널에 메시지를 전송해봅니다.
-뒤끝 채팅을 활성화하면 자동으로 `global` 그룹의 `server-1` 이라는 채널이 생성되므로, 해당 채널에 메시지를 보내봅시다.
+뒤끝 채팅을 활성화하면 `global` 그룹의 `server-1` 기본 채널이 자동으로 생성됩니다.
+기본 채널 입장이 완료되어 `OnJoinChannel` 콜백이 오면 메시지를 전송합니다.
 
-```csharp {10,11,14,15,16,17,18}
-// 채널에 입장하고 메시지를 보내는 흐름
-
-void Start()
-{
-    ChatClient = new ChatClient(this, new ChatClientArguments
-    {
-        // ...
-    });
-
-    // 기본 채널 입장 (콘솔에서 자동 생성된 채널)
-    ChatClient.SendJoinOpenChannel("global", "server-1");
-}
-
+```csharp {3,5}
 public void OnJoinChannel(ChannelInfo channelInfo)
 {
-    // 채널 입장 완료 시 메시지 전송
+    if (channelInfo.ChannelGroup != "global" || channelInfo.ChannelName != "server-1") return;
+
     ChatClient.SendChatMessage(channelInfo.ChannelGroup, channelInfo.ChannelName, channelInfo.ChannelNumber, "안녕하세요!");
 }
 ```
+
+:::caution 호출 시점
+`ChatClient` 생성 직후에는 아직 채팅 서버에 연결되지 않았으므로 채널 입장 요청이 처리되지 않습니다. 추가 채널 입장 함수는 기본 채널의 `OnJoinChannel` 콜백 등 채팅 서버 연결이 완료된 이후 호출하세요.
+:::
 
 
 <details>
@@ -161,6 +165,7 @@ public void OnJoinChannel(ChannelInfo channelInfo)
 ```csharp
 using BackEnd;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoginManager : MonoBehaviour
 {
@@ -204,6 +209,11 @@ public class LoginManager : MonoBehaviour
 ### 채팅 초기화 스크립트
 
 ```csharp
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using BackndChat;
+
 public class UIChatManager : MonoBehaviour, BackndChat.IChatClientListener
 {
     private BackndChat.ChatClient ChatClient = null;

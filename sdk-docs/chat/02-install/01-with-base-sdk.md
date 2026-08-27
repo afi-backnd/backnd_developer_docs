@@ -24,4 +24,4 @@ description: "베이스 SDK와 함께 사용하는 경우"
 ### 관련 링크
 
 - [채팅 시작하기](/sdk-docs/chat/intro)
-- [베이스 시작하기](/sdk-docs/backend/02-base/start-up)
+- [베이스 시작하기](/sdk-docs/backend/base/start-up)

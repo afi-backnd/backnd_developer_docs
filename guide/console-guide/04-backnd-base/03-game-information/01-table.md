@@ -118,7 +118,6 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 <img src="https://developer.thebackend.io/static/img/newconsole/base/게임 정보 관리/뒤끝베이스--게임-정보-관리---테이블---테이블-생성-모달---스키마-사용---컬럼-생성.png" />
 
   
-[text](.)
 
 <img src="https://developer.thebackend.io/static/img/newconsole/base/게임 정보 관리/뒤끝베이스--게임-정보-관리---테이블---테이블-생성-모달---스키마-사용---컬럼-생성-모.png" />
 

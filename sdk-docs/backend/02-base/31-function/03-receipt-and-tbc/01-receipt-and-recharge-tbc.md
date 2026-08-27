@@ -8,8 +8,8 @@ description: "영수증 검증 / TBC 충전"
 영수증 검증을 하기 위해서는 먼저 인앱결제를 진행한 후 영수증 토큰을 발급받아야 합니다.  
 인앱 결제를 진행하는 방법에 대해서는 아래 링크를 참고해 주세요.  
 
-- [구글 인앱결제](/sdk-docs/backend/base/receipt/android/verify)
-- [애플 인앱결제](/sdk-docs/backend/base/receipt/ios/verify)
+- [구글 인앱결제](/sdk-docs/backend/base/receipt/receipt/android/verify)
+- [애플 인앱결제](/sdk-docs/backend/base/receipt/receipt/ios/verify)
 
 ---
 

@@ -9,7 +9,7 @@ slug: backend-5-9-6
 :::
 
 <!--truncate-->
-[SDK .NET 4 버전] <a href="https://developer.thebackend.io/sdk/unityPackage/5.9.5/Backend-5.9.6.unitypackage" target="_blank">
+[SDK .NET 4 버전] <a href="https://developer.thebackend.io/sdk/unityPackage/5.9.6/Backend-5.9.6.unitypackage" target="_blank">
 다운로드</a> <br />
 
 ## Versions

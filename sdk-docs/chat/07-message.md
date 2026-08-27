@@ -65,6 +65,12 @@ public class MessageInfo
   // 아바타 이름
   public string Avatar = string.Empty;
 
+  // 메시지를 작성한 유저의 언어 정보
+  public string Language = string.Empty;
+
+  // 메시지를 작성한 유저의 메타데이터
+  public Dictionary<string, string> Metadata = new Dictionary<string, string>();
+
   // 채팅 인덱스
   public UInt64 Index = 0;
 
@@ -93,6 +99,12 @@ public class WhisperMessageInfo
 
   // 귓속말 보낸 유저 아바타 이름
   public string FromAvatar = string.Empty;
+
+  // 귓속말을 보낸 유저의 언어 정보
+  public string FromLanguage = string.Empty;
+
+  // 귓속말을 보낸 유저의 메타데이터
+  public Dictionary<string, string> FromMetadata = new Dictionary<string, string>();
 
   // 귓속말 메시지
   public string Message = string.Empty;

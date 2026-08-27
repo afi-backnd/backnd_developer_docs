@@ -6,8 +6,8 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 # 채팅
 
-인게임 채팅을 손쉽게 구현하고 효과적으로 관리하세요.
-유저는 실시간으로 메시지를 주고 받을 수 있고,
+인게임 채팅을 손쉽게 구현하고 효과적으로 관리하세요.  
+유저는 실시간으로 메시지를 주고 받을 수 있고,  
 운영자는 비속어 필터링, 신고 확인 및 차단, 도배 방지, 관리자 메시지 전송 등의 운영 기능을 사용할 수 있습니다.
 
 :::info 지원 플랫폼
@@ -15,9 +15,9 @@ Android, iOS, Windows, Mac(Editor), Linux
 :::
 
 관련 콘솔 가이드 : [채팅 - 채널](/guide/console-guide/chat/channels)  
-관련 SDK 개발자 문서 :
-[채팅 - Unity SDK](/sdk-docs/chat/intro) /
-[채팅 - Unreal SDK](/sdk-docs/unreal-chat/intro) /
+관련 SDK 개발자 문서 :  
+[채팅 - Unity SDK](/sdk-docs/chat/intro) /  
+[채팅 - Unreal SDK](/sdk-docs/unreal-chat/intro) /  
 [채팅 - Platform API](/api-docs/chat/intro)
 
 <ConsoleLinkButton text="채팅 바로가기" menu="chatChannel" feature="채팅 채널" title="채팅 채널" />

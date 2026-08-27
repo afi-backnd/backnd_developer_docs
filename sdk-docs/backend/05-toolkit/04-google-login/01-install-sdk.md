@@ -18,7 +18,7 @@ SDK에서 간단한 핸들러를 등록하고 로그인 함수를 호출하는 �
 :::  
 
 :::danger Android용 구글 로그인 SDK 버전 안내
-안드로이드 구글 로그인은 기존 Google Sign-In 방식 기반의 **안정화 버전(2.3.0)만 제공**합니다.  
+안드로이드 구글 로그인은 기존 Google Sign-In 방식 기반의 **안정화 버전(2.3.1)만 제공**합니다.  
 
 구글은 2024년 9월 인증 간소화 정책([Credential Manager replaces legacy APIs](https://android-developers.googleblog.com/2024/09/streamlining-android-authentication-credential-manager-replaces-legacy-apis.html))에서 레거시 인증 API의 단계적 제거 일정을 공지했습니다.  
 당시 공지에는 이 SDK가 의존하는 Google Sign-In for Android가 H2 2025에 제거 예정으로 안내되었으나, 현재 구글 공식 마이그레이션 문서([About the migration from legacy Google Sign-In](https://developer.android.com/identity/sign-in/legacy-gsi-migration))에서는 Android용 Google 로그인 API가 deprecated 상태이며 향후 Google Play services Auth SDK 릴리스에서 제거될 예정이라고만 안내하고 있습니다.  
@@ -30,7 +30,7 @@ SDK에서 간단한 핸들러를 등록하고 로그인 함수를 호출하는 �
 실제로 신규 인증관리자(Credential Manager) 방식은 최근까지도 사용자 기기 환경에 따른 로그인 오류가 보고되고 있습니다. 이러한 오류의 상당수는 앱이 번들하는 라이브러리 버전이 아니라 최종 사용자 기기의 Google Play Services 버전·계정 상태에 좌우됩니다. 구글 공식 [Credential Manager 오류 트러블슈팅](https://developer.android.com/identity/sign-in/credential-manager-troubleshooting-guide) 문서는 `NoCredentialException`을 기기 계정·Google Play Services 상태에 따른 문제로 설명하고, 다계정 환경의 `TransactionTooLargeException`은 Google Play Services 24.40.XX 이상에서 수정된다고 안내하여 수정이 기기 측 Play Services에 실립니다. 따라서 앱·SDK 측 라이브러리 업데이트만으로는 사용자 기기 환경에서 발생하는 오류를 근절하기 어렵습니다.  
 또한 Unity용 공식 Credential Manager 구현이 제공되지 않아(구글의 google-signin-unity 저장소는 2026년 아카이브되었고, [Unity 공식 문서](https://docs.unity.com/en-us/authentication/platform-signin/google)에도 Credential Manager 기반 공식 경로가 없음), 게임 환경에서 신규 방식을 안정적으로 적용하기 어렵습니다.  
 
-구글의 레거시 API 강제 종료 시점이 명확히 공지되고 위 문제가 해결되는 시점에 신규 버전을 다시 제공할 예정이며, 그 전까지는 안정화 버전인 2.3.0 사용을 권장합니다.  
+구글의 레거시 API 강제 종료 시점이 명확히 공지되고 위 문제가 해결되는 시점에 신규 버전을 다시 제공할 예정이며, 그 전까지는 안정화 버전인 2.3.1 사용을 권장합니다.  
 
 상기 내용은 안드로이드 구글 로그인에만 해당하며 iOS 구글 로그인은 관련 없습니다.  
 :::
@@ -49,16 +49,21 @@ SDK에서 간단한 핸들러를 등록하고 로그인 함수를 호출하는 �
 구글 로그인 SDK와 같은 외부 SDK를 import했을 경우에는 구글 플레이에서 내부 테스트 혹은 알파,베타 테스트에 앱을 업로드한 후 다운받는 실제 테스트가 필요합니다.  
 :::
 
-**Android용** : [BackendGoogleLogin-Android-2.3.0.unitypackage](https://developer.thebackend.io/sdk/google-login/BackendGoogleLogin-Android-2.3.0.unitypackage) \[2026-08-13]  
+**Android용** : [BackendGoogleLogin-Android-2.3.1.unitypackage](https://developer.thebackend.io/sdk/google-login/BackendGoogleLogin-Android-2.3.1.unitypackage) \[2026-08-27]  
 **iOS용** : [BackendGoogleLogin-iOS-2.1.0.unitypackage](https://developer.thebackend.io/sdk/google-login/BackendGoogleLogin-iOS-2.1.0.unitypackage) \[2024-04-24]  
 
-:::info Android 2.3.0 업데이트 내용
+:::info Android 업데이트 내용
+**2.3.1**
+- 2.3.0 unitypackage를 Unity 프로젝트에 import할 때 오류가 발생하던 문제를 수정하였습니다.
+- 2.3.0 unitypackage를 다운로드한 경우에는 2.3.1 unitypackage를 새로 다운로드하여 사용해 주세요.
+
+**2.3.0**
 안드로이드 2.3.0은 기존 Google Sign-In 방식을 유지하면서 다음 안정성 문제를 수정한 버전입니다.
 - 로그인 도중 화면 회전 등 구성 변경이나 프로세스 재시작이 발생하면 앱이 강제 종료되거나 로그인 콜백이 유실되던 문제를 수정하였습니다.
 - 로그인 결과 콜백이 중복 호출될 수 있던 문제를 수정하였습니다.
 - 콜백 미등록 등 예외 상황에서 예외가 게임 코드로 전파되지 않도록 예외 처리를 강화하였습니다.
 
-2.2.0에서 업데이트할 경우, 기존 Assets > TheBackend > Toolkit > GoogleLogin > Android 폴더를 제거한 후 2.3.0을 import 해주시기 바랍니다.
+2.2.0에서 업데이트할 경우, 기존 Assets > TheBackend > Toolkit > GoogleLogin > Android 폴더를 제거한 후 2.3.1을 import 해주시기 바랍니다.
 :::
 
 구글 로그인 SDK는 **Android, iOS만 지원**하고 있으며, 유니티 에디터에서는 작동하지 않습니다.  

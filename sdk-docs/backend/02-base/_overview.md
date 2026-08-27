@@ -50,3 +50,4 @@
 | [30-country-code/](./30-country-code/) | [Legacy] 국가 코드 |
 | [31-function/](./31-function/) | 뒤끝펑션 |
 | [32-sdk-utils/](./32-sdk-utils/) | SDK Utils |
+| [33-multi-character/](./33-multi-character/) | [New] 멀티 캐릭터 |

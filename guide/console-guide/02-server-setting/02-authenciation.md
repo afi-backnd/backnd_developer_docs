@@ -108,7 +108,7 @@ Steam App ID, Web API Key는 스팀 인증 기능 이용 시 반드시 필요한
 자세한 내용은 [Steam 로그인 인증 예제](/sdk-docs/backend/base/user/federation/example-using-steam#2-appid-발급)를 참고해 주세요.
 
 ## 구글 로그인 인증 정보
-[구글 로그인으로 뒤끝에 가입한 유저에 대한 회원 탈퇴 웹](/guide/console-guide/backnd-base/web-withdraw)을 이용하거나, [GPGS v2 페데레이션 로그인 기능](/sdk-docs/backend/base/user/federation/example-using-gpgs2)을 이용하시려면 구글 로그인 인증 정보를 입력해야 합니다.  
+[구글 로그인으로 뒤끝에 가입한 유저에 대한 회원 탈퇴 웹](/guide/console-guide/backnd-base/web-withdraw/web-withdraw)을 이용하거나, [GPGS v2 페데레이션 로그인 기능](/sdk-docs/backend/base/user/federation/example-using-gpgs2)을 이용하시려면 구글 로그인 인증 정보를 입력해야 합니다.  
 
 뒤끝 구글 로그인 혹은 GPGS V2 SDK에 사용하던 web client id를 가진 [Google Cloud Platform](https://console.cloud.google.com/apis/credentials) 프로젝트를 선택합니다.  
 

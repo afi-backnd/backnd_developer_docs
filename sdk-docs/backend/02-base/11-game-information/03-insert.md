@@ -13,7 +13,7 @@ public BackendReturnObject **Insert**(string **tableName**, Param **param**);
 | Value     | Type                                            | Description                 |
 | :-------- | :---------------------------------------------- | :-------------------------- |
 | tableName | string                                          | 게임 정보를 저장할 테이블명 |
-| param     | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 게임 정보에 저장할 내용     |
+| param     | [Param](/sdk-docs/backend/base/knowhow/param/param) | 게임 정보에 저장할 내용     |
 
 ## 설명
 

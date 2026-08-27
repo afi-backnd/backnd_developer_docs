@@ -12,7 +12,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 <ConsoleLinkButton text="결제 관리 바로가기" href="https://console.thebackend.io/account/payment" feature="결제 관리" title="결제 관리" />
 
-![이미지 1](/img/docs/guide//billing/dropdown.png)
+![이미지 1](/img/docs/guide/billing/dropdown.png)
 
 ## 현재 요금
 
@@ -26,15 +26,15 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 총합계와 예상 요금을 확인하실 수 있습니다.
 
-![이미지 2](/img/docs/guide//billing/current-usage.png)
-![이미지 3](/img/docs/guide//billing/usage-history.png)
+![이미지 2](/img/docs/guide/billing/current-usage.png)
+![이미지 3](/img/docs/guide/billing/usage-history.png)
 
 ### 요금 상세 내역
 
 - 항목별 요금 상세 내역을 확인하실 수 있습니다.
 - 사용량이 발생한 항목만 노출되며, 사용량이 0인 경우에는 노출되지 않습니다.
 
-![이미지 4](/img/docs/guide//billing/fee-detailed-history.png)
+![이미지 4](/img/docs/guide/billing/fee-detailed-history.png)
 
 ## 청구 내역
 
@@ -42,7 +42,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - 청구서는 익월 5일에 발행됩니다.
 - 청구서가 발행되면 10일에 등록된 결제 정보로 자동 결제가 진행됩니다.
 
-![이미지 5](/img/docs/guide//billing/billing.png)
+![이미지 5](/img/docs/guide/billing/billing.png)
 
 :::info 요금 관련 유의사항 안내
 - 요금은 UTC 기준으로 집계됩니다.  
@@ -60,12 +60,12 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 결제 정보를 입력하여 등록하실 수 있습니다.
 
-![이미지 6](/img/docs/guide//billing/payment-information.png)
+![이미지 6](/img/docs/guide/billing/payment-information.png)
 
 - 등록된 결제 정보로 매월 10일에 자동 결제됩니다.
 - 결제 정보 변경 버튼을 클릭해 등록된 결제 정보를 변경하실 수 있습니다.
 
-![이미지 7](/img/docs/guide//billing/payment-information-save.png)
+![이미지 7](/img/docs/guide/billing/payment-information-save.png)
 
 <!-- 결제 정보 영문 번역은 해당 내용으로 해주시기 바랍니다.
 

@@ -28,7 +28,7 @@ CDN 차트에서 로컬 삭제 기능이 추가되었습니다.
 **[Updates]**
 - 클라우드 세이브 기능이 추가되었습니다. [[개발자문서]](/sdk-docs/backend/base/cloud-save/get-collections)  
   - 원격 저장소에 JSON 문자열 형태로 데이터를 업로드하고 다운로드 받을 수 있습니다.
-- CDN 차트를 통해 로컬에 저장한 차트를 삭제하는 기능이 추가되었습니다. [[개발자문서]](/sdk-docs/backend/base/content/chart/Local/delete)  
+- CDN 차트를 통해 로컬에 저장한 차트를 삭제하는 기능이 추가되었습니다. [[개발자문서]](/sdk-docs/backend/base/chart/Local/delete)  
 
 
 ## SDK 포함 Nuget

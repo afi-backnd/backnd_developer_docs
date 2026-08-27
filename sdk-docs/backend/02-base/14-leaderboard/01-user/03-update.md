@@ -22,7 +22,7 @@ public BackendReturnObject **UpdateMyDataAndRefreshLeaderboard**(string **leader
 | leaderboardUuid | string | 갱신할 리더보드의 uuid |
 | tableName | string | 갱신할 테이블의 이름 |
 | rowIndate | string | 갱신할 row의 inDate |
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 갱신할 값 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 갱신할 값 |
 
 leaderboardUuid 값은 아래 방법을 통해 확인할 수 있습니다.  
 * uuid 값은 뒤끝 콘솔에서 리더보드를 생성 후 해당 리더보드 정보에서 uuid 값 확인

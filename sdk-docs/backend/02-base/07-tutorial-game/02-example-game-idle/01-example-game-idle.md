@@ -29,7 +29,7 @@ TheBackendMatch는 [BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause) 
 
 ## 이용 방법
 
-게임 시작 방법은 [게임 설정](/sdk-docs/backend/base/tutorial-game/download-and-settings)을 참고해주세요.  
+게임 시작 방법은 [게임 설정](/sdk-docs/backend/base/tutorial-game/example-game-idle/download-and-settings)을 참고해주세요.  
 
 ## 포함된 기능
 

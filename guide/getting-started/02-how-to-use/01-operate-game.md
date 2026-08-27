@@ -16,7 +16,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 <ConsoleLinkButton text="공지사항 바로가기" menu="baseNotice" feature="공지사항" title="게임 운영 관리" />
 
-관련 콘솔 가이드 : [뒤끝베이스 - 공지사항](/guide/console-guide/backnd-base/notice)  
+관련 콘솔 가이드 : [뒤끝베이스 - 공지사항](/guide/console-guide/backnd-base/notice/notice)  
 관련 SDK 개발자 문서 : [운영 관리 - 공지사항 조회](/sdk-docs/backend/base/operation/notice/get-list)
 
 
@@ -29,7 +29,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 <ConsoleLinkButton text="이벤트 바로가기" menu="baseEvent" feature="이벤트" title="게임 운영 관리" />
 
-관련 콘솔 가이드 : [뒤끝베이스 - 이벤트](/guide/console-guide/backnd-base/event)  
+관련 콘솔 가이드 : [뒤끝베이스 - 이벤트](/guide/console-guide/backnd-base/event/event)  
 관련 SDK 개발자 문서 : [운영 관리 - 이벤트 조회](/sdk-docs/backend/base/operation/event/get-list)
 
 ## 약관 및 정책
@@ -64,7 +64,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 관련 SDK 개발자 문서 : [유저 관리 - 아이디 찾기](/sdk-docs/backend/base/user/custom/find-custom-id)
 
 ## 쿠폰
-서버에서 쿠폰 코드 발급 및 인증 서비스를 제공하며, 
+서버에서 쿠폰 코드 발급 및 인증 서비스를 제공하며,  
 이용자들의 쿠폰 사용 내역 또한 효율적으로 관리할 수 있습니다.  
 - 하나의 코드로 다수의 이용자가 사용 가능한 단일 코드 쿠폰
 - 각기 다른 코드로 발급 가능한 대규모의 시리얼 쿠폰

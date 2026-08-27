@@ -57,6 +57,10 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 ![group detail 1](/img/docs/guide/base/group/group-detail-statistics.png)
 
+:::tip 멀티 캐릭터를 사용 중인가요?
+멀티 캐릭터 프로젝트에서는 그룹 통계 그래프에 **계정 기준 집계** 옵션이 추가되어, 동일 계정에 속한 여러 유저를 1명으로 계산할 수 있습니다. [보기](/guide/console-guide/backnd-base/users/multi-character#다른-메뉴에서의-동작)
+:::
+
 ### 유저와 리더보드
 
 **유저**

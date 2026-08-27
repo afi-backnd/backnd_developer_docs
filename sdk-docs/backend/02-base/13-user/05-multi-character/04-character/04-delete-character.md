@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "캐릭터 삭제"
 description: "DeleteCharacter"
 ---
@@ -29,7 +31,7 @@ public BackendReturnObject **DeleteCharacter**(string **uuid**, string **inDate*
 * 페더레이션 & 커스텀 아이디 정보 삭제
 * 국가 코드 정보 삭제
 * 게임 정보 삭제
-* 길드 정보 삭제  - 길드장이 탈퇴 시, 해당 길드는 길드장이 존재하지 않게 됩니다.  - 길드에 해당 유저만 존재할 경우, 길드는 자동으로 삭제됩니다.  
+* 길드 정보 삭제  - 길드 마스터이 탈퇴 시, 해당 길드는 길드 마스터이 존재하지 않게 됩니다.  - 길드에 해당 유저만 존재할 경우, 길드는 자동으로 삭제됩니다.  
 
 
 ## Example

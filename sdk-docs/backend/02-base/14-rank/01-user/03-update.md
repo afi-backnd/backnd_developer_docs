@@ -30,11 +30,11 @@ URank 랭킹 함수는 그룹이 구분된 리더보드에서 NULL그룹만 등�
 | rankUuid | string | 갱신할 랭킹의 uuid |
 | tableName | string | 갱신할 테이블의 이름 |
 | rowIndate | string | 갱신할 row의 inDate |
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 갱신할 값 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 갱신할 값 |
 
 rankUuid 값은 아래 방법을 통해 확인할 수 있습니다.  
 * uuid 값은 뒤끝 콘솔에서 랭킹을 생성 후 해당 랭킹 정보에서 uuid 값 확인
-* [모든 유저 랭킹 정보 조회](/sdk-docs/backend/base/rank/user/get-all-sertting) 함수를 이용하여 uuid 값 확인
+* [모든 유저 랭킹 정보 조회](/sdk-docs/backend/base/leaderboard/user/get-leaderboard) 함수를 이용하여 uuid 값 확인
 
 ## 설명
 uuid의 랭킹을 갱신함과 동시에 테이블의 row에 저장된 데이터를 갱신합니다.  

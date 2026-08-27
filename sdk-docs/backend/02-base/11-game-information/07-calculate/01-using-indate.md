@@ -13,7 +13,7 @@ public BackendReturnObject **UpdateWithCalculationV2**(string **tableName**, str
 | tableName   | string | 업데이트할 테이블명 | 
 | inDate   | string | 업데이트를 할 row의 inDate 값 | 
 | owner_inDate   | string | 해당 row를 소유한 유저의 inDate | 
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 업데이트할 정보(AddCalculation을 통해 데이터 삽입) |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 업데이트할 정보(AddCalculation을 통해 데이터 삽입) |
 
 ## 설명
 테이블에 저장되어 있는 값 중 inDate 컬럼의 값과 소유하는 유저의 owner_inDate가 일치하는 **row를 검색하여 사칙연산을 수행**합니다.  

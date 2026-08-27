@@ -20,8 +20,8 @@ public BackendReturnObject **UpdateMyGuildGoodsAndRefreshLeaderboard**(string **
 
 ## 설명
 길드에 굿즈를 기부함과 동시에 리더보드를 갱신합니다.  
-* 해당 함수는 [Backend.Social.Guild.ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate) 함수에 리더보드 갱신 기능이 추가된 함수입니다.  
-* [ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate) 함수 혹은 [UseGuildGoods](/sdk-docs/backend/base/rank/guild/modify/by-using-goods)로 갱신된 굿즈 내역은 리더보드에 반영되지 않습니다.  
+* 해당 함수는 [Backend.Social.Guild.ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate-forbidden-during-reset-time) 함수에 리더보드 갱신 기능이 추가된 함수입니다.  
+* [ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate-forbidden-during-reset-time) 함수 혹은 [UseGuildGoods](/sdk-docs/backend/base/leaderboard/guild/update-by-goods)로 갱신된 굿즈 내역은 리더보드에 반영되지 않습니다.  
 > 현재 리더보드에 10000점이 반영되어 있는 상태에서 Backend.Social.Guild.ContributeGoodsV3 함수를 이용하여 1000점을 기부한 경우
 리더보드에는 10000점, 길드 굿즈에는 11000점이 반영되게 됩니다.  
 
@@ -74,7 +74,7 @@ statusCode : 400
 errorCode : ValidationException  
 message : value can't be negative
 
-**[Spend] 길드장이 아닌 유저가 GoodsUse.Spend를 호출한 경우**  
+**[Spend] 길드 마스터이 아닌 유저가 GoodsUse.Spend를 호출한 경우**  
 statusCode : 403  
 errorCode : ForbiddenException  
 message : Forbidden useGoods, 금지된 useGoods

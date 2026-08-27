@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "멀티 캐릭터 예제 게임"
 description: "멀티 캐릭터 예제 게임"
 ---

@@ -25,12 +25,12 @@ public BackendReturnObject **UpdateGuildMetaData**(string **rankUuid**, string *
 
 rankUuid 값은 아래 방법을 통해 확인할 수 있습니다.  
 * uuid 값은 뒤끝 콘솔에서 랭킹을 생성 후 해당 랭킹 정보에서 uuid 값 확인
-* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/rank/guild/get-all-settings) 함수를 이용하여 uuid 값 확인
+* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/leaderboard/guild/get-leaderboard) 함수를 이용하여 uuid 값 확인
 
 ## 설명
 길드의 메타 데이터를 갱신함과 동시에 랭킹을 갱신합니다.  
 * 갱신하려는 메타 데이터가 존재하지 않는 경우 해당 메타 데이터가 새로 생성되게 됩니다.  
-* UpdateGuildMetaData 함수는 [Backend.Social.Guild.ModifyGuildV3](/sdk-docs/backend/base/guild/metadata/change) 함수에 랭킹 갱신 기능이 추가된 함수입니다.  
+* UpdateGuildMetaData 함수는 [Backend.Social.Guild.ModifyGuildV3](/sdk-docs/backend/base/guild/metadata/change-forbidden-during-reset-time) 함수에 랭킹 갱신 기능이 추가된 함수입니다.  
 * UpdateGuildMetaData 함수를 이용하지 않고 갱신된 데이터는 랭킹에 반영되지 않습니다.  
 > **랭킹에 사용하는 메타 데이터의 값(점수로 사용할 값)의 범위는 아래와 같아야 합니다.  
 해당 범위를 벗어나는 값은 반올림, 반내림 되는 등 정상적으로 저장되지 않을 수 있고, SDK에서 랭킹을 조회할 때 에러가 발생할 수 있습니다.**  

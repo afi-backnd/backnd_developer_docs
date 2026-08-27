@@ -25,7 +25,7 @@ URank 랭킹 함수는 그룹이 구분된 리더보드에서 NULL그룹만 조�
 
 rankUuid 값은 아래 방법을 통해 확인할 수 있습니다.  
 * uuid 값은 뒤끝 콘솔에서 랭킹을 생성 후 해당 랭킹 정보에서 uuid 값 확인
-* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/rank/guild/get-all-settings) 함수를 이용하여 uuid 값 확인
+* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/leaderboard/guild/get-leaderboard) 함수를 이용하여 uuid 값 확인
 
 ## 설명
 uuid 값을 이용하여 해당 랭킹의 보상 정보를 조회합니다.  

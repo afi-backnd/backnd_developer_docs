@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "이메일 정보등록"
 description: "UpdateCustomEmail"
 ---

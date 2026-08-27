@@ -12,7 +12,7 @@
 ## SDK 모듈
 
 ### 베이스 SDK (sdk-docs/backend/)
-엔진: Unity | 문서 555개
+엔진: Unity | 문서 563개
 플레이어 인증, 데이터, 랭킹, 길드, 쿠폰, 푸시, 로그, 확률, 결제 등 게임 서버 핵심 기능 전반
 
 - [02-base/](./sdk-docs/backend/02-base/): 뒤끝베이스
@@ -108,8 +108,8 @@ Unreal Engine 전용 실시간 채팅
 
 ## 가이드
 
-- [시작 가이드](./guide/getting-started/): 문서 49개
-- [콘솔 가이드](./guide/console-guide/): 문서 84개
+- [시작 가이드](./guide/getting-started/): 문서 51개
+- [콘솔 가이드](./guide/console-guide/): 문서 85개
 
 ## FAQ
 
@@ -128,8 +128,8 @@ Unreal Engine 전용 실시간 채팅
 
 ## 릴리즈 노트 (update-note/)
 
-- Backend: 최신 Backend-5.18.13 (40개 버전) → [update-note/Backend/](./update-note/Backend/)
-- Chat: 최신 Chat-1.4.0 (11개 버전) → [update-note/Chat/](./update-note/Chat/)
+- Backend: 최신 Backend-5.18.14 (41개 버전) → [update-note/Backend/](./update-note/Backend/)
+- Chat: 최신 Chat-1.4.1 (12개 버전) → [update-note/Chat/](./update-note/Chat/)
 - Function: 최신 Function-1.0.2 (7개 버전) → [update-note/Function/](./update-note/Function/)
 - World: 최신 World-0.2.0 (2개 버전) → [update-note/World/](./update-note/World/)
 - Database: 최신 Database-1.0.0 (2개 버전) → [update-note/Database/](./update-note/Database/)

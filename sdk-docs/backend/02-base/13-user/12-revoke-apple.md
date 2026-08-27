@@ -37,48 +37,48 @@ cb3235099be9244a1b3c12b7c71e4afe9.0.srqyr.eOzlqRF-gg9UZvHXBwmGaA
 * Apple 프로젝트의 Key 이름
 * Apple 프로젝트 Key(p8 파일)
 
-![](\img\docs\guide\base\user\revoke-apple\console.png)
+![](/img/docs/guide/base/user/revoke-apple/console.png)
 
 
 ### iOS Bundle Identifier
 
 [애플 개발자 계정](https://appstoreconnect.apple.com/apps) 접속 > 등록한 앱 클릭 > 앱 정보 > 일반 정보 > 번들 ID
 
-![](\img\docs\guide\base\user\revoke-apple\identifier.png)
+![](/img/docs/guide/base/user/revoke-apple/identifier.png)
 
 ### Apple 개발자 계정의 Team ID
 
 [애플 개발자 계정](https://appstoreconnect.apple.com/apps) 접속 > 우측 상단 아이디 클릭 > 프로필 편집 클릭
 
-![](\img\docs\guide\base\user\revoke-apple\team-id.png)
+![](/img/docs/guide/base/user/revoke-apple/team-id.png)
 
 ### Apple 프로젝트 Key
 
 1. [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/authkeys/list)에 들어가 Key를 추가합니다.
 
-![](\img\docs\guide\base\user\revoke-apple\create-key.png)
+![](/img/docs/guide/base/user/revoke-apple/create-key.png)
 
 2. Sign In With Apple에 체크, Configure를 클릭합니다.
 
-![](\img\docs\guide\base\user\revoke-apple\siwa-configure.png)
+![](/img/docs/guide/base/user/revoke-apple/siwa-configure.png)
 
 3. 애플 로그인을 구현한 앱을 선택합니다.
 
-![](\img\docs\guide\base\user\revoke-apple\register.png)
+![](/img/docs/guide/base/user/revoke-apple/register.png)
 
 4. Save를 클릭합니다.
 
-![](\img\docs\guide\base\user\revoke-apple\save.png)
+![](/img/docs/guide/base/user/revoke-apple/save.png)
 
 5. Download를 클릭하여 p8 파일을 다운받습니다.
 
-![](\img\docs\guide\base\user\revoke-apple\key-name.png)
+![](/img/docs/guide/base/user/revoke-apple/key-name.png)
 
 ### Apple 프로젝트의 Key 이름
 
 Apple 프로젝트의 Key를 다운받았던 곳에서 key 이름을 복사합니다.
 
-![](\img\docs\guide\base\user\revoke-apple\key-name.png)
+![](/img/docs/guide/base/user/revoke-apple/key-name.png)
 
 ## Example
 해당 예제는 [Lupidan/apple-signin-unity](https://github.com/lupidan/apple-signin-unity)의 기능을 참고하여 authorizationCode를 발급하고 있습니다.

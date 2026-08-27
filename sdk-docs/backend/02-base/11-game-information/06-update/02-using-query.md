@@ -12,7 +12,7 @@ public BackendReturnObject **Update**(string **tableName**, Where **where**, Par
 | :------------ |:-------------| :----- | 
 | tableName   | string | 업데이트를 할 테이블명 | 
 | where   | [Where](/sdk-docs/backend/base/game-information/clause-where/basic) | 업데이트를 할 row를 찾기 위한 param | 
-| param | [Param](/sdk-docs/backend/base/knowhow/param/Param) | 업데이트할 정보 |
+| param | [Param](/sdk-docs/backend/base/knowhow/param/param) | 업데이트할 정보 |
 
 ## 설명
 테이블에 저장되어 있는 값 중 where 조건문에 해당하는 **row 1개를 검색하여 수정**합니다.  

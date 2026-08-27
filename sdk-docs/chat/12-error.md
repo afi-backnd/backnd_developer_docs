@@ -57,6 +57,7 @@ public void OnError(ERROR_MESSAGE error, object param)
 
 | Value                     | Description                                                                            | Param                    |
 | :------------------------ | :------------------------------------------------------------------------------------- | :----------------------- |
+| UNKNOWN_ERROR           | 정의되지 않은 에러입니다. 서버에서 알 수 없는 에러 코드가 전달된 경우 발생합니다.       | NULL                     |
 | NOT_AUTHENTICATION      | 인증 되지 않은 사용자 입니다. | NULL                     |
 | CHAT_SERVER_FULL          | 채팅 서버 최대 인원 접속 상태 입니다.                                                  | NULL                     |
 | WHISPER_OFFLINE           | 귓속말 상대가 오프라인 상태 입니다.                                                    | NULL                     |
@@ -75,12 +76,12 @@ public void OnError(ERROR_MESSAGE error, object param)
 | NOT_JOIN_CHANNEL          | 입장 되어 있는 채널이 아닙니다.                                                        | NULL                     |
 | ALREADY_CREATED_CHANNEL   | 이미 생성 된 채널 입니다. (채널 생성 시)                                               | ErrorMessageChannelParam |
 | DUPLICATE_CHANNEL_GROUP   | 채널 그룹이 이미 존재 합니다. (채널 생성 시)                                           | ErrorMessageChannelParam |
-| CHANNEL_GROUP_TOO_LONG    | 채널 그룹이 너무 짧습니다. (채널 생성 시)                                              | ErrorMessageChannelParam |
-| CHANNEL_GROUP_TOO_SHORT   | 채널 그룹이 너무 깁니다. (채널 생성 시)                                                | ErrorMessageChannelParam |
+| CHANNEL_GROUP_TOO_LONG    | 채널 그룹이 너무 깁니다. (채널 생성 시)                                                | ErrorMessageChannelParam |
+| CHANNEL_GROUP_TOO_SHORT   | 채널 그룹이 너무 짧습니다. (채널 생성 시)                                              | ErrorMessageChannelParam |
 | CHANNEL_GROUP_FILTERED    | 채널 그룹이 필터링 되었습니다. (채널 생성 시)                                          | ErrorMessageChannelParam |
 | DUPLICATE_CHANNEL_NAME    | 채널 이름이 이미 존재 합니다. (채널 생성 시)                                           | NULL                     |
-| CHANNEL_NAME_TOO_LONG     | 채널 이름이 너무 짧습니다. (채널 생성 시)                                              | ErrorMessageChannelParam |
-| CHANNEL_NAME_TOO_SHORT    | 채널 이름이 너무 깁니다. (채널 생성 시)                                                | ErrorMessageChannelParam |
+| CHANNEL_NAME_TOO_LONG     | 채널 이름이 너무 깁니다. (채널 생성 시)                                                | ErrorMessageChannelParam |
+| CHANNEL_NAME_TOO_SHORT    | 채널 이름이 너무 짧습니다. (채널 생성 시)                                              | ErrorMessageChannelParam |
 | CHANNEL_NAME_FILTERED     | 채널 이름이 필터링 되었습니다. (채널 생성 시)                                          | ErrorMessageChannelParam |
 | PASSWORD_TOO_LONG         | 비밀번호를 너무 길게 설정 하였습니다. (채널 생성 시)                                   | ErrorMessageChannelParam |
 | INVALID_PASSWORD          | 비밀번호를 잘못 입력 하였습니다. (채널 입장 시)                                        | ErrorMessageChannelParam |
@@ -95,7 +96,7 @@ public void OnError(ERROR_MESSAGE error, object param)
 | FAILED_UPDATE_METADATA      | 메타데이터 업데이트에 실패 하였습니다. | NULL                     |
 | FAILED_UPDATE_GAMER_NAME      | 닉네임 변경에 실패 하였습니다. | NULL                     |
 | FAILED_UPDATE_LANGUAGE      | 언어 정보 변경에 실패 하였습니다. | NULL                     |
-| NOT_BLOCK_USER_WHISPER      | 차단 된 유저에게 귓속말을 보내 실 수 없습니다. | NULL                     |
+| NOT_BLOCK_USER_WHISPER      | 내가 차단한 유저에게는 귓속말을 보낼 수 없습니다. | NULL                     |
 | BLOCKED_RECIPIENT_WHISPER      | 귓속말 요청 상대가 나를 차단 하였습니다. | NULL                     |
 
 ## Param

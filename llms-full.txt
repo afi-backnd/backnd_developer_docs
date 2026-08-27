@@ -2,7 +2,7 @@
 
 > AI agent와 LLM이 TheBackend 문서를 단일 컨텍스트로 소비할 수 있도록 핵심 내용을 모은 파일입니다.
 > 전체 원본: https://github.com/afi-backnd/backnd_developer_docs
-> 생성일: 2026-08-13
+> 생성일: 2026-08-27
 
 ---
 
@@ -41,7 +41,7 @@
 ## Step1. 최신 뒤끝 SDK 다운로드
 
 아래 뒤끝 SDK를 다운로드합니다. 뒤끝 베이스 SDK는 베이스 기능 외, 뒤끝매치 기능도 포함하고 있습니다.
-- <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.13/Backend-5.18.13.unitypackage" id="download-sdk">Backend-5.18.13.unitypackage</a>&nbsp;[2026-08-13]
+- <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.14/Backend-5.18.14.unitypackage" id="download-sdk">Backend-5.18.14.unitypackage</a>&nbsp;[2026-08-27]
 
 **최초 설치인 경우**
 - Step2.로 이동합니다.
@@ -160,7 +160,7 @@ Unity SDK를 통해 실시간 채팅 기능을 Unity 프로젝트에 빠르게 �
 ### 1. 채팅 SDK 설치하기
 
 아래 패키지를 다운로드하고 유니티 프로젝트에 Import 합니다.
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.0/BackndChat-1.4.0.unitypackage" id="download-sdk-chat">BackndChat-1.4.0.unitypackage</a>&nbsp;[2025-12-18]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChat-1.4.1.unitypackage" id="download-sdk-chat">BackndChat-1.4.1.unitypackage</a>&nbsp;[2026-08-27]
 
 :::info 베이스 SDK와 함께 사용한다면?
 채팅 SDK를 임포트할 때 `Backend.dll`이 덮어씌워지지 않도록 체크 해제하세요. 자세한 내용은 [베이스 SDK와 함께 사용하는 경우](/sdk-docs/chat/install/with-base-sdk) 문서에서 확인하세요.
@@ -255,13 +255,10 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
     void Update() => ChatClient?.Update();
     void OnApplicationQuit() => ChatClient?.Dispose();
 
-    public void OnChatMessage(MessageInfo messageInfo)
-    {
-        Debug.Log($"[수신] {messageInfo.GamerName}: {messageInfo.Message}");
-    }
-
-    public void OnSuccess(SUCCESS_MESSAGE success, object param) { }
-    public void OnError(ERROR_MESSAGE
+    public void OnJoinChannel(ChannelInfo channelInfo) { }
+    public void OnLeaveChannel(ChannelInfo channelInfo) { }
+    public void OnJoinChannelPlayer(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
+    publi
 
 > ... (전체 내용: sdk-docs/chat/01-intro.md)
 

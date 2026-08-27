@@ -22,12 +22,12 @@ public BackendReturnObject **ContributeGuildGoods**(string **rankUuid**, goodsTy
 
 rankUuid 값은 아래 방법을 통해 확인할 수 있습니다.  
 * uuid 값은 뒤끝 콘솔에서 랭킹을 생성 후 해당 랭킹 정보에서 uuid 값 확인
-* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/rank/guild/get-all-settings) 함수를 이용하여 uuid 값 확인
+* [모든 길드 랭킹 정보 조회](/sdk-docs/backend/base/leaderboard/guild/get-leaderboard) 함수를 이용하여 uuid 값 확인
 
 ## 설명
 길드에 굿즈를 기부함과 동시에 랭킹을 갱신합니다.  
-* ContributeGuildGoods 함수는 [Backend.Social.Guild.ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate) 함수에 랭킹 갱신 기능이 추가된 함수입니다.  
-* ContributeGuildGoods 함수 혹은 [UseGuildGoods](/sdk-docs/backend/base/rank/guild/modify/by-using-goods) 함수를 이용하지 않고 갱신된 굿즈 내역은 랭킹에 반영되지 않습니다.  
+* ContributeGuildGoods 함수는 [Backend.Social.Guild.ContributeGoodsV3](/sdk-docs/backend/base/guild/goods/donate-forbidden-during-reset-time) 함수에 랭킹 갱신 기능이 추가된 함수입니다.  
+* ContributeGuildGoods 함수 혹은 [UseGuildGoods](/sdk-docs/backend/base/leaderboard/guild/update-by-goods) 함수를 이용하지 않고 갱신된 굿즈 내역은 랭킹에 반영되지 않습니다.  
 > 현재 랭킹에 10000점이 반영되어 있는 상태에서 Backend.Social.Guild.ContributeGoodsV3 함수를 이용하여 1000점을 기부한 경우
 랭킹에는 10000점, 길드 굿즈에는 11000점이 반영되게 됩니다.  
   

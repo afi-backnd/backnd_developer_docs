@@ -17,3 +17,4 @@
 | [07-setting-immediatly-join.md](./07-setting-immediatly-join.md) | SetRegistrationValueV3 |
 | [08-change-country-code.md](./08-change-country-code.md) | UpdateCountryCodeV3 |
 | [09-update-guild-name.md](./09-update-guild-name.md) | UpdateGuildName |
+| [10-claim-master.md](./10-claim-master.md) | ClaimGuildMaster |

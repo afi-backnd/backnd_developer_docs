@@ -17,7 +17,7 @@ description: "13. 친구 요청과 요청 대기 목록 조회"
 </div>
 
 <div className="linked_button">
-    <a href="/guide/getting-started/tutorial/simple-airplane-game/friend-accept/">다음 강의 바로가기</a>
+    <a href="/guide/getting-started/tutorial/simple-airplane-game/friends-accept">다음 강의 바로가기</a>
 </div>
 
 ---

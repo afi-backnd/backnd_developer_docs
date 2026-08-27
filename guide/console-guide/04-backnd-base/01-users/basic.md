@@ -10,14 +10,18 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 뒤끝 콘솔의 유저 관리에서는 회원가입한 유저들의 정보를 찾거나 조회할 수 있습니다.
 
-- 가입하신 유저 아이디의 앞뒤로 공백이 있을 경우, 뒤끝 콘솔에서는 공백을 제거하기 때문에 동일한 유저처럼 표시될 수 있습니다.
+- 가입하신 계정 ID의 앞뒤로 공백이 있을 경우, 뒤끝 콘솔에서는 공백을 제거하기 때문에 동일한 유저처럼 표시될 수 있습니다.
 - 유저의 닉네임이 존재하지 않을 경우 '-'으로 표시됩니다.
 - 유저의 국가가 설정되어 있지 않을 경우, '-'으로 표시됩니다.
-- 멀티 캐릭터 사용 유무에 따라 캐릭터 탭이 추가됩니다.
 
 <ConsoleLinkButton text="유저 바로가기" menu="baseGamer/5.11.0/gamer" feature="유저" title="유저 관리 - 검색/생성/삭제" />
 
-![user](/img/docs/guide/base/user-management/user.png)
+![유저 목록](/img/docs/guide/base/user-management/basic01.png)
+
+:::tip 멀티 캐릭터를 사용 중인가요?
+멀티 캐릭터를 활성화한 프로젝트는 유저 메뉴에 **계정 탭**이 추가되며, 검색 · 생성 · 삭제 동작이 일부 달라집니다.  
+자세한 내용은 [유저 관리 - 멀티 캐릭터](/guide/console-guide/backnd-base/users/multi-character)를 참고해 주세요.
+:::
 
 ## 누적 결제액
 
@@ -25,31 +29,29 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - 누적 결제액 순으로 정렬이 가능하여 상위 유저를 한눈에 쉽게 확인 가능합니다.
 - 누적 결제액은 SDK 5.12.2 이후 버전을 통해 저장된 경우에만 표기됩니다.
 
-![payment1](/img/docs/guide/base/user-management/cumulative_payment_amount_sorting.png)
+![누적 결제액](/img/docs/guide/base/user-management/basic02.png)
 
 화폐를 선택하여 확인할 수 있습니다.
 
-![payment2](/img/docs/guide/base/user-management/user_currency.png)
+![화폐 선택](/img/docs/guide/base/user-management/basic03.png)
 
-## 유저 검색(멀티 캐릭터 미사용)
+## 유저 검색
 
 검색은 기본 검색과 상세 검색으로 나뉩니다.
 
 ### 기본 검색
 
-유저 번호, 유저 아이디, 닉네임으로 유저를 검색할 수 있습니다.
+유저 UUID, 계정 ID, 닉네임 중 하나를 선택해 유저를 검색할 수 있습니다.
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--기본-검색.png" />
+![기본 검색](/img/docs/guide/base/user-management/basic04.png)
 
 대상 입력 칸에 작은 따옴표(')를 사용하여 단어를 입력할 경우, 해당 단어가 포함된 유저의 정보 또한 검색이 됩니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--해당-단어-포함-검색.png" />
 
 ### 상세 검색
 
 **상세 검색**을 사용하면 가입 유형, 접속 기기, 계정 상태, 국가, 가입일 등을 이용하여 유저를 검색할 수 있습니다.
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--상세-검색.png" />
+![상세 검색](/img/docs/guide/base/user-management/basic05.png)
 
 - 가입 유형 : 회원가입한 방식에 따라 custom, 구글, 애플, 페이스북으로 검색 가능
 - 계정 상태 : 정상, 차단, 탈퇴 신청, 탈퇴 완료로 검색 가능
@@ -57,146 +59,36 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - 접속 OS : OS 전체 및 각 OS 별 버전 선택 가능(디폴트는 전체, 소수점 이하는 상위 버전에 포함됨)
 - 접속 기기 : 로그인한 유저의 기기명(모델명)으로 검색 가능
 - 가입일 : 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-- 최종 접속일 : 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-- 메모 : 콘솔에서 수정을 통해 입력된 유저의 메모로 검색 가능
+- 최근 접속일 : 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
+- 메모 : 유저 상세보기에서 입력한 메모로 검색 가능
 
-메모 검색에 사용되는 검색어는 포함된 모든 결과를 표시합니다.
+메모 검색에 사용되는 검색어는 포함된 모든 결과를 표시합니다. 메모는 유저 상세보기에서 입력합니다.
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--상세-검색-메모.png" />
+![유저 상세보기의 메모 영역](/img/docs/guide/base/user-management/basic06.png)
 
-## 유저 생성(멀티 캐릭터 미사용)
+## 유저 생성
 
-페이지 상단의 명령 버튼 중 **게임 유저 생성** 버튼을 클릭해 유저 계정을 생성할 수 있습니다.
+페이지 상단의 **생성하기** 버튼을 클릭해 유저를 생성할 수 있습니다.
 
-- 유저 아이디는 중복 사용할 수 없습니다.
+- 계정 ID는 중복 사용할 수 없습니다.
 - 유저의 국가는 콘솔에서 변경이 불가능하며, 뒤끝 SDK를 통해 변경이 가능합니다.
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-버튼.png" />
+![유저 생성](/img/docs/guide/base/user-management/basic07.png)
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-모달.png" />
+## 유저 삭제
 
-## 유저 삭제(멀티 캐릭터 미사용)
+삭제할 유저를 선택하면 목록 위에 선택 개수와 **삭제** 버튼이 표시됩니다. 삭제 시 해당 유저가 가지고 있는 게임 정보 관리 내의 값과 리더보드에 등록되어 있는 정보도 같이 삭제할 수 있습니다.
 
-삭제할 유저를 선택한 후 페이지 상단의 명령 버튼 중 **삭제** 버튼을 클릭해 게임 유저를 삭제할 수 있으며,
-해당 유저가 가지고 있는 게임 정보 관리 내의 값과 랭킹에 등록되어 있는 정보도 같이 삭제할 수 있습니다.
+![유저 선택 후 삭제](/img/docs/guide/base/user-management/basic08.png)
 
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제.png" />
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제-모달.png" />
+![유저 삭제 모달](/img/docs/guide/base/user-management/basic09.png)
 
-- 삭제 시, 게임 유저의 모든 정보를 즉시 삭제합니다.
+- 삭제 시, 유저의 모든 정보를 즉시 삭제합니다.
 - 전체 선택은 페이지 당 적용되므로 한 번에 일괄 삭제 가능한 유저 수는 최대 100명입니다.
 - 삭제한 데이터는 정책상 복구가 불가능합니다.
+- 연결된 계정이 없고 유저의 디바이스 차단이 설정된 경우, 디바이스 차단을 먼저 해제한 후 삭제해 주세요. 삭제 후에는 디바이스 차단을 해제할 수 없습니다.
 - 유저 데이터 삭제 여부에 '삭제함'을 선택 시, 유저 정보 삭제와 함께 해당 유저가 삽입한 데이터 테이블의 정보도 함께 삭제됩니다.
-- 랭킹 삭제 여부에 '삭제함'을 선택 시, 랭킹에 업데이트된 유저의 랭킹 정보(랭킹에 보이는 순위)도 함께 삭제되며 더 이상 랭킹에 노출되지 않습니다.
-
-## 유저 검색(멀티 캐릭터 사용)
-
-검색은 기본 검색과 상세 검색으로 나뉩니다.
-
-### 기본 검색
-
-유저 번호, 유저 아이디로 유저를 검색할 수 있습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--기본-검색--멀티캐릭터.png" />
-
-대상 입력 칸에 작은 따옴표(')를 사용하여 단어를 입력할 경우, 해당 단어가 포함된 유저의 정보 또한 검색이 됩니다.
-
-### 상세 검색
-
-**상세 검색**을 사용하면 유형, 상태, 접속 OS, 접속 기기, 생성일, 최종 접속일을 검색할 수 있습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--상세-검색--멀티캐릭터.png" />
-
-- 유형: 회원가입한 방식에 따라 custom, 구글, 애플, 페이스북으로 검색 가능
-- 상태: 정상, 차단, 탈퇴 신청, 탈퇴 완료로 검색 가능
-- 접속 OS: OS 전체 및 각 OS 별 버전 선택 가능(디폴트는 전체, 소수점 이하는 상위 버전에 포함됨)
-- 접속 기기: 로그인한 유저의 기기명(모델명)으로 검색 가능
-- 생성일: 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-- 최종 접속일: 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-
-## 유저 생성(멀티 캐릭터 사용)
-
-:::caution
-
-- 멀티 캐릭터 기능에 여러 가지 개선이 필요한 상황임을 확인하고, 현재는 멀티 캐릭터 프로젝트 생성을 제한한 상태입니다. 이미 멀티 캐릭터를 사용 중인 프로젝트에서는 계속 멀티 캐릭터 기능을 이용하실 수 있습니다.
-- 만일 멀티 캐릭터 기능을 사용하지 않고 일반 프로젝트로 전환을 원하시는 경우, help@backnd.com로 문의해 주세요.
-- 보다 편리하고 안정적으로 사용하실 수 있도록 정비 중이오니 너른 양해 부탁드립니다.
-
-:::
-
-페이지 상단의 명령 버튼 중 **유저 생성** 버튼을 클릭해 유저 계정을 생성할 수 있습니다.
-
-- 유저 아이디는 중복 사용할 수 없습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-버튼--멀티캐릭터.png" />
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-모달--멀티캐릭터.png" />
-
-## 유저 삭제(멀티 캐릭터 사용)
-
-삭제할 유저를 선택한 후 페이지 상단의 명령 버튼 중 **삭제** 버튼을 클릭해 게임 유저를 삭제할 수 있으며,
-해당 유저에 종속된 모든 캐릭터의 데이터와 랭킹 정보가 삭제됩니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제--멀티캐릭터.png" />
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제-모달--멀티캐릭터.png" />
-
-- 삭제 시, 게임 유저의 모든 정보를 즉시 삭제합니다.
-- 전체 선택은 페이지 당 적용되므로 한 번에 일괄 삭제 가능한 유저 수는 최대 100명입니다.
-- 삭제한 데이터는 정책상 복구가 불가능합니다.
-
-## 캐릭터 검색(멀티 캐릭터 사용)
-
-검색은 기본 검색과 상세 검색으로 나뉩니다.
-
-### 기본 검색
-
-캐릭터 번호, 닉네임, 유저 번호로 캐릭터를 검색할 수 있습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--기본-검색--캐릭터.png" />
-
-대상 입력 칸에 작은 따옴표(')를 사용하여 단어를 입력할 경우, 해당 단어가 포함된 캐릭터의 정보 또한 검색이 됩니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--해당-단어-포함-검색--캐릭터.png" />
-
-### 상세 검색
-
-**상세 검색**을 사용하면 유형, 접속 기기, 상태, 국가, 생성일 등을 이용하여 캐릭터를 검색할 수 있습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--상세-검색--캐릭터.png" />
-
-- 가입 유형 : 회원가입한 방식에 따라 custom, 구글, 애플, 페이스북으로 검색 가능
-- 계정 상태 : 정상, 차단, 탈퇴 신청, 탈퇴 완료로 검색 가능
-- 국가 : 국가 코드로 검색 가능
-- 접속 OS : OS 전체 및 각 OS 별 버전 선택 가능(디폴트는 전체, 소수점 이하는 상위 버전에 포함됨)
-- 접속 기기 : 로그인한 캐릭터의 기기명(모델명)으로 검색 가능
-- 가입일 : 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-- 최종 접속일 : 시작일과 종료일 모두 입력해야 검색 가능(공백 시 전체 기간)
-- 메모 : 콘솔에서 수정을 통해 입력된 캐릭터의 메모로 검색 가능
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--상세-검색-메모--캐릭터.png" />
-
-## 캐릭터 생성(멀티 캐릭터 사용)
-
-멀티 캐릭터 사용 시 캐릭터 탭에서 페이지 상단의 명령 버튼 중 **캐릭터 생성** 버튼을 클릭해 캐릭터 계정을 생성할 수 있습니다.
-
-- 닉네임은 중복 사용할 수 없습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-버튼--캐릭터.png" />
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-생성-모달--캐릭터.png" />
-
-## 캐릭터 삭제(멀티 캐릭터 사용)
-
-멀티 캐릭터 사용 시 캐릭터 탭에서 삭제할 캐릭터를 선택한 후 페이지 상단의 명령 버튼 중 **삭제** 버튼을 클릭해 캐릭터를 삭제할 수 있으며,
-해당 캐릭터가 가지고 있는 게임 정보 관리 내의 값과 랭킹에 등록되어 있는 정보도 같이 삭제할 수 있습니다.
-
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제--캐릭터.png" />
-<img src="https://developer.thebackend.io/static/img/newconsole/base/유저 관리/뒤끝베이스--유저-관리--게임-유저-삭제-모달--캐릭터.png" />
-
-- 삭제 시, 캐릭터의 모든 정보를 즉시 삭제합니다.
-- 전체 선택은 페이지 당 적용되므로 한 번에 일괄 삭제 가능한 캐릭터 수는 최대 100명입니다.
-- 삭제한 데이터는 정책상 복구가 불가능합니다.
-- 데이터 삭제 여부에 '삭제함'을 선택 시, 캐릭터 정보 삭제와 함께 해당 캐릭터가 삽입한 데이터 테이블의 정보도 함께 삭제됩니다.
-- 랭킹 삭제 여부에 '삭제함'을 선택 시, 랭킹에 업데이트된 캐릭터의 랭킹 정보(랭킹에 보이는 순위)도 함께 삭제되며 더 이상 랭킹에 노출되지 않습니다.
+- 리더보드 순위 삭제 여부에 '삭제함'을 선택 시, 리더보드에 업데이트된 유저의 순위 정보도 함께 삭제되며 더 이상 리더보드에 노출되지 않습니다.
 
 ## 라이브 출시 전, 비정상적인 회원정보가 생성되었을 경우
 

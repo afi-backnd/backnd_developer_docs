@@ -11,7 +11,7 @@ public void **MatchEnd**(MatchGameResult **matchGameResult**);
 
 | Value           | Type                                        | Description |
 | :-------------- | :------------------------------------------ | :---------- |
-| matchGameResult | [MatchGameResult](/sdk-docs/backend/chat/basic) | 게임의 결과 |
+| matchGameResult | [MatchGameResult](/sdk-docs/backend/match/argument) | 게임의 결과 |
 
 ## 설명
 

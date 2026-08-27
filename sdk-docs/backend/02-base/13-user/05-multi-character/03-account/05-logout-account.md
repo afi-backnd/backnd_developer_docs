@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "계정 로그아웃"
 description: "LogoutAccount"
 ---

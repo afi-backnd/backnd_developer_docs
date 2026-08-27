@@ -659,6 +659,15 @@ description: "모든 Error Cases"
 
 ---
 
+#### ForbiddenException
+
+| message | Forbidden alreadyMaster, 금지된 alreadyMaster       |
+| :------ | :-------------------------------------------------- |
+| 상황    | 이미 길드 마스터인 유저가 길드 마스터 교체를 신청한 경우 |
+| 함수    | ClaimGuildMaster                                    |
+
+---
+
 #### ForbiddenError
 
 | message | Forbidden applyGuild, 금지된 applyGuild                        |
@@ -710,6 +719,15 @@ description: "모든 Error Cases"
 | :------ | :------------------------------------------ |
 | 상황    | 마스터 이외의 길드원이 함수를 호출한 경우   |
 | 함수    | SetRegistrationValueV3                      |
+
+---
+
+#### ForbiddenException
+
+| message | Forbidden guildMember, 금지된 guildMember             |
+| :------ | :---------------------------------------------------- |
+| 상황    | 길드 마스터 교체를 신청한 유저의 길드원 정보가 없는 경우   |
+| 함수    | ClaimGuildMaster                                      |
 
 ---
 
@@ -846,7 +864,7 @@ description: "모든 Error Cases"
 | message | guild not found, guild을(를) 찾을 수 없습니다                                                                                         |
 | :------ | :------------------------------------------------------------------------------------------------------------------------------------ |
 | 상황    | 존재하지 않는 길드명, 길드 InDate인 경우 / 길드에 가입하지 않은 유저가 함수를 호출한 경우                                             |
-| 함수    | GetGuildGoodsByIndateV3 / GetGuildIndateByGuildNameV3 / GetGuildInfoV3 / GetGuildMemberListV3 / GetGuildRank / SetRegistrationValueV3 |
+| 함수    | GetGuildGoodsByIndateV3 / GetGuildIndateByGuildNameV3 / GetGuildInfoV4 / GetGuildMemberListV3 / GetGuildRank / SetRegistrationValueV3 |
 
 ---
 
@@ -863,8 +881,8 @@ description: "모든 Error Cases"
 
 | message | guildMember not found, guildMember을(를) 찾을 수 없습니다     |
 | :------ | :------------------------------------------------------------ |
-| 상황    | 길드에 없는 유저일 경우                                       |
-| 함수    | NominateMasterV3 / NominateViceMasterV3 / ReleaseViceMasterV3 |
+| 상황    | 길드에 없는 유저일 경우 / 길드 마스터 교체 시 기존 길드 마스터의 길드원 정보가 없는 경우 |
+| 함수    | ClaimGuildMaster / NominateMasterV3 / NominateViceMasterV3 / ReleaseViceMasterV3    |
 
 ---
 
@@ -1092,6 +1110,15 @@ description: "모든 Error Cases"
 
 #### DuplicatedParameterException
 
+| message | Duplicated alreadyClaimed, 중복된 alreadyClaimed 입니다      |
+| :------ | :----------------------------------------------------------- |
+| 상황    | 동시 요청으로 다른 길드원이 먼저 길드 마스터 교체를 완료한 경우   |
+| 함수    | ClaimGuildMaster                                             |
+
+---
+
+#### DuplicatedParameterException
+
 | message | Duplicated alreadyRequestGamer, 중복된 alreadyRequestGamer 입니다 |
 | :------ | :---------------------------------------------------------------- |
 | 상황    | 이미 가입 요청한 길드에 다시 가입 요청 한 경우                    |
@@ -1231,6 +1258,24 @@ description: "모든 Error Cases"
 
 #### PreconditionFailed
 
+| message | master is active 사전 조건을 만족하지 않습니다.                        |
+| :------ | :--------------------------------------------------------------------- |
+| 상황    | 현재 길드 마스터의 미접속 기간이 콘솔에 설정한 기준 일수 이하인 경우   |
+| 함수    | ClaimGuildMaster                                                       |
+
+---
+
+#### PreconditionFailed
+
+| message | masterInactivePeriod not configured 사전 조건을 만족하지 않습니다.     |
+| :------ | :--------------------------------------------------------------------- |
+| 상황    | 프로젝트에 길드 마스터 자동 교체 기준 일수가 설정되지 않은 경우             |
+| 함수    | ClaimGuildMaster                                                       |
+
+---
+
+#### PreconditionFailed
+
 | message | maxGamerFriend 사전 조건을 만족하지 않습니다. |
 | :------ | :-------------------------------------------- |
 | 상황    | 요청받은 사람의 friend list 가 꽉 찬 경우     |
@@ -1287,8 +1332,8 @@ description: "모든 Error Cases"
 
 | message | subscribed guild 사전 조건을 만족하지 않습니다.               |
 | :------ | :------------------------------------------------------------ |
-| 상황    | 길드에 가입하지 않은 유저가 메타 정보 변경, 탈퇴를 시도한 경우 |
-| 함수    | ModifyGuildV3 / WithdrawGuildV3                               |
+| 상황    | 길드에 가입하지 않은 유저가 내 길드 조회, 메타 정보 변경, 탈퇴, 길드 마스터 교체를 시도한 경우 |
+| 함수    | ClaimGuildMaster / GetMyGuildInfoV4 / ModifyGuildV3 / WithdrawGuildV3                     |
 
 ---
 

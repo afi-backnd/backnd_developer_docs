@@ -19,7 +19,7 @@ public BackendReturnObject **UpdateCountryCodeV3**(CountryCode **code**);
 
 - 길드 v3 에서만 국가 코드를 수정할 수 있습니다.  
 - 길드 마스터만 국가 코드를 수정할 수 있습니다.  
-- 길드의 국가 코드 정보는 GetMyGuildInfoV3의 결괏값에 **countryCode** 키값으로 조회할 수 있습니다.  
+- 길드의 국가 코드 정보는 GetMyGuildInfoV4의 결괏값에 **_countryCode** 키값으로 조회할 수 있습니다.  
 
 ## Example
 

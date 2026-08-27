@@ -55,8 +55,8 @@ var bro = Backend.Guild.GetRandomGuildInfoV3("metaKey", 10, 0, 1);
 string metaKey = "guildLevel";
 
 //내 길드 정보중 guild level 데이터 가져오기
-var bro = Backend.Guild.GetMyGuildInfoV3();
-int myGuildLevel = int.Parse(bro.GetReturnValuetoJSON()["guild"][metaKey]["N"].ToString());
+var bro = Backend.Guild.GetMyGuildInfoV4();
+int myGuildLevel = int.Parse(bro.GetReturnValuetoJSON()["result"][metaKey].ToString());
 
 // myGuildLevel이 100일 경우, 90 ~ 110 사이의 level 데이터를 가진 길드 20개 조회
 var bro2 = Backend.Guild.GetRandomGuildInfoV3(metaKey, myGuildLevel, 10, 20);
@@ -82,9 +82,9 @@ Backend.Guild.GetRandomGuildInfoV3("metaKey", 10, 0, 1, callback =>
 string metaKey = "guildLevel";
 
 //내 길드 정보중 guild level 데이터 가져오기
-Backend.Guild.GetMyGuildInfoV3(callback =>
+Backend.Guild.GetMyGuildInfoV4(callback =>
 {
-    int myGuildLevel = int.Parse(callback.GetReturnValuetoJSON()["guild"][metaKey]["N"].ToString());
+    int myGuildLevel = int.Parse(callback.GetReturnValuetoJSON()["result"][metaKey].ToString());
 
     // myGuildLevel이 100일 경우, 90 ~ 110 사이의 level 데이터를 가진 길드 20개 조회
     Backend.Guild.GetRandomGuildInfoV3(metaKey, myGuildLevel, 10, 20, callback2 =>
@@ -112,9 +112,9 @@ SendQueue.Enqueue(Backend.Guild.GetRandomGuildInfoV3, "metaKey", 10, 0, 1, callb
 string metaKey = "guildLevel";
 
 //내 길드 정보중 guild level 데이터 가져오기
-SendQueue.Enqueue(Backend.Guild.GetMyGuildInfoV3, callback =>
+SendQueue.Enqueue(Backend.Guild.GetMyGuildInfoV4, callback =>
 {
-    int myGuildLevel = int.Parse(callback.GetReturnValuetoJSON()["guild"][metaKey]["N"].ToString());
+    int myGuildLevel = int.Parse(callback.GetReturnValuetoJSON()["result"][metaKey].ToString());
 
     // myGuildLevel이 100일 경우, 90 ~ 110 사이의 level 데이터를 가진 길드 20개 조회
     SendQueue.Enqueue(Backend.Guild.GetRandomGuildInfoV3, metaKey, myGuildLevel, 10, 20, callback2 =>

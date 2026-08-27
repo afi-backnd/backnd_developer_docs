@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "자동 로그인(토큰 로그인)"
 description: "AutoLoginAccount"
 ---

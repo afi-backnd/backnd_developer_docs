@@ -47,3 +47,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 삭제할 유저를 선택(체크박스)한 후 **삭제** 버튼을 누르면 접근 허용 내역을 삭제할 수 있습니다.  
 
 <img src="https://developer.thebackend.io/static/img/newconsole/base/유저 접근 관리/뒤끝베이스-유저접근관리-접근허용-삭제.png" />
+
+:::tip 멀티 캐릭터를 사용 중인가요?
+멀티 캐릭터 계정으로 승격한 경우 기존 접근 허용 유저를 **계정 UUID로 다시 등록**해야 합니다. [보기](/guide/console-guide/backnd-base/users/multi-character#유저-접근)
+:::

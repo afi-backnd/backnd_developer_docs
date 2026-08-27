@@ -8,4 +8,4 @@
 | 파일 | 설명 |
 |---|---|
 | [01-condition.md](./01-condition.md) | 재접속 조건 |
-| [02-old-event.md](./02-old-event.md) | \[Deprecated] OnSessionOnlineChannel |
+| [02-old-event.md](./02-old-event.md) | [Deprecated] OnSessionOnlineChannel |

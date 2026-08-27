@@ -78,7 +78,7 @@ token: USER_TOKEN
 
 ```json
 {
-  "source": "thebackend-chat-api",
+  "source": "thebackend-chat-api"
 }
 ```
 
@@ -108,7 +108,7 @@ token: USER_TOKEN
 ```
 
 유저 간 차단 기능을 사용하시려면 `blockedPlayers`에 차단 된 유저의 `uid`와 `nickname`, `blockdate`를 포함 해 주시면 서버에서 채팅 차단 처리가 가능 해 집니다.  
-자세한 내용은 ([유저](user)) 에서 확인 해 주시길 바랍니다.
+자세한 내용은 ([유저](./05-user.md)) 에서 확인 해 주시길 바랍니다.
 ```json title="Status: 200 OK"
 {
     "nickname": "john doe",
@@ -121,7 +121,7 @@ token: USER_TOKEN
             "nickname": "nickname1",
             "blockdate": "2025-12-01T12:00:00Z"
         }
-    ],
+    ]
 }
 ```
 
@@ -129,9 +129,13 @@ token: USER_TOKEN
 
 클라이언트 사이드에서는 아래 코드를 통해 인증된 유저의 토큰으로 채팅 서버에 접속하세요.
 
+커스텀 인증을 사용하더라도 Chat UUID는 필수입니다. `The Backend > Edit Chat Settings`에서 등록하거나 `ChatClientArguments.UUID`에 직접 지정하세요.
+
 ```csharp
 ChatClient = new ChatClient(this, new ChatClientArguments
 {
+    UUID = "xxxx-xxxx-xxxxxx-xxxxxxx",
     Avatar = "default",
     CustomAccessToken = "USER_TOKEN"
 });
+```

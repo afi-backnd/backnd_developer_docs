@@ -1,4 +1,6 @@
 ---
+draft: "true"
+unlisted: "true"
 sidebar_label: "아이디 찾기"
 description: "FindAccountId"
 ---

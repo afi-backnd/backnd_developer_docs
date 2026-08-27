@@ -26,3 +26,5 @@
 | [16-backnd-functions.md](./16-backnd-functions.md) | 뒤끝펑션 |
 | [17-worlds.md](./17-worlds.md) | 월드 |
 | [18-cloud-save.md](./18-cloud-save.md) | 클라우드 세이브 |
+| [database.md](./database.md) | 데이터베이스 |
+| [multi-character.md](./multi-character.md) | 멀티 캐릭터 |

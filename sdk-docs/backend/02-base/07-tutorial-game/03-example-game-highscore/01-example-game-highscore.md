@@ -165,5 +165,5 @@ Sevices 탭에서 새 프로젝트를 생성하고, **In-App Purchasing** 항목
 - [GPGS 페더레이션 회원가입](/sdk-docs/backend/base/user/federation/example-using-gpgs)
 - [안드로이드 푸시 설정](/guide/console-guide/server-setting/push/for-android)
 - [iOS 푸시 설정](/guide/console-guide/server-setting/push/for-ios)
-- [구글 영수증 검증](/sdk-docs/backend/base/receipt/android/setting-google-console)
-- [애플 영수증 검증](/sdk-docs/backend/base/receipt/ios/setting-google-console)
+- [구글 영수증 검증](/sdk-docs/backend/base/receipt/receipt/android/setting-google-console)
+- [애플 영수증 검증](/sdk-docs/backend/base/receipt/receipt/ios/setting-google-console)

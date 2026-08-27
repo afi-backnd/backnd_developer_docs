@@ -122,4 +122,4 @@ description: "다운로드 및 게임 설정"
 유니티에서 LoginScene으로 이동하여 게임을 실행하세요.  
 랭킹의 경우, 게임 시작을 통해 게임 정보 테이블에 데이터가 생성된 후 이용할 수 있습니다.  
 
-이후 랭킹 및 우편 설정 방법은 [랭킹, 우편 사용 방법](/sdk-docs/backend/base/tutorial-game/rank-and-post)을 참고해주세요.  
+이후 랭킹 및 우편 설정 방법은 [랭킹, 우편 사용 방법](/sdk-docs/backend/base/tutorial-game/example-game-idle/rank-and-post)을 참고해주세요.  

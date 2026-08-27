@@ -36,7 +36,7 @@ description: "프로젝트 설정"
 ## SDK 설치하기
 
 :::note
-SDK 설치에 대한 자세한 내용은 [SDK 설치](install) 문서를 참고해 주세요.
+SDK 설치에 대한 자세한 내용은 [SDK 설치](./01-install.md) 문서를 참고해 주세요.
 :::
 
 ## SDK 초기 설정하기

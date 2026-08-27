@@ -50,7 +50,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
     - 멀티 캐릭터 사용 시, 유저 UUID만 입력 가능합니다.
     - 이미 등록된 유저나 존재하지 않는 유저는 등록할 수 없습니다.
 - ‘차단 시 리더보드 순위 삭제하기’ 옵션을 선택하면, 차단과 동시에 해당 유저의 리더보드 순위가 삭제됩니다.
-- **사유**는 선택 입력 항목이며, 최대 100자까지 입력 가능합니다. 
+- **사유**는 선택 입력 항목이며, 최대 100자까지 입력 가능합니다.
 
 ![user block](/img/docs/guide/base/access-user-blocking/user-block.png)
 
@@ -72,6 +72,10 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
   - 다운로드한 파일을 그대로 다시 업로드하면 ‘실패 사유’ 컬럼은 무시되며, ‘uuid’ 컬럼만 처리됩니다.
 
 ![user block](/img/docs/guide/base/access-user-blocking/csv-upload-result.png)
+
+:::tip 멀티 캐릭터를 사용 중인가요?
+멀티 캐릭터 계정으로 승격한 경우 기존 접근 차단은 **계정 UUID로 자동 변경**됩니다. [보기](/guide/console-guide/backnd-base/users/multi-character#유저-접근)
+:::
 
 ## 접근 차단 등록 - 디바이스
 
