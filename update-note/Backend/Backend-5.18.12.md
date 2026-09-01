@@ -15,7 +15,6 @@ slug: backend-5-18-12
 
 <!--truncate-->
 
-[SDK .NET 4 버전] <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.12/Backend-5.18.12.unitypackage" target="_blank">다운로드</a>   
 
 ## Versions
 - Backend-5.18.12.dll
