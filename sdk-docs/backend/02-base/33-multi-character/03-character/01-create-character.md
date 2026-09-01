@@ -18,7 +18,7 @@ public BackendReturnObject **CreateCharacter**(string **nickname**);
 
 멀티 캐릭터 계정에 새로운 캐릭터를 생성합니다.
 
-- 계정 컨텍스트(`Backend.IsMultiAccountLogin == true`) 또는 `SelectCharacter`로 진입한 캐릭터 컨텍스트에서 호출합니다. `Elevate` 직후의 세션은 계정 권한이 없어 호출할 수 없습니다.
+- 계정 컨텍스트(`Backend.IsMultiAccountLogin == true`) 또는 `SelectCharacter`로 진입한 캐릭터 컨텍스트에서 호출합니다. `Elevate`에 성공하면 계정 컨텍스트로 진입하므로 바로 호출할 수 있습니다.
 - 호출 전에 `Backend.LocationProperties.UpdateLocationProperties` 또는 `CustomizeLocationProperties`로 위치 정보를 불러와야 합니다.
 - 닉네임은 중복하여 사용할 수 없습니다.
 - 계정 하나에 캐릭터는 최대 20개까지 생성할 수 있습니다.
@@ -91,10 +91,6 @@ statusCode : 403
 errorCode : ForbiddenException  
 message : Forbidden character count can not exceed 20, 금지된 character count can not exceed 20
 
-**`Elevate` 직후의 세션에서 호출한 경우**  
-statusCode : 403  
-errorCode : ForbiddenException  
-message : Forbidden caller must be account, 금지된 caller must be account
 
 **멀티 캐릭터를 사용하지 않는 프로젝트인 경우**  
 statusCode : 403  

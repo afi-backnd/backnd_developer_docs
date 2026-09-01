@@ -40,9 +40,8 @@ flowchart TD
     A["계정 회원가입 또는 로그인"] --> B{"기존 싱글 캐릭터 계정인가?"}
     B -->|예| C["Elevate로 계정 전환"]
     B -->|아니요| D["멀티 캐릭터 계정 컨텍스트"]
-    C --> J["기존 게이머가 첫 번째 캐릭터로 선택된 상태"]
-    J --> K["Logout 후 재로그인"]
-    K --> D
+    C --> J["기존 게이머를 첫 번째 캐릭터로 유지"]
+    J --> D
     D --> E["캐릭터 조회, 생성, 삭제"]
     E --> F["SelectCharacter"]
     F --> G["캐릭터 컨텍스트"]
@@ -57,7 +56,7 @@ flowchart TD
 ## 주요 특징
 
 - 회원가입과 로그인은 기존 게임 유저 관리 방식과 동일합니다.
-- 기존 싱글 캐릭터 계정은 `Backend.BMember.Elevate`로 멀티 캐릭터 계정으로 전환할 수 있습니다. 전환 직후에는 기존 게이머가 첫 번째 캐릭터로 선택된 상태이며, 계정 컨텍스트를 사용하려면 로그아웃 후 다시 로그인해야 합니다.
+- 기존 싱글 캐릭터 계정은 `Backend.BMember.Elevate`로 멀티 캐릭터 계정으로 전환할 수 있습니다. 전환에 성공하면 기존 게이머를 첫 번째 캐릭터로 유지하고 계정 컨텍스트로 진입하므로, 로그아웃 없이 캐릭터를 조회·생성·선택·삭제할 수 있습니다.
 - `Backend.NeedsElevation`, `Backend.IsMultiAccountLogin`, `Backend.IsMultiCharacterLogin`으로 현재 컨텍스트를 구분할 수 있습니다.
 - 계정 하나에 캐릭터는 최대 20개까지 생성할 수 있습니다.
 - `GetCharacterList()`로 캐릭터 목록만 조회하거나, `GetCharacterList(string tableName)`으로 캐릭터 목록과 각 캐릭터의 최신 게임 정보 한 건을 함께 조회할 수 있습니다.

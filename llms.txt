@@ -128,7 +128,7 @@ Unreal Engine 전용 실시간 채팅
 
 ## 릴리즈 노트 (update-note/)
 
-- Backend: 최신 Backend-5.18.14 (41개 버전) → [update-note/Backend/](./update-note/Backend/)
+- Backend: 최신 Backend-5.18.15 (42개 버전) → [update-note/Backend/](./update-note/Backend/)
 - Chat: 최신 Chat-1.4.1 (12개 버전) → [update-note/Chat/](./update-note/Chat/)
 - Function: 최신 Function-1.0.2 (7개 버전) → [update-note/Function/](./update-note/Function/)
 - World: 최신 World-0.2.0 (2개 버전) → [update-note/World/](./update-note/World/)

@@ -19,6 +19,8 @@ public void **Backend.CDN.Content.Get**(List< ContentTableItem > **contentTableL
 Backend.CDN.Content.Table.Get()를 통해 불러온 List< ContentTableItem >에 등록된 확률들의 내용을 불러옵니다.  
 * 해당 함수는 SendQueue로 호출할 수 없습니다.
 
+빈 `contentTableList`를 전달하면 성공 응답과 빈 `ContentItem` 목록을 반환합니다.
+
 리턴값이 204 성공 시, BackendContentReturnObject에 존재하는 **List< ContentItem > GetContentList()**에서 해당 파일의 값을 Json으로 확인하실 수 있습니다.  
 
 ### ContentProgressDelegate

@@ -19,7 +19,7 @@ public BackendReturnObject **GetCharacterList**(string **tableName**);
 
 멀티 캐릭터 계정에 속한 캐릭터 목록을 조회합니다.
 
-계정 컨텍스트(`Backend.IsMultiAccountLogin == true`) 또는 `SelectCharacter`로 진입한 캐릭터 컨텍스트에서 호출합니다. `Elevate` 직후의 세션은 계정 권한이 없어 호출할 수 없습니다.
+계정 컨텍스트(`Backend.IsMultiAccountLogin == true`) 또는 `SelectCharacter`로 진입한 캐릭터 컨텍스트에서 호출합니다. `Elevate`에 성공하면 계정 컨텍스트로 진입하므로 바로 호출할 수 있습니다.
 
 `tableName`을 전달하면 각 캐릭터가 해당 테이블에 저장한 최신 row 한 건을 함께 조회합니다. 테이블이 없거나 저장한 row가 없으면 해당 캐릭터 응답에 테이블 이름의 필드가 포함되지 않습니다. 한 번에 테이블 하나만 지정할 수 있습니다. `tableName`을 생략하면 캐릭터 정보만 조회합니다.
 
@@ -79,10 +79,6 @@ statusCode : 400
 errorCode : UndefinedAccountParameterException  
 message : Account information does not exist. The account needs to be elevated. Call Backend.BMember.Elevate to elevate the account.
 
-**`Elevate` 직후의 세션에서 호출한 경우**  
-statusCode : 403  
-errorCode : ForbiddenException  
-message : Forbidden caller must be account, 금지된 caller must be account
 
 **멀티 캐릭터를 사용하지 않는 프로젝트인 경우**  
 statusCode : 403  

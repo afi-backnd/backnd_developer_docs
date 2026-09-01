@@ -19,6 +19,8 @@ public void **Backend.CDN.Probability.Get**(List< ProbabilityTableItem > **proba
 Backend.CDN.Probability.Table.Get()를 통해 불러온 List< ProbabilityTableItem >에 등록된 확률들의 내용을 불러옵니다.  
 * 해당 함수는 SendQueue로 호출할 수 없습니다.
 
+빈 `probabilityTableList`를 전달하면 성공 응답과 빈 `ProbabilityContentItem` 목록을 반환합니다.
+
 리턴값이 204 성공 시, BackendProbabilityContentReturnObject에 존재하는 **List< ProbabilityContentItem > GetProbabilityContentList()**에서 해당 파일의 값을 Json으로 확인하실 수 있습니다.  
 
 ### ContentProgressDelegate
