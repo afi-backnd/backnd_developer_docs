@@ -29,6 +29,7 @@ public BackendReturnObject **InsertLogV2**(string **logType**, Param **param**);
 - Param의 key값은 숫자 혹은 _(언더바)로 시작할 수 없습니다.  
 - Param의 key값에는 -(하이픈), _(언더바), (띄어쓰기)를 제외한 특수문자의 사용이 불가능합니다.  
 - Param의 key값에는 nickname, gamer_id, indate, unknown_fields를 대소문자 상관없이 사용할 수 없습니다.  
+- Param의 key값은 대소문자를 구분하지 않고 중복 검사합니다. SDK 5.18.17에서는 터키어 등 일부 문화권에서도 `item`과 `ITEM`처럼 대소문자만 다른 키를 중복으로 처리하도록 수정되었습니다.
 - 게임 로그로 저장 가능한 데이터의 최대 크기는 1MB입니다.
 ## Example
 
@@ -80,7 +81,7 @@ message : MethodNotAllowed {key}, 이용할 수 없는 {key}입니다
 **param에 대소문자 상관없이 중복되는 key값이 존재할 경우**  
 statusCode : 405  
 errorCode : MethodNotAllowedParameterException  
-message : MethodNotAllowed {중복된key대문자}, 이용할 수 없는 {중복된key대문자}입니다
+message : Duplicated param key : {중복된key}({중복된key대문자})
 
 **param에 기타 조건에 맞지 않는 key값이 존재할 경우**  
 statusCode : 400  

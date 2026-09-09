@@ -4,13 +4,17 @@ date: 2026-09-04T10:00
 slug: backend-5-18-16
 ---
 
+:::danger 5.18.16 지원 종료
+특정 문화권에서 iOS 인증 요청의 플랫폼·앱 정보와 게임 로그 Param 키의 중복 검사가 올바르게 처리되지 않는 문제가 발견되어 지원이 종료되었습니다.<br />
+문제가 수정된 5.18.17로 업데이트해 주세요.
+:::
+
 :::info 업데이트 요약
 [압축 데이터] 압축 테이블에서 페이징 키를 사용한 다음 페이지 조회가 정상적으로 동작하지 않던 문제가 수정되었습니다.
 :::
 
 <!--truncate-->
 
-[SDK .NET 4 버전] <a href="https://developer.thebackend.io/sdk/unityPackage/5.18.16/Backend-5.18.16.unitypackage" target="_blank">다운로드</a>   
 
 ## Versions
 - Backend-5.18.16.dll
