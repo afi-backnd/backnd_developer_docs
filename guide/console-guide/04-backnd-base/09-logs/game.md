@@ -30,6 +30,10 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 ### 행동 유형 : thebackend_login_success_log
 
+:::info
+`thebackend_login_success_log`에는 커스텀 로그인, 페더레이션 로그인, 게스트 로그인, [토큰 로그인](/sdk-docs/backend/base/user/token/login), [토큰 갱신](/sdk-docs/backend/base/user/token/refresh-token)이 모두 포함됩니다.
+:::
+
 행동 유형이 thebackend_login_success_log일 경우, 검색 설정이 다음과 같이 변경됩니다.  
 
 - 하루 단위로 만 선택 가능(기간 검색 불가)
