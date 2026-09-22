@@ -2,7 +2,7 @@
 
 > AI agent와 LLM이 TheBackend 문서를 단일 컨텍스트로 소비할 수 있도록 핵심 내용을 모은 파일입니다.
 > 전체 원본: https://github.com/afi-backnd/backnd_developer_docs
-> 생성일: 2026-09-17
+> 생성일: 2026-09-22
 
 ---
 
