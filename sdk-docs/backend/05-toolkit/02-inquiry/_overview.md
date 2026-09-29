@@ -7,4 +7,4 @@
 
 | 파일 | 설명 |
 |---|---|
-| [01-install-inquiry-plugin.md](./01-install-inquiry-plugin.md) | 1대1 문의 플러그인 설치 |
+| [01-install-inquiry-plugin.md](./01-install-inquiry-plugin.md) | Unity에서 문의 버튼을 연결하고 1대1 문의 창 열기 |
