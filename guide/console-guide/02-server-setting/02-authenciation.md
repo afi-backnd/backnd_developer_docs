@@ -10,23 +10,87 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 
 <ConsoleLinkButton text="인증 정보 바로가기" menu="settingAuth" feature="인증 정보" title="인증정보" />
 
-![base-authentication](/img/docs/guide/base-authentication/base-authentication-onestore.png)
+![인증 정보 화면](/img/docs/guide/base-authentication/authenciation_guide_1.png)
 
 ## 게임 인증 정보
+
+### 인증 정보 연동
 
 뒤끝 기능을 사용하기 위해서는 뒤끝 SDK에 **Client App Id**와 **Signature Key**를 입력해야 합니다.  
 사용방법은 [개발자 문서 - 시작하기](/sdk-docs/backend/base/start-up)를 참고해 주세요.
 
+![게임 인증 정보](/img/docs/guide/base-authentication/authenciation_guide_2.png)
+
+<!--
 ### Client App Id / Signature Key 새로 발급
 
-**Client App Id**와 **Signature Key**를 새로 발급받고 싶으실 경우에는 해당 항목 우측에 새로 발급을 클릭하여 새로운 Key 값을 얻으실 수 있습니다.  
+**Client App Id**와 **Signature Key**를 새로 발급받고 싶으실 경우에는 해당 항목 우측에 새로 발급을 클릭하여 새로운 Key 값을 얻으실 수 있습니다.
 새로 발급 시 주의사항은 아래와 같습니다.
 
 - Client App Id 변경 시 뒤끝 SDK에서 인증값 재설정이 필요하여 뒤끝 콘솔에서 설정한 임시 공지, 뒤끝챗 필터링 등 일부 설정이 초기화됩니다.
 - Client App Id와 Signature Key를 재발급 받은 경우 SDK에 설정값에도 해당 값을 변경해야 합니다.
 - SDK에서 Client App Id를 변경한 경우 뒤끝 SDK 로컬에 저장된 설정값이 초기화됩니다.(게스트 로그인 정보, 유저 액세스 토큰 정보 등)
+-->
 
-![base-authentication](/img/docs/guide/base-authentication/base-authentication-new_CAppId.png)
+### Signature Key 교체 <span class="badge badge--info">26.10.20 제공</span> {#signature-key-change}
+
+**Signature Key**는 클라이언트 빌드에 포함되어 배포되는 값입니다.  
+따라서 사용 중인 키를 곧바로 교체하면, 기존 빌드를 이용 중인 모든 유저의 인증이 실패하게 됩니다.
+
+이를 방지할 수 있도록 **신규 Signature Key를 추가로 발급**하여 함께 사용할 수 있습니다.  
+신규 키를 빌드에 적용해 스토어에 배포가 완료된 후 기존 키를 삭제하면 서비스 중단 없이 키를 교체할 수 있습니다.
+
+#### 키 교체 절차
+
+1. **새 Signature Key 발급**  
+   Signature Key 항목 우측의 `+` 버튼을 클릭합니다.  
+   안내 모달에서 **발급**을 클릭하면 신규 키가 즉시 발급되며, 기존 키도 삭제 전까지 그대로 동작합니다. (최대 2개)
+
+   ![Signature Key 추가 발급](/img/docs/guide/base-authentication/authenciation_guide_3.png)
+
+2. **신규 키를 빌드에 적용**  
+   발급된 키를 복사하여 SDK 설정에 입력한 뒤 빌드합니다. 적용 방법은 [개발자 문서 - 시작하기](/sdk-docs/backend/base/start-up)를 참고해 주세요.
+
+3. **스토어 배포 및 유저 업데이트**  
+   신규 키가 적용된 빌드를 배포합니다.  
+   이 기간에는 기존 키와 새 키가 모두 동작하므로, 업데이트한 유저와 아직 하지 않은 유저 모두 정상적으로 게임을 이용할 수 있습니다.  
+   
+   기존 키 삭제는 강제 업데이트 및 신규 Signature Key가 반영된 버전이 스토어를 통해 배포가 적용되고, 정상 접속을 확인하신 후 진행해 주세요.  
+   ※ [버전 관리](/guide/console-guide/backnd-base/versions)에서 해당 버전을 등록할 때 **업데이트 방식**을 **강제**로 설정하시면, 유저가 이전 빌드를 계속 사용하는 상황을 줄일 수 있습니다.
+
+4. **기존 키 삭제**  
+   기존 키 우측의 **삭제** 버튼을 클릭합니다.  
+   확인 모달에 `DELETE`를 입력해야 삭제가 진행되며, 삭제 대상 키의 발급일을 함께 확인할 수 있습니다.
+
+   ![Signature Key 삭제](/img/docs/guide/base-authentication/authenciation_guide_4.png)
+
+#### 참고: 기존 키 삭제 시 유저 영향
+
+기존 키를 삭제하면 **즉시 반영**되며, 해당 키가 포함된 빌드에서는 인증이 실패합니다.  
+
+| 유저 상태 | 기존 키 삭제 후 동작 |
+|---|---|
+| 신규 키 적용 빌드 이용 중 | 영향 없음. 토큰이 만료되기 전에 업데이트한 경우 기기에 저장된 토큰을 그대로 사용하므로 재로그인도 필요하지 않습니다. |
+| 기존 키 빌드로 로그인한 상태 | 기기에 저장된 액세스 토큰과 리프레시 토큰이 유지되어, 토큰이 만료되기 전까지는 게임을 계속 이용할 수 있습니다. 액세스 토큰의 유효 기간은 1일이므로, 삭제 시점에 접속 중이던 유저도 최대 1일 이내에 영향을 받습니다. |
+| 기존 키 빌드에서 토큰이 만료된 경우 | 토큰이 필요한 동작을 수행할 때 게임이 종료됩니다. 새 키가 적용된 빌드로 업데이트한 뒤, 재로그인을 진행해야 합니다. |
+| 기존 키 빌드에서 새로 로그인을 시도하는 경우 | 토큰 로그인, 토큰 갱신, 신규 로그인 모두 실패합니다. |
+
+위 동작은 로그인 방식과 관계없이 동일하게 적용됩니다.  
+- 커스텀 로그인, 페더레이션 로그인(구글·애플·페이스북·스팀 등), 게스트 로그인 모두 동일
+- 다만 세션 만료 후 재로그인 시 게스트 로그인은 기기에 저장된 정보로 자동 처리되어 유저가 별도로 입력할 내용은 없음
+
+:::caution 유의사항
+- **기존 키를 삭제할 경우 해당 키의 빌드를 실행하면 아래와 같은 에러가 발생하며 재로그인도 불가능**합니다. 새 키가 적용된 빌드로 업데이트해야 다시 이용할 수 있습니다.
+
+  ```
+  statusCode : 404
+  errorCode : NotFoundException
+  message : game not found, game을(를) 찾을 수 없습니다
+  ```
+- **삭제한 키는 복구할 수 없습니다.** 동일한 값으로 다시 발급할 수 없으므로, 삭제 후에는 새 키를 발급하여 빌드에 다시 적용해야 합니다.
+- **지원 SDK 버전**: Signature Key 2개 동시 사용은 뒤끝 SDK **5.4.0 이상**에서 지원됩니다. 5.4.0 미만 버전에서는 새로 발급한 키로 인증할 수 없으므로, SDK를 5.4.0 이상으로 업데이트한 빌드에 새 키를 적용해 주세요.
+:::
+<br />
 
 ## 스토어 인증 정보
 
