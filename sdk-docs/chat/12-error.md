@@ -87,7 +87,7 @@ public void OnError(ERROR_MESSAGE error, object param)
 | INVALID_PASSWORD          | 비밀번호를 잘못 입력 하였습니다. (채널 입장 시)                                        | ErrorMessageChannelParam |
 | LIMIT_REPORT_MESSAGE_DAYS | 오래된 채팅 메시지이므로 신고가 불가능합니다.                                          | NULL                     |
 | ALREADY_JOIN_CHANNEL      | 이미 입장 한 채널 입니다. 오픈 채널은 같은 채널 그룹 내에서 중복 입장이 불가능 합니다. | NULL                     |
-| DUPLICATE_CONNECTION      | 중복 로그인이 발생 되었습니다. | NULL                     |
+| DUPLICATE_CONNECTION      | 중복 로그인이 발생 되었습니다. 자동으로 재연결하지 않으므로, 다시 접속하려면 기존 `ChatClient`를 `Dispose()`한 뒤 새로 생성해야 합니다. | NULL                     |
 | NOT_FOUND_BLOCK_URL      | 유저 간 차단 처리 URL 등록이 되어 있지 않습니다. (커스텀 인증 사용 시) | NULL                     |
 | FAILED_ADD_BLOCK_PLAYER      | 유저 차단에 실패 하였습니다. | NULL                     |
 | ALREADY_BLOCK_PLAYER      | 이미 차단 된 유저 입니다. | NULL                     |

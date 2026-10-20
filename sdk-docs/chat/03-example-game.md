@@ -15,15 +15,16 @@ description: "예제게임"
 
 개발된 버전 정보는 다음과 같습니다.
 
-- Unity 2022.3.13f1
-- Backend 5.11.9
+- Unity 2022.3.62f3
+- Backend 5.18.17
 
 ### 다운로드
 
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChatExample.unitypackage" id="download-sdk-chat-example">BackndChatExample.unitypackage</a>&nbsp;[2026-08-27]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.4/BackndChatExample.unitypackage" id="download-sdk-chat-example">BackndChatExample.unitypackage</a>&nbsp;[2026-10-20]
 
 :::info Supported Platforms
 - Android, iOS, Windows, Mac, Linux
+- 플랫폼별 요구 사양은 [시작하기](/sdk-docs/chat/intro) 문서에서 확인하세요.
 :::
 
 ## 설정 방법

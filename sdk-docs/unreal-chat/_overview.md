@@ -9,8 +9,10 @@
 |---|---|
 | [01-intro.md](./01-intro.md) | 시작하기 |
 | [02-install.md](./02-install.md) | 설치 및 환경 구성 |
+| [02-migration-guide.md](./02-migration-guide.md) | 마이그레이션 가이드 |
 | [03-example-game.md](./03-example-game.md) | 예제게임 |
 | [04-custom-auth.md](./04-custom-auth.md) | 커스텀 인증 |
+| [04-project-status.md](./04-project-status.md) | 프로젝트 상태 |
 | [05-user.md](./05-user.md) | 유저 |
 | [06-channel.md](./06-channel.md) | 채널 |
 | [07-message.md](./07-message.md) | 채팅 메시지 |

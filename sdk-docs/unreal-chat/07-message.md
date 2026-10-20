@@ -32,10 +32,10 @@ void OnDeleteMessage(BackndChat::MessageInfo messageInfo) { }
 
 ```cpp
 // 채팅 메시지를 입력 하는 함수 입니다. 채널 그룹, 채널 이름, 채널 번호, 메시지를 넣어서 보내 줍니다.
-BackndChat::BDChatMain::SendChatMessage(string channelGroup, string channelName, uint64_t channelNumber, string message);
+BackndChat::BDChatMain::SendChatMessage(std::string channelGroup, std::string channelName, uint64_t channelNumber, std::string message);
 
 // 귓속말을 입력 하는 함수입니다. 유저 이름(귓속말 보낼), 메시지를 넣어서 보내 줍니다.
-BackndChat::BDChatMain::SendWhisperMessage(string gamerName, string message);
+BackndChat::BDChatMain::SendWhisperMessage(std::string gamerName, std::string message);
 ```
 
 ### 정보 클래스
@@ -51,19 +51,25 @@ BackndChat::BDChatMain::SendWhisperMessage(string gamerName, string message);
 struct MessageInfo
 {
   // 채널 그룹 이름
-  string ChannelGroup;
+  std::string ChannelGroup;
 
   // 채널 이름
-  string ChannelName;
+  std::string ChannelName;
 
   // 채널 번호
   uint64_t ChannelNumber;
 
   // 유저 이름
-  string GamerName;
+  std::string GamerName;
 
   // 아바타 이름
-  string Avatar;
+  std::string Avatar;
+
+  // 메시지를 작성한 유저의 언어 정보
+  std::string Language;
+
+  // 메시지를 작성한 유저의 메타데이터
+  std::map<std::string, std::string> Metadata;
 
   // 채팅 인덱스
   uint64_t Index;
@@ -72,35 +78,41 @@ struct MessageInfo
   MESSAGE_TYPE MessageType;
 
   // 채팅 메시지
-  string Message;
+  std::string Message;
 
   // 채팅 시간 정보(UTC 기준) yyyy-MM-dd HH:mm:ss  ex) 2020-01-01 00:00:00
-  string Time;
+  std::string Time;
 
   // 메시지 태그
-  string Tag;
+  std::string Tag;
 };
 ```
 
 ```cpp
-struct MessageInfo
+struct WhisperMessageInfo
 {
   // 귓속말 인덱스
   uint64_t Index;
 
   // 귓속말 보낸 유저 이름
-  string FromGamerName;
+  std::string FromGamerName;
 
   // 귓속말 보낸 유저 아바타 이름
-  string FromAvatar;
+  std::string FromAvatar;
+
+  // 귓속말을 보낸 유저의 언어 정보
+  std::string FromLanguage;
+
+  // 귓속말을 보낸 유저의 메타데이터
+  std::map<std::string, std::string> FromMetadata;
 
   // 귓속말 메시지
-  string Message;
+  std::string Message;
 
   // 귓속말 시간 정보(UTC 기준) yyyy-MM-dd HH:mm:ss  ex) 2020-01-01 00:00:00
-  string Time;
+  std::string Time;
 
   // 메시지 태그
-  string Tag
+  std::string Tag;
 };
 ```

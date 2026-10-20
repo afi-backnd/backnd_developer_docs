@@ -2,7 +2,7 @@
 
 > AI agent와 LLM이 TheBackend 문서를 단일 컨텍스트로 소비할 수 있도록 핵심 내용을 모은 파일입니다.
 > 전체 원본: https://github.com/afi-backnd/backnd_developer_docs
-> 생성일: 2026-10-08
+> 생성일: 2026-10-20
 
 ---
 
@@ -160,7 +160,16 @@ Unity SDK를 통해 실시간 채팅 기능을 Unity 프로젝트에 빠르게 �
 ### 1. 채팅 SDK 설치하기
 
 아래 패키지를 다운로드하고 유니티 프로젝트에 Import 합니다.
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChat-1.4.1.unitypackage" id="download-sdk-chat">BackndChat-1.4.1.unitypackage</a>&nbsp;[2026-08-27]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.4/BackndChat-1.4.4.unitypackage" id="download-sdk-chat">BackndChat-1.4.4.unitypackage</a>&nbsp;[2026-10-20]
+
+#### 지원 플랫폼 및 요구 사양 
+| 플랫폼 | 요구 사양 |
+|---|---|
+| Android | 64비트(arm64-v8a, x86_64)를 포함하면 Minimum API Level **API 24(Android 7.0)** 이상 |
+| iOS | arm64 |
+| Windows | x64, x86 |
+| macOS | Apple Silicon은 **macOS 12.0** 이상, Scripting Backend는 **Mono**만 지원 |
+| Linux | x86_64 |
 
 :::info 베이스 SDK와 함께 사용한다면?
 채팅 SDK를 임포트할 때 `Backend.dll`이 덮어씌워지지 않도록 체크 해제하세요. 자세한 내용은 [베이스 SDK와 함께 사용하는 경우](/sdk-docs/chat/install/with-base-sdk) 문서에서 확인하세요.
@@ -190,6 +199,8 @@ android {
 만일 베이스의 유저 기능을 사용하지 않고 싶으시다면 [커스텀 인증](/sdk-docs/chat/custom-auth)를 참고하세요.
 :::
 
+채팅을 처음 사용한다면 뒤끝 콘솔의 **채팅 > 설정**에서 **채팅 사용하기**를 먼저 클릭해 채팅을 활성화합니다.
+
 1. 뒤끝 콘솔의 채팅 > 설정 페이지에서 `Chat UUID`, `Client App ID`, `Signature Key` 를 복사합니다.
 ![chat settings](/img/docs/guide/chat/install/chat-inspector-keys.png)
 2. Unity에 인증키를 붙여넣습니다.
@@ -200,7 +211,7 @@ android {
 
 ### 3. 유저 닉네임 설정하기
 
-채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다.
+채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다. 채팅 서버에 접속한 뒤 닉네임을 변경하는 방법은 [유저](/sdk-docs/chat/user#닉네임-변경-순서) 문서를 참고하세요.
 
 ```csharp
 using UnityEngine;
@@ -247,18 +258,7 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
             {
                 { "Rank", "1" },
                 { "Level", "1000" },
-                { "Server", "1" }
-            }
-        });
-    }
-
-    void Update() => ChatClient?.Update();
-    void OnApplicationQuit() => ChatClient?.Dispose();
-
-    public void OnJoinChannel(ChannelInfo channelInfo) { }
-    public void OnLeaveChannel(ChannelInfo channelInfo) { }
-    public void OnJoinChannelPlayer(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
-    publi
+ 
 
 > ... (전체 내용: sdk-docs/chat/01-intro.md)
 
@@ -595,8 +595,10 @@ public class DatabaseManager : MonoBehaviour
 |---|---|
 | [01-intro.md](./01-intro.md) | 시작하기 |
 | [02-install.md](./02-install.md) | 설치 및 환경 구성 |
+| [02-migration-guide.md](./02-migration-guide.md) | 마이그레이션 가이드 |
 | [03-example-game.md](./03-example-game.md) | 예제게임 |
 | [04-custom-auth.md](./04-custom-auth.md) | 커스텀 인증 |
+| [04-project-status.md](./04-project-status.md) | 프로젝트 상태 |
 | [05-user.md](./05-user.md) | 유저 |
 | [06-channel.md](./06-channel.md) | 채널 |
 | [07-message.md](./07-message.md) | 채팅 메시지 |
@@ -623,15 +625,15 @@ Unreal SDK를 통해 실시간 채팅 기능을 Unreal 프로젝트에 빠르게
 
 ## 유저 닉네임 설정
 
-채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다.
-
-- 닉네임이 변경된 경우, 채널을 다시 접속해야만 변경된 닉네임으로 표시됩니다.
+채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다. 닉네임은 커스텀 인증 서버가 응답한 `nickname`이 사용됩니다. 채팅 서버에 접속한 뒤 닉네임을 변경하는 방법은 [유저](/sdk-docs/unreal-chat/user#닉네임-변경-순서) 문서를 참고하세요.
 
 ## 요구사항
 
 Unreal SDK의 최소 요구 사항은 다음과 같습니다.
 
 - Unreal Engine 5.3  
+
+플랫폼별 제한 사양과 권장 사양은 [설치 및 환경 구성](/sdk-docs/unreal-chat/install#지원-플랫폼-및-요구-사양) 문서에서 확인하세요.
 
 :::info
 Unreal Engine 4.27 도 지원을 하고 있습니다. 따로 채팅 SDK가 준비 되어 있습니다. 사용하시는 Unreal Engine 버전을 확인 하여 맞는 채팅 SDK를 사용 해 주시길 바랍니다.

@@ -80,18 +80,18 @@ LINQ 기반 타입 안전 게임 DB, 트랜잭션 지원
 - [08-samples.md](./sdk-docs/database/08-samples.md): 구현 예제
 
 ### 언리얼 채팅 (sdk-docs/unreal-chat/)
-엔진: Unreal Engine | 문서 12개
+엔진: Unreal Engine | 문서 14개
 Unreal Engine 전용 실시간 채팅
 
 - [01-intro.md](./sdk-docs/unreal-chat/01-intro.md): 시작하기
 - [02-install.md](./sdk-docs/unreal-chat/02-install.md): 설치 및 환경 구성
+- [02-migration-guide.md](./sdk-docs/unreal-chat/02-migration-guide.md): 마이그레이션 가이드
 - [03-example-game.md](./sdk-docs/unreal-chat/03-example-game.md): 예제게임
 - [04-custom-auth.md](./sdk-docs/unreal-chat/04-custom-auth.md): 커스텀 인증
+- [04-project-status.md](./sdk-docs/unreal-chat/04-project-status.md): 프로젝트 상태
 - [05-user.md](./sdk-docs/unreal-chat/05-user.md): 유저
 - [06-channel.md](./sdk-docs/unreal-chat/06-channel.md): 채널
-- [07-message.md](./sdk-docs/unreal-chat/07-message.md): 채팅 메시지
-- [08-report.md](./sdk-docs/unreal-chat/08-report.md): 신고
-- ... 외 4개
+- ... 외 6개
 
 ### 채팅 REST API (api-docs/chat/)
 엔진: - | 문서 6개
@@ -129,11 +129,11 @@ Unreal Engine 전용 실시간 채팅
 ## 릴리즈 노트 (update-note/)
 
 - Backend: 최신 Backend-5.18.17 (44개 버전) → [update-note/Backend/](./update-note/Backend/)
-- Chat: 최신 Chat-1.4.1 (12개 버전) → [update-note/Chat/](./update-note/Chat/)
+- Chat: 최신 Chat-1.4.4 (13개 버전) → [update-note/Chat/](./update-note/Chat/)
 - Function: 최신 Function-1.0.2 (7개 버전) → [update-note/Function/](./update-note/Function/)
 - World: 최신 World-0.2.0 (2개 버전) → [update-note/World/](./update-note/World/)
 - Database: 최신 Database-1.0.0 (2개 버전) → [update-note/Database/](./update-note/Database/)
-- UnrealChat: 최신 UnrealChat-1.3.0 (2개 버전) → [update-note/UnrealChat/](./update-note/UnrealChat/)
+- UnrealChat: 최신 UnrealChat-1.4.4 (3개 버전) → [update-note/UnrealChat/](./update-note/UnrealChat/)
 - ApiChat: 최신 ApiChat-1.0.0 (1개 버전) → [update-note/ApiChat/](./update-note/ApiChat/)
 
 ## Q&A (qna/)

@@ -78,7 +78,7 @@ token: USER_TOKEN
 
 ```json
 {
-  "source": "thebackend-chat-api",
+  "source": "thebackend-chat-api"
 }
 ```
 
@@ -107,7 +107,8 @@ token: USER_TOKEN
 }
 ```
 
-유저 간 차단 기능을 사용하시려면 `blockedPlayers`에 차단 된 유저의 `uid`와 `nickname`을 포함 해 주시면 서버에서 채팅 차단 처리가 가능 해 집니다.  
+유저 간 차단 기능을 사용하시려면 `blockedPlayers`에 차단 된 유저의 `uid`와 `nickname`, `blockdate`를 포함 해 주시면 서버에서 채팅 차단 처리가 가능 해 집니다.  
+`blockdate`는 차단한 시각(UTC)이며 `yyyy-MM-ddTHH:mm:ss.fffZ` 또는 `yyyy-MM-dd HH:mm:ss` 형식으로 보내 주세요. SDK의 `GetBlockGamers()`에서 `BlockTime`(`yyyy-MM-dd HH:mm:ss`)으로 확인할 수 있습니다.  
 자세한 내용은 ([유저](/sdk-docs/unreal-chat/user)) 에서 확인 해 주시길 바랍니다.
 ```json title="Status: 200 OK"
 {
@@ -118,9 +119,10 @@ token: USER_TOKEN
     "blockedPlayers": [
         {
             "uid": "1",
-            "nickname": "nickname1"
+            "nickname": "nickname1",
+            "blockdate": "2025-12-01T12:00:00.000Z"
         }
-    ],
+    ]
 }
 ```
 
@@ -128,10 +130,12 @@ token: USER_TOKEN
 
 클라이언트 사이드에서는 아래 코드를 통해 인증된 유저의 토큰으로 채팅 서버에 접속하세요.
 
+커스텀 인증을 사용하더라도 Chat UUID는 필수입니다. 뒤끝 콘솔의 **채팅 > 설정**에서 확인한 Chat UUID를 `BDChatClientArguments.UUID`에 지정하세요.
+
 ```cpp
 BackndChat::BDChatClientArguments args;
-args.UUID = "xxxx-xxxx-xxxxxx-xxxxxxx";
-args.CustomAccessToken = USER_TOKEN
+args.UUID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+args.CustomAccessToken = USER_TOKEN;
 args.Avatar = "default";
 args.Metadata.insert(std::make_pair("key1", "value1"));
 args.Metadata.insert(std::make_pair("key2", "value2"));

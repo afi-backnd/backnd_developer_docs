@@ -10,6 +10,13 @@ description: "종료 처리"
 ## 설명
 
 채팅 종료 처리는 앱 종료 전에 호출 해 주시는 것을 권장 드리고 있습니다. 내부적으로 네트워크 상태를 감지 하여 자동으로 재연결 처리를 하고 있기 때문에 연결 상태를 따로 확인 하시거나 종료 처리를 앱 실행 중에 하실 필요가 없습니다.   
+
+`BackndChat::BDChatMain::Shutdown()`을 호출해도 `OnLeaveChannel` 콜백은 호출되지 않습니다.
+
+:::caution 콜백 안에서 Initialize, Shutdown 호출
+1.4.4부터 `OnError` 등 콜백 함수 안에서 `BackndChat::BDChatMain::Initialize` 또는 `BackndChat::BDChatMain::Shutdown`을 호출할 수 있습니다. 교체되거나 종료된 클라이언트는 더 이상 콜백을 호출하지 않으며, 실행 중이던 SDK 함수 호출(`Update()`, `Send*` 등)이 끝난 뒤 해제됩니다. 두 함수는 `Update()`를 호출하는 스레드에서 호출하고, 콜백 안에서 `BackndChat::BDChatMain::Update()`를 다시 호출하지 마세요.
+1.3.0 이하 버전에서는 콜백 안에서 호출하면 크래시가 발생할 수 있습니다.
+:::
   
 채팅 종료에 관련된 호출 함수와 예제 코드 입니다.
 

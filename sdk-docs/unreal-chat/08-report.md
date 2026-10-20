@@ -28,7 +28,7 @@ void OnSuccess(BackndChat::SUCCESS_MESSAGE success, void* param)
   {
     case BackndChat::SUCCESS_MESSAGE::REPORT:
     {
-
+      // 신고 접수가 완료가 되면 오는 콜백 함수 입니다.
     }
     break;
   }
@@ -39,10 +39,10 @@ void OnSuccess(BackndChat::SUCCESS_MESSAGE success, void* param)
 
 ```cpp
 // 콘솔에서 지정한 신고 키워드와 사유를 얻어 올 수 있습니다. 현재 유저의 언어 기반으로 정보를 얻어 옵니다.
-map<string, string> reasons = BackndChat::BDChatMain::GetReportReasons()
+std::map<std::string, std::string> reasons = BackndChat::BDChatMain::GetReportReasons();
 ```
 
 ```cpp
 // 신고 함수 입니다. 메시지 인덱스, 메시지 태그, 신고 키워드, 신고 사유를 넣어서 보내 줍니다.
-BackndChat::BDChatMain::SendReportChatMessage(uint64_t index, string tag, string keyword, string reason);
+BackndChat::BDChatMain::SendReportChatMessage(uint64_t index, std::string tag, std::string keyword, std::string reason);
 ```

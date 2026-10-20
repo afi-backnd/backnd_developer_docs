@@ -8,7 +8,9 @@ description: "채널"
 채널 입장, 채널 퇴장을 구현할 수 있고, 새로운 유저가 들어오거나 나갈 때 콜백을 이용할 수 있습니다.  
 :::tip
 
-콘솔에서 유저의 국가(`country`), 언어(`language`), 국가 코드(`countrycode`), 또는 길드(`guild`)를 통해 채널 그룹을 설정했다면, 유저가 채팅 서버에 접속할 때 해당 속성에 따라 자동으로 채널에 입장합니다. 자동 채널 그룹을 설정하려면 [콘솔 가이드 문서](/guide/console-guide/chat/channels#자동-채널-그룹)를 확인하세요.
+콘솔에서 유저의 국가(`country`), 언어(`language`), 국가 코드(`countrycode`), 또는 길드(`guild`)를 통해 채널 그룹을 설정했다면, 유저가 채팅 서버에 접속할 때 해당 속성에 따라 자동으로 채널에 입장합니다. 자동 채널 그룹을 설정하려면 [콘솔 가이드 문서](/guide/console-guide/chat/channels#예약어-채널)를 확인하세요.
+
+커스텀 인증을 사용하는 경우 커스텀 인증 서버의 응답에는 국가·길드 정보가 없으므로, 언어(`language`) 채널 그룹만 유저 정보에 따라 입장합니다. 국가(`country`)·국가 코드(`countrycode`) 채널 그룹은 해당 그룹의 기본(Fallback) 채널로 입장하며, 길드(`guild`) 채널에는 자동으로 입장하지 않습니다.
 
 :::
 
@@ -23,7 +25,7 @@ description: "채널"
 채널 그룹으로 총 3가지가 있습니다. 오픈 채널, 프라이빗 채널, 길드 채널입니다. 길드 채널은 베이스의 길드 기능과 연동하여 사용하실 수 있습니다.
 - 오픈 채널: 누구나 입장할 수 있는 공개 채널입니다. 채널 그룹과 채널 이름으로 입장합니다.
 - 프라이빗 채널: 비밀번호가 있어야 입장할 수 있는 비공개 채널입니다.(비밀번호를 설정 하지 않을 경우 누구나 입장 가능) 채널 그룹과 채널 번호로 입장합니다.
-- 길드 채널: 베이스의 길드 기능과 연동된 채널입니다. 길드에 가입된 유저만 입장할 수 있으며 자동으로 입장됩니다.
+- 길드 채널: 베이스의 길드 기능과 연동된 채널입니다. 길드에 가입된 유저만 입장할 수 있으며 자동으로 입장됩니다. 커스텀 인증을 사용하는 경우에는 사용할 수 없으므로, 아래의 프라이빗 채널을 이용한 방법으로 구현하세요.
 
 :::info 채널 이름 중복 허용
 채널 그룹으로 우선 구분을 하기 때문에 채널 이름이 중복 될 수 있습니다. 또한, 프라이빗 채널은 룸 개념과 동일하다고 생각하시면 됩니다.  
@@ -69,7 +71,7 @@ public void OnLeaveChannelPlayer(
 ```
 
 :::caution 호출 시점
-채널 생성 및 입장 함수는 채팅 서버 연결이 완료된 상태에서만 처리됩니다. `ChatClient` 생성 직후 호출하면 요청이 처리되지 않으므로, 기본 채널의 `OnJoinChannel` 콜백 등 연결 완료 이후 시점에 호출하세요.
+채널 생성 및 입장 함수는 채팅 서버 연결이 완료된 상태에서만 처리됩니다. `ChatClient` 생성 직후나 연결이 끊긴 동안 호출하면 요청이 처리되지 않으므로, 기본 채널의 `OnJoinChannel` 콜백 등 연결 완료 이후 시점에 호출하세요.
 :::
 
 ### 호출 함수
@@ -124,7 +126,9 @@ ChatClient.SendLeaveGuildChannel();
 OnGuildMemberExpelled 콜백이 올 경우에도 길드 채팅 채널 나가기 함수를 호출 해 주시길 바랍니다. [(실시간 알림)](/sdk-docs/backend/base/notify/handler-user/guild)
 :::
 
-:::info 채팅 SDK 단독으로 사용하여 길드 채널을 사용하시기 위해서는 아래의 방법으로 구현 하셔야 합니다.
+:::info 채팅 SDK 단독으로 사용하거나 커스텀 인증을 사용하는 경우, 길드 채널은 아래의 방법으로 구현 하셔야 합니다.
+
+`SendJoinGuildChannel()`, `SendLeaveGuildChannel()`은 베이스의 길드 기능과 연동된 함수이므로 커스텀 인증을 사용하는 경우에는 동작하지 않습니다.
 
 길드를 생성 시 아래의 코드를 입력 하세요. 단, `guild`는 자동 채널 생성 기능에서 사용하고 있는 예약어이기 때문에, `guild`가 아닌 다른 채널 그룹 이름을 사용해야 합니다. 생성이 완료 되면 자동으로 채널에 접속 합니다.
 
@@ -155,15 +159,23 @@ ChatClient.SendLeaveChannel("guilds", "guildname", 1);
 ```csharp
 public class ChannelInfo
 {
-    // 채널 정보
-    public string ChannelGroup;    // 채널 그룹명
-    public string ChannelName;     // 채널명
-    public UInt64 ChannelNumber;   // 채널 번호
-    public uint MaxCount;          // 최대 인원수
+  // 채널 그룹 이름
+  public string ChannelGroup = string.Empty;
 
-    // 채널 데이터
-    public Dictionary<string, PlayerInfo> Players;   // 접속중인 유저 목록
-    public List<MessageInfo> Messages;              // 이전 채팅 메시지
+  // 채널 이름
+  public string ChannelName = string.Empty;
+
+  // 채널 번호
+  public UInt64 ChannelNumber = 0;
+
+  // 채널 최대 인원
+  public uint MaxCount = 0;
+
+  // 현재 접속 중인 플레이어 정보
+  public Dictionary<string, PlayerInfo> Players = new Dictionary<string, PlayerInfo>();
+
+  // 이전 채팅 메시지 리스트
+  public List<MessageInfo> Messages = new List<MessageInfo>();
 }
 ```
 
@@ -172,10 +184,17 @@ public class ChannelInfo
 ```csharp
 public class PlayerInfo
 {
-    public string GamerName;    // 유저명
-    public string Avatar;       // 아바타
-    public string Language;     // 언어
-    public Dictionary<string, string> Metadata;   // 추가 정보
+  // 플레이어 이름
+  public string GamerName = string.Empty;
+
+  // 플레이어 아바타 이름
+  public string Avatar = string.Empty;
+
+  // 플레이어 언어 정보
+  public string Language = string.Empty;
+
+  // 플레이어 메타 정보
+  public Dictionary<string, string> Metadata = new Dictionary<string, string>();
 }
 ```
 
@@ -188,6 +207,7 @@ public void OnJoinChannel(ChannelInfo channelInfo)
     foreach (var msg in channelInfo.Messages)
     {
         Debug.Log($"[이전메시지] {msg.GamerName}: {msg.Message}");
+        Debug.Log($"전송시각: {msg.Time}");
     }
 
     // 현재 접속중인 유저 확인

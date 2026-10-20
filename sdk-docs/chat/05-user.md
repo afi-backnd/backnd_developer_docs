@@ -31,8 +31,10 @@ description: "유저"
 > **참고**: 한글, 이모지 등 다국어 문자의 경우 1자가 여러 바이트를 차지할 수 있으므로, 바이트 기준으로 길이를 계산해야 합니다.
 
 #### 닉네임 변경 순서
-- 베이스의 `Backend.BMember.UpdateNickname` 함수를 먼저 호출하여 닉네임을 변경합니다.
+- 베이스의 `Backend.BMember.UpdateNickname` 함수를 먼저 호출하여 닉네임을 변경합니다. (커스텀 인증을 사용하는 경우에는 커스텀 인증 서버가 응답하는 `nickname`을 먼저 변경합니다.)
 - 이후 채팅의 `ChatClient.UpdateNickname` 함수를 호출하여 닉네임을 변경합니다.
+
+채팅 서버는 인증 서버(베이스 또는 커스텀 인증 서버)가 응답하는 닉네임과 변경할 닉네임이 같은지 확인합니다. 서로 다르면 `OnError` 콜백으로 `FAILED_UPDATE_GAMER_NAME` 에러가 전달됩니다.
 
 #### 콜백 함수
 
@@ -69,7 +71,7 @@ ChatClient.UpdateMetadata(Dictionary<string, string> metadata)
 #### 호출 함수
 
 ```csharp
-// 현재 차단 한 유저의 닉네임 리스트를 얻어 옵니다.
+// 현재 차단 한 유저 목록(닉네임, 차단 시간)을 얻어 옵니다.
 List<BlockPlayerInfo> blockedPlayers = ChatClient.GetBlockGamers();
 ```
 
@@ -81,6 +83,18 @@ ChatClient.SendAddBlockGamer(string gamerName)
 ChatClient.SendRemoveBlockGamer(string gamerName);
 ```
 
+:::caution 1.4.0 변경 사항
+1.4.0부터 `GetBlockGamers()`의 반환 형식이 `List<string>`에서 `List<BlockPlayerInfo>`로 변경되었습니다. 닉네임은 `GamerName`으로 확인하세요. 자세한 내용은 [마이그레이션 가이드](/sdk-docs/chat/install/migration-guide)를 참고하세요.
+:::
+
+차단·해제가 완료되면 `OnSuccess` 콜백으로 `ADD_BLOCK_PLAYER`, `REMOVE_BLOCK_PLAYER`가 전달됩니다. 처리할 수 없으면 `OnError` 콜백으로 아래 에러가 전달됩니다.
+
+| 상황 | 에러 |
+| :--- | :--- |
+| 유저 이름을 비워서 호출한 경우 | `INVALID_PARAMETER` |
+| 이미 차단한 유저를 차단하는 경우 | `ALREADY_BLOCK_PLAYER` |
+| 차단하지 않은 유저를 해제하는 경우 | `FAILED_REMOVE_BLOCK_PLAYER` |
+| 커스텀 인증 사용 시 유저 간 차단 API를 설정하지 않은 경우 | `NOT_FOUND_BLOCK_URL` |
 
 ### 정보 클래스
 
@@ -90,7 +104,7 @@ public class BlockPlayerInfo
     // 차단 된 플레이어 이름
     public string GamerName = string.Empty;
 
-    // 차단 시간 정보 (UTC 기준) yyyy-MM-dd HH:mm:ss  ex) 2020-01-01 00:00:00
+    // 차단 시간 정보 (UTC 기준) yyyy-MM-dd HH:mm:ss  ex) 2020-01-01 00:00:00 (차단 시간 정보가 없으면 빈 문자열)
     public string BlockTime = string.Empty;
 }
 ```
@@ -156,15 +170,15 @@ token: USER_TOKEN
 ##### Responses
 
 형식에 맞는 응답을 반환하도록 구성하세요. 유저 정보는 string 형식의 `nickname`과 `uid`를 필수로 포함해야 합니다.
-- `uid`를 통해 유저를 구분하므로, `uid`는 각 유저에게 부여된 고유 값이어야 합니다. 
-- `blockdate`는 차단 시간 정보로, "yyyy-MM-ddTHH:mm:ssZ" 또는 "yyyy-MM-dd HH:mm:ss" 형식으로 전달해야 합니다.
+- `uid`를 통해 유저를 구분하므로, `uid`는 각 유저에게 부여된 고유 값이어야 합니다.
+- `blockdate`는 차단 시간 정보(UTC)로, `yyyy-MM-ddTHH:mm:ss.fffZ` 또는 `yyyy-MM-dd HH:mm:ss` 형식으로 전달합니다. 생략하면 `BlockTime`은 빈 문자열입니다.
 
 다음은 유저 차단 API에서 채팅 서버로 보내는 유저 정보 예시입니다.
 ```json title="Status: 200 OK"
 {
   "nickname": "john doe",
   "uid": "1234",
-  "blockdate": "2025-12-01T12:00:00Z"
+  "blockdate": "2025-12-01T12:00:00.000Z"
 }
 ```
 
@@ -201,7 +215,7 @@ token: USER_TOKEN
 
 ##### Responses
 
-형식에 맞는 응답을 반환하도록 구성하세요. 유저 정보는 string 형식의 `nickname`과 `uid`를 필수로 포함해야 합니다.  
+형식에 맞는 응답을 반환하도록 구성하세요. 유저 정보는 string 형식의 `nickname`과 `uid`를 필수로 포함해야 합니다.
 - `uid`를 통해 유저를 구분하므로, `uid`는 각 유저에게 부여된 고유 값이어야 합니다.
 
 다음은 유저 해제 API에서 채팅 서버로 보내는 유저 정보 예시입니다.

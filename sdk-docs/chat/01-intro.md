@@ -16,7 +16,16 @@ Unity SDK를 통해 실시간 채팅 기능을 Unity 프로젝트에 빠르게 �
 ### 1. 채팅 SDK 설치하기
 
 아래 패키지를 다운로드하고 유니티 프로젝트에 Import 합니다.
-- <a href="https://developer.thebackend.io/sdk/chat/1.4.1/BackndChat-1.4.1.unitypackage" id="download-sdk-chat">BackndChat-1.4.1.unitypackage</a>&nbsp;[2026-08-27]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.4/BackndChat-1.4.4.unitypackage" id="download-sdk-chat">BackndChat-1.4.4.unitypackage</a>&nbsp;[2026-10-20]
+
+#### 지원 플랫폼 및 요구 사양 
+| 플랫폼 | 요구 사양 |
+|---|---|
+| Android | 64비트(arm64-v8a, x86_64)를 포함하면 Minimum API Level **API 24(Android 7.0)** 이상 |
+| iOS | arm64 |
+| Windows | x64, x86 |
+| macOS | Apple Silicon은 **macOS 12.0** 이상, Scripting Backend는 **Mono**만 지원 |
+| Linux | x86_64 |
 
 :::info 베이스 SDK와 함께 사용한다면?
 채팅 SDK를 임포트할 때 `Backend.dll`이 덮어씌워지지 않도록 체크 해제하세요. 자세한 내용은 [베이스 SDK와 함께 사용하는 경우](/sdk-docs/chat/install/with-base-sdk) 문서에서 확인하세요.
@@ -46,6 +55,8 @@ android {
 만일 베이스의 유저 기능을 사용하지 않고 싶으시다면 [커스텀 인증](/sdk-docs/chat/custom-auth)를 참고하세요.
 :::
 
+채팅을 처음 사용한다면 뒤끝 콘솔의 **채팅 > 설정**에서 **채팅 사용하기**를 먼저 클릭해 채팅을 활성화합니다.
+
 1. 뒤끝 콘솔의 채팅 > 설정 페이지에서 `Chat UUID`, `Client App ID`, `Signature Key` 를 복사합니다.
 ![chat settings](/img/docs/guide/chat/install/chat-inspector-keys.png)
 2. Unity에 인증키를 붙여넣습니다.
@@ -56,7 +67,7 @@ android {
 
 ### 3. 유저 닉네임 설정하기
 
-채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다.
+채팅을 사용하려면 유저의 닉네임을 반드시 설정해야 합니다. 채팅 서버에 접속한 뒤 닉네임을 변경하는 방법은 [유저](/sdk-docs/chat/user#닉네임-변경-순서) 문서를 참고하세요.
 
 ```csharp
 using UnityEngine;
@@ -118,7 +129,7 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
     public void OnUpdatePlayerInfo(string channelGroup, string channelName, ulong channelNumber, PlayerInfo player) { }
     public void OnChangeGamerName(string oldGamerName, string newGamerName) { }
     public void OnWhisperMessage(WhisperMessageInfo messageInfo) { }
-    public void OnTranslateMessage(List<MessageInfo> messages) { }
+    public void OnTranslateMessage(Dictionary<string, MessageInfo> messages) { }
     public void OnHideMessage(MessageInfo messageInfo) { }
     public void OnDeleteMessage(MessageInfo messageInfo) { }
 
@@ -133,8 +144,14 @@ public class UIChatExample : MonoBehaviour, BackndChat.IChatClientListener
 ```
 
 :::note
-`ChatClient.Update()`를 매 프레임 호출해야 수신 메시지와 콜백이 처리됩니다.
+`ChatClient.Update()`를 매 프레임 호출해야 수신 메시지와 콜백이 처리됩니다. 콜백은 `Update()` 또는 SDK 함수를 호출한 스레드에서 실행되므로 Unity 메인 스레드에서 호출해 주세요.
+
 뒤끝 채팅 SDK는 네트워크 변경이나 일시적인 연결 끊김 상황에서도 자동으로 다시 연결되는 기능을 제공합니다. 별도의 재연결 처리는 필요하지 않으며, 종료 시점에는 `Dispose()`를 호출하세요.
+
+- 연결이 끊기면 입장해 있던 채널마다 `OnLeaveChannel`이 호출됩니다. 재연결에 성공하면 같은 채널에 대해 `OnJoinChannel`이 다시 호출될 수 있습니다.
+- 재연결은 1초 후 처음 시도하며, 이후 10초, 20초, ... 순으로 대기 시간이 늘어나 최대 120초까지 대기합니다.
+- 씬 로딩이나 앱 일시정지 등으로 `Update()`가 10초를 넘게 호출되지 않다가 다시 호출되면 재연결 대기 시간을 초기화합니다. 재연결을 기다리는 중이었다면 바로 재연결을 시도합니다.
+- 연결이 끊긴 동안 호출한 요청은 서버로 전송되지 않으며, 재연결 전까지 처리하지 못한 이전 연결의 수신 메시지는 콜백으로 전달되지 않습니다.
 :::
 
 ### 5. 메시지 보내기
@@ -231,11 +248,11 @@ public class UIChatManager : MonoBehaviour, BackndChat.IChatClientListener
             },
         });
         
-        // 인스펙터를 설정하지 않았을 경우, 아래와 같이 Chat UUID (xxxx-xxxx-xxxxxx-xxxxxxx)를 등록할 수 있습니다.
+        // 인스펙터를 설정하지 않았을 경우, 아래와 같이 Chat UUID (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)를 등록할 수 있습니다.
         /*
             ChatClient = new ChatClient(this, new ChatClientArguments
             {
-                UUID = "xxxx-xxxx-xxxxxx-xxxxxxx",
+                UUID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
                 Avatar = "default",
                 Metadata = new Dictionary<string, string>() 
                 {
@@ -250,7 +267,7 @@ public class UIChatManager : MonoBehaviour, BackndChat.IChatClientListener
         /*
             ChatClient = new ChatClient(this, new ChatClientArguments
             {
-                UUID = "xxxx-xxxx-xxxxxx-xxxxxxx",
+                UUID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
                 Avatar = "default",
                 Metadata = new Dictionary<string, string>() 
                 {
@@ -284,7 +301,7 @@ public class UIChatManager : MonoBehaviour, BackndChat.IChatClientListener
 
     public void OnWhisperMessage(WhisperMessageInfo messageInfo) { }
 
-    public void OnTranslateMessage(List<MessageInfo> messages) { }
+    public void OnTranslateMessage(Dictionary<string, MessageInfo> messages) { }
 
     public void OnHideMessage(MessageInfo messageInfo) { }
 

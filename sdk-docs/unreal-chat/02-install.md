@@ -7,15 +7,23 @@ description: "설치 및 환경 구성"
 
 ## SDK 다운로드
 
-- <a href="https://developer.thebackend.io/sdk/chat/1.3.0/BackndChat-1.3.0-UE53.zip" id="download-sdk-chat">BackndChat-1.3.0-UE53.zip</a>&nbsp;[2024-10-29]
-
-:::info Supported Platforms
-- Android, iOS, Windows, Mac, Linux
-:::
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.4/BackndChat-1.4.4-UE53.zip" id="download-sdk-chat">BackndChat-1.4.4-UE53.zip</a>&nbsp;[2026-10-20]
 
 :::info Unreal Engine 4.27
-- <a href="https://developer.thebackend.io/sdk/chat/1.3.0/BackndChat-1.3.0-UE427.zip" id="download-sdk-chat">BackndChat-1.3.0-UE427.zip</a>&nbsp;[2024-10-29]
+- <a href="https://developer.thebackend.io/sdk/chat/1.4.4/BackndChat-1.4.4-UE427.zip" id="download-sdk-chat">BackndChat-1.4.4-UE427.zip</a>&nbsp;[2026-10-20]
 :::
+
+## 지원 플랫폼 및 요구 사양
+
+| 플랫폼 | Unreal Engine 5.3 | Unreal Engine 4.27 |
+|---|---|---|
+| Windows | x64 | x64 |
+| macOS | Apple Silicon, Intel | Apple Silicon, Intel |
+| Linux | x86_64 | x86_64 |
+| Android | arm64-v8a, x86_64, **API 26** 이상, NDK r25b | armeabi-v7a, arm64-v8a, x86_64, **API 21** 이상, NDK r21b~r23a |
+| iOS | arm64, **iOS 15.0** 이상 | arm64, **iOS 15.0** 이상 |
+
+SDK 라이브러리는 Android는 NDK r25b(Unreal Engine 5.3)·r21e(Unreal Engine 4.27), iOS는 Xcode 27.1로 빌드했습니다.
 
 ## 채팅 활성화 하기
 
@@ -30,6 +38,8 @@ description: "설치 및 환경 구성"
 ### 3. 채팅 사용하기 버튼을 클릭합니다.
 
 ![image](/img/docs/guide/chat/install/new-chat.png)
+
+채팅을 활성화하면 `global` 그룹의 `server-1` 기본 채널이 자동으로 생성됩니다. 추가 채널이 필요한 경우에만 아래와 같이 채널을 생성합니다.
 
 ## 채팅 채널 생성 하기
 
@@ -54,11 +64,6 @@ description: "설치 및 환경 구성"
 ![create open channel](/img/docs/guide/chat/console/channel-create-open-channel.png)
 
 ![created open channel](/img/docs/guide/chat/console/channel-created-open.png)
-
-### 3. 콘솔에서 메시지 확인하기
-
-뒤끝 콘솔에서 `server-1` 채널을 선택하면, 클라이언트에서 보낸 채팅 메시지를 확인할 수 있습니다.
-![first message](/img/docs/guide/chat/install/first-message.png)
 
 ## 설치 및 환경 구성
 
@@ -88,8 +93,19 @@ description: "설치 및 환경 구성"
 
 ### 특징
 
-저희 채팅 SDK의 특징 중 자동 재 연결 프로세스가 있습니다. 유저의 네트워크가 변경 되거나 리스가 발생 할 경우 자동으로 재 연결 프로세스가 실행 됩니다.
-자동 재 연결 프로세스가 존재 하여 최초 한번 BackndChat::BDChatMain::Initialize(this, args); 호출 후 앱 종료 처리 시 BackndChat::BDChatMain::Shutdown(); 호출 해 주신다면 따로 관리 하실 필요가 없습니다.
+`BackndChat::BDChatMain::Update()`를 매 프레임 호출해야 수신 메시지와 콜백이 처리됩니다. 콜백은 `Update()` 또는 SDK 함수를 호출한 스레드에서 실행되므로 게임 스레드에서 호출해 주세요.
+
+뒤끝 채팅 SDK는 네트워크 변경이나 일시적인 연결 끊김 상황에서도 자동으로 다시 연결되는 기능을 제공합니다. 별도의 재연결 처리는 필요하지 않으며, 최초 한번 `BackndChat::BDChatMain::Initialize(this, args);`를 호출한 뒤 종료 시점에는 `BackndChat::BDChatMain::Shutdown();`을 호출하세요.
+
+- 연결이 끊기면 입장해 있던 채널마다 `OnLeaveChannel`이 호출됩니다. 재연결에 성공하면 같은 채널에 대해 `OnJoinChannel`이 다시 호출될 수 있습니다.
+- 재연결은 1초 후 처음 시도하며, 이후 10초, 20초, ... 순으로 대기 시간이 늘어나 최대 120초까지 대기합니다.
+- 앱 일시정지나 레벨 로딩 등으로 `Update()`가 10초를 넘게 호출되지 않다가 다시 호출되면 재연결 대기 시간을 초기화합니다. 재연결을 기다리는 중이었다면 바로 재연결을 시도합니다.
+- 연결이 끊겨 재연결을 기다리는 동안 호출한 요청은 서버로 전송되지 않습니다. 재연결 시도 중에 호출한 요청은 전송될 수도 있으므로, 요청은 `OnJoinChannel` 등 연결이 완료된 이후에 호출하세요. 재연결 전까지 처리하지 못한 이전 연결의 수신 메시지는 콜백으로 전달되지 않습니다.
+- `Update()`가 호출되지 않아 처리하지 못한 수신 메시지가 1,000건 또는 8MB를 넘으면 연결을 다시 맺습니다.
+
+:::caution 1.4.4 변경 사항
+1.4.4부터 SDK 헤더가 전역 `using namespace std;`를 선언하지 않습니다. `string`, `vector`, `map`을 `std::` 없이 사용하던 코드는 수정해야 합니다. 자세한 내용은 [마이그레이션 가이드](/sdk-docs/unreal-chat/migration-guide)를 참고하세요.
+:::
 
 ### Example
 
@@ -107,18 +123,22 @@ public:
 public:
 	virtual void OnJoinChannel(BackndChat::ChannelInfo channelInfo) override;
 	virtual void OnLeaveChannel(BackndChat::ChannelInfo channelInfo) override;
-	virtual void OnJoinChannelPlayer(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
-	virtual void OnLeaveChannelPlayer(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
-	virtual void OnUpdatePlayerInfo(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
-	virtual void OnChangeGamerName(string oldGamerName, string newGamerName) override;
+	virtual void OnJoinChannelPlayer(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
+	virtual void OnLeaveChannelPlayer(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
+	virtual void OnUpdatePlayerInfo(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) override;
+	virtual void OnChangeGamerName(std::string oldGamerName, std::string newGamerName) override;
 	virtual void OnChatMessage(BackndChat::MessageInfo messageInfo) override;
 	virtual void OnWhisperMessage(BackndChat::WhisperMessageInfo messageInfo) override;
-	virtual void OnTranslateMessage(std::vector<BackndChat::MessageInfo> messages) override;
+	virtual void OnTranslateMessage(std::map<std::string, BackndChat::MessageInfo> messages) override;
 	virtual void OnHideMessage(BackndChat::MessageInfo messageInfo) override;
 	virtual void OnDeleteMessage(BackndChat::MessageInfo messageInfo) override;
 	virtual void OnSuccess(BackndChat::SUCCESS_MESSAGE success, void* param) override;
 	virtual void OnError(BackndChat::ERROR_MESSAGE error, void* param) override;
-}
+
+public:
+	// 매 프레임 호출해 주세요. (예: Actor 또는 HUD의 Tick에서 호출)
+	void Tick(float DeltaTime);
+};
 
 // ChatClientManager.cpp
 
@@ -127,8 +147,8 @@ public:
 ChatClientManager::ChatClientManager()
 {
 	BackndChat::BDChatClientArguments args;
-	args.UUID = "xxxx-xxxx-xxxxxx-xxxxxxx";
-	args.CustomAccessToken = USER_TOKEN
+	args.UUID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+	args.CustomAccessToken = USER_TOKEN;
 	args.Avatar = "default";
 	args.Metadata.insert(std::make_pair("key1", "value1"));
 	args.Metadata.insert(std::make_pair("key2", "value2"));
@@ -146,19 +166,19 @@ void ChatClientManager::OnJoinChannel(BackndChat::ChannelInfo channelInfo) { }
 
 void ChatClientManager::OnLeaveChannel(BackndChat::ChannelInfo channelInfo) { }
 
-void ChatClientManager::OnJoinChannelPlayer(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
+void ChatClientManager::OnJoinChannelPlayer(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
 
-void ChatClientManager::OnLeaveChannelPlayer(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
+void ChatClientManager::OnLeaveChannelPlayer(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
 
-void ChatClientManager::OnUpdatePlayerInfo(string channelGroup, string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
+void ChatClientManager::OnUpdatePlayerInfo(std::string channelGroup, std::string channelName, uint64_t channelNumber, BackndChat::PlayerInfo player) { }
 
-void ChatClientManager::OnChangeGamerName(string oldGamerName, string newGamerName) { }
+void ChatClientManager::OnChangeGamerName(std::string oldGamerName, std::string newGamerName) { }
 
 void ChatClientManager::OnChatMessage(BackndChat::MessageInfo messageInfo) { }
 
 void ChatClientManager::OnWhisperMessage(BackndChat::WhisperMessageInfo messageInfo) { }
 
-void ChatClientManager::OnTranslateMessage(std::vector<BackndChat::MessageInfo> messages) { }
+void ChatClientManager::OnTranslateMessage(std::map<std::string, BackndChat::MessageInfo> messages) { }
 
 void ChatClientManager::OnHideMessage(BackndChat::MessageInfo messageInfo) { }
 
@@ -187,3 +207,35 @@ void ChatClientManager::Tick(float DeltaTime)
 	BackndChat::BDChatMain::Update();
 }
 ```
+
+## 메시지 보내기
+
+뒤끝 채팅을 활성화하면 `global` 그룹의 `server-1` 기본 채널이 자동으로 생성됩니다.
+기본 채널 입장이 완료되어 `OnJoinChannel` 콜백이 오면 메시지를 전송합니다.
+
+```cpp {3,5}
+void ChatClientManager::OnJoinChannel(BackndChat::ChannelInfo channelInfo)
+{
+	if (channelInfo.ChannelGroup != "global" || channelInfo.ChannelName != "server-1") return;
+
+	BackndChat::BDChatMain::SendChatMessage(channelInfo.ChannelGroup, channelInfo.ChannelName, channelInfo.ChannelNumber, TCHAR_TO_UTF8(TEXT("안녕하세요!")));
+}
+```
+
+:::caution 호출 시점
+`BackndChat::BDChatMain::Initialize` 호출 직후에는 아직 채팅 서버에 연결되지 않았으므로 채널 입장 요청이 처리되지 않을 수 있습니다. 추가 채널 입장 함수는 기본 채널의 `OnJoinChannel` 콜백 등 채팅 서버 연결이 완료된 이후 호출하세요.
+:::
+
+## 콘솔에서 메시지 확인하기
+
+뒤끝 콘솔에서 `server-1` 채널을 선택하면, 클라이언트에서 보낸 채팅 메시지를 확인할 수 있습니다.
+![first message](/img/docs/guide/chat/install/first-message.png)
+
+## 채팅 연동이 완료되었습니다
+
+이제 실시간 채팅 기능을 게임에서 사용할 수 있게 되었습니다.  
+더 확장하거나 실제 프로젝트에 적용하려면 아래 문서들을 참고하세요.
+
+- **UI까지 완성된 샘플을 보고 싶어요** → [예제 프로젝트](/sdk-docs/unreal-chat/example-game)
+- **다른 채팅 기능이 궁금해요** → [채팅 기능 소개](/guide/getting-started/how-to-use/backnd-chat)
+- **커스텀 인증 서버를 구성하고 싶어요** → [커스텀 인증 가이드](/sdk-docs/unreal-chat/custom-auth)
