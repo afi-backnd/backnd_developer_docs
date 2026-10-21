@@ -32,7 +32,7 @@ import ConsoleLinkButton from '@site/src/components/ConsoleLinkButton';
 - SDK에서 Client App Id를 변경한 경우 뒤끝 SDK 로컬에 저장된 설정값이 초기화됩니다.(게스트 로그인 정보, 유저 액세스 토큰 정보 등)
 -->
 
-### Signature Key 교체 <span class="badge badge--info">26.10.20 제공</span> {#signature-key-change}
+### Signature Key 교체 {#signature-key-change}
 
 **Signature Key**는 클라이언트 빌드에 포함되어 배포되는 값입니다.  
 따라서 사용 중인 키를 곧바로 교체하면, 기존 빌드를 이용 중인 모든 유저의 인증이 실패하게 됩니다.
@@ -170,6 +170,19 @@ Steam App ID, Web API Key는 스팀 인증 기능 이용 시 반드시 필요한
 
 해당 값은 Steamworks에서 확인 가능합니다.  
 자세한 내용은 [Steam 로그인 인증 예제](/sdk-docs/backend/base/user/federation/example-using-steam#2-appid-발급)를 참고해 주세요.
+
+### Partner Identity
+
+Partner Identity를 입력하면 서버가 스팀 Partner API로 티켓을 검증합니다.  
+입력하지 않은 경우 기존 방식(GetAuthSessionTicket)을 그대로 사용할 수 있습니다.
+
+:::info Partner Identity 등록 시 클라이언트 수정이 함께 필요합니다
+- 콘솔에 Partner Identity를 입력한 경우, 반드시 `GetAuthTicketForWebApi` 방식으로 티켓을 발급해야 합니다.
+- **Partner Identity가 설정된 상태에서 기존 `GetAuthSessionTicket` 방식으로 로그인하면 오류가 발생합니다.**
+- `GetAuthTicketForWebApi` 호출 시 identity 파라미터에는 콘솔에 입력한 Partner Identity와 동일한 값을 전달해야 합니다.
+:::
+
+클라이언트 구현 방법은 [Steam 로그인 인증 예제 - Partner 방식 로그인](/sdk-docs/backend/base/user/federation/example-using-steam#partner-방식-로그인-web-api-티켓)을 참고해 주세요.
 
 ## 구글 로그인 인증 정보
 [구글 로그인으로 뒤끝에 가입한 유저에 대한 회원 탈퇴 웹](/guide/console-guide/backnd-base/web-withdraw/web-withdraw)을 이용하거나, [GPGS v2 페데레이션 로그인 기능](/sdk-docs/backend/base/user/federation/example-using-gpgs2)을 이용하시려면 구글 로그인 인증 정보를 입력해야 합니다.  
