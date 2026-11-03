@@ -7,6 +7,6 @@
 
 | 파일 | 설명 |
 |---|---|
-| [01-install.md](./01-install.md) | 비주얼 스튜디오 필수 파일 설치 |
+| [01-install.md](./01-install.md) | Visual Studio 준비 |
 | [02-create.md](./02-create.md) | 프로젝트 생성 |
 | [03-debug.md](./03-debug.md) | 디버깅 |

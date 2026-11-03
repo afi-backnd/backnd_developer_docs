@@ -13,4 +13,4 @@
 
 | 디렉터리 | 설명 |
 |---|---|
-| [02-receipt-check/](./02-receipt-check/) | 영수증 검증 |
+| [02-receipt-check/](./02-receipt-check/) | [Deprecated] 영수증 검증 |

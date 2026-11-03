@@ -1,6 +1,8 @@
 ---
-sidebar_label: 명령어모음
+sidebar_label: "[Deprecated] 명령어모음"
 description: "명령어모음"
+draft: true
+unlisted: true
 ---
 
 # VSCode 뒤끝펑션용 명령 팔레트

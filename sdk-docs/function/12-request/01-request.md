@@ -1,13 +1,15 @@
 ---
-sidebar_label: 뒤끝 기능 요청
+sidebar_label: "[Deprecated] 뒤끝 기능 요청"
 description: "뒤끝 기능 요청"
+draft: true
+unlisted: true
 ---
 
 # 뒤끝 기능 요청
 
 뒤끝펑션 내에서는 유니티에서 뒤끝 SDK를 이용하여 뒤끝 기능을 호출하는 것과 동일하게 다양한 뒤끝 기능들을 요청할 수 있습니다.  
 뒤끝펑션 내에서 뒤끝 기능들을 요청하면 해당 기능 요청에 대한 응답을 대기해야 되기 때문에 그만큼 뒤끝펑션 자체의 응답시간이 느려질 수 있습니다.  
-응답시간에 대한 자세한 설명은 [응답시간](/sdk-docs/function/work-in-windows/visual-studio-code/create) 문서를 참고해 주세요.  
+응답시간에 대한 자세한 설명은 [응답시간](/sdk-docs/function/basic/respone-time) 문서를 참고해 주세요.  
 
 ## 뒤끝 기능 요청하기
 

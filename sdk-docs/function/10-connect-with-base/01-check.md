@@ -1,11 +1,15 @@
 ---
-sidebar_label: 뒤끝베이스에서 보낸데이터확인
+sidebar_label: "[Deprecated] 뒤끝베이스에서 보낸데이터확인"
 description: "뒤끝베이스에서 보낸데이터확인"
+draft: true
+unlisted: true
 ---
 
 # HasKey
 
-public bool HasKey(string key);
+```csharp
+public static bool HasKey(string key);
+```
 
 ## 파라미터
 
@@ -20,7 +24,7 @@ SDK(뒤끝 베이스)에서 보낸 데이터를 확인합니다.
 
 ## Example
 
-```js
+```csharp
 bool isExist = Backend.HasKey("myKey");
 ```
 

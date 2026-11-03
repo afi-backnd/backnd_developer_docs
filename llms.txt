@@ -36,21 +36,22 @@
 - [02-install/](./sdk-docs/chat/02-install/): 설치 유의사항
 
 ### 뒤끝펑션 (sdk-docs/function/)
-엔진: Unity | 문서 34개
+엔진: Unity | 문서 46개
 서버리스 커스텀 함수 실행 (베이스 SDK 필수)
 
 - [01-intro.md](./sdk-docs/function/01-intro.md): 시작하기
-- [02-migrate-from-old-version.md](./sdk-docs/function/02-migrate-from-old-version.md): 뒤끝펑션 버전 마이그레이션  
-- [07-upgrade.md](./sdk-docs/function/07-upgrade.md): 펑션 SDK 업그레이드
+- [02-migrate-from-old-version.md](./sdk-docs/function/02-migrate-from-old-version.md): 기존 버전에서 옮기기
+- [07-upgrade.md](./sdk-docs/function/07-upgrade.md): 업데이트
 - [08-template.md](./sdk-docs/function/08-template.md): 뒤끝펑션 템플릿
 - [03-basic/](./sdk-docs/function/03-basic/): 뒤끝펑션 기초
 - [04-work-in-windows/](./sdk-docs/function/04-work-in-windows/): 개발환경설정 (Windows)
-- [05-work-in-ios/](./sdk-docs/function/05-work-in-ios/): 개발환경설정 (MacOS)
+- [05-work-in-ios/](./sdk-docs/function/05-work-in-ios/): 개발환경설정 (macOS)
 - [06-cli/](./sdk-docs/function/06-cli/): Backend CLI
 - [09-tutorial/](./sdk-docs/function/09-tutorial/): 튜토리얼
-- [10-connect-with-base/](./sdk-docs/function/10-connect-with-base/): 뒤끝베이스와 통신
-- [11-transfer-stream/](./sdk-docs/function/11-transfer-stream/): Stream으로 변환
-- [12-request/](./sdk-docs/function/12-request/): 뒤끝기능요청
+- [10-connect-with-base/](./sdk-docs/function/10-connect-with-base/): [Deprecated] 뒤끝베이스와 통신
+- [10-request-response/](./sdk-docs/function/10-request-response/): 요청과 응답
+- [11-backnd-features/](./sdk-docs/function/11-backnd-features/): 뒤끝 기능 사용
+- ... 외 2개
 
 ### 월드 (sdk-docs/world/)
 엔진: Unity | 문서 25개
@@ -130,7 +131,7 @@ Unreal Engine 전용 실시간 채팅
 
 - Backend: 최신 Backend-5.18.17 (44개 버전) → [update-note/Backend/](./update-note/Backend/)
 - Chat: 최신 Chat-1.4.4 (13개 버전) → [update-note/Chat/](./update-note/Chat/)
-- Function: 최신 Function-1.0.2 (7개 버전) → [update-note/Function/](./update-note/Function/)
+- Function: 최신 Function-1.1.1 (8개 버전) → [update-note/Function/](./update-note/Function/)
 - World: 최신 World-0.2.0 (2개 버전) → [update-note/World/](./update-note/World/)
 - Database: 최신 Database-1.0.0 (2개 버전) → [update-note/Database/](./update-note/Database/)
 - UnrealChat: 최신 UnrealChat-1.4.4 (3개 버전) → [update-note/UnrealChat/](./update-note/UnrealChat/)

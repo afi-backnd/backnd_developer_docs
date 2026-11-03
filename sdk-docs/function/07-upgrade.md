@@ -1,99 +1,119 @@
 ---
-sidebar_label: 펑션 SDK 업그레이드
-description: "펑션 SDK 업그레이드"
+sidebar_label: 업데이트
+description: "업데이트"
 ---
 
-# 펑션 SDK 업그레이드
+# 업데이트
 
-## 펑션 SDK 업그레이드 방법
+뒤끝펑션 업데이트는 두 가지입니다.  
 
-펑션 SDK는 개발 툴에 첨부된 API를 복사하여 현재 사용중인 프로젝트에 붙여넣는 형식으로 업데이트를 진행해야합니다.  
-해당 펑션 SDK 업그레이드 가이드 문서는 **뒤끝 펑션 버전 1.0.0** 기준으로 작성 되었습니다.  
+| 대상 | 내용 | 명령 |
+|---|---|---|
+| 개발 도구 | PC에 설치한 `backend` | `backend update` |
+| 프로젝트 SDK | 프로젝트 `dll` 폴더의 뒤끝펑션 SDK DLL | `backend update --project <프로젝트 폴더> --yes` |
 
-### 1.최신 버전의 펑션 다운로드
+개발 도구를 업데이트해도 프로젝트의 SDK DLL은 자동으로 바뀌지 않습니다.  
+새 SDK의 기능이나 수정 사항을 사용하려면 프로젝트 SDK도 업데이트해 주세요.  
 
-[펑션 시작하기](/sdk-docs/function/intro)에서 새로 배포된 개발툴을 다운 받고 설치를 진행합니다.  
+## 개발 도구 업데이트하기
 
-<img src="/img/docs/guide/function/migrate/new-install-finish.png" />
+PowerShell 또는 터미널에서 아래 명령을 실행합니다.  
+`backend`는 뒤끝이 서명해 둔 최신 버전 정보를 확인하고, 새 버전이 있으면 확인 질문을 표시합니다. 질문이 표시되면 `y`를 입력합니다.  
 
-### 2. 펑션이 설치된 폴더로 이동
+```powershell
+backend update
+```
 
-이후 펑션이 설치된 폴더로 이동합니다.  
+새 버전이 있으면 아래와 같이 표시됩니다. 버전 번호와 설치 폴더는 환경에 따라 다릅니다.  
 
-- Windows : C:\Program Files\AFI\BackendFunction\API
-- Mac : Applications(응용프로그램)\AFI\BFunc\API
+```text
+Checking https://developer.thebackend.io/sdk/BackendFunction/live/latest.json
+Installed  1.1.0
+Available  1.1.1   (source b9a9702, SDK b1a74ed)
+Update BACKND CLI 1.1.0 -> 1.1.1 for win-x64 into C:\Users\<사용자 이름>\AppData\Local\AFI\Function? [y/N]:
+Downloading backend-1.1.1-win-x64.zip ...
+Archive verified.
+Activated 1.1.1. Previous versions are kept under C:\Users\<사용자 이름>\AppData\Local\AFI\Function\versions.
+```
 
-**Window 경로**  
+Mac에서는 `win-x64` 대신 `osx-arm64`가, 설치 폴더는 `~/Library/Application Support/AFI/Function`이 표시됩니다.  
+이미 최신 버전이면 질문 없이 `Already up to date (1.1.1).`을 표시하고 아무것도 바꾸지 않습니다.  
 
-<img src="/img/docs/guide/function/upgrade/new-window-install.png" />  
+- 새 버전을 별도 폴더에 설치한 뒤 전환하므로, 업데이트 중에 실패해도 기존 버전을 계속 사용할 수 있습니다.  
+- 내려받은 파일은 서명과 게시자 확인을 모두 통과해야 설치됩니다. 통과하지 못하면 아무것도 바꾸지 않습니다.  
+- 등록한 인증 정보(`profiles`)와 프로젝트는 그대로 유지됩니다.  
+- `backend update`는 옛 버전으로 되돌리지 않습니다.  
 
-**Mac 경로**  
+## 프로젝트 SDK 업데이트하기
 
-<img src="https://developer.thebackend.io/static/img/bfunc/upgrade/mac-install.png" />
+### 1. 바뀔 내용 확인하기
 
-### 3. API 폴더 내 있는 dll 복사
+프로젝트 폴더에서 아래 명령을 실행합니다.  
+`--yes` 없이 실행하면 개발 도구만 업데이트하고(새 버전이 있으면 확인 질문이 나오며 `y`를 입력합니다), 프로젝트는 바꾸지 않고 바뀔 내용만 보여 줍니다.  
 
-API 폴더에 있는 dll 파일들을 전부 복사합니다.  
+```powershell
+cd C:\work\MyFunction
+backend update --project .
+```
 
-<img src="/img/docs/guide/function/upgrade/new-window-copy.png" />  
+결과의 `data.project.preview.files`에서 DLL별로 바뀌는지(`changed`) 확인할 수 있습니다.  
 
-### 4. 사용중인 뒤끝펑션 프로젝트에 붙여넣기
+### 2. 적용하기
 
-업그레이드할 펑션의 프로젝트 > dll 폴더에 복사한 파일들을 붙여넣습니다.  
+내용을 확인했다면 `--yes`를 추가해 적용합니다.  
 
-<img src="/img/docs/guide/function/upgrade/new-window-paste.png" />  
+```powershell
+backend update --project . --yes
+```
 
-### 5. 기존 BackendAPI.dll 파일 삭제하기
+결과의 `data.project.applied`가 `true`이면 완료된 것입니다.  
 
-파일을 붙여넣기한 dll 폴더에 남아있는 BackendAPI.dll파일을 삭제합니다.   
+- `dll` 폴더의 SDK DLL, `backend-sdk.json`, `backend-function.json`의 SDK 버전 정보가 바뀝니다.  
+- 필요하면 `BackendFunction.csproj`의 `System.Text.Json` 참조 설정도 맞춥니다.  
+- 바꾸기 전 파일은 `.backend/sdk-update-backups` 폴더에 백업됩니다. 결과의 `data.project.backup`에 백업 위치가 표시됩니다.  
+- `Function.cs` 등 함수 코드와 `requests` 폴더의 요청 파일, 예전 `debugConfig.json`은 바뀌지 않습니다.  
 
-<img src="/img/docs/guide/function/upgrade/new-window-delete.png" />  
+업데이트한 뒤 `backend debug`로 함수가 정상적으로 실행되는지 확인하고 다시 배포해 주세요.  
+**서버에 이미 배포된 함수는 다시 배포하기 전까지 이전 SDK로 실행됩니다.**  
 
-### 6. 프로젝트 속성 수정하기
+## 개발 도구 업데이트에 실패한 경우
 
-#### Visual Studio의 경우  
+`backend update`가 실패하면 `error.code`와 JSON 위에 표시된 메시지를 확인합니다. 어떤 경우에도 기존 버전은 그대로 남아 계속 사용할 수 있습니다.  
 
-1. 솔루션 탐색기에서 BackendFunction을 더블 클릭하여 열리는 csproj 파일의 BackendAPI 부분을 찾아 확인합니다.  
+| 오류 코드 | 원인과 해결 방법 |
+|---|---|
+| `NOT_INSTALLED` | 설치 기록이 없습니다. [Windows](/sdk-docs/function/work-in-windows/install) / [Mac](/sdk-docs/function/work-in-ios/install) 문서의 설치 명령을 먼저 실행합니다. |
+| `POINTER_NOT_FOUND` | 서버에서 최신 버전 정보를 찾지 못했습니다. 잠시 뒤 다시 실행합니다. |
+| `NETWORK_ERROR` | 최신 버전 정보나 업데이트 파일을 내려받지 못했습니다. 인터넷 연결과 방화벽을 확인합니다. 회사 보안 프로그램이 HTTPS 통신을 검사하면 `backend`가 파일을 내려받지 못할 수 있으니 보안 담당자에게 문의해 주세요. |
+| `INTEGRITY_ERROR`, `SIGNATURE_INVALID` | 내려받은 파일의 서명이나 내용이 맞지 않아 업데이트하지 않았습니다. 잠시 뒤 다시 실행하고, 계속되면 뒤끝에 문의해 주세요. |
+| `PLATFORM_SIGNATURE_INVALID` | 새 버전의 게시자 서명을 확인하지 못했습니다. 오랫동안 업데이트하지 않은 `backend`에서 게시자 서명이 바뀐 경우에도 나타납니다. 설치 명령을 다시 실행해 설치합니다. |
+| `TRUST_ROOT_CHANGED`, `RECEIPT_UNSUPPORTED` | 설치된 `backend`가 가진 서명 확인 키로는 새 버전의 서명을 확인할 수 없습니다. 뒤끝이 서명 키 변경을 공지했거나 예전 시험용 설치 기록이 남아 있는 경우에만 나타납니다. 아래 명령으로 설치 기록(`receipt.json`)과 `bin` 폴더만 삭제하고 설치 명령을 다시 실행합니다. 인증 정보(`profiles`)와 프로젝트는 유지됩니다. |
 
-<img src="/img/docs/guide/function/upgrade/new-window-modify-csproj-vs-step1.png" />  
+`TRUST_ROOT_CHANGED`, `RECEIPT_UNSUPPORTED`일 때 삭제하는 명령입니다. 기본 설치 폴더 기준입니다.  
 
+**Windows (PowerShell)**
 
-2. BackendAPI부분을 Backend로 수정하고 저장합니다.  
+```powershell
+Remove-Item "$env:LOCALAPPDATA\AFI\Function\receipt.json"
+Remove-Item -Recurse "$env:LOCALAPPDATA\AFI\Function\bin"
+```
 
-<img src="/img/docs/guide/function/upgrade/new-window-modify-csproj-vs-step2.png" />  
+**Mac (터미널)**
 
-#### VSCode의 경우  
+```bash
+rm "$HOME/Library/Application Support/AFI/Function/receipt.json"
+rm -r "$HOME/Library/Application Support/AFI/Function/bin"
+```
 
-1. 탐색기에서 BackendFunction.csproj 파일을 열여 BackendAPI 부분을 찾습니다.  
+## 프로젝트 SDK 업데이트에 실패한 경우
 
-<img src="/img/docs/guide/function/upgrade/new-window-modify-csproj-vscode-step1.png" />  
+프로젝트 SDK 업데이트에 실패하면 결과의 `error.code`는 항상 `PROJECT_UPDATE_FAILED`입니다.  
+개발 도구는 이미 업데이트되었고, 프로젝트는 업데이트 전 상태로 유지됩니다.  
+실패한 원인은 JSON 위에 표시된 프로젝트 업데이트 결과의 `error.code`에서 확인합니다.  
 
-
-2. BackendAPI부분을 Backend로 수정하고 저장합니다.  
-
-<img src="/img/docs/guide/function/upgrade/new-window-modify-csproj-vscode-step2.png" />  
-
-### 7. 펑션 템플릿 수정(선택 사항)
-
-펑션 디버거가 비동기를 환경에서 테스트가 가능해 졌습니다.  
-개발 상황에 따라 동기/비동기 방식을 선택하여 구현 하실 수 있습니다.
-
-:::caution 펑션 비동기 처리 이슈
-펑션을 비동기로 구현하여 처리 할 경우 동기 방식 보다 응답 속도가 떨어지는 현상이 발생 할 수 있습니다.  
-우선적으로 동기 방식으로 구현하는 것을 권장드리며 비동기 처리가 필요한 상황에 따라서 선택적으로 사용해 주세요.
-:::
-
-1.기존 Function함수(동기 방식)
-<img src="/img/docs/guide/function/upgrade/new-template-old.png" />  
-
-
-2.비동기 Function함수
-<img src="/img/docs/guide/function/upgrade/new-template-async.png" />  
-
-### 8. 빌드 후 배포
-
-이후 빌드 및 배포하여 새로운 sdk의 펑션을 업로드합니다.  
-
-<img src="https://developer.thebackend.io/static/img/bfunc/upgrade/window-deploy.png" />
-
-에러가 발생할 경우에는 .NET 8.0 버전이 설치되어 있는지, Backend.dll의 경로나 파일명이 정확하게 되어있는지 확인합니다.
+| 원인 오류 코드 | 원인과 해결 방법 |
+|---|---|
+| `PROJECT_MODIFIED` | `dll` 폴더의 DLL이 기록된 버전과 다릅니다. 직접 바꾼 DLL은 덮어쓰지 않습니다. 직접 바꾼 이유를 확인한 뒤, 원래 DLL로 되돌리고 다시 실행합니다. |
+| `SDK_DEPENDENCY_CONFLICT` | 프로젝트의 `System.Text.Json` 참조 설정을 자동으로 맞출 수 없습니다. `BackendFunction.csproj`에서 `System.Text.Json` 패키지 참조를 조건 없이 9.x 버전 숫자로 직접 지정하고, `CopyLocalLockFileAssemblies`를 `true`로 설정한 뒤 다시 실행합니다. 프로젝트 폴더 위쪽에 `Directory.Packages.props`가 있거나, 패키지 버전을 중앙에서 관리하거나 `Import`를 포함한 `Directory.Build.props`·`Directory.Build.targets`가 있어도 같은 오류가 납니다. 이 경우 해당 파일의 설정을 정리한 뒤 다시 실행합니다. |
+| `PROJECT_RECOVERY_REQUIRED` | 이전 업데이트가 중간에 멈췄습니다. `.backend/sdk-update-pending.json`에 적힌 백업 파일을 원래 위치로 복원하고 이 파일을 삭제한 뒤 다시 실행합니다. |
+| `PROJECT_NOT_FOUND` | 지정한 폴더에 `backend-function.json`이 없습니다. 1.0.2 이하 버전 프로젝트라면 [기존 버전에서 옮기기](/sdk-docs/function/migrate-from-old-version)를 먼저 진행합니다. |

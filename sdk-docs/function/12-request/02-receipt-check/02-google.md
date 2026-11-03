@@ -1,6 +1,8 @@
 ---
-sidebar_label: 구글 영수증 검증
+sidebar_label: "[Deprecated] 구글 영수증 검증"
 description: "구글 영수증 검증"
+draft: true
+unlisted: true
 ---
 
 # 구글 영수증 검증
@@ -8,7 +10,7 @@ description: "구글 영수증 검증"
 구글 인앱결제 진행 후 발행된 영수증이 유효한지 확인하는 함수입니다.  
 인앱결제 진행에 대한 자세한 설명은 뒤끝베이스의 [뒤끝펑션에서 인앱결제 검증하기 문서](/sdk-docs/backend/base/function/receipt-and-tbc/receipt-and-recharge-tbc)를 참고해 주세요.  
 
-```js
+```csharp
 IsValidateGooglePurchase(string productId, string token, string receiptDescription, bool isSubscription = false) -> BackendReturnObject
 
 // example
@@ -36,7 +38,7 @@ statusCode : 200
 message : Success  
 returnValue : 아래 참고
 
-```js
+```json
 {
   "kind":"androidpublisher#subscriptionPurchase",
   "startTimeMillis":"1583722491833",

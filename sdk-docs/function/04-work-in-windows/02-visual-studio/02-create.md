@@ -3,47 +3,95 @@ sidebar_label: 프로젝트 생성
 description: "프로젝트 생성"
 ---
 
-# Visual Studio 프로젝트 생성
+# Visual Studio 프로젝트 만들기
 
-## Visual Studio에서 뒤끝펑션 프로젝트 템플릿을 이용하여 새 프로젝트 생성하기
+`backend new` 명령으로 Visual Studio용 뒤끝펑션 프로젝트를 만들고 Visual Studio에서 엽니다.  
+[backend 설치](/sdk-docs/function/work-in-windows/install)와 [Visual Studio 준비](/sdk-docs/function/work-in-windows/visual-studio/install)를 먼저 완료해 주세요.  
 
-아래 설명은 Visual Studio 2019 버전을 기준입니다.  
-프로젝트 생성 부분의 UI를 제외하고는 Visual Studio 2017 버전과 2019 이상 버전 모두 동일합니다.  
+## 1. 프로젝트 만들기
 
----
-####
-1. BackendFunction 템플릿을 선택해 새 프로젝트를 생성합니다.  
+PowerShell을 열고 프로젝트를 만들 폴더로 이동합니다.  
+아래 예시는 `C:\work` 폴더에 `MyFunction` 프로젝트를 만듭니다.  
 
-시작하기 문서에서 뒤끝펑션 프로젝트 템플릿을 설치해야 새 프로젝트를 생성할 때 아래 그림과 같이 BackendFunction 템플릿이 표시됩니다.  
+```powershell
+mkdir C:\work -Force
+cd C:\work
+backend new MyFunction --vs
+```
 
-![image](https://developer.thebackend.io/static/img/bfunc/create/1.PNG)
+`--vs`를 붙이면 Visual Studio에서 바로 실행할 수 있도록 디버깅에 필요한 도구를 함께 빌드하므로, JSON 위에 `Build succeeded.` 같은 빌드 진행 메시지가 먼저 표시됩니다(한국어 환경에서는 `빌드했습니다.`).  
+결과에 `"ok": true`가 표시되면 `C:\work\MyFunction` 폴더가 만들어진 것입니다.  
 
----
-####
-2. 프로젝트 속성에서 **어셈블리 이름 및 네임스페이스를 BackendFunction으로 수정**합니다.  
+```json
+{
+  "command": "new",
+  "data": {
+    "functionName": "MyFunction",
+    "ide": "vs",
+    "note": "requests/*.json are committed to Git: never put credentials in a request file. backend debug runs offline by default; add --user to run as the test user.",
+    "project": "C:\\work\\MyFunction",
+    "requests": [
+      "requests/default.json"
+    ],
+    "sdkVersion": "snapshot-d6ef1b2188e3ac9b",
+    "template": "hello"
+  },
+  "error": null,
+  "ok": true,
+  "schemaVersion": 1
+}
+```
 
-> 대상 프레임워크, 출력 형식 등의 설정은 모두 프로젝트 생성 후 설정되어 있는 **기본 값**을 사용해야 합니다.  
+`sdkVersion` 값은 설치한 `backend` 버전에 따라 다릅니다.  
 
-- 대상 프레임워크 : .NET 8.0
-- 출력 형식 : 클래스 라이브러리
+:::info 프로젝트 이름 규칙
+- 프로젝트 이름은 **서버에 배포될 함수 이름**으로도 사용됩니다.  
+- 영문, 숫자, `_`, `-`만 사용할 수 있고 영문 또는 숫자로 시작해야 합니다. 최대 64자입니다. `CON`, `NUL`, `COM1`처럼 Windows가 예약한 이름은 사용할 수 없습니다.  
+- 이미 파일이 있는 폴더에는 만들 수 없습니다.  
+:::
 
-![image](https://developer.thebackend.io/static/img/bfunc/create/2.png)
+## 2. Visual Studio에서 열기
 
-![image](https://developer.thebackend.io/static/img/bfunc/create/3.PNG)
+1. Visual Studio를 실행합니다.  
+2. **파일 > 열기 > 프로젝트/솔루션**을 선택합니다.  
+3. `C:\work\MyFunction\BackendFunction.csproj`를 선택해 엽니다.  
 
----
-####
-3. 네임스페이스, 클래스명, 함수명을 변경합니다.  
+솔루션 파일(.sln)은 만들어지지 않습니다. 저장할 때 Visual Studio가 솔루션 파일을 저장할 위치를 물으면 프로젝트 폴더를 선택하면 됩니다.  
 
-뒤끝펑션에서 제공하는 템플릿으로 프로젝트를 생성하면 네임스페이스와 클래스명은 개발사에서 생성한 프로젝트 명으로 변경될 수 있습니다.  
-이 부분을 아래와 같이 변경해야 합니다.  
+## 만들어지는 파일
 
-- 네임스페이스 : BackendFunction
-- 클래스명 : BFunc
-- BFunc에 존재하는 Function 함수 형태
-   ```js
-   public Stream Function(Stream stream, ILambdaContext context)
-   ```
-  > 개발사에서 제작한 뒤끝펑션을 뒤끝 SDK에서 호출하면 **BackendFunction.BackendFunction.BFunc.Function**이 호출되게 됩니다.  
+| 파일 | 설명 |
+|---|---|
+| `Function.cs` | 함수 코드입니다. 이 파일을 수정해 함수를 작성합니다. |
+| `BackendFunction.csproj` | 프로젝트 파일입니다. |
+| `requests/default.json` | 내 PC에서 실행할 때 함수에 전달할 값입니다. 유니티에서 `InvokeFunction`으로 보내는 `Param`과 같은 형태의 JSON입니다. Git에 올라가는 파일이므로 인증 정보를 적지 않습니다. [디버깅](/sdk-docs/function/work-in-windows/visual-studio/debug) 문서를 참고해 주세요. |
+| `backend-function.json` | 배포할 함수 이름과 설명 등 프로젝트 정보입니다. |
+| `backend-sdk.json` | 프로젝트에 포함된 SDK DLL의 버전 정보입니다. 직접 수정하지 않습니다. |
+| `dll/` | 뒤끝펑션 SDK DLL입니다. 직접 수정하지 않습니다. |
+| `Properties/launchSettings.json` | Visual Studio 디버깅 설정입니다. **Backend Function (offline)**(인증 정보 없이 실행)과 **Backend Function (test user)**(등록한 테스트 계정으로 실행) 두 가지 실행 프로필이 들어 있습니다. |
+| `.backend/` | `backend`가 관리하는 빌드·디버깅용 폴더입니다. 직접 수정하지 않습니다. |
+| `.gitignore` | Git에 올리지 않을 파일 목록입니다. `.backend/`와 예전 버전의 `debugConfig.json`이 포함됩니다. `requests/`는 포함되지 않아 Git에 올라갑니다. |
 
-![image](/img/docs/guide/function/setting/create-template-sample.png)
+## 고정되는 이름
+
+서버는 배포된 함수에서 아래 이름을 찾아 실행합니다.  
+`backend new`가 만든 프로젝트에는 이미 설정되어 있으므로 바꾸지 마세요.  
+
+- 어셈블리 이름: `BackendFunction` (빌드 결과 `BackendFunction.dll`)
+- 네임스페이스: `BackendFunction`
+- 클래스: `BFunc`
+- 함수: `Function`
+
+프로젝트 폴더 이름을 바꾸어도 위 이름은 바뀌지 않습니다.  
+함수 형태는 [서버에서 뒤끝펑션이 호출되는 형태](/sdk-docs/function/basic/call) 문서를 참고해 주세요.  
+
+## 다른 템플릿으로 만들기
+
+기본 템플릿 `hello`는 받은 값을 인사 메시지와 함께 돌려줍니다.  
+빈 함수로 시작하려면 `--template empty`를 추가합니다.  
+
+```powershell
+backend new MyFunction --vs --template empty
+```
+
+두 템플릿의 코드는 [뒤끝펑션 템플릿](/sdk-docs/function/template) 문서를 참고해 주세요.
